@@ -1,0 +1,8 @@
+{
+  "body": {
+    "serviceDescriptorId": "1",
+    "additionalParameters": {
+      "param": "Simple Param"
+    }
+  }
+}

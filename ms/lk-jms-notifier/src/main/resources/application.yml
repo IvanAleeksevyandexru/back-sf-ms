@@ -1,0 +1,19 @@
+server:
+  port: 8097
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: lk-jms-notifier
+    env: dev
+  jms:
+    pub-sub-domain: true
+    template:
+      # Имя очереди для отправки нотификаций
+      default-destination: jms.queue.scFormDataRequest
+
+jms:
+  connection: localhost:61616
+  username: artemis
+  password: simetraehcapa

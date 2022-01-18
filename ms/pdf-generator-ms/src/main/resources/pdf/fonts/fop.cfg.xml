@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!-- $Id: fop.xconf 901793 2010-01-21 17:37:07Z jeremias $ -->
+
+<!--
+
+This is an example configuration file for FOP.
+This file contains the same settings as the default values
+and will have no effect if used unchanged.
+
+Relative config url's will be resolved relative to
+the location of this file.
+
+-->
+
+<!-- NOTE: This is the version of the configuration -->
+<fop version="1.0">
+
+    <!-- Base URL for resolving relative URLs -->
+    <base>.</base>
+
+    <!-- Source resolution in dpi (dots/pixels per inch) for determining the size of pixels in SVG and bitmap images, default: 72dpi -->
+    <source-resolution>72</source-resolution>
+    <!-- Target resolution in dpi (dots/pixels per inch) for specifying the target resolution for generated bitmaps, default: 72dpi -->
+    <target-resolution>72</target-resolution>
+
+    <!-- Default page-height and page-width, in case
+value is specified as auto -->
+    <default-page-settings height="11in" width="8.26in"/>
+
+    <!-- Information for specific renderers -->
+    <!-- Uses renderer mime type for renderers -->
+    <renderers>
+        <renderer mime="application/pdf">
+            <filterList>
+                <!-- provides compression using zlib flate (default is on) -->
+                <value>flate</value>
+
+                <!-- encodes binary data into printable ascii characters (default off)
+       This provides about a 4:5 expansion of data size -->
+                <!-- <value>ascii-85</value> -->
+
+                <!-- encodes binary data with hex representation (default off)
+     This filter is not recommended as it doubles the data size -->
+                <!-- <value>ascii-hex</value> -->
+            </filterList>
+
+            <fonts>
+                <font embed-url="pdf/fonts/symbol.ttf" kerning="yes">
+                    <font-triplet name="Symbol" style="normal" weight="700"/>
+                </font>
+                <font embed-url="pdf/fonts/times.ttf" kerning="yes">
+                    <font-triplet name="serif" style="normal" weight="normal"/>
+                </font>
+                <font embed-url="pdf/fonts/timesbd.ttf" kerning="yes">
+                    <font-triplet name="serif" style="normal" weight="bold"/>
+                </font>
+
+                <!--HelveticaNeue-->
+                <font embed-url="pdf/fonts/HelveticaNeue/HelveticaNeueCyr-Black.ttf" kerning="yes">
+                    <font-triplet name="Helvetica-Neue" style="normal" weight="normal"/>
+                </font>
+                <font embed-url="pdf/fonts/HelveticaNeue/HelveticaNeueCyr-Bold.ttf" kerning="yes">
+                    <font-triplet name="Helvetica-Neue" style="normal" weight="bold"/>
+                </font>
+                <font embed-url="pdf/fonts/HelveticaNeue/HelveticaNeueCyr-Light.ttf" kerning="yes">
+                    <font-triplet name="Helvetica-Neue" style="normal" weight="200"/>
+                </font>
+                <font embed-url="pdf/fonts/HelveticaNeue/HelveticaNeueCyr-Medium.ttf" kerning="yes">
+                    <font-triplet name="Helvetica-Neue" style="normal" weight="300"/>
+                </font>
+
+                <!--ALSEkibastuz-->
+                <font embed-url="pdf/fonts/ALSEkibastuz/als_ekibastuz_bold.ttf" kerning="yes">
+                    <font-triplet name="ALSEkibastuz" style="normal" weight="bold"/>
+                </font>
+                <font embed-url="pdf/fonts/ALSEkibastuz/als_ekibastuz_light.ttf" kerning="yes">
+                    <font-triplet name="ALSEkibastuz" style="normal" weight="normal"/>
+                </font>
+                <!--Arial-->
+                <font embed-url="pdf/fonts/arial.ttf" kerning="yes">
+                    <font-triplet name="Arial" style="normal" weight="normal"/>
+                </font>
+                <!--ArialbD-->
+                <font embed-url="pdf/fonts/arialbd.ttf" kerning="yes">
+                    <font-triplet name="Arial" style="normal" weight="bold"/>
+                </font>
+
+                <!--Microsoft Sans Serif-->
+                <font embed-url="pdf/fonts/micross.ttf" kerning="yes">
+                    <font-triplet name="sans" style="normal" weight="normal"/>
+                </font>
+                <!--Lato-->
+                <font embed-url="pdf/fonts/Lato-Regular.ttf" kerning="yes">
+                    <font-triplet name="Lato-Regular" style="normal" weight="normal"/>
+                </font>
+                <!--LatobD-->
+                <font embed-url="pdf/fonts/Lato-Bold.ttf" kerning="yes">
+                    <font-triplet name="Lato-Bold" style="normal" weight="bold"/>
+                </font>
+            </fonts>
+        </renderer>
+    </renderers>
+
+</fop>
+

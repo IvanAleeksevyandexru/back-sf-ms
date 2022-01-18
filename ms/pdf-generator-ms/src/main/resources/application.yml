@@ -1,0 +1,26 @@
+server:
+  port: 8094
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: pdf-generator-service
+    env: dev
+
+draft-client:
+  enabled: true
+  url: http://dev01.pgu2-pub.test.gosuslugi.ru/drafts2
+
+service-descriptor-storage-client:
+  url: http://dev01.pgu2-pub.test.gosuslugi.ru/service-descriptor-storage/
+
+terrabyte:
+  client:
+    storage-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/api/storage/v1
+    internal-storage-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/internal/api/storage
+    internal-dataservice-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/internal/api/dataservice
+
+template-service:
+    file-resource-loader-path: ms/pdf-generator-ms/vm-templates
+    refresh-rate: 3000

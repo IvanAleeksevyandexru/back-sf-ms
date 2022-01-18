@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:AppealCycleResponse xmlns:ns2="urn://web.gibdd.ru/appeal-fines-gibdd/commons/scenario/1.0.2"
+                         xmlns:ns3="urn://web.gibdd.ru/appeal-fines-gibdd/appeal-cycle/1.0.2"
+                         xmlns="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2"
+                         Id="R-61cf0bbf-6f09-494a-a0c0-b7b9f3508cdb"
+                         ReqId="Q-00caa448-3994-4f16-a8b3-af005d5aa9ba"
+                         timestamp="2020-12-22T18:56:28.625+03:00"
+                         wantCallback="false">
+    <orderId>991753267</orderId>
+    <Status code="202">
+        <Message>Рассмотрение обращения состоится 2020-12-31 11:00 по адресу.....</Message>
+    </Status>
+    <ns3:StatusUpdate/>
+</ns3:AppealCycleResponse>

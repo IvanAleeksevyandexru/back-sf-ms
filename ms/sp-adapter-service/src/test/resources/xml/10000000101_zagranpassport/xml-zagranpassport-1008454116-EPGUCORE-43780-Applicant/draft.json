@@ -1,0 +1,742 @@
+{
+  "orderId": 1008454116,
+  "type": "10000000101",
+  "locked": false,
+  "updated": "2020-12-12T17:13:22.399Z",
+  "body": {
+    "serviceCode": "10000000101",
+    "targetCode": "-10000000101",
+    "orderId": 1008454116,
+    "currentScenarioId": 1,
+    "currentUrl": "https://pgu-uat-fed.test.gosuslugi.ru/600101/1/form",
+    "finishedAndCurrentScreens": [
+      "s1",
+      "s2",
+      "s3",
+      "s4",
+      "s66",
+      "s12",
+      "s19",
+      "s20",
+      "s21",
+      "s22",
+      "s53",
+      "s63",
+      "s60",
+      "s82"
+    ],
+    "cachedAnswers": {
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "q1": {
+        "visited": true,
+        "value": "Нового образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Детям"
+      },
+      "q3": {
+        "visited": true,
+        "value": "От 14 до 18 лет"
+      },
+      "q20": {
+        "visited": true,
+        "value": "По месту жительства"
+      },
+      "d3": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Тестова Ольга Никоновна\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"01.09.2001\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0007 154239\"},{\"label\":\"Дата выдачи:\",\"value\":\"15.05.2015\"},{\"label\":\"Кем выдан:\",\"value\":\"ФМС\"},{\"label\":\"Код подразделения:\",\"value\":\"565-675\"},{\"label\":\"Место рождения:\",\"value\":\"Москва\"}]}],\"storedValues\":{\"firstName\":\"Ольга\",\"lastName\":\"Тестова\",\"birthPlace\":\"Москва\",\"rfPasportIssuedBy\":\"ФМС\",\"gender\":\"F\",\"rfPasportIssuedById\":\"565675\",\"rfPasportSeries\":\"0007\",\"middleName\":\"Никоновна\",\"birthDate\":\"01.09.2001\",\"rfPasportNumber\":\"154239\",\"rfPasportIssueDate\":\"15.05.2015\"}}"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(965)1402198"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "violaosennyaya@yandex.ru"
+      },
+      "pd4": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":\"улус\",\"geoLat\":\"68.5381262\",\"building2Type\":null,\"okato\":\"98201551000\",\"building1Type\":null,\"regionType\":\"республика\",\"additionalStreet\":\"\",\"lat\":\"68.5381262\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Белая Гора\",\"lng\":\"146.1838658\",\"index\":\"678890\",\"townShortType\":\"пгт\",\"district\":\"Абыйский\",\"fullAddress\":\"678890, Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина, д. 2, кв. 1\",\"houseCheckbox\":false,\"region\":\"Саха /Якутия/\",\"geoLon\":\"146.1838658\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"2\",\"apartmentCheckbox\":false,\"townType\":\"поселок городского типа\",\"additionalAreaType\":null,\"regionShortType\":\"Респ\",\"regionCode\":\"14\",\"districtShortType\":\"у\",\"street\":\"П.Г.Корякина\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"1400200000100080002\",\"building1ShortType\":null,\"fiasCode\":\"d21b4218-fa08-4d56-b9fa-0a36b7852e71\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"1\"},\"regDate\":\"14.07.2018\"}"
+      },
+      "q16": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "ai19": {
+        "visited": true,
+        "value": "[{\"clr3\":{\"regDate\":\"15.10.2018\",\"regAddr\":{\"streetShortType\":\"ул\",\"districtType\":\"улус\",\"geoLat\":\"68.5381262\",\"okato\":\"98201551000\",\"regionType\":\"республика\",\"additionalStreet\":\"\",\"lat\":\"68.5381262\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Белая Гора\",\"lng\":\"146.1838658\",\"index\":\"678890\",\"townShortType\":\"пгт\",\"district\":\"Абыйский\",\"fullAddress\":\"678890, Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина, д. 2, кв. 1\",\"houseCheckbox\":false,\"region\":\"Саха /Якутия/\",\"geoLon\":\"146.1838658\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"2\",\"apartmentCheckbox\":false,\"townType\":\"поселок городского типа\",\"regionShortType\":\"Респ\",\"regionCode\":\"14\",\"districtShortType\":\"у\",\"street\":\"П.Г.Корякина\",\"kladrCode\":\"1400200000100080002\",\"fiasCode\":\"d21b4218-fa08-4d56-b9fa-0a36b7852e71\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"1\"}},\"d34\":{\"name\":\"photo_2019-10-24_16-25-55.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.a9ec1b07-01a3-47ed-9bd5-ab58993ba761\",\"mimeType\":\"image/jpeg\",\"objectId\":1008439115,\"objectType\":2},\"ps0\":\"\",\"ps2\":\"111111\",\"ps1\":\"1111\",\"ps4\":\"2020-11-30T00:00:00.000+03:00\",\"ps3\":\"мвд пермь\",\"ps6\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"ps5\":\"752-101\",\"ps7\":\"Пермь\",\"ps6_1\":\"false\",\"ai19_3\":\"Тестовый-Иванов\",\"ai19_4\":\"Тест\",\"ai19_5\":\"Тестович\",\"bd20_0\":\"\",\"ai19_6\":\"true\",\"ai19_0\":\"a9ec1b07-01a3-47ed-9bd5-ab58993ba761\",\"q28_2\":\"Получение впервые\",\"ai19_1\":\"2006-07-14T00:00:00.000+04:00\",\"ai19_2\":\"M\",\"bd22\":\"2009-05-16T00:00:00.000+04:00\",\"bd23\":\"загс 5678\",\"bd20\":\"XI-ВФ\",\"bd21\":\"5344\",\"q22\":\"Нет\",\"q26\":\"Нет\",\"q27\":\"Нет\"},{\"clr3\":{\"regDate\":\"29.08.2018\",\"regAddr\":{\"streetShortType\":\"ул\",\"districtType\":\"улус\",\"geoLat\":\"68.5381262\",\"okato\":\"98201551000\",\"regionType\":\"республика\",\"additionalStreet\":\"\",\"lat\":\"68.5381262\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Белая Гора\",\"lng\":\"146.1838658\",\"index\":\"678890\",\"townShortType\":\"пгт\",\"district\":\"Абыйский\",\"fullAddress\":\"678890, Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина, д. 2, кв. 1\",\"houseCheckbox\":false,\"region\":\"Саха /Якутия/\",\"geoLon\":\"146.1838658\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"2\",\"apartmentCheckbox\":false,\"townType\":\"поселок городского типа\",\"regionShortType\":\"Респ\",\"regionCode\":\"14\",\"districtShortType\":\"у\",\"street\":\"П.Г.Корякина\",\"kladrCode\":\"1400200000100080002\",\"fiasCode\":\"d21b4218-fa08-4d56-b9fa-0a36b7852e71\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"1\"}},\"d34\":{\"name\":\"f9x12ru-rospas.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.1120fc68-aec5-41bb-8b26-8619aea72624\",\"mimeType\":\"image/jpeg\",\"objectId\":1008439115,\"objectType\":2},\"ps0\":\"\",\"ps2\":\"222222\",\"ps1\":\"2222\",\"ps4\":\"2019-09-16T00:00:00.000+03:00\",\"ps3\":\"мвд тыва\",\"ps6\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"ps5\":\"562-110\",\"ps7\":\"Тыва\",\"ps6_1\":\"false\",\"ai19_3\":\"Тестовая-Иванова\",\"ai19_4\":\"Дочь\",\"ai19_5\":\"Тестовна\",\"bd20_0\":\"\",\"ai19_6\":\"true\",\"ai19_0\":\"1120fc68-aec5-41bb-8b26-8619aea72624\",\"q28_2\":\"Получение впервые\",\"ai19_1\":\"2003-09-10T00:00:00.000+04:00\",\"ai19_2\":\"F\",\"bd22\":\"2020-09-08T00:00:00.000+03:00\",\"bd23\":\"загс 2222\",\"bd20\":\"IL-МИ\",\"bd21\":\"435\",\"q22\":\"Нет\",\"q26\":\"Нет\",\"q27\":\"Нет\"}]"
+      },
+      "ms1": {
+        "visited": true,
+        "value": "{\"value\":\"100050002\",\"parentValue\":null,\"title\":\"ОВМ МУМВД России «Балашихинское»\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"},\"valueAsOfType\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"}],\"source\":\"mvd_organization\",\"attributeValues\":{\"address_out\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"},\"idForMap\":118,\"center\":[38.082226,55.756118],\"baloonContent\":[{\"value\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\",\"label\":\"Адрес\"},{\"label\":\"Телефон\"},{\"label\":\"Электроная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"98000000000\",\"okato\":\"98201551000\"}"
+      }
+    },
+    "currentValue": {},
+    "errors": {},
+    "applicantAnswers": {
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "q1": {
+        "visited": true,
+        "value": "Нового образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Детям"
+      },
+      "q3": {
+        "visited": true,
+        "value": "От 14 до 18 лет"
+      },
+      "q20": {
+        "visited": true,
+        "value": "По месту жительства"
+      },
+      "d3": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Тестова Ольга Никоновна\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"01.09.2001\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0007 154239\"},{\"label\":\"Дата выдачи:\",\"value\":\"15.05.2015\"},{\"label\":\"Кем выдан:\",\"value\":\"ФМС\"},{\"label\":\"Код подразделения:\",\"value\":\"565-675\"},{\"label\":\"Место рождения:\",\"value\":\"Москва\"}]}],\"storedValues\":{\"firstName\":\"Ольга\",\"lastName\":\"Тестова\",\"birthPlace\":\"Москва\",\"rfPasportIssuedBy\":\"ФМС\",\"gender\":\"F\",\"rfPasportIssuedById\":\"565675\",\"rfPasportSeries\":\"0007\",\"middleName\":\"Никоновна\",\"birthDate\":\"01.09.2001\",\"rfPasportNumber\":\"154239\",\"rfPasportIssueDate\":\"15.05.2015\"}}"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(965)1402198"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "violaosennyaya@yandex.ru"
+      },
+      "pd4": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":\"улус\",\"geoLat\":\"68.5381262\",\"building2Type\":null,\"okato\":\"98201551000\",\"building1Type\":null,\"regionType\":\"республика\",\"additionalStreet\":\"\",\"lat\":\"68.5381262\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Белая Гора\",\"lng\":\"146.1838658\",\"index\":\"678890\",\"townShortType\":\"пгт\",\"district\":\"Абыйский\",\"fullAddress\":\"678890, Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина, д. 2, кв. 1\",\"houseCheckbox\":false,\"region\":\"Саха /Якутия/\",\"geoLon\":\"146.1838658\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"2\",\"apartmentCheckbox\":false,\"townType\":\"поселок городского типа\",\"additionalAreaType\":null,\"regionShortType\":\"Респ\",\"regionCode\":\"14\",\"districtShortType\":\"у\",\"street\":\"П.Г.Корякина\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"1400200000100080002\",\"building1ShortType\":null,\"fiasCode\":\"d21b4218-fa08-4d56-b9fa-0a36b7852e71\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"1\"},\"regDate\":\"14.07.2018\"}"
+      },
+      "q16": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "ai19": {
+        "visited": true,
+        "value": "[{\"clr3\":{\"regDate\":\"15.10.2018\",\"regAddr\":{\"streetShortType\":\"ул\",\"districtType\":\"улус\",\"geoLat\":\"68.5381262\",\"okato\":\"98201551000\",\"regionType\":\"республика\",\"additionalStreet\":\"\",\"lat\":\"68.5381262\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Белая Гора\",\"lng\":\"146.1838658\",\"index\":\"678890\",\"townShortType\":\"пгт\",\"district\":\"Абыйский\",\"fullAddress\":\"678890, Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина, д. 2, кв. 1\",\"houseCheckbox\":false,\"region\":\"Саха /Якутия/\",\"geoLon\":\"146.1838658\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"2\",\"apartmentCheckbox\":false,\"townType\":\"поселок городского типа\",\"regionShortType\":\"Респ\",\"regionCode\":\"14\",\"districtShortType\":\"у\",\"street\":\"П.Г.Корякина\",\"kladrCode\":\"1400200000100080002\",\"fiasCode\":\"d21b4218-fa08-4d56-b9fa-0a36b7852e71\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"1\"}},\"d34\":{\"name\":\"photo_2019-10-24_16-25-55.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.a9ec1b07-01a3-47ed-9bd5-ab58993ba761\",\"mimeType\":\"image/jpeg\",\"objectId\":1008439115,\"objectType\":2},\"ps0\":\"\",\"ps2\":\"111111\",\"ps1\":\"1111\",\"ps4\":\"2020-11-30T00:00:00.000+03:00\",\"ps3\":\"мвд пермь\",\"ps6\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"ps5\":\"752-101\",\"ps7\":\"Пермь\",\"ps6_1\":\"false\",\"ai19_3\":\"Тестовый-Иванов\",\"ai19_4\":\"Тест\",\"ai19_5\":\"Тестович\",\"bd20_0\":\"\",\"ai19_6\":\"true\",\"ai19_0\":\"a9ec1b07-01a3-47ed-9bd5-ab58993ba761\",\"q28_2\":\"Получение впервые\",\"ai19_1\":\"2006-07-14T00:00:00.000+04:00\",\"ai19_2\":\"M\",\"bd22\":\"2009-05-16T00:00:00.000+04:00\",\"bd23\":\"загс 5678\",\"bd20\":\"XI-ВФ\",\"bd21\":\"5344\",\"q22\":\"Нет\",\"q26\":\"Нет\",\"q27\":\"Нет\"},{\"clr3\":{\"regDate\":\"29.08.2018\",\"regAddr\":{\"streetShortType\":\"ул\",\"districtType\":\"улус\",\"geoLat\":\"68.5381262\",\"okato\":\"98201551000\",\"regionType\":\"республика\",\"additionalStreet\":\"\",\"lat\":\"68.5381262\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Белая Гора\",\"lng\":\"146.1838658\",\"index\":\"678890\",\"townShortType\":\"пгт\",\"district\":\"Абыйский\",\"fullAddress\":\"678890, Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина, д. 2, кв. 1\",\"houseCheckbox\":false,\"region\":\"Саха /Якутия/\",\"geoLon\":\"146.1838658\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"2\",\"apartmentCheckbox\":false,\"townType\":\"поселок городского типа\",\"regionShortType\":\"Респ\",\"regionCode\":\"14\",\"districtShortType\":\"у\",\"street\":\"П.Г.Корякина\",\"kladrCode\":\"1400200000100080002\",\"fiasCode\":\"d21b4218-fa08-4d56-b9fa-0a36b7852e71\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"1\"}},\"d34\":{\"name\":\"f9x12ru-rospas.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.1120fc68-aec5-41bb-8b26-8619aea72624\",\"mimeType\":\"image/jpeg\",\"objectId\":1008439115,\"objectType\":2},\"ps0\":\"\",\"ps2\":\"222222\",\"ps1\":\"2222\",\"ps4\":\"2019-09-16T00:00:00.000+03:00\",\"ps3\":\"мвд тыва\",\"ps6\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"ps5\":\"562-110\",\"ps7\":\"Тыва\",\"ps6_1\":\"false\",\"ai19_3\":\"Тестовая-Иванова\",\"ai19_4\":\"Дочь\",\"ai19_5\":\"Тестовна\",\"bd20_0\":\"\",\"ai19_6\":\"true\",\"ai19_0\":\"1120fc68-aec5-41bb-8b26-8619aea72624\",\"q28_2\":\"Получение впервые\",\"ai19_1\":\"2003-09-10T00:00:00.000+04:00\",\"ai19_2\":\"F\",\"bd22\":\"2020-09-08T00:00:00.000+03:00\",\"bd23\":\"загс 2222\",\"bd20\":\"IL-МИ\",\"bd21\":\"435\",\"q22\":\"Нет\",\"q26\":\"Нет\",\"q27\":\"Нет\"}]"
+      },
+      "ms1": {
+        "visited": true,
+        "value": "{\"value\":\"100050002\",\"parentValue\":null,\"title\":\"ОВМ МУМВД России «Балашихинское»\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"},\"valueAsOfType\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"}],\"source\":\"mvd_organization\",\"attributeValues\":{\"address_out\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"},\"idForMap\":118,\"center\":[38.082226,55.756118],\"baloonContent\":[{\"value\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\",\"label\":\"Адрес\"},{\"label\":\"Телефон\"},{\"label\":\"Электроная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"98000000000\",\"okato\":\"98201551000\"}"
+      }
+    },
+    "cycledApplicantAnswers": {
+      "currentAnswerId": "ai19",
+      "answerlist": [
+        {
+          "id": "ai19",
+          "initScreen": "s63",
+          "currentItemId": "1120fc68-aec5-41bb-8b26-8619aea72624",
+          "items": [
+            {
+              "id": "a9ec1b07-01a3-47ed-9bd5-ab58993ba761",
+              "itemAnswers": {
+                "ai19_3": {
+                  "visited": true,
+                  "value": "Тестовый-Иванов"
+                },
+                "ai19_4": {
+                  "visited": true,
+                  "value": "Тест"
+                },
+                "ai19_5": {
+                  "visited": true,
+                  "value": "Тестович"
+                },
+                "ai19_6": {
+                  "visited": true,
+                  "value": "true"
+                },
+                "ai19_0": {
+                  "visited": true,
+                  "value": "a9ec1b07-01a3-47ed-9bd5-ab58993ba761"
+                },
+                "ai19_1": {
+                  "visited": true,
+                  "value": "2006-07-14T00:00:00.000+04:00"
+                },
+                "ai19_2": {
+                  "visited": true,
+                  "value": "M"
+                },
+                "ps0": {
+                  "visited": true,
+                  "value": ""
+                },
+                "ps1": {
+                  "visited": true,
+                  "value": "1111"
+                },
+                "ps2": {
+                  "visited": true,
+                  "value": "111111"
+                },
+                "ps3": {
+                  "visited": true,
+                  "value": "мвд пермь"
+                },
+                "ps4": {
+                  "visited": true,
+                  "value": "2020-11-30T00:00:00.000+03:00"
+                },
+                "ps5": {
+                  "visited": true,
+                  "value": "752-101"
+                },
+                "ps6": {
+                  "visited": true,
+                  "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                },
+                "ps6_1": {
+                  "visited": true,
+                  "value": "false"
+                },
+                "ps7": {
+                  "visited": true,
+                  "value": "Пермь"
+                },
+                "clr3": {
+                  "visited": true,
+                  "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":\"улус\",\"geoLat\":\"68.5381262\",\"building2Type\":null,\"okato\":\"98201551000\",\"building1Type\":null,\"regionType\":\"республика\",\"additionalStreet\":\"\",\"lat\":\"68.5381262\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Белая Гора\",\"lng\":\"146.1838658\",\"index\":\"678890\",\"townShortType\":\"пгт\",\"district\":\"Абыйский\",\"fullAddress\":\"678890, Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина, д. 2, кв. 1\",\"houseCheckbox\":false,\"region\":\"Саха /Якутия/\",\"geoLon\":\"146.1838658\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"2\",\"apartmentCheckbox\":false,\"townType\":\"поселок городского типа\",\"additionalAreaType\":null,\"regionShortType\":\"Респ\",\"regionCode\":\"14\",\"districtShortType\":\"у\",\"street\":\"П.Г.Корякина\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"1400200000100080002\",\"building1ShortType\":null,\"fiasCode\":\"d21b4218-fa08-4d56-b9fa-0a36b7852e71\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"1\"},\"regDate\":\"15.10.2018\"}"
+                },
+                "d34": {
+                  "visited": true,
+                  "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.a9ec1b07-01a3-47ed-9bd5-ab58993ba761\",\"name\":\"photo_2019-10-24_16-25-55.jpg\",\"objectType\":2,\"objectId\":1008439115,\"mimeType\":\"image/jpeg\"}"
+                },
+                "q26": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q27": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q28_2": {
+                  "visited": true,
+                  "value": "Получение впервые"
+                },
+                "bd20_0": {
+                  "visited": true,
+                  "value": ""
+                },
+                "bd20": {
+                  "visited": true,
+                  "value": "XI-ВФ"
+                },
+                "bd21": {
+                  "visited": true,
+                  "value": "5344"
+                },
+                "bd22": {
+                  "visited": true,
+                  "value": "2009-05-16T00:00:00.000+04:00"
+                },
+                "bd23": {
+                  "visited": true,
+                  "value": "загс 5678"
+                },
+                "q22": {
+                  "visited": true,
+                  "value": "Нет"
+                }
+              },
+              "cachedAnswers": {
+                "ai19_3": {
+                  "visited": true,
+                  "value": "Тестовый-Иванов"
+                },
+                "ai19_4": {
+                  "visited": true,
+                  "value": "Тест"
+                },
+                "ai19_5": {
+                  "visited": true,
+                  "value": "Тестович"
+                },
+                "ai19_6": {
+                  "visited": true,
+                  "value": "true"
+                },
+                "ai19_0": {
+                  "visited": true,
+                  "value": "a9ec1b07-01a3-47ed-9bd5-ab58993ba761"
+                },
+                "ai19_1": {
+                  "visited": true,
+                  "value": "2006-07-14T00:00:00.000+04:00"
+                },
+                "ai19_2": {
+                  "visited": true,
+                  "value": "M"
+                },
+                "ps0": {
+                  "visited": true,
+                  "value": ""
+                },
+                "ps1": {
+                  "visited": true,
+                  "value": "1111"
+                },
+                "ps2": {
+                  "visited": true,
+                  "value": "111111"
+                },
+                "ps3": {
+                  "visited": true,
+                  "value": "мвд пермь"
+                },
+                "ps4": {
+                  "visited": true,
+                  "value": "2020-11-30T00:00:00.000+03:00"
+                },
+                "ps5": {
+                  "visited": true,
+                  "value": "752-101"
+                },
+                "ps6": {
+                  "visited": true,
+                  "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                },
+                "ps6_1": {
+                  "visited": true,
+                  "value": "false"
+                },
+                "ps7": {
+                  "visited": true,
+                  "value": "Пермь"
+                },
+                "clr3": {
+                  "visited": true,
+                  "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":\"улус\",\"geoLat\":\"68.5381262\",\"building2Type\":null,\"okato\":\"98201551000\",\"building1Type\":null,\"regionType\":\"республика\",\"additionalStreet\":\"\",\"lat\":\"68.5381262\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Белая Гора\",\"lng\":\"146.1838658\",\"index\":\"678890\",\"townShortType\":\"пгт\",\"district\":\"Абыйский\",\"fullAddress\":\"678890, Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина, д. 2, кв. 1\",\"houseCheckbox\":false,\"region\":\"Саха /Якутия/\",\"geoLon\":\"146.1838658\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"2\",\"apartmentCheckbox\":false,\"townType\":\"поселок городского типа\",\"additionalAreaType\":null,\"regionShortType\":\"Респ\",\"regionCode\":\"14\",\"districtShortType\":\"у\",\"street\":\"П.Г.Корякина\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"1400200000100080002\",\"building1ShortType\":null,\"fiasCode\":\"d21b4218-fa08-4d56-b9fa-0a36b7852e71\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"1\"},\"regDate\":\"15.10.2018\"}"
+                },
+                "d34": {
+                  "visited": true,
+                  "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.a9ec1b07-01a3-47ed-9bd5-ab58993ba761\",\"name\":\"photo_2019-10-24_16-25-55.jpg\",\"objectType\":2,\"objectId\":1008439115,\"mimeType\":\"image/jpeg\"}"
+                },
+                "q26": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q27": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q28_2": {
+                  "visited": true,
+                  "value": "Получение впервые"
+                },
+                "bd20_0": {
+                  "visited": true,
+                  "value": ""
+                },
+                "bd20": {
+                  "visited": true,
+                  "value": "XI-ВФ"
+                },
+                "bd21": {
+                  "visited": true,
+                  "value": "5344"
+                },
+                "bd22": {
+                  "visited": true,
+                  "value": "2009-05-16T00:00:00.000+04:00"
+                },
+                "bd23": {
+                  "visited": true,
+                  "value": "загс 5678"
+                },
+                "q22": {
+                  "visited": true,
+                  "value": "Нет"
+                }
+              },
+              "esiaData": {
+                "lastName": "Тестовый-Иванов",
+                "firstName": "Тест",
+                "middleName": "Тестович",
+                "id": "a9ec1b07-01a3-47ed-9bd5-ab58993ba761",
+                "rfPasportSeries": "1111",
+                "rfPasportNumber": "111111",
+                "rfPasportIssuedBy": "мвд пермь",
+                "rfPasportIssuedById": "752-101",
+                "birthPlaceLocality": "Пермь",
+                "Series": "XI-ВФ",
+                "Number": "5344",
+                "IssuedBy": "загс 5678"
+              },
+              "finishedScreens": [
+                "scrchld5",
+                "scrchld10",
+                "scrchld9",
+                "scrchld11",
+                "scrchld13",
+                "scrchld15_2",
+                "s70",
+                "s71"
+              ]
+            },
+            {
+              "id": "1120fc68-aec5-41bb-8b26-8619aea72624",
+              "itemAnswers": {
+                "ai19_3": {
+                  "visited": true,
+                  "value": "Тестовая-Иванова"
+                },
+                "ai19_4": {
+                  "visited": true,
+                  "value": "Дочь"
+                },
+                "ai19_5": {
+                  "visited": true,
+                  "value": "Тестовна"
+                },
+                "ai19_6": {
+                  "visited": true,
+                  "value": "true"
+                },
+                "ai19_0": {
+                  "visited": true,
+                  "value": "1120fc68-aec5-41bb-8b26-8619aea72624"
+                },
+                "ai19_1": {
+                  "visited": true,
+                  "value": "2003-09-10T00:00:00.000+04:00"
+                },
+                "ai19_2": {
+                  "visited": true,
+                  "value": "F"
+                },
+                "ps0": {
+                  "visited": true,
+                  "value": ""
+                },
+                "ps1": {
+                  "visited": true,
+                  "value": "2222"
+                },
+                "ps2": {
+                  "visited": true,
+                  "value": "222222"
+                },
+                "ps3": {
+                  "visited": true,
+                  "value": "мвд тыва"
+                },
+                "ps4": {
+                  "visited": true,
+                  "value": "2019-09-16T00:00:00.000+03:00"
+                },
+                "ps5": {
+                  "visited": true,
+                  "value": "562-110"
+                },
+                "ps6": {
+                  "visited": true,
+                  "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                },
+                "ps6_1": {
+                  "visited": true,
+                  "value": "false"
+                },
+                "ps7": {
+                  "visited": true,
+                  "value": "Тыва"
+                },
+                "clr3": {
+                  "visited": true,
+                  "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":\"улус\",\"geoLat\":\"68.5381262\",\"building2Type\":null,\"okato\":\"98201551000\",\"building1Type\":null,\"regionType\":\"республика\",\"additionalStreet\":\"\",\"lat\":\"68.5381262\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Белая Гора\",\"lng\":\"146.1838658\",\"index\":\"678890\",\"townShortType\":\"пгт\",\"district\":\"Абыйский\",\"fullAddress\":\"678890, Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина, д. 2, кв. 1\",\"houseCheckbox\":false,\"region\":\"Саха /Якутия/\",\"geoLon\":\"146.1838658\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"2\",\"apartmentCheckbox\":false,\"townType\":\"поселок городского типа\",\"additionalAreaType\":null,\"regionShortType\":\"Респ\",\"regionCode\":\"14\",\"districtShortType\":\"у\",\"street\":\"П.Г.Корякина\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"1400200000100080002\",\"building1ShortType\":null,\"fiasCode\":\"d21b4218-fa08-4d56-b9fa-0a36b7852e71\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"1\"},\"regDate\":\"29.08.2018\"}"
+                },
+                "d34": {
+                  "visited": true,
+                  "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.1120fc68-aec5-41bb-8b26-8619aea72624\",\"name\":\"f9x12ru-rospas.jpg\",\"objectType\":2,\"objectId\":1008439115,\"mimeType\":\"image/jpeg\"}"
+                },
+                "q26": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q27": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q28_2": {
+                  "visited": true,
+                  "value": "Получение впервые"
+                },
+                "bd20_0": {
+                  "visited": true,
+                  "value": ""
+                },
+                "bd20": {
+                  "visited": true,
+                  "value": "IL-МИ"
+                },
+                "bd21": {
+                  "visited": true,
+                  "value": "435"
+                },
+                "bd22": {
+                  "visited": true,
+                  "value": "2020-09-08T00:00:00.000+03:00"
+                },
+                "bd23": {
+                  "visited": true,
+                  "value": "загс 2222"
+                },
+                "q22": {
+                  "visited": true,
+                  "value": "Нет"
+                }
+              },
+              "cachedAnswers": {
+                "ai19_3": {
+                  "visited": true,
+                  "value": "Тестовая-Иванова"
+                },
+                "ai19_4": {
+                  "visited": true,
+                  "value": "Дочь"
+                },
+                "ai19_5": {
+                  "visited": true,
+                  "value": "Тестовна"
+                },
+                "ai19_6": {
+                  "visited": true,
+                  "value": "true"
+                },
+                "ai19_0": {
+                  "visited": true,
+                  "value": "1120fc68-aec5-41bb-8b26-8619aea72624"
+                },
+                "ai19_1": {
+                  "visited": true,
+                  "value": "2003-09-10T00:00:00.000+04:00"
+                },
+                "ai19_2": {
+                  "visited": true,
+                  "value": "F"
+                },
+                "ps0": {
+                  "visited": true,
+                  "value": ""
+                },
+                "ps1": {
+                  "visited": true,
+                  "value": "2222"
+                },
+                "ps2": {
+                  "visited": true,
+                  "value": "222222"
+                },
+                "ps3": {
+                  "visited": true,
+                  "value": "мвд тыва"
+                },
+                "ps4": {
+                  "visited": true,
+                  "value": "2019-09-16T00:00:00.000+03:00"
+                },
+                "ps5": {
+                  "visited": true,
+                  "value": "562-110"
+                },
+                "ps6": {
+                  "visited": true,
+                  "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                },
+                "ps6_1": {
+                  "visited": true,
+                  "value": "false"
+                },
+                "ps7": {
+                  "visited": true,
+                  "value": "Тыва"
+                },
+                "clr3": {
+                  "visited": true,
+                  "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":\"улус\",\"geoLat\":\"68.5381262\",\"building2Type\":null,\"okato\":\"98201551000\",\"building1Type\":null,\"regionType\":\"республика\",\"additionalStreet\":\"\",\"lat\":\"68.5381262\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Белая Гора\",\"lng\":\"146.1838658\",\"index\":\"678890\",\"townShortType\":\"пгт\",\"district\":\"Абыйский\",\"fullAddress\":\"678890, Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина, д. 2, кв. 1\",\"houseCheckbox\":false,\"region\":\"Саха /Якутия/\",\"geoLon\":\"146.1838658\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"2\",\"apartmentCheckbox\":false,\"townType\":\"поселок городского типа\",\"additionalAreaType\":null,\"regionShortType\":\"Респ\",\"regionCode\":\"14\",\"districtShortType\":\"у\",\"street\":\"П.Г.Корякина\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"1400200000100080002\",\"building1ShortType\":null,\"fiasCode\":\"d21b4218-fa08-4d56-b9fa-0a36b7852e71\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"Респ. Саха /Якутия/, у. Абыйский, пгт. Белая Гора, ул. П.Г.Корякина\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"1\"},\"regDate\":\"29.08.2018\"}"
+                },
+                "d34": {
+                  "visited": true,
+                  "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.1120fc68-aec5-41bb-8b26-8619aea72624\",\"name\":\"f9x12ru-rospas.jpg\",\"objectType\":2,\"objectId\":1008439115,\"mimeType\":\"image/jpeg\"}"
+                },
+                "q26": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q27": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q28_2": {
+                  "visited": true,
+                  "value": "Получение впервые"
+                },
+                "bd20_0": {
+                  "visited": true,
+                  "value": ""
+                },
+                "bd20": {
+                  "visited": true,
+                  "value": "IL-МИ"
+                },
+                "bd21": {
+                  "visited": true,
+                  "value": "435"
+                },
+                "bd22": {
+                  "visited": true,
+                  "value": "2020-09-08T00:00:00.000+03:00"
+                },
+                "bd23": {
+                  "visited": true,
+                  "value": "загс 2222"
+                },
+                "q22": {
+                  "visited": true,
+                  "value": "Нет"
+                }
+              },
+              "esiaData": {
+                "lastName": "Тестовая-Иванова",
+                "firstName": "Дочь",
+                "middleName": "Тестовна",
+                "id": "1120fc68-aec5-41bb-8b26-8619aea72624",
+                "rfPasportSeries": "2222",
+                "rfPasportNumber": "222222",
+                "rfPasportIssuedBy": "мвд тыва",
+                "rfPasportIssuedById": "562-110",
+                "birthPlaceLocality": "Тыва",
+                "Series": "IL-МИ",
+                "Number": "435",
+                "IssuedBy": "загс 2222"
+              },
+              "finishedScreens": [
+                "scrchld5",
+                "scrchld10",
+                "scrchld9",
+                "scrchld11",
+                "scrchld13",
+                "scrchld15_2",
+                "s70",
+                "s71"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "participants": {
+      "-20000": {
+        "role": "Coapplicant",
+        "mode": "SlaveApplicant",
+        "component": "ai19",
+        "index": 0
+      },
+      "-20001": {
+        "role": "Coapplicant",
+        "mode": "SlaveApplicant",
+        "component": "ai19",
+        "index": 1
+      }
+    },
+    "display": {
+      "id": "s82",
+      "name": "Заявление отправлено! новый, дети от 14, регистрация",
+      "type": "INFO",
+      "header": "Заявление отправлено!",
+      "components": [
+        {
+          "id": "d19",
+          "type": "InfoScr",
+          "label": "<p>Оформление загранпаспорта будет производиться подразделением ОВМ МУМВД России «Балашихинское» по адресу:   </p><p><br><a target='_blank' href='http://yandex.ru/maps/?pt=38.082226,55.756118&z=13'></a></p><p>Процедура получения паспорта займет до <b>1 месяца</b></p><p><b>Что дальше</b></p><p>1. После рассмотрения заявления в ваш личный кабинет придет уведомление о возможности оплатить пошлину онлайн со скидкой 30%</p><p>2. Дождитесь в личном кабинете приглашения в подразделение. Принесите с собой <a id='DocOrigonals'>оригиналы документов</a></p><p>3. В отделении МВД сотрудник полиции сверит данные из электронного заявления с оригинальными документами, сфотографирует вас и сообщит о сроке готовности загранпаспорта</p>",
+          "attrs": {
+            "actions": [
+              {
+                "label": "В личный кабинет",
+                "value": "В личный кабинет",
+                "type": "redirectToLK",
+                "action": "getNextScreen"
+              }
+            ],
+            "clarifications": {
+              "DocOrigonals": {
+                "title": "Какие документы взять в МВД",
+                "text": "Вам нужно взять с собой:<ul><li>Ваш паспорт РФ</li><li><a href='javascript:void(0)'><span id='docofright'>Документ</span></a>, подтверждающий права законного представителя ребенка <div data-hidden-id='docofright' hidden>Это может быть свидетельство о рождении ребенка, документ об усыновлении или акт органа опеки и попечительства о назначении опекуна или попечителя</div></li><li>Паспорт РФ для детей от 14 лет</li><li>Ранее выданный загранпаспорт ребенка (при наличии)</li></ul>"
+              }
+            },
+            "refs": {
+              "reference_to_name": "ms1.value.title",
+              "reference_to_x": "ms1.value.center[0]",
+              "reference_to_y": "ms1.value.center[1]",
+              "reference_to_address": "ms1.value.attributes[1].valueAsOfType"
+            }
+          },
+          "linkedValues": [],
+          "arguments": {},
+          "value": "",
+          "required": true,
+          "cycled": false,
+          "componentInCycle": false
+        }
+      ],
+      "terminal": true,
+      "impasse": false,
+      "accepted": true,
+      "firstScreen": false
+    },
+    "attachmentInfo": {
+      "d34": [
+        {
+          "uploadId": "child_passport_photo",
+          "uploadMnemonic": "d34.PhotoUploadComponent.child_passport_photo.a9ec1b07-01a3-47ed-9bd5-ab58993ba761",
+          "uploadFilename": "photo_2019-10-24_16-25-55.jpg",
+          "objectId": "1008439115",
+          "objectTypeId": "2"
+        },
+        {
+          "uploadId": "child_passport_photo",
+          "uploadMnemonic": "d34.PhotoUploadComponent.child_passport_photo.1120fc68-aec5-41bb-8b26-8619aea72624",
+          "uploadFilename": "f9x12ru-rospas.jpg",
+          "objectId": "1008439115",
+          "objectTypeId": "2"
+        }
+      ]
+    },
+    "additionalParameters": {
+      "orderId": 1008454116,
+      "oid": -20001,
+      "snils": "000-154-239 12",
+      "gender": "F",
+      "citizenship": "РОССИЯ",
+      "citizenshipCode": "RUS",
+      "serviceCode": "10000000101",
+      "timezone": "+3",
+      "masterId": "1008439115",
+      "masterOid": "1000350336",
+      "masterSnils": "000-154-239 12",
+      "masterGender": "F",
+      "masterCitizenship": "РОССИЯ",
+      "masterCitizenshipCode": "RUS",
+      "masterTimezone": "+3"
+    },
+    "id": 1008454116,
+    "extId": 1008454116,
+    "version": 2
+  }
+}

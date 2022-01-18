@@ -1,0 +1,18 @@
+version: '2.1'
+services:
+
+  activemq1:
+    container_name: activemq1
+    image: vromero/activemq-artemis:latest-alpine
+    ports:
+      - 8161:8161
+      - 61616:61616
+# Настройка для Linux, под отдельную подсеть. Иначе докер контейнер не стартует вместе с поднятым VPN
+#    networks:
+#      - default
+#
+#networks:
+#  default:
+#    external:
+#      name: my-network
+

@@ -1,0 +1,73 @@
+{
+  "body": {
+    "serviceDescriptorId": "1",
+    "applicantAnswers": {
+      "cycledComponent": {
+        "visited": true,
+        "value": "[{\"cycledFirstName\":\"Арсений\"},{\"cycledFirstName\":\"Вероника\"}]"
+      },
+      "absentComponent": {
+        "visited": true,
+        "value": null
+      },
+      "nonJsonValueComponent": {
+        "visited": true,
+        "value": "non json value"
+      },
+      "nonJsonArrayValueComponent": {
+        "visited": true,
+        "value": "{\"non\":\"array\"}"
+      },
+      "jsonArrayWithNonObjValueComponent": {
+        "visited": true,
+        "value": "[\"nonObj\"]"
+      },
+      "jsonArrayWithNonExistingIndex": {
+        "visited": true,
+        "value": "[{\"cycledFirstName\":\"Арсений\"}]"
+      }
+    },
+    "participants": {
+      "-1": {
+        "role": "Coapplicant",
+        "component": "cycledComponent",
+        "index": 0
+      },
+      "3": {
+        "role": "Coapplicant",
+        "component": "cycledComponent",
+        "index": 1
+      },
+      "2": {
+        "role": "Coapplicant",
+        "component": "nonexistentCycledComponent",
+        "index": 1
+      },
+      "1": {
+        "role": "Coapplicant",
+        "component": "nullValueComponent",
+        "index": 1
+      },
+      "4": {
+        "role": "Coapplicant",
+        "component": "nonJsonValueComponent",
+        "index": 1
+      },
+      "5": {
+        "role": "Coapplicant",
+        "component": "nonJsonArrayValueComponent",
+        "index": 1
+      },
+      "6": {
+        "role": "Coapplicant",
+        "component": "jsonArrayWithNonObjValueComponent",
+        "index": 0
+      },
+      "7": {
+        "role": "Coapplicant",
+        "component": "jsonArrayWithNonExistingIndex",
+        "index": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "body": {
+    "serviceDescriptorId": "1",
+    "additionalParameters": {
+      "sp_request_guid": "sp_request_guid",
+      "sp_request_hash": "sp_request_hash"
+    }
+  }
+}

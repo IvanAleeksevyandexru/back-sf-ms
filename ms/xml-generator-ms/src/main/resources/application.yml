@@ -1,0 +1,35 @@
+server:
+  port: 8097
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: xml-service
+    env: dev
+
+draft-client:
+  enabled: true
+  url: http://dev01.pgu2-pub.test.gosuslugi.ru/drafts2
+
+terrabyte:
+  client:
+    storage-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/api/storage/v1
+    internal-storage-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/internal/api/storage
+    internal-dataservice-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/internal/api/dataservice
+
+logging:
+  remote-rest:
+    # максимальный размер логируемого тела запросов и ответов. Например, 1 = 1B, 1KB, 1MB, 1GB
+    body-max-length: 1536KB
+
+service-descriptor-storage-client:
+  url: https://dev01.pgu2-pub.test.gosuslugi.ru/service-descriptor-storage
+  integration: true
+
+template-service:
+  file-resource-loader-path: ms/xml-generator-ms/vm-templates
+
+springdoc:
+  packagesToScan: ru.gosuslugi.pgu.xmlservice
+  pathsToMatch: /**

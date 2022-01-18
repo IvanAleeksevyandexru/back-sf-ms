@@ -1,0 +1,330 @@
+{
+  "orderId": 763512104,
+  "type": "10000000101",
+  "locked": false,
+  "updated": "2020-11-23T03:24:38.163Z",
+  "body": {
+    "serviceCode": "10000000101",
+    "targetCode": "-10000000101",
+    "orderId": 763512104,
+    "currentScenarioId": 1,
+    "currentUrl": "http://local.test.gosuslugi.ru:4200/",
+    "finishedAndCurrentScreens": [
+      "s1",
+      "s2",
+      "s3",
+      "s9",
+      "s201",
+      "s19",
+      "s20",
+      "s21",
+      "s8_1",
+      "s24",
+      "s25",
+      "s29",
+      "s30",
+      "s5",
+      "s35",
+      "s113",
+      "s111",
+      "s233"
+    ],
+    "cachedAnswers": {
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "q1": {
+        "visited": true,
+        "value": "Нового образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Мне"
+      },
+      "q8": {
+        "visited": true,
+        "value": "По месту пребывания"
+      },
+      "d41": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Фёдоров Фёдор Акакиевич\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"06.06.1987\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0011 111111\"},{\"label\":\"Дата выдачи:\",\"value\":\"16.07.2011\"},{\"label\":\"Кем выдан:\",\"value\":\"Место 1\"},{\"label\":\"Код подразделения:\",\"value\":\"000-001\"},{\"label\":\"Место рождения:\",\"value\":\"вапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап вап вап вапвапва вапвапвапвапвапвапвпвапв авапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап в\"}]}],\"storedValues\":{\"firstName\":\"Фёдор\",\"lastName\":\"Фёдоров\",\"birthPlace\":\"вапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап вап вап вапвапва вапвапвапвапвапвапвпвапв авапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап в\",\"rfPasportIssuedBy\":\"Место 1\",\"rfPasportIssuedById\":\"000001\",\"rfPasportSeries\":\"0011\",\"middleName\":\"Акакиевич\",\"birthDate\":\"06.06.1987\",\"rfPasportNumber\":\"111111\",\"rfPasportIssueDate\":\"16.07.2011\"}}"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(100)0000002"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "bedward70@mail.ru"
+      },
+      "pd44": {
+        "visited": true,
+        "value": "{\"regDate\":\"23.11.2020\",\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":\"район\",\"geoLat\":\"56.7172303\",\"building2Type\":\"строение\",\"okato\":\"65249000016\",\"building1Type\":\"корпус\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"56.7172303\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Бутка\",\"lng\":\"63.7783514\",\"index\":\"623610\",\"townShortType\":\"с\",\"district\":\"Талицкий\",\"fullAddress\":\"623610, обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина, д. 15, к. 2, стр. 14, кв. 3\",\"houseCheckbox\":false,\"region\":\"Свердловская\",\"geoLon\":\"63.7783514\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"15\",\"apartmentCheckbox\":false,\"townType\":\"село\",\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"66\",\"districtShortType\":\"р-н\",\"street\":\"Ленина\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"66028000018003400\",\"building1ShortType\":\"к\",\"fiasCode\":\"a532f63d-624a-4fbe-9cef-f9923ce7a19f\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина\",\"building1\":\"2\",\"building2\":\"14\",\"houseShortType\":\"д\",\"building2ShortType\":\"стр\",\"apartment\":\"3\"}}"
+      },
+      "pd6": {
+        "visited": true,
+        "value": "{\"regionType\":\"область\",\"regionShortType\":\"обл\",\"region\":\"Омская\",\"cityType\":\"город\",\"cityShortType\":\"г\",\"city\":\"Омск\",\"district\":\"\",\"town\":\"\",\"inCityDist\":\"\",\"streetType\":\"проспект\",\"streetShortType\":\"пр-кт\",\"street\":\"Комарова\",\"additionalArea\":\"\",\"additionalStreet\":\"\",\"houseType\":\"дом\",\"houseShortType\":\"д\",\"house\":\"11А\",\"houseCheckbox\":false,\"houseCheckboxClosed\":false,\"building1\":\"\",\"building2\":\"\",\"apartmentType\":\"квартира\",\"apartmentShortType\":\"кв\",\"apartment\":\"1В\",\"apartmentCheckbox\":false,\"apartmentCheckboxClosed\":false,\"index\":\"644112\",\"geoLat\":\"54.9876035\",\"geoLon\":\"73.2940536\",\"fullAddress\":\"644112, обл. Омская, г. Омск, пр-кт. Комарова, д. 11А, кв. 1В\",\"addressStr\":\"обл. Омская, г. Омск, пр-кт. Комарова\",\"lat\":\"54.9876035\",\"lng\":\"73.2940536\",\"fiasCode\":\"6a2e498f-d945-44c4-8785-afa5b9617e3b\",\"okato\":\"52401364000\",\"hasErrors\":0,\"kladrCode\":\"55000001000047100\",\"regionCode\":\"55\"}"
+      },
+      "pd9": {
+        "visited": true,
+        "value": ""
+      },
+      "pd7": {
+        "visited": true,
+        "value": "2020-10-27T00:00:00.000+06:00"
+      },
+      "pd8": {
+        "visited": true,
+        "value": "2020-11-11T00:00:00.000+06:00"
+      },
+      "d33": {
+        "visited": true,
+        "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"ACDC.jpg\",\"objectType\":2,\"objectId\":763512104}"
+      },
+      "eh1": {
+        "visited": true,
+        "value": "[{\"type\":\"unemployed\",\"label\":\"Я не работал\",\"from\":{\"year\":2005,\"month\":1,\"monthCode\":\"Февраль\"},\"to\":{\"year\":2020,\"month\":10,\"monthCode\":\"Ноябрь\"},\"address\":\"56\",\"checkboxToDate\":true}]"
+      },
+      "q9": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q4": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "fai6": {
+        "visited": true,
+        "value": ""
+      },
+      "rf34": {
+        "visited": true,
+        "value": "true"
+      },
+      "fai23": {
+        "visited": true,
+        "value": "46"
+      },
+      "rb9": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb10": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb11": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb12": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb13": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb14": {
+        "visited": true,
+        "value": "0"
+      },
+      "q30": {
+        "visited": true,
+        "value": "Получение впервые"
+      },
+      "ms3": {
+        "visited": true,
+        "value": "{\"value\":\"5000199\",\"parentValue\":null,\"title\":\"ОВМ УМВД России  на комплексе «Байконур» (дислокация Байконур)  ГУ МВД России по Московской области\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"email_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"город гор. Байконур, Носова, д. 14\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"город гор. Байконур, Носова, д. 14\"},\"valueAsOfType\":\"город гор. Байконур, Носова, д. 14\"},{\"name\":\"phone_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"+7(33622)73808\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"+7(33622)73808\"},\"valueAsOfType\":\"+7(33622)73808\"},{\"name\":\"fax_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"schedule_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n\\n                \"},\"valueAsOfType\":\"\\n\\n                \"},{\"name\":\"scheduleComment_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                \"},\"valueAsOfType\":\"\\n                \"}],\"attributeValues\":{\"phone_out\":\"+7(33622)73808\",\"email_out\":\"\",\"schedule_out\":\"\\n\\n                \",\"fax_out\":\"\",\"scheduleComment_out\":\"\\n                \",\"address_out\":\"город гор. Байконур, Носова, д. 14\"},\"idForMap\":1,\"center\":[63.323322,45.617932],\"baloonContent\":[{\"value\":\"город гор. Байконур, Носова, д. 14\",\"label\":\"Адрес\"},{\"value\":\"+7(33622)73808\",\"label\":\"Телефон\"},{\"value\":\"\",\"label\":\"Электроная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\"}"
+      }
+    },
+    "currentValue": {},
+    "errors": {},
+    "applicantAnswers": {
+      "q1": {
+        "visited": true,
+        "value": "Нового образца"
+      },
+      "d41": {
+        "visited": true,
+        "value": ""
+      },
+      "pd44": {
+        "visited": true,
+        "value": "{\"regDate\":\"23.11.2020\",\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":\"район\",\"geoLat\":\"56.7172303\",\"building2Type\":\"строение\",\"okato\":\"65249000016\",\"building1Type\":\"корпус\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"56.7172303\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Бутка\",\"lng\":\"63.7783514\",\"index\":\"623610\",\"townShortType\":\"с\",\"district\":\"Талицкий\",\"fullAddress\":\"623610, обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина, д. 15, к. 2, стр. 14, кв. 3\",\"houseCheckbox\":false,\"region\":\"Свердловская\",\"geoLon\":\"63.7783514\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"15\",\"apartmentCheckbox\":false,\"townType\":\"село\",\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"66\",\"districtShortType\":\"р-н\",\"street\":\"Ленина\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"66028000018003400\",\"building1ShortType\":\"к\",\"fiasCode\":\"a532f63d-624a-4fbe-9cef-f9923ce7a19f\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина\",\"building1\":\"2\",\"building2\":\"14\",\"houseShortType\":\"д\",\"building2ShortType\":\"стр\",\"apartment\":\"3\"}}"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Мне"
+      },
+      "q8": {
+        "visited": true,
+        "value": "По месту пребывания"
+      },
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Фёдоров Фёдор Акакиевич\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"06.06.1987\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0011 111111\"},{\"label\":\"Дата выдачи:\",\"value\":\"16.07.2011\"},{\"label\":\"Кем выдан:\",\"value\":\"Место 1\"},{\"label\":\"Код подразделения:\",\"value\":\"000-001\"},{\"label\":\"Место рождения:\",\"value\":\"вапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап вап вап вапвапва вапвапвапвапвапвапвпвапв авапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап в\"}]}],\"storedValues\":{\"firstName\":\"Фёдор\",\"lastName\":\"Фёдоров\",\"birthPlace\":\"вапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап вап вап вапвапва вапвапвапвапвапвапвпвапв авапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап в\",\"rfPasportIssuedBy\":\"Место 1\",\"rfPasportIssuedById\":\"000001\",\"rfPasportSeries\":\"0011\",\"middleName\":\"Акакиевич\",\"birthDate\":\"06.06.1987\",\"rfPasportNumber\":\"111111\",\"rfPasportIssueDate\":\"16.07.2011\"}}"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "bedward70@mail.ru"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(100)0000002"
+      },
+      "pd6": {
+        "visited": true,
+        "value": "{\"regionType\":\"область\",\"regionShortType\":\"обл\",\"region\":\"Омская\",\"cityType\":\"город\",\"cityShortType\":\"г\",\"city\":\"Омск\",\"district\":\"\",\"town\":\"\",\"inCityDist\":\"\",\"streetType\":\"проспект\",\"streetShortType\":\"пр-кт\",\"street\":\"Комарова\",\"additionalArea\":\"\",\"additionalStreet\":\"\",\"houseType\":\"дом\",\"houseShortType\":\"д\",\"house\":\"11А\",\"houseCheckbox\":false,\"houseCheckboxClosed\":false,\"building1\":\"\",\"building2\":\"\",\"apartmentType\":\"квартира\",\"apartmentShortType\":\"кв\",\"apartment\":\"1В\",\"apartmentCheckbox\":false,\"apartmentCheckboxClosed\":false,\"index\":\"644112\",\"geoLat\":\"54.9876035\",\"geoLon\":\"73.2940536\",\"fullAddress\":\"644112, обл. Омская, г. Омск, пр-кт. Комарова, д. 11А, кв. 1В\",\"addressStr\":\"обл. Омская, г. Омск, пр-кт. Комарова\",\"lat\":\"54.9876035\",\"lng\":\"73.2940536\",\"fiasCode\":\"6a2e498f-d945-44c4-8785-afa5b9617e3b\",\"okato\":\"52401364000\",\"hasErrors\":0,\"kladrCode\":\"55000001000047100\",\"regionCode\":\"55\"}"
+      },
+      "pd9": {
+        "visited": true,
+        "value": ""
+      },
+      "pd7": {
+        "visited": true,
+        "value": "2020-10-27T00:00:00.000+06:00"
+      },
+      "pd8": {
+        "visited": true,
+        "value": "2020-11-11T00:00:00.000+06:00"
+      },
+      "d33": {
+        "visited": true,
+        "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"ACDC.jpg\",\"objectType\":2,\"objectId\":763512104}"
+      },
+      "eh1": {
+        "visited": true,
+        "value": "[{\"type\":\"unemployed\",\"label\":\"Я не работал\",\"from\":{\"year\":2005,\"month\":1,\"monthCode\":\"Февраль\"},\"to\":{\"year\":2020,\"month\":10,\"monthCode\":\"Ноябрь\"},\"address\":\"56\",\"checkboxToDate\":true}]"
+      },
+      "q9": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q4": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "fai6": {
+        "visited": true,
+        "value": ""
+      },
+      "rf34": {
+        "visited": true,
+        "value": "true"
+      },
+      "fai23": {
+        "visited": true,
+        "value": "46"
+      },
+      "rb9": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb10": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb11": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb12": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb13": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb14": {
+        "visited": true,
+        "value": "0"
+      },
+      "q30": {
+        "visited": true,
+        "value": "Получение впервые"
+      },
+      "ms3": {
+        "visited": true,
+        "value": "{\"value\":\"5000199\",\"parentValue\":null,\"title\":\"ОВМ УМВД России  на комплексе «Байконур» (дислокация Байконур)  ГУ МВД России по Московской области\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"email_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"город гор. Байконур, Носова, д. 14\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"город гор. Байконур, Носова, д. 14\"},\"valueAsOfType\":\"город гор. Байконур, Носова, д. 14\"},{\"name\":\"phone_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"+7(33622)73808\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"+7(33622)73808\"},\"valueAsOfType\":\"+7(33622)73808\"},{\"name\":\"fax_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"schedule_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n\\n                \"},\"valueAsOfType\":\"\\n\\n                \"},{\"name\":\"scheduleComment_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                \"},\"valueAsOfType\":\"\\n                \"}],\"attributeValues\":{\"phone_out\":\"+7(33622)73808\",\"email_out\":\"\",\"schedule_out\":\"\\n\\n                \",\"fax_out\":\"\",\"scheduleComment_out\":\"\\n                \",\"address_out\":\"город гор. Байконур, Носова, д. 14\"},\"idForMap\":1,\"center\":[63.323322,45.617932],\"baloonContent\":[{\"value\":\"город гор. Байконур, Носова, д. 14\",\"label\":\"Адрес\"},{\"value\":\"+7(33622)73808\",\"label\":\"Телефон\"},{\"value\":\"\",\"label\":\"Электроная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\"}"
+      }
+    },
+    "cycledApplicantAnswers": {
+      "answers": []
+    },
+    "participants": {},
+    "display": {
+      "id": "s233",
+      "name": "Заявление отправлено! новый, взрослый, временное",
+      "type": "INFO",
+      "header": "Заявление отправлено!",
+      "components": [
+        {
+          "id": "d73",
+          "type": "InfoScr",
+          "label": "<p><center><img src='https://gu-st.ru/content/catalog/new/status_1.svg'></center></p><p>Оформление загранпаспорта будет производиться подразделением <b>ОВМ УМВД России  на комплексе «Байконур» (дислокация Байконур)  ГУ МВД России по Московской области</b> по адресу:<br><a target='_blank' href='http://yandex.ru/maps/?pt=63.323322,45.617932&z=13'>город гор. Байконур, Носова, д. 14</a></p><p>Процедура оформления паспорта займет до <b>1 месяца</b></p><p>(до 3-х месяцев в случае подачи в субъекте РФ, отличном от места постоянной регистрации, или допуска к сведениям, составляющим государственную тайну)</p><p>После рассмотрения заявления в ваш личный кабинет придет уведомление о возможности оплатить пошлину онлайн со скидкой 30%</p><p>Дождитесь в личном кабинете приглашения в подразделение</p><p>Принесите с собой <a id='DocOrigonals'>оригиналы документов</a></p><p>Сотрудник полиции сверит данные из электронного заявления с оригинальными документами, сфотографирует вас и сообщит о сроке готовности загранпаспорта</p>",
+          "attrs": {
+            "actions": [
+              {
+                "label": "Перейти в личный кабинет",
+                "value": "Перейти в личный кабинет",
+                "type": "redirectToLK",
+                "action": "getNextScreen"
+              }
+            ],
+            "clarifications": {
+              "DocOrigonals": {
+                "title": "Какие документы взять в МВД",
+                "text": "<ul><li>паспорт РФ</li><li>ранее выданный загранпаспорт (при наличии)</li><li>разрешение командования — для служащих в Вооруженных Силах России, а также в федеральных органах власти, в которых предусмотрена военная служба (за исключением службы по призыву)</li></ul>"
+              }
+            },
+            "refs": {
+              "reference_to_name": "ms3.value.title",
+              "reference_to_x": "ms3.value.center[0]",
+              "reference_to_y": "ms3.value.center[1]",
+              "reference_to_address": "ms3.value.attributes[1].valueAsOfType"
+            }
+          },
+          "arguments": {},
+          "value": "",
+          "required": true,
+          "cycled": false
+        }
+      ],
+      "terminal": true,
+      "impasse": false,
+      "accepted": true,
+      "firstScreen": false
+    },
+    "attachmentInfo": {
+      "d33": [
+        {
+          "uploadId": "passport_photo",
+          "uploadMnemonic": "d33.PhotoUploadComponent.passport_photo.0",
+          "uploadFilename": "ACDC.jpg"
+        }
+      ]
+    },
+    "additionalParameters": {
+      "masterOid": "1000415878",
+      "masterId": "763512104",
+      "citizenshipCode": "RUS",
+      "gender": "M",
+      "orderId": "763512104",
+      "citizenship": "РОССИЯ",
+      "oid": "1000415878",
+      "snils": "000-000-000 03"
+    },
+    "gender": "M"
+  }
+}

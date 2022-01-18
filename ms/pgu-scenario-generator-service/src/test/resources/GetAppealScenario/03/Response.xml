@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:GetAppealScenarioResponse xmlns:ns2="urn://web.gibdd.ru/appeal-fines-gibdd/get-scenario/1.0.2"
+                               xmlns:ns3="urn://web.gibdd.ru/appeal-fines-gibdd/commons/scenario/1.0.2"
+                               xmlns="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2"
+                               Id="R-7c7edd40-e895-4033-abcd-b187620090df"
+                               ReqId="Q-d4dd18bb-be05-4300-9cc1-4945cf5c40ed"
+                               timestamp="2020-12-30T08:31:12.023+03:00"
+                               wantCallback="true">
+    <Status code="100">
+        <Message>Предоставлен ответ</Message>
+    </Status>
+    <AdditionalData>
+        <Item>
+            <Name>offenceCoordinates</Name>
+            <Value>37.53123,54.982362</Value>
+        </Item>
+    </AdditionalData>
+    <ns2:Scenario>
+        <ns2:Document attName="030a3608-eb60-4a9e-bb19-0244017488d1" mimeType="application/pdf">
+            <description>Печатная форма постановления</description>
+        </ns2:Document>
+        <ns2:AppealScenario>
+            <ns3:AppealAllowedBefore>2021-01-15</ns3:AppealAllowedBefore>
+            <ns3:Reasons>
+
+                <ns3:Top1>
+                    <ns3:Reasons>
+                        <ns3:Reason code="32">
+                            <ns3:Title>Остановка в разрешённом месте</ns3:Title>
+                            <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                            <ns3:Evidences>
+                                <ns3:Evidence code="1" required="false" textAllowed="false">
+                                    <ns3:Title>Фотоматериалы</ns3:Title>
+                                    <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                                    <ns3:AttachmentsAllowed>
+                                        <ns3:AttachmentTemplate countMax="3" countMin="1" sizeTotalKB="10000">
+                                            <ns3:FileFormats>
+                                                <ns3:FileFormat code="1">
+                                                    <ns3:Title>Растровые изображения</ns3:Title>
+                                                    <ns3:FileExtensions>
+                                                        <ns3:FileExtension>jpg</ns3:FileExtension>
+                                                        <ns3:FileExtension>png</ns3:FileExtension>
+                                                    </ns3:FileExtensions>
+                                                </ns3:FileFormat>
+                                            </ns3:FileFormats>
+                                        </ns3:AttachmentTemplate>
+                                    </ns3:AttachmentsAllowed>
+                                </ns3:Evidence>
+                                <ns3:Evidence code="2" required="false" textAllowed="false">
+                                    <ns3:Title>Видеозапись</ns3:Title>
+                                    <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                                    <ns3:AttachmentsAllowed>
+                                        <ns3:AttachmentTemplate countMax="1" countMin="1" sizeTotalKB="50000">
+                                            <ns3:FileFormats>
+                                                <ns3:FileFormat code="2">
+                                                    <ns3:Title>Фрагменты видеозаписи</ns3:Title>
+                                                    <ns3:FileExtensions>
+                                                        <ns3:FileExtension>mp4</ns3:FileExtension>
+                                                        <ns3:FileExtension>mov</ns3:FileExtension>
+                                                        <ns3:FileExtension>mkv</ns3:FileExtension>
+                                                    </ns3:FileExtensions>
+                                                </ns3:FileFormat>
+                                            </ns3:FileFormats>
+                                        </ns3:AttachmentTemplate>
+                                    </ns3:AttachmentsAllowed>
+                                </ns3:Evidence>
+                            </ns3:Evidences>
+                            <ns3:Participation defaultValue="true" readOnly="false"/>
+                        </ns3:Reason>
+                    </ns3:Reasons>
+                </ns3:Top1>
+
+                <ns3:Top2>
+                    <ns3:Reasons>
+                        <ns3:Reason code="7">
+                            <ns3:Title>Выполнялись указания регулировщика</ns3:Title>
+                            <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                            <ns3:Evidences>
+                                <ns3:Evidence code="1" required="false" textAllowed="false">
+                                    <ns3:Title>Фотоматериалы</ns3:Title>
+                                    <ns3:Hint>Рекомендуется, чтобы фотографии были выполнены с привязкой к месту
+                                        совершения
+                                        административного правонарушения, указанного в постановлении.
+                                    </ns3:Hint>
+                                    <ns3:AttachmentsAllowed>
+                                        <ns3:AttachmentTemplate countMax="3" countMin="1" sizeTotalKB="10000">
+                                            <ns3:FileFormats>
+                                                <ns3:FileFormat code="1">
+                                                    <ns3:Title>Растровые изображения</ns3:Title>
+                                                    <ns3:FileExtensions>
+                                                        <ns3:FileExtension>jpg</ns3:FileExtension>
+                                                        <ns3:FileExtension>png</ns3:FileExtension>
+                                                    </ns3:FileExtensions>
+                                                </ns3:FileFormat>
+                                            </ns3:FileFormats>
+                                        </ns3:AttachmentTemplate>
+                                    </ns3:AttachmentsAllowed>
+                                </ns3:Evidence>
+                                <ns3:Evidence code="2" required="false" textAllowed="false">
+                                    <ns3:Title>Видеозапись</ns3:Title>
+                                    <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                                    <ns3:AttachmentsAllowed>
+                                        <ns3:AttachmentTemplate countMax="2" countMin="1" sizeTotalKB="50000">
+                                            <ns3:FileFormats>
+                                                <ns3:FileFormat code="2">
+                                                    <ns3:Title>Фрагменты видеозаписи</ns3:Title>
+                                                    <ns3:FileExtensions>
+                                                        <ns3:FileExtension>mp4</ns3:FileExtension>
+                                                        <ns3:FileExtension>mov</ns3:FileExtension>
+                                                        <ns3:FileExtension>mkv</ns3:FileExtension>
+                                                    </ns3:FileExtensions>
+                                                </ns3:FileFormat>
+                                            </ns3:FileFormats>
+                                        </ns3:AttachmentTemplate>
+                                    </ns3:AttachmentsAllowed>
+                                </ns3:Evidence>
+                                <ns3:Evidence code="38" required="false" textAllowed="false">
+                                    <ns3:Title>Иные документы</ns3:Title>
+                                    <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                                    <ns3:AttachmentsAllowed>
+                                        <ns3:AttachmentTemplate countMax="3" countMin="1" sizeTotalKB="20000">
+                                            <ns3:FileFormats>
+                                                <ns3:FileFormat code="3">
+                                                    <ns3:Title>Документы</ns3:Title>
+                                                    <ns3:FileExtensions>
+                                                        <ns3:FileExtension>pdf</ns3:FileExtension>
+                                                        <ns3:FileExtension>xls</ns3:FileExtension>
+                                                        <ns3:FileExtension>xlsx</ns3:FileExtension>
+                                                        <ns3:FileExtension>doc</ns3:FileExtension>
+                                                        <ns3:FileExtension>docx</ns3:FileExtension>
+                                                        <ns3:FileExtension>rtf</ns3:FileExtension>
+                                                        <ns3:FileExtension>ppt</ns3:FileExtension>
+                                                    </ns3:FileExtensions>
+                                                </ns3:FileFormat>
+                                            </ns3:FileFormats>
+                                        </ns3:AttachmentTemplate>
+                                    </ns3:AttachmentsAllowed>
+                                </ns3:Evidence>
+                            </ns3:Evidences>
+                            <ns3:Participation defaultValue="true" readOnly="false"/>
+                        </ns3:Reason>
+                    </ns3:Reasons>
+                </ns3:Top2>
+
+                <ns3:Other>
+                    <ns3:Reasons>
+                        <ns3:Reason code="13">
+                            <ns3:Title>ДТП</ns3:Title>
+                            <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                            <ns3:Evidences>
+                                <ns3:Evidence code="1" required="true" textAllowed="false" requireGroup="1">
+                                    <ns3:Title>Фотоматериалы</ns3:Title>
+                                    <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                                    <ns3:AttachmentsAllowed>
+                                        <ns3:AttachmentTemplate countMax="3" countMin="1" sizeTotalKB="10000">
+                                            <ns3:FileFormats>
+                                                <ns3:FileFormat code="1">
+                                                    <ns3:Title>Растровые изображения</ns3:Title>
+                                                    <ns3:FileExtensions>
+                                                        <ns3:FileExtension>jpg</ns3:FileExtension>
+                                                        <ns3:FileExtension>png</ns3:FileExtension>
+                                                    </ns3:FileExtensions>
+                                                </ns3:FileFormat>
+                                            </ns3:FileFormats>
+                                        </ns3:AttachmentTemplate>
+                                    </ns3:AttachmentsAllowed>
+                                </ns3:Evidence>
+                                <ns3:Evidence code="2" required="true" textAllowed="false" requireGroup="1">
+                                    <ns3:Title>Видеозапись</ns3:Title>
+                                    <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                                    <ns3:AttachmentsAllowed>
+                                        <ns3:AttachmentTemplate countMax="2" countMin="1" sizeTotalKB="50000">
+                                            <ns3:FileFormats>
+                                                <ns3:FileFormat code="2">
+                                                    <ns3:Title>Фрагменты видеозаписи</ns3:Title>
+                                                    <ns3:FileExtensions>
+                                                        <ns3:FileExtension>mp4</ns3:FileExtension>
+                                                        <ns3:FileExtension>mov</ns3:FileExtension>
+                                                        <ns3:FileExtension>mkv</ns3:FileExtension>
+                                                    </ns3:FileExtensions>
+                                                </ns3:FileFormat>
+                                            </ns3:FileFormats>
+                                        </ns3:AttachmentTemplate>
+                                    </ns3:AttachmentsAllowed>
+                                </ns3:Evidence>
+                                <ns3:Evidence code="3" required="true" textAllowed="false" requireGroup="2">
+                                    <ns3:Title>Европротокол</ns3:Title>
+                                    <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                                    <ns3:AttachmentsAllowed>
+                                        <ns3:AttachmentTemplate countMax="1" countMin="1" sizeTotalKB="10000">
+                                            <ns3:FileFormats>
+                                                <ns3:FileFormat code="1">
+                                                    <ns3:Title>Растровые изображения</ns3:Title>
+                                                    <ns3:FileExtensions>
+                                                        <ns3:FileExtension>jpg</ns3:FileExtension>
+                                                        <ns3:FileExtension>png</ns3:FileExtension>
+                                                    </ns3:FileExtensions>
+                                                </ns3:FileFormat>
+                                                <ns3:FileFormat code="3">
+                                                    <ns3:Title>Документы</ns3:Title>
+                                                    <ns3:FileExtensions>
+                                                        <ns3:FileExtension>pdf</ns3:FileExtension>
+                                                        <ns3:FileExtension>xls</ns3:FileExtension>
+                                                        <ns3:FileExtension>xlsx</ns3:FileExtension>
+                                                        <ns3:FileExtension>doc</ns3:FileExtension>
+                                                        <ns3:FileExtension>docx</ns3:FileExtension>
+                                                        <ns3:FileExtension>rtf</ns3:FileExtension>
+                                                        <ns3:FileExtension>ppt</ns3:FileExtension>
+                                                    </ns3:FileExtensions>
+                                                </ns3:FileFormat>
+                                            </ns3:FileFormats>
+                                        </ns3:AttachmentTemplate>
+                                    </ns3:AttachmentsAllowed>
+                                </ns3:Evidence>
+                                <ns3:Evidence code="4" required="false" textAllowed="false">
+                                    <ns3:Title>Протокол об административном правонарушении</ns3:Title>
+                                    <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                                    <ns3:AttachmentsAllowed>
+                                        <ns3:AttachmentTemplate countMax="1" countMin="1" sizeTotalKB="10000">
+                                            <ns3:FileFormats>
+                                                <ns3:FileFormat code="1">
+                                                    <ns3:Title>Растровые изображения</ns3:Title>
+                                                    <ns3:FileExtensions>
+                                                        <ns3:FileExtension>jpg</ns3:FileExtension>
+                                                        <ns3:FileExtension>png</ns3:FileExtension>
+                                                    </ns3:FileExtensions>
+                                                </ns3:FileFormat>
+                                                <ns3:FileFormat code="3">
+                                                    <ns3:Title>Документы</ns3:Title>
+                                                    <ns3:FileExtensions>
+                                                        <ns3:FileExtension>pdf</ns3:FileExtension>
+                                                        <ns3:FileExtension>xls</ns3:FileExtension>
+                                                        <ns3:FileExtension>xlsx</ns3:FileExtension>
+                                                        <ns3:FileExtension>doc</ns3:FileExtension>
+                                                        <ns3:FileExtension>docx</ns3:FileExtension>
+                                                        <ns3:FileExtension>rtf</ns3:FileExtension>
+                                                        <ns3:FileExtension>ppt</ns3:FileExtension>
+                                                    </ns3:FileExtensions>
+                                                </ns3:FileFormat>
+                                            </ns3:FileFormats>
+                                        </ns3:AttachmentTemplate>
+                                    </ns3:AttachmentsAllowed>
+                                </ns3:Evidence>
+                            </ns3:Evidences>
+                            <ns3:Participation defaultValue="true" readOnly="false"/>
+                        </ns3:Reason>
+
+                        <ns3:Reason code="23">
+                            <ns3:Title>Меня там не было (в этот день)</ns3:Title>
+                            <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                            <ns3:Participation defaultValue="true" readOnly="false"/>
+                        </ns3:Reason>
+
+                        <ns3:Reason code="0">
+                            <ns3:Title>Иная причина</ns3:Title>
+                            <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                            <ns3:Subject required="true">
+                                <ns3:Hint>Введите суть жалобы</ns3:Hint>
+                            </ns3:Subject>
+                            <ns3:Evidences>
+                                <ns3:Evidence code="0" required="false" textAllowed="true">
+                                    <ns3:Title>Иное</ns3:Title>
+                                    <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                                </ns3:Evidence>
+                                <ns3:Evidence code="38" required="false" textAllowed="false">
+                                    <ns3:Title>Иные документы</ns3:Title>
+                                    <ns3:Hint>Подсказка по заполнению</ns3:Hint>
+                                    <ns3:AttachmentsAllowed>
+                                        <ns3:AttachmentTemplate countMax="3" countMin="1" sizeTotalKB="20000">
+                                            <ns3:FileFormats>
+                                                <ns3:FileFormat code="3">
+                                                    <ns3:Title>Документы</ns3:Title>
+                                                    <ns3:FileExtensions>
+                                                        <ns3:FileExtension>pdf</ns3:FileExtension>
+                                                        <ns3:FileExtension>xls</ns3:FileExtension>
+                                                        <ns3:FileExtension>xlsx</ns3:FileExtension>
+                                                        <ns3:FileExtension>doc</ns3:FileExtension>
+                                                        <ns3:FileExtension>docx</ns3:FileExtension>
+                                                        <ns3:FileExtension>rtf</ns3:FileExtension>
+                                                        <ns3:FileExtension>ppt</ns3:FileExtension>
+                                                    </ns3:FileExtensions>
+                                                </ns3:FileFormat>
+                                            </ns3:FileFormats>
+                                        </ns3:AttachmentTemplate>
+                                    </ns3:AttachmentsAllowed>
+                                </ns3:Evidence>
+                            </ns3:Evidences>
+                            <ns3:Participation defaultValue="true" readOnly="true"/>
+                        </ns3:Reason>
+
+                    </ns3:Reasons>
+                </ns3:Other>
+
+            </ns3:Reasons>
+        </ns2:AppealScenario>
+    </ns2:Scenario>
+</ns2:GetAppealScenarioResponse>

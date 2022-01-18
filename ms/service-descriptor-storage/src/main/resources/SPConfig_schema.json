@@ -1,0 +1,110 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Configs",
+	"description": "Configs for SP",
+	"type": "object",
+	"properties": {
+		"spConfig": {
+			"description": "конфигурация SP адаптера",
+			"type": "object",
+			"properties": {
+				"alwaysAttachServicePdf": {
+					"description": "Устарел / настроить генерацию pdf даже при условии, что пустой запрос смэв",
+					"type": "boolean"
+				},
+				"serviceCustomId": {
+					"description": "Заменяет в строке вызова SP serviceCode услуги на указанную строку",
+					"type": "string"
+				},
+				"replacedHeaders": {
+					"description": "Список добавочных заголовков запроса",
+					"type": "object",
+					"minProperties": 1
+				}
+			},
+			"additionalProperties": false
+		},
+		"files": {
+			"description": "Содержит перечисление генерируемых файлов - будут сгенерированы только они",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"description": "Экземпляр описания",
+				"additionalProperties": false,
+				"properties": {
+					"type": {
+						"description": "Указание формата генерируемого файла [pdf, xml, commonPdf, request]",
+						"enum": [
+							"pdf",
+							"xml",
+							"commonPdf",
+							"request"
+						]
+					},
+					"fileName": {
+						"description": "Указывает имя создаваемого файла - виден при скачиваниии и в ЛК",
+						"type": "string"
+					},
+					"addedFileName": {
+						"description": "[guid | hash]",
+						"enum": [
+							"guid",
+							"hash"
+						]
+					},
+					"mnemonic": {
+						"description": "Указывает имя мнемоники файла",
+						"type": "string"
+					},
+					"addedMnemonic": {
+						"description": "[guid | hash]",
+						"enum": [
+							"guid",
+							"hash"
+						]
+					},
+					"attachmentType": {
+						"description": "Указывает на способ сохранения файла [lk | request | hidden]",
+						"enum": [
+							"lk",
+							"request",
+							"hidden"
+						]
+					},
+					"templates": {
+						"description": "Перечисление шаблонов => ролей выполняемых с данными настройками",
+						"type": "object",
+						"minProperties": 1,
+						"properties": {
+							"Applicant": {
+								"description": "Основной заявитель, пользователь подавший первое (мастер) заявление",
+								"type": "string"
+							},
+							"Coapplicant": {
+								"description": "со-заявитель, который дополняет",
+								"type": "string"
+							},
+							"Approval": {
+								"description": "пользователь, который даёт согласие, но может чего-то дозаполнить",
+								"type": "string"
+							},
+							"ApprovalParent": {
+								"description": "Родитель ребёнка до 18 лет, который не участвует в заявлении, но даёт согласие на ребёнка",
+								"type": "string"
+							},
+							"ChildrenUnder14": {
+								"description": "Ребёнок до 14 лет - он не может зайти в ЛК",
+								"type": "string"
+							},
+							"ChildrenAbove14": {
+								"description": "Ребёнок от 14 до 18 лет - он полноправный пользователь, но ему нужно согласие родителей при регистрации по месту пребывания",
+								"type": "string"
+							}
+						},
+						"additionalProperties": false
+					}
+				}
+			}
+		}
+	}
+}

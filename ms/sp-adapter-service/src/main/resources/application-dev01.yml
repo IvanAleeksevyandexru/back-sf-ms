@@ -1,0 +1,102 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+
+spring:
+  application:
+    name: serviceprocessing-adapter
+    env: dev
+  kafka:
+    # Адрес для подключения к кафке для трейсинга в Zipkin
+    bootstrap-servers: localhost:19092
+    auto-create-topics: true
+
+    suggestions:
+      # Включает или выключает отправку событий
+      enabled: false
+      sender-threads: 5
+      target-topic:
+        topic-name: suggestions-topic
+        topic-partitions: 1
+        topic-replication-factor: 1
+
+    form-service:
+      enabled: true
+      topic-name: sp-adapter
+      sp-errors-topic-name: sp-errors
+      self-errors-topic-name: self-errors
+      sp-adapter-fs-consumer-group-id : spAdapterFsConsumerGroupId
+      sp-response-topic-name: sp-result
+      sp-errors-partitions: 1
+      self-errors-partitions: 1
+      sp-response-partitions: 1
+      sp-errors-replication-factor: 1
+      self-errors-replication-factor: 1
+      sp-response-replication-factor: 1
+
+pgu.uddi.url: http://pgu-dev-fednlb.test.gosuslugi.ru/juddiv3/services/inquiry?wsdl
+
+pdf-generator:
+  enabled: false
+  url: http://localhost:8094/api
+
+# Включение интеграции с сервисом черновиков. Если выключено, то черновики не сохраняются.
+draft-client:
+  enabled: true
+  url: http://dev01.pgu2-pub.test.gosuslugi.ru/drafts2
+
+# Включение интеграции с сервисом хранения XML. Если выключено, то XML не сохраняются.
+order-store-client:
+  enabled: false
+  url: http://dev01.pgu2-pub.test.gosuslugi.ru/drafts2
+
+management:
+  endpoints.web.exposure.include: info, health, prometheus
+  metrics:
+    enable.tomcat: false
+    web:
+      server.request.autotime.percentiles: [0.99, 0.97, 0.75]
+      client.request.autotime.percentiles: [0.99, 0.97, 0.75]
+
+logging:
+  remote-rest:
+    # максимальный размер логируемого тела запросов и ответов. Например, 1 = 1B, 1KB, 1MB, 1GB
+    body-max-length: 1536KB
+
+velocity:
+  resource-loader: FILE
+  file-resource-loader-path: ./sp-adapter-service/vm-templates
+  resource-loader-file-cache: false
+  resource-loader-file-modification-check-interval: 0
+  template-package:
+    refresh-rate: 60000
+
+service-descriptor-storage-client:
+  url: http://dev01.pgu2-pub.test.gosuslugi.ru/service-descriptor-storage/
+
+
+esia:
+  auth:
+    enabled: true
+    include-urls: /pdf
+  uddi.url: http://pgu-dev-fednlb.test.gosuslugi.ru/juddiv3/services/inquiry?wsdl
+  system.token.host: http://pgu-dev-fedlkapinlb.test.gosuslugi.ru/lk-api/internal/api/lk/v1/users/system/token
+  keystore:
+    passwd: 111111
+    alias: epgu
+  url: https://esia-portal1.test.gosuslugi.ru
+  redirect:
+    url: https://pgu-dev-fed.test.gosuslugi.ru/ pgu/esia/oauth/auth_code_receiver
+  crt: classpath:esia/esia-epgu-major.cert
+
+terrabyte:
+  client:
+    storage-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/api/storage/v1
+    internal-storage-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/internal/api/storage
+    internal-dataservice-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/internal/api/dataservice
+
+dev-mode:
+  enabled: true

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:GetAppealScenarioRequest xmlns:ns2="urn://web.gibdd.ru/appeal-fines-gibdd/get-scenario/1.0.2"
+                              xmlns="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2"
+                              Id="Q-80ba80d8-a7d5-4655-b482-25d1d448fc07"
+                              routeNumber="MVDR22"
+                              timestamp="2020-12-22T18:54:42.933+03:00"
+                              uin="18810520210211000017">
+    <ns2:Callback RefId="R-87d04904-85dc-4ff0-91a8-f98babb5cecf">
+        <Result code="0"/>
+    </ns2:Callback>
+</ns2:GetAppealScenarioRequest>

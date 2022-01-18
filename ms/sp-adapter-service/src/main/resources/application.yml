@@ -1,0 +1,114 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+
+ru:
+  nvg:
+    idecs:
+      uddi:
+        inquiryUrl: http://pgu-dev-fednlb.test.gosuslugi.ru/juddiv3/services/inquiry?wsdl
+
+spring:
+  application:
+    name: serviceprocessing-adapter
+    env: dev
+    version: 8.0
+  kafka:
+    # Адреса для подключения к кафке для трейсинга в Zipkin
+    bootstrap-servers: localhost:19092
+    # Адреса для подключения к кафке для бизнес сервисов
+    brokers: localhost:19092
+
+    auto-create-topics: true
+
+    suggestions:
+      # Включает или выключает отправку событий
+      enabled: true
+      target-topic:
+        topic-name: suggestions-topic
+        topic-partitions: 1
+        topic-replication-factor: 1
+
+    form-service:
+      enabled: true
+      topic-name: sp-adapter
+      group-id: 0
+
+      errors-topic-name: sp-errors
+      errors-partitions: 1
+      errors-replication-factor: 1
+
+      self-errors-topic-name: self-errors
+      self-errors-partitions: 1
+      self-errors-replication-factor: 1
+
+      response-topic-name: sp-result
+      response-partitions: 1
+      response-replication-factor: 1
+
+      processing-threads: 5
+      batch-processing: true
+      max-poll-records: 100
+      poll-timeout: 345600s
+      fetch-max-size: 52428800
+      partition-fetch-bytes: 1048576
+
+pgu.uddi.url: http://pgu-dev-fednlb.test.gosuslugi.ru/juddiv3/services/inquiry?wsdl
+
+pdf-generator:
+  enabled: false
+  url: http://localhost:8094/api
+
+# Включение интеграции с сервисом черновиков. Если выключено, то черновики не сохраняются.
+draft-client:
+  enabled: true
+  url: http://dev01.pgu2-pub.test.gosuslugi.ru/drafts2
+
+# Включение интеграции с сервисом хранения XML. Если выключено, то XML не сохраняются.
+order-store-client:
+  enabled: false
+  url: http://dev01.pgu2-pub.test.gosuslugi.ru/drafts2
+
+logging:
+  remote-rest:
+    # максимальный размер логируемого тела запросов и ответов. Например, 1 = 1B, 1KB, 1MB, 1GB
+    body-max-length: 1536KB
+
+velocity:
+  resource-loader: FILE
+  file-resource-loader-path: ./sp-adapter-service/vm-templates
+  resource-loader-file-cache: false
+  resource-loader-file-modification-check-interval: 0
+  template-package:
+    refresh-rate: 3000
+
+
+dev-mode:
+  enabled: false
+
+service-descriptor-storage-client:
+  url: http://127.0.0.1:8096
+  integration: true
+
+esia:
+  auth:
+    enabled: true
+    include-urls: /pdf
+  uddi.url: http://pgu-dev-fednlb.test.gosuslugi.ru/juddiv3/services/inquiry?wsdl
+  system.token.host: http://pgu-dev-fedlkapinlb.test.gosuslugi.ru/lk-api/internal/api/lk/v1/users/system/token
+  keystore:
+    passwd: 111111
+    alias: epgu
+  url: https://esia-portal1.test.gosuslugi.ru
+  redirect:
+    url: https://pgu-dev-fed.test.gosuslugi.ru/ pgu/esia/oauth/auth_code_receiver
+  crt: classpath:esia/esia-epgu-major.cert
+
+terrabyte:
+  client:
+    storage-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/api/storage/v1
+    internal-storage-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/internal/api/storage
+    internal-dataservice-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/internal/api/dataservice

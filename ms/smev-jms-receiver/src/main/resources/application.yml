@@ -1,0 +1,20 @@
+server:
+  port: 8099
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: smev-jms-receiver
+    env: dev
+  jms:
+    pub-sub-domain: true
+    template:
+      # Имя очереди для отправки в СМЭВ-адаптер
+      send-queue-name: toSmevRequest
+      reply-queue-name: fromSmevResponse
+
+jms:
+  connection: localhost:61616
+  username: artemis
+  password: simetraehcapa

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:GetAppealScenarioRequest xmlns:ns2="urn://web.gibdd.ru/appeal-fines-gibdd/get-scenario/1.0.2"
+                              xmlns="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2"
+                              Id="Q-a7c09763-c077-46eb-8fb6-38356f456404"
+                              routeNumber="MVDR22"
+                              timestamp="2020-12-22T18:54:42.963+03:00"
+                              uin="18810520210211000017">
+    <ns2:GetScenario>
+        <ns2:UserType>PERSON_RF</ns2:UserType>
+        <ns2:PhysicalPerson birthdate="1965-01-01" email="user@domain.ru" name="Имён" patronymic="Отчествович"
+                            phone="89951234567" snils="12345678901" surname="Фамилиев"/>
+    </ns2:GetScenario>
+</ns2:GetAppealScenarioRequest>

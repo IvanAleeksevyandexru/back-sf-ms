@@ -1,0 +1,37 @@
+version: '2.1'
+services:
+  service-publisher-db:
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: publisher
+    ports:
+      - 35432:5432
+    volumes:
+      - ./db-changes/2021-09-17--01-init.sql:/docker-entrypoint-initdb.d/init.sql
+  cassandra:
+    image: cassandra:3.11.8
+    container_name: cassandra
+    ports:
+      - "9042:9042"
+    environment:
+      - "CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch"
+      - "CASSANDRA_DC=dc1"
+      - "MAX_HEAP_SIZE=256M"
+      - "HEAP_NEWSIZE=128M"
+    healthcheck:
+      test: [ "CMD", "cqlsh", "-u cassandra", "-p cassandra" ,"-e describe keyspaces" ]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+  cassandra-load-service-descriptor-keyspace:
+    container_name: cassandra-load-keyspace
+    image: cassandra:3.11.8
+    depends_on:
+      cassandra:
+        condition: service_healthy
+    volumes:
+      - ../service-descriptor-storage/.dev/schema.cql:/schema.cql
+    command: /bin/bash -c "echo loading cassandra keyspace && cqlsh cassandra -f /schema.cql"

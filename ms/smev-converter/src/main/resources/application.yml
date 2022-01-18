@@ -1,0 +1,26 @@
+server:
+  port: 8092
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: smev-converter
+
+smev-service:
+  url: http://pgu-dev-fednlb.test.gosuslugi.ru/barbarbok/internal/api
+#  url: http://pgu-uat-fednlb.test.gosuslugi.ru/barbarbok/internal/api
+  smev-version: SMEV30MESSAGE
+  timeout: 300
+  ttl: 100
+  enabled: true
+
+draft-converter:
+  integration:
+    enabled: true
+    url: http://local.test.gosuslugi.ru:8097/api
+#    url: http://pgu-uat-fednlb.test.gosuslugi.ru/draft-converter
+
+springdoc:
+  packagesToScan: ru.gosuslugi.pgu.smevconverter
+  pathsToMatch: /**

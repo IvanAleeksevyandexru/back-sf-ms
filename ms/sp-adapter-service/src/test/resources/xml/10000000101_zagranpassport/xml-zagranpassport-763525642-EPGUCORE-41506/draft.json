@@ -1,0 +1,310 @@
+{
+  "orderId": 763525642,
+  "type": "10000000101",
+  "locked": false,
+  "updated": "2020-11-30T09:40:18.029Z",
+  "body": {
+    "serviceCode": "10000000101",
+    "targetCode": "-10000000101",
+    "orderId": 763525642,
+    "currentScenarioId": 1,
+    "currentUrl": "http://local.test.gosuslugi.ru:4200/",
+    "finishedAndCurrentScreens": [
+      "s1",
+      "s2",
+      "s3",
+      "s9",
+      "s200",
+      "s19",
+      "s20",
+      "s21",
+      "s8_1",
+      "s23",
+      "s25",
+      "s29",
+      "s30",
+      "s31",
+      "s5",
+      "s35",
+      "s113",
+      "s110",
+      "s232"
+    ],
+    "cachedAnswers": {
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "q1": {
+        "visited": true,
+        "value": "Нового образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Мне"
+      },
+      "q8": {
+        "visited": true,
+        "value": "По месту обращения (фактического проживания)"
+      },
+      "d40": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Иванова Ольга Ивановна\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"29.01.1966\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"2131 231231\"},{\"label\":\"Дата выдачи:\",\"value\":\"29.01.1970\"},{\"label\":\"Кем выдан:\",\"value\":\"Тестовый центр выдачи\"},{\"label\":\"Код подразделения:\",\"value\":\"123-123\"},{\"label\":\"Место рождения:\",\"value\":\"Тестовое место рождения\"}]}],\"storedValues\":{\"firstName\":\"Ольга\",\"lastName\":\"Иванова\",\"birthPlace\":\"Тестовое место рождения\",\"rfPasportIssuedBy\":\"Тестовый центр выдачи\",\"gender\":\"F\",\"rfPasportIssuedById\":\"123123\",\"rfPasportSeries\":\"2131\",\"middleName\":\"Ивановна\",\"birthDate\":\"29.01.1966\",\"rfPasportNumber\":\"231231\",\"rfPasportIssueDate\":\"29.01.1970\"}}"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(969)7657895"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "sbondarenko@smart-consulting.ru"
+      },
+      "pd44": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"пер\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"54.9961876\",\"building2Type\":null,\"okato\":\"50401377000\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"54.9961876\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"переулок\",\"town\":\"\",\"lng\":\"82.9041065\",\"index\":\"630073\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"630073, обл. Новосибирская, г. Новосибирск, пер. 2-й Горский, д. 4, кв. 6\",\"houseCheckbox\":false,\"region\":\"Новосибирская\",\"geoLon\":\"82.9041065\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Новосибирск\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"54\",\"districtShortType\":null,\"street\":\"2-й Горский\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"5400000100003010002\",\"building1ShortType\":null,\"fiasCode\":\"a186e451-0824-460e-bed1-2063dc194d18\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Новосибирская, г. Новосибирск, пер. 2-й Горский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"6\"},\"regDate\":\"04.11.2020\"}"
+      },
+      "pd5": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":\"район\",\"geoLat\":\"56.7172303\",\"building2Type\":\"строение\",\"okato\":\"65249000016\",\"building1Type\":\"корпус\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"56.7172303\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Бутка\",\"lng\":\"63.7783514\",\"index\":\"623610\",\"townShortType\":\"с\",\"district\":\"Талицкий\",\"fullAddress\":\"623610, обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина, д. 15, к. 2, стр. 14, кв. 3\",\"houseCheckbox\":false,\"region\":\"Свердловская\",\"geoLon\":\"63.7783514\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"15\",\"apartmentCheckbox\":false,\"townType\":\"село\",\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"66\",\"districtShortType\":\"р-н\",\"street\":\"Ленина\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"66028000018003400\",\"building1ShortType\":\"к\",\"fiasCode\":\"a532f63d-624a-4fbe-9cef-f9923ce7a19f\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина\",\"building1\":\"2\",\"building2\":\"14\",\"houseShortType\":\"д\",\"building2ShortType\":\"стр\",\"apartment\":\"3\"}}"
+      },
+      "d33": {
+        "visited": true,
+        "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"1qrRZLRJ0wc.jpg\",\"objectType\":2,\"objectId\":763525642}"
+      },
+      "eh1": {
+        "visited": true,
+        "value": "[{\"type\":\"unemployed\",\"label\":\"Я не работала\",\"from\":{\"year\":2010,\"month\":0,\"monthCode\":\"Январь\"},\"to\":{\"year\":2020,\"month\":10,\"monthCode\":\"Ноябрь\"},\"address\":\"117405, г. Москва, ш. Варшавское, д. 141А, к. 3, кв. 999\",\"checkboxToDate\":true}]"
+      },
+      "q9": {
+        "visited": true,
+        "value": "Да"
+      },
+      "ai4": {
+        "visited": true,
+        "value": "[{\"rf1\":\"Назарова\",\"rf2\":\"Мария\",\"rf3\":\"Михайловна\",\"rf4\":\"Караганда\",\"rf5\":\"2020-10-28T00:00:00.000+06:00\"},{\"rf1\":\"Хабибулин\",\"rf2\":\"Дамир\",\"rf3\":\"Маратович\",\"rf4\":\"Омск\",\"rf5\":\"2012-10-31T00:00:00.000+07:00\"}]"
+      },
+      "q4": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "fai6": {
+        "visited": true,
+        "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+      },
+      "rf34": {
+        "visited": true,
+        "value": "false"
+      },
+      "rb9": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb10": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb11": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb12": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb13": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb14": {
+        "visited": true,
+        "value": "0"
+      },
+      "q30": {
+        "visited": true,
+        "value": "Получение впервые"
+      },
+      "ms2": {
+        "visited": true,
+        "value": "{\"value\":\"5000156\",\"parentValue\":null,\"title\":\"ОВМ ОМВД России по Рузскому району  ГУ МВД России по Московской области\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"email_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"Город Руза, Социалистическая, д. 64\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"Город Руза, Социалистическая, д. 64\"},\"valueAsOfType\":\"Город Руза, Социалистическая, д. 64\"},{\"name\":\"phone_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"+7(496)2720227\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"+7(496)2720227\"},\"valueAsOfType\":\"+7(496)2720227\"},{\"name\":\"fax_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"schedule_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n\\n                \"},\"valueAsOfType\":\"\\n\\n                \"},{\"name\":\"scheduleComment_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                \"},\"valueAsOfType\":\"\\n                \"}],\"attributeValues\":{\"phone_out\":\"+7(496)2720227\",\"email_out\":\"\",\"schedule_out\":\"\\n\\n                \",\"fax_out\":\"\",\"scheduleComment_out\":\"\\n                \",\"address_out\":\"Город Руза, Социалистическая, д. 64\"},\"idForMap\":0,\"center\":[36.203723,55.702434],\"baloonContent\":[{\"value\":\"Город Руза, Социалистическая, д. 64\",\"label\":\"Адрес\"},{\"value\":\"+7(496)2720227\",\"label\":\"Телефон\"},{\"value\":\"\",\"label\":\"Электроная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"50000000000\"}"
+      }
+    },
+    "currentValue": {},
+    "errors": {},
+    "applicantAnswers": {
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "q1": {
+        "visited": true,
+        "value": "Нового образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Мне"
+      },
+      "q8": {
+        "visited": true,
+        "value": "По месту обращения (фактического проживания)"
+      },
+      "d40": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Иванова Ольга Ивановна\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"29.01.1966\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"2131 231231\"},{\"label\":\"Дата выдачи:\",\"value\":\"29.01.1970\"},{\"label\":\"Кем выдан:\",\"value\":\"Тестовый центр выдачи\"},{\"label\":\"Код подразделения:\",\"value\":\"123-123\"},{\"label\":\"Место рождения:\",\"value\":\"Тестовое место рождения\"}]}],\"storedValues\":{\"firstName\":\"Ольга\",\"lastName\":\"Иванова\",\"birthPlace\":\"Тестовое место рождения\",\"rfPasportIssuedBy\":\"Тестовый центр выдачи\",\"gender\":\"F\",\"rfPasportIssuedById\":\"123123\",\"rfPasportSeries\":\"2131\",\"middleName\":\"Ивановна\",\"birthDate\":\"29.01.1966\",\"rfPasportNumber\":\"231231\",\"rfPasportIssueDate\":\"29.01.1970\"}}"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(969)7657895"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "sbondarenko@smart-consulting.ru"
+      },
+      "pd44": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"пер\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"54.9961876\",\"building2Type\":null,\"okato\":\"50401377000\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"54.9961876\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"переулок\",\"town\":\"\",\"lng\":\"82.9041065\",\"index\":\"630073\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"630073, обл. Новосибирская, г. Новосибирск, пер. 2-й Горский, д. 4, кв. 6\",\"houseCheckbox\":false,\"region\":\"Новосибирская\",\"geoLon\":\"82.9041065\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Новосибирск\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"54\",\"districtShortType\":null,\"street\":\"2-й Горский\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"5400000100003010002\",\"building1ShortType\":null,\"fiasCode\":\"a186e451-0824-460e-bed1-2063dc194d18\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Новосибирская, г. Новосибирск, пер. 2-й Горский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"6\"},\"regDate\":\"04.11.2020\"}"
+      },
+      "pd5": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":\"район\",\"geoLat\":\"56.7172303\",\"building2Type\":\"строение\",\"okato\":\"65249000016\",\"building1Type\":\"корпус\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"56.7172303\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Бутка\",\"lng\":\"63.7783514\",\"index\":\"623610\",\"townShortType\":\"с\",\"district\":\"Талицкий\",\"fullAddress\":\"623610, обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина, д. 15, к. 2, стр. 14, кв. 3\",\"houseCheckbox\":false,\"region\":\"Свердловская\",\"geoLon\":\"63.7783514\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"15\",\"apartmentCheckbox\":false,\"townType\":\"село\",\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"66\",\"districtShortType\":\"р-н\",\"street\":\"Ленина\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"66028000018003400\",\"building1ShortType\":\"к\",\"fiasCode\":\"a532f63d-624a-4fbe-9cef-f9923ce7a19f\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина\",\"building1\":\"2\",\"building2\":\"14\",\"houseShortType\":\"д\",\"building2ShortType\":\"стр\",\"apartment\":\"3\"}}"
+      },
+      "d33": {
+        "visited": true,
+        "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"1qrRZLRJ0wc.jpg\",\"objectType\":2,\"objectId\":763525642}"
+      },
+      "eh1": {
+        "visited": true,
+        "value": "[{\"type\":\"unemployed\",\"label\":\"Я не работала\",\"from\":{\"year\":2010,\"month\":0,\"monthCode\":\"Январь\"},\"to\":{\"year\":2020,\"month\":10,\"monthCode\":\"Ноябрь\"},\"address\":\"117405, г. Москва, ш. Варшавское, д. 141А, к. 3, кв. 999\",\"checkboxToDate\":true}]"
+      },
+      "q9": {
+        "visited": true,
+        "value": "Да"
+      },
+      "ai4": {
+        "visited": true,
+        "value": "[{\"rf1\":\"Назарова\",\"rf2\":\"Мария\",\"rf3\":\"Михайловна\",\"rf4\":\"Караганда\",\"rf5\":\"2020-10-28T00:00:00.000+06:00\"},{\"rf1\":\"Хабибулин\",\"rf2\":\"Дамир\",\"rf3\":\"Маратович\",\"rf4\":\"Омск\",\"rf5\":\"2012-10-31T00:00:00.000+07:00\"}]"
+      },
+      "q4": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "fai6": {
+        "visited": true,
+        "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+      },
+      "rf34": {
+        "visited": true,
+        "value": "false"
+      },
+      "rb9": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb10": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb11": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb12": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb13": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb14": {
+        "visited": true,
+        "value": "0"
+      },
+      "q30": {
+        "visited": true,
+        "value": "Получение впервые"
+      },
+      "ms2": {
+        "visited": true,
+        "value": "{\"value\":\"5000156\",\"parentValue\":null,\"title\":\"ОВМ ОМВД России по Рузскому району  ГУ МВД России по Московской области\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"email_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"Город Руза, Социалистическая, д. 64\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"Город Руза, Социалистическая, д. 64\"},\"valueAsOfType\":\"Город Руза, Социалистическая, д. 64\"},{\"name\":\"phone_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"+7(496)2720227\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"+7(496)2720227\"},\"valueAsOfType\":\"+7(496)2720227\"},{\"name\":\"fax_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"schedule_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n\\n                \"},\"valueAsOfType\":\"\\n\\n                \"},{\"name\":\"scheduleComment_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                \"},\"valueAsOfType\":\"\\n                \"}],\"attributeValues\":{\"phone_out\":\"+7(496)2720227\",\"email_out\":\"\",\"schedule_out\":\"\\n\\n                \",\"fax_out\":\"\",\"scheduleComment_out\":\"\\n                \",\"address_out\":\"Город Руза, Социалистическая, д. 64\"},\"idForMap\":0,\"center\":[36.203723,55.702434],\"baloonContent\":[{\"value\":\"Город Руза, Социалистическая, д. 64\",\"label\":\"Адрес\"},{\"value\":\"+7(496)2720227\",\"label\":\"Телефон\"},{\"value\":\"\",\"label\":\"Электроная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"50000000000\"}"
+      }
+    },
+    "cycledApplicantAnswers": {
+      "answerlist": []
+    },
+    "participants": {},
+    "display": {
+      "id": "s232",
+      "name": "Заявление отправлено! новый, взрослый, жительство",
+      "type": "INFO",
+      "header": "Заявление отправлено!",
+      "components": [
+        {
+          "id": "d72",
+          "type": "InfoScr",
+          "label": "<p>Оформление загранпаспорта будет производиться подразделением <b>ОВМ ОМВД России по Рузскому району  ГУ МВД России по Московской области</b> по адресу:<br><a target='_blank' href='http://yandex.ru/maps/?pt=36.203723,55.702434&z=13'>Город Руза, Социалистическая, д. 64</a></p><p>Процедура получения паспорта займет до <b>3 месяцев</b></p><p><b>Что дальше</b></p><p>1. После рассмотрения заявления в ваш личный кабинет придет уведомление о возможности оплатить пошлину онлайн со скидкой 30%</p><p>2. Дождитесь в личном кабинете приглашения в подразделение. Принесите с собой <a id='DocOrigonals'>оригиналы документов</a></p><p>3. В отделении МВД сотрудник полиции сверит данные из электронного заявления с оригинальными документами, сфотографирует вас и сообщит о сроке готовности загранпаспорта</p>",
+          "attrs": {
+            "actions": [
+              {
+                "label": "На главную",
+                "value": "На главную",
+                "type": "home",
+                "action": "getNextScreen"
+              }
+            ],
+            "clarifications": {
+              "DocOrigonals": {
+                "title": "Какие документы взять в МВД",
+                "text": "<ul><li>Паспорт РФ</li><li>Ранее выданный загранпаспорт (при наличии)</li><li>Разрешение командования — для служащих в Вооруженных Силах России, а также в федеральных органах власти, в которых предусмотрена военная служба (за исключением службы по призыву)</li></ul>"
+              }
+            },
+            "refs": {
+              "reference_to_name": "ms2.value.title",
+              "reference_to_x": "ms2.value.center[0]",
+              "reference_to_y": "ms2.value.center[1]",
+              "reference_to_address": "ms2.value.attributes[1].valueAsOfType"
+            }
+          },
+          "linkedValues": [],
+          "arguments": {},
+          "value": "",
+          "required": true,
+          "cycled": false
+        }
+      ],
+      "accepted": true,
+      "terminal": true,
+      "impasse": false,
+      "firstScreen": false
+    },
+    "attachmentInfo": {
+      "d33": [
+        {
+          "uploadId": "passport_photo",
+          "uploadMnemonic": "d33.PhotoUploadComponent.passport_photo.0",
+          "uploadFilename": "1qrRZLRJ0wc.jpg"
+        }
+      ]
+    },
+    "additionalParameters": {
+      "masterOid": "1000305289",
+      "masterId": "763525642",
+      "citizenshipCode": "RUS",
+      "gender": "F",
+      "orderId": "763525642",
+      "serviceCode": "10000000101",
+      "citizenship": "РОССИЯ",
+      "oid": "1000305289",
+      "snils": "010-000-304 21",
+      "masterSnils": "010-000-304 21"
+    },
+    "gender": "F"
+  }
+}

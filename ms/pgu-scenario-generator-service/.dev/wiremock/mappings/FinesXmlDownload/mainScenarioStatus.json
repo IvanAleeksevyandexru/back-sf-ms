@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/api/pay/v1/offence/protocol/status"
+  },
+  "response": {
+    "bodyFileName": "../__files/FinesXmlDownload/requestStatus.json",
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

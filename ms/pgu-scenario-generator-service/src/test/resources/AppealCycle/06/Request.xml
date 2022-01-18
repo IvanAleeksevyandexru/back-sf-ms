@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:AppealCycleRequest xmlns:ns3="urn://web.gibdd.ru/appeal-fines-gibdd/appeal-cycle/1.0.2"
+                        xmlns="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2"
+                        xmlns:ns2="urn://web.gibdd.ru/appeal-fines-gibdd/commons/scenario/1.0.2"
+                        Id="Q-56250127-f994-45cc-89d4-71239709643f"
+                        routeNumber="MVDR22"
+                        timestamp="2021-02-11T16:27:10.421+03:00"
+                        uin="18810520210211000017">
+    <orderId>991753267</orderId>
+    <ns3:AppealBegin>
+        <ns3:UserType>LEGAL</ns3:UserType>
+        <ns3:LegalCompany nameFull="ООО Просвещение" nameShort="ООО Просвещение" inn="7736207543" kpp="770401001" ogrn="1027700229193">
+            <CEO surname="Светлов" name="Сергей" patronymic="Олегович" birthdate="1959-05-12"/>
+        </ns3:LegalCompany>
+        <ns3:DelegatePerson surname="Чернов" name="Анатолий" patronymic="Владимирович" birthdate="1967-02-03" />
+        <ns3:Procuration>
+            <ns3:Document attName="application/x-binary" mimeType="application/xml">
+                <description>XML файл</description>
+            </ns3:Document>
+            <ns3:DocumentSignature attName="procuration.xml.sign" mimeType="application/x-binary">
+                <description>Detached signature</description>
+            </ns3:DocumentSignature>
+        </ns3:Procuration>
+        <ns3:Reason code="23" participation="true">
+            <ns2:Evidences>
+                <ns2:Evidence code="1">
+                    <ns2:Attachments>
+                        <AppliedDocument attEntryName="scan1.jpg" attName="6ac96d95-1ec8-41a0-817e-d104fc7fddb2"
+                                        mimeType="application/jpeg">
+                            <description>Описание вложения</description>
+                        </AppliedDocument>
+                    </ns2:Attachments>
+                </ns2:Evidence>
+            </ns2:Evidences>
+        </ns3:Reason>
+    </ns3:AppealBegin>
+</ns3:AppealCycleRequest>

@@ -1,0 +1,21 @@
+server:
+  port: 8093
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: scenario-generator-service
+    env: dev
+
+service-descriptor-storage-client:
+  # url сервиса-дескриптор хранилища
+  url: http://dev01.pgu2-pub.test.gosuslugi.ru/service-descriptor-storage/
+
+ipsh:
+  url: http://localhost:5000/api/pay/v1
+  max-status-request-count: 60
+  max-status-request-timeout-ms: 500
+
+file-storage:
+  url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/internal/api/storage

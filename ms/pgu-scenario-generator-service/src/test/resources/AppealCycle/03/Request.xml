@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:AppealCycleRequest xmlns:ns3="urn://web.gibdd.ru/appeal-fines-gibdd/appeal-cycle/1.0.2"
+                        xmlns="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2"
+                        xmlns:ns2="urn://web.gibdd.ru/appeal-fines-gibdd/commons/scenario/1.0.2"
+                        Id="Q-c1f2d683-a468-4728-94fd-802367062aa9"
+                        routeNumber="MVDR22"
+                        timestamp="2020-12-30T10:21:06.823+03:00"
+                        uin="18810520210211000017">
+    <orderId>991753267</orderId>
+    <ns3:AppealBegin>
+        <ns3:UserType>PERSON_RF</ns3:UserType>
+        <ns3:PhysicalPerson birthdate="1965-01-01" email="user@domain.ru" name="Имён" patronymic="Отчествович"
+                            phone="89951234567" snils="12345678901" surname="Фамилиев"/>
+
+        <ns3:Reason code="0" participation="true">
+            <ns2:Subject>Я являюсь гражданином СССР и не признаю законы Российской Федерации.</ns2:Subject>
+            <ns2:Evidences>
+                <ns2:Evidence code="38">
+                    <ns2:Attachments>
+                        <AppliedDocument attEntryName="scan1.jpg" attName="6ac96d95-1ec8-41a0-817e-d104fc7fddb2"
+                                         mimeType="application/jpeg">
+                            <description>Скан паспорта СССР</description>
+                        </AppliedDocument>
+                    </ns2:Attachments>
+                </ns2:Evidence>
+            </ns2:Evidences>
+        </ns3:Reason>
+    </ns3:AppealBegin>
+</ns3:AppealCycleRequest>

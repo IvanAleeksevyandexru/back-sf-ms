@@ -1,0 +1,104 @@
+{
+  "GetApplicationResponse": {
+    "orderId": 12345678,
+    "PersonInfo": {
+      "PersonSurname": "Иванова",
+      "PersonName": "Елена",
+      "PersonMiddleName": "Викторовна",
+      "PersonPhone": "+7(123)1234567",
+      "PersonEmail": "test@test.ru",
+      "Parents": true
+    },
+    "PersonIdentityDocInfo": {
+      "IdentityDocName": "Паспорт гражданина РФ",
+      "IdentityDocSeries": 6004,
+      "IdentityDocNumber": 586830,
+      "IdentityDocIssueDate": {
+        "Text": "2007-09-10"
+      },
+      "IdentityDocIssueCode": {
+        "Text": "000009"
+      },
+      "IdentityDocIssued": "Отделением УФМС России"
+    },
+    "ChildInfo": {
+      "ChildSurname": "Иванов",
+      "ChildName": "Василий",
+      "ChildMiddleName": "Александрович",
+      "ChildBirthDate": "2016-02-02",
+      "ChildBirthDocRF": {
+        "ChildBirthDocSeries": "VII-ЛД",
+        "ChildBirthDocNumber": 132564,
+        "ChildBirthDocIssueDate": "2016-02-02",
+        "ChildBirthDocActNumber": 13245,
+        "ChildBirthDocActDate": "2016-02-02",
+        "ChildBirthDocIssued": "ЗАГС района №5"
+      }
+    },
+    "Address": {
+      "FullAddress": "121351, Москва г., Бобруйская ул., 4 д., 2 корп.",
+      "Index": "121351",
+      "Region": "г. Москва",
+      "Area": "",
+      "City": "",
+      "CityArea": "",
+      "Place": "",
+      "Street": "ул. Бобруйская",
+      "AdditionalArea": "",
+      "AdditionalStreet": "",
+      "House": 4,
+      "Building1": 2,
+      "Building2": "",
+      "Apartment": 23
+    },
+    "EntryParams": {
+      "EntryDate": "2018-09-01",
+      "Language": "Русский",
+      "Schedule": "Кратковременный режим пребывания (до 5 часов)",
+      "AgreementOnFullDayGroup": true
+    },
+    "AdaptationProgram": {
+      "AdaptationGroup": "Компенсирующая",
+      "AdaptationGroupType": "Для слабовидящих детей",
+      "AgreementOnGeneralGroup": true,
+      "AgreementOnCareGroup": true
+    },
+    "MedicalReport": {
+      "DocName": "Заключение",
+      "DocSeries": "А1",
+      "DocNumber": 1122,
+      "DocIssueDate": "2018-09-01",
+      "DocIssued": "Центральная ПМПМК"
+    },
+    "EduOrganizations": {
+      "EduOrganization": [
+        {
+          "Name": "Василёк",
+          "Code": 215
+        },
+        {
+          "Name": "Солнышко",
+          "Code": 219
+        },
+        {
+          "Name": "Ромашка",
+          "Code": 221
+        }
+      ],
+      "AllowOfferOther": true
+    },
+    "BrotherSisterInfo": {
+      "ChildSurname": "Иванов",
+      "ChildName": "Петр",
+      "ChildMiddleName": "Александрович",
+      "EduOrganization": "Василёк"
+    },
+    "BenefitInfo": {
+      "BenefitCategory": "Дети прокуроров",
+      "BenefitDocInfo": {
+        "DocIssueDate": "2018-03-02",
+        "DocIssued": "Справка с работы"
+      }
+    }
+  }
+}

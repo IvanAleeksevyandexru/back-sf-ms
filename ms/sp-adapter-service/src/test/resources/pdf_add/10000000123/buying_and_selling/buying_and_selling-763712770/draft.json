@@ -1,0 +1,354 @@
+{
+    "orderId": 763712770,
+    "type": "10000000123",
+    "locked": false,
+    "updated": "2021-03-12T09:00:21.698Z",
+    "body": {
+        "serviceCode": "10000000123",
+        "targetCode": "-10000000123",
+        "orderId": 763712770,
+        "currentScenarioId": 1,
+        "currentUrl": "http://dev01.pgu2-pub.test.gosuslugi.ru/",
+        "finishedAndCurrentScreens": [
+            "s26",
+            "s27"
+        ],
+        "cachedAnswers": {
+            "w1": {
+                "visited": true,
+                "value": ""
+            },
+            "q1": {
+                "visited": true,
+                "value": "Продавец"
+            },
+            "d1": {
+                "visited": true,
+                "value": ""
+            },
+            "pd1": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"Мишкин Мишка Мишкович\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"09.10.2000\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0004 354645\"},{\"label\":\"Дата выдачи:\",\"value\":\"25.06.2019\"},{\"label\":\"Кем выдан:\",\"value\":\"УМВД РОССИИ ПО ЗАБАЙКАЛЬСКОМУ КРАЮ\"},{\"label\":\"Код подразделения:\",\"value\":\"750-001\"},{\"label\":\"Место рождения:\",\"value\":\"г. Челекен Туркменской ССР\"}]}],\"storedValues\":{\"firstName\":\"Мишка\",\"lastName\":\"Мишкин\",\"middleName\":\"Мишкович\",\"birthDate\":\"09.10.2000\",\"birthPlace\":\"г. Челекен Туркменской ССР\",\"gender\":\"M\",\"docType\":\"RF_PASSPORT\",\"rfPasportSeries\":\"0004\",\"rfPasportNumber\":\"354645\",\"rfPasportIssueDate\":\"25.06.2019\",\"rfPasportIssuedBy\":\"УМВД РОССИИ ПО ЗАБАЙКАЛЬСКОМУ КРАЮ\",\"rfPasportIssuedById\":\"750001\",\"citizenship\":\"РОССИЯ\",\"citizenshipCode\":\"RUS\"},\"errors\":[]}"
+            },
+            "pd2": {
+                "visited": true,
+                "value": "+7(519)6156116"
+            },
+            "pd3": {
+                "visited": true,
+                "value": "esiatest302@yandex.ru"
+            },
+            "pd4": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":\"\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":\"\",\"districtType\":\"\",\"geoLat\":\"55.7921241\",\"building2Type\":\"\",\"okato\":\"45280569000\",\"building1Type\":\"корпус\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7921241\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.6017246\",\"index\":\"127018\",\"townShortType\":\"\",\"district\":\"\",\"fullAddress\":\"127018, г. Москва, ул. Сущёвский Вал, д. 14, к. 3, кв. 4\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6017246\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"14\",\"apartmentCheckbox\":false,\"townType\":\"\",\"additionalAreaType\":\"\",\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":\"\",\"street\":\"Сущёвский Вал\",\"additionalStreetType\":\"\",\"inCityDistShortType\":\"\",\"additionalAreaShortType\":\"\",\"cityShortType\":\"\",\"kladrCode\":\"77000000000060600\",\"building1ShortType\":\"к\",\"fiasCode\":\"84dd3822-f006-435a-bdb3-314670c5812c\",\"hasErrors\":0,\"inCityDistType\":\"\",\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, ул. Сущёвский Вал\",\"building1\":\"3\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":\"\",\"apartment\":\"4\"}}"
+            },
+            "carList": {
+                "visited": true,
+                "value": "{\"vehicleInfo\":{\"status\":\"На учёте\",\"statusIntValue\":\"1\",\"legals\":true,\"stsSeriesNumber\":\"9923873237\",\"ptsType\":\"ПТС\",\"ptsNum\":\"164301011374931\",\"restrictionsFlag\":false,\"category\":\"B\",\"searchingTransportFlag\":false,\"carcaseColor\":\"СЕРЫЙ\",\"markName\":\"KIA\",\"modelName\":\"SPORTAGE\",\"modelMarkName\":\"KIA SPORTAGE \",\"manufacturedYear\":\"2020\",\"govRegNumber\":\"Е151ВЕ790\",\"recordStatus\":\"1\",\"vin\":\"XWEPH81ABM0043185\",\"carcaseNumber\":\"XWEPH81ABM0043185\",\"vehicleType\":\"Легковой универсал\",\"engineModel\":\"G4NA-5R\",\"engineNum\":\"G4NALH310736\",\"enginePowerHorse\":\"149.6\",\"enginePowerVt\":\"110.0\",\"ecologyClass\":\"5\",\"ecologyClassDesc\":\"Пятый\",\"restrictions\":[{\"restrictionType\":\"Запрет на регистрационные действия\",\"status\":\"действует\",\"statusIntValue\":\"1\",\"initiateRegion\":\"г. Москва\",\"mainReason\":\"постановление 134\"}],\"ownerPeriods\":[{\"dateStart\":\"23.10.2020\"}],\"uniqueRowNumber\":\"9999993\",\"stsDocumentType\":\"СТС\",\"stsDocumentDate\":\"2020-10-23\",\"stsIssueAgency\":\"ГУОБДД МВД России по го Лобня\",\"ptsRegDate\":\"2020-09-21\",\"ptsIssueAgency\":\"ООО ЭЛЛАДА ИНТЕРТРЕЙД\",\"manufacturer\":\"ООО ЭЛЛАДА ИНТЕРТРЕЙД\",\"price\":\"250000\",\"gazEnvironmentFlag\":false,\"transmissionType\":\"2\",\"driveUnitType\":\"1\",\"engineType\":\"Бензиновый на бензине\",\"approveSerNum\":\"TC RU E-RU АЯ04 00245 Р2И1\",\"utilizStatus\":\"Уплачен\",\"regActions\":[],\"owner\":{\"lastName\":\"Мелешков\",\"firstName\":\"Александр\",\"middleName\":\"Александрович\",\"birthDay\":\"1986-02-26\",\"birthPlace\":\"ТУЛЬСКАЯ ОБЛАСТЬ\",\"inn\":\"717171717171\",\"regAddress\":\",  , Молодежная\",\"idDocumentType\":\"Свидетельство о регистрации  транспортного средства (приказ МВД России № 346-93)\",\"documentNumSer\":\"9923873237\",\"documentDate\":\"2020-10-23\"}},\"notaryInfo\":{\"isPledged\":false},\"vehicleServiceCallResult\":\"SUCCESS\",\"notaryServiceCallResult\":\"SUCCESS\"}"
+            },
+            "carOwnerInfo1": {
+                "visited": true,
+                "value": "Верно"
+            },
+            "carOwnerInfo2": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"<h5 class='mb-12'>Свидетельство о регистрации (СТС)</h5>\",\"fields\":[{\"label\":\"<a>Образец СТС</a>\",\"value\":\"\"},{\"label\":\"<p>Серия и номер</p>\",\"value\":\"9923873237\"},{\"label\":\"<p>Дата выдачи</p>\",\"value\":\"2020-10-23\"},{\"label\":\"<p>Кем выдан</p>\",\"value\":\"ГУОБДД МВД России по го Лобня\"}],\"needDivider\":true},{\"groupName\":\"<h5 class='mb-12'>Паспорт ТС (ПТС)</h5>\",\"fields\":[{\"label\":\"<a>Образец СТС</a>\",\"value\":\"\"},{\"label\":\"<p>Серия и номер</p>\",\"value\":\"164301011374931\"},{\"label\":\"<p>Дата выдачи(создания)</p>\",\"value\":\"2020-09-21\"},{\"label\":\"<p>Кем выдан(оформлен)</p>\",\"value\":\"ООО ЭЛЛАДА ИНТЕРТРЕЙД\"}]}]}"
+            },
+            "pd19d": {
+                "visited": true,
+                "value": "1 000 000 ₽"
+            },
+            "add16": {
+                "visited": true,
+                "value": "1 233 456"
+            },
+            "dp1": {
+                "visited": true,
+                "value": "Ф"
+            },
+            "dp2": {
+                "visited": true,
+                "value": "И"
+            },
+            "dp3": {
+                "visited": true,
+                "value": "Я"
+            },
+            "dp4": {
+                "visited": true,
+                "value": "{\"rfPasportSeries\":\"0006\",\"rfPasportNumber\":\"234222\",\"oid\":\"1000473351\",\"snils\":\"000-234-222 55\",\"firstName\":\"Анна Мария\",\"lastName\":\"Ы\",\"exists\":true}"
+            },
+            "pdi1": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"\",\"fields\":[{\"label\":\"<b style='color:#000000; font-size: 18px' class='mt-0 mb-8'>Транспортное средство</b>\",\"value\":\"<p class='mt-8 mb-24'>KIA SPORTAGE , <span class='text-color--text-helper'>Е151ВЕ790</span></p>\"},{\"label\":\"\",\"value\":\"<p class='mt-24 mb-24'><a style='color: #0065B1'>Открыть проект договора</a></p>\"},{\"label\":\"<p style='color:#000000' class='mb-8'>Направьте договор покупателю:</p>\",\"value\":\"<p class='text-color--text-helper mt-8 mb-24'><img src='https://gu-st.ru/content/catalog/new/face_Blue.svg' style='float: left; margin-right: 12px;'/>Ф И Я</p>\"},{\"label\":\"<h5 style='color:#000000' class='mb-8'>Что дальше</h5>\",\"value\":\"<p class='mt-8 mb-12'>Вам придёт уведомление, когда покупатель согласует и подпишет договор.</p><p class='mb-12 mt-12'>Договор будет заключен после подписания обеими сторонами сделки.</p><p class='mt-12'>До подписания условия договора можно изменить.</p>\"}]}]}"
+            },
+            "sentTime": {
+                "value": "2021-03-12T11:55:35+03:00"
+            },
+            "booktimer1": {
+                "visited": true,
+                "value": "Проверить договор"
+            },
+            "contractOwner1": {
+                "visited": true,
+                "value": "Верно"
+            },
+            "pd11": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"Ы Анна Мария\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"25.01.1990\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0006 234222\"},{\"label\":\"Дата выдачи:\",\"value\":\"19.05.2020\"},{\"label\":\"Кем выдан:\",\"value\":\"ОТДЕЛОМ УФМС РОССИИ ПО СМОЛЕНСКОЙ ОБЛ. В ЛЕНИНСКОМ РАЙОНЕ Г. СМОЛЕНСКА\"},{\"label\":\"Код подразделения:\",\"value\":\"670-001\"},{\"label\":\"Место рождения:\",\"value\":\"Сыктывкар\"}]}],\"storedValues\":{\"firstName\":\"Анна Мария\",\"lastName\":\"Ы\",\"middleName\":\"\",\"birthDate\":\"25.01.1990\",\"birthPlace\":\"Сыктывкар\",\"gender\":\"F\",\"docType\":\"RF_PASSPORT\",\"rfPasportSeries\":\"0006\",\"rfPasportNumber\":\"234222\",\"rfPasportIssueDate\":\"19.05.2020\",\"rfPasportIssuedBy\":\"ОТДЕЛОМ УФМС РОССИИ ПО СМОЛЕНСКОЙ ОБЛ. В ЛЕНИНСКОМ РАЙОНЕ Г. СМОЛЕНСКА\",\"rfPasportIssuedById\":\"670001\",\"citizenship\":\"РОССИЯ\",\"citizenshipCode\":\"RUS\"},\"errors\":[]}"
+            },
+            "pd12": {
+                "visited": true,
+                "value": "+7(953)2121212"
+            },
+            "pd13": {
+                "visited": true,
+                "value": "irymar@luxoft.com"
+            },
+            "pd14": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":\"\",\"districtType\":\"\",\"geoLat\":\"55.4323067\",\"building2Type\":\"\",\"okato\":\"46460000000\",\"building1Type\":\"\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.4323067\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.5619233\",\"index\":\"142116\",\"townShortType\":\"\",\"district\":\"\",\"fullAddress\":\"142116, обл. Московская, г. Подольск, пр-кт. Революционный, д. 2/14, кв. 5\",\"houseCheckbox\":false,\"region\":\"Московская\",\"geoLon\":\"37.5619233\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Подольск\",\"apartmentShortType\":\"кв\",\"house\":\"2/14\",\"apartmentCheckbox\":false,\"townType\":\"\",\"additionalAreaType\":\"\",\"regionShortType\":\"обл\",\"regionCode\":\"50\",\"districtShortType\":\"\",\"street\":\"Революционный\",\"additionalStreetType\":\"\",\"inCityDistShortType\":\"\",\"additionalAreaShortType\":\"\",\"cityShortType\":\"г\",\"kladrCode\":\"5000002400003820014\",\"building1ShortType\":\"\",\"fiasCode\":\"b924607a-e2ea-438a-bdbf-a20579df8de3\",\"hasErrors\":0,\"inCityDistType\":\"\",\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Московская, г. Подольск, пр-кт. Революционный\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":\"\",\"apartment\":\"5\"}}"
+            },
+            "contractOwner2": {
+                "visited": true,
+                "value": "Подписать"
+            },
+            "booktimer2": {
+                "visited": true,
+                "value": "Проверить договор"
+            }
+        },
+        "currentValue": {},
+        "errors": {},
+        "applicantAnswers": {
+            "w1": {
+                "visited": true,
+                "value": ""
+            },
+            "q1": {
+                "visited": true,
+                "value": "Продавец"
+            },
+            "d1": {
+                "visited": true,
+                "value": ""
+            },
+            "pd1": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"Мишкин Мишка Мишкович\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"09.10.2000\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0004 354645\"},{\"label\":\"Дата выдачи:\",\"value\":\"25.06.2019\"},{\"label\":\"Кем выдан:\",\"value\":\"УМВД РОССИИ ПО ЗАБАЙКАЛЬСКОМУ КРАЮ\"},{\"label\":\"Код подразделения:\",\"value\":\"750-001\"},{\"label\":\"Место рождения:\",\"value\":\"г. Челекен Туркменской ССР\"}]}],\"storedValues\":{\"firstName\":\"Мишка\",\"lastName\":\"Мишкин\",\"middleName\":\"Мишкович\",\"birthDate\":\"09.10.2000\",\"birthPlace\":\"г. Челекен Туркменской ССР\",\"gender\":\"M\",\"docType\":\"RF_PASSPORT\",\"rfPasportSeries\":\"0004\",\"rfPasportNumber\":\"354645\",\"rfPasportIssueDate\":\"25.06.2019\",\"rfPasportIssuedBy\":\"УМВД РОССИИ ПО ЗАБАЙКАЛЬСКОМУ КРАЮ\",\"rfPasportIssuedById\":\"750001\",\"citizenship\":\"РОССИЯ\",\"citizenshipCode\":\"RUS\"},\"errors\":[]}"
+            },
+            "pd2": {
+                "visited": true,
+                "value": "+7(519)6156116"
+            },
+            "pd3": {
+                "visited": true,
+                "value": "esiatest302@yandex.ru"
+            },
+            "pd4": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":\"\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":\"\",\"districtType\":\"\",\"geoLat\":\"55.7921241\",\"building2Type\":\"\",\"okato\":\"45280569000\",\"building1Type\":\"корпус\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7921241\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.6017246\",\"index\":\"127018\",\"townShortType\":\"\",\"district\":\"\",\"fullAddress\":\"127018, г. Москва, ул. Сущёвский Вал, д. 14, к. 3, кв. 4\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6017246\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"14\",\"apartmentCheckbox\":false,\"townType\":\"\",\"additionalAreaType\":\"\",\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":\"\",\"street\":\"Сущёвский Вал\",\"additionalStreetType\":\"\",\"inCityDistShortType\":\"\",\"additionalAreaShortType\":\"\",\"cityShortType\":\"\",\"kladrCode\":\"77000000000060600\",\"building1ShortType\":\"к\",\"fiasCode\":\"84dd3822-f006-435a-bdb3-314670c5812c\",\"hasErrors\":0,\"inCityDistType\":\"\",\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, ул. Сущёвский Вал\",\"building1\":\"3\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":\"\",\"apartment\":\"4\"}}"
+            },
+            "carList": {
+                "visited": true,
+                "value": "{\"vehicleInfo\":{\"status\":\"На учёте\",\"statusIntValue\":\"1\",\"legals\":true,\"stsSeriesNumber\":\"9923873237\",\"ptsType\":\"ПТС\",\"ptsNum\":\"164301011374931\",\"restrictionsFlag\":false,\"category\":\"B\",\"searchingTransportFlag\":false,\"carcaseColor\":\"СЕРЫЙ\",\"markName\":\"KIA\",\"modelName\":\"SPORTAGE\",\"modelMarkName\":\"KIA SPORTAGE \",\"manufacturedYear\":\"2020\",\"govRegNumber\":\"Е151ВЕ790\",\"recordStatus\":\"1\",\"vin\":\"XWEPH81ABM0043185\",\"carcaseNumber\":\"XWEPH81ABM0043185\",\"vehicleType\":\"Легковой универсал\",\"engineModel\":\"G4NA-5R\",\"engineNum\":\"G4NALH310736\",\"enginePowerHorse\":\"149.6\",\"enginePowerVt\":\"110.0\",\"ecologyClass\":\"5\",\"ecologyClassDesc\":\"Пятый\",\"restrictions\":[{\"restrictionType\":\"Запрет на регистрационные действия\",\"status\":\"действует\",\"statusIntValue\":\"1\",\"initiateRegion\":\"г. Москва\",\"mainReason\":\"постановление 134\"}],\"ownerPeriods\":[{\"dateStart\":\"23.10.2020\"}],\"uniqueRowNumber\":\"9999993\",\"stsDocumentType\":\"СТС\",\"stsDocumentDate\":\"2020-10-23\",\"stsIssueAgency\":\"ГУОБДД МВД России по го Лобня\",\"ptsRegDate\":\"2020-09-21\",\"ptsIssueAgency\":\"ООО ЭЛЛАДА ИНТЕРТРЕЙД\",\"manufacturer\":\"ООО ЭЛЛАДА ИНТЕРТРЕЙД\",\"price\":\"250000\",\"gazEnvironmentFlag\":false,\"transmissionType\":\"2\",\"driveUnitType\":\"1\",\"engineType\":\"Бензиновый на бензине\",\"approveSerNum\":\"TC RU E-RU АЯ04 00245 Р2И1\",\"utilizStatus\":\"Уплачен\",\"regActions\":[],\"owner\":{\"lastName\":\"Мелешков\",\"firstName\":\"Александр\",\"middleName\":\"Александрович\",\"birthDay\":\"1986-02-26\",\"birthPlace\":\"ТУЛЬСКАЯ ОБЛАСТЬ\",\"inn\":\"717171717171\",\"regAddress\":\",  , Молодежная\",\"idDocumentType\":\"Свидетельство о регистрации  транспортного средства (приказ МВД России № 346-93)\",\"documentNumSer\":\"9923873237\",\"documentDate\":\"2020-10-23\"}},\"notaryInfo\":{\"isPledged\":false},\"vehicleServiceCallResult\":\"SUCCESS\",\"notaryServiceCallResult\":\"SUCCESS\"}"
+            },
+            "carOwnerInfo1": {
+                "visited": true,
+                "value": "Верно"
+            },
+            "carOwnerInfo2": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"<h5 class='mb-12'>Свидетельство о регистрации (СТС)</h5>\",\"fields\":[{\"label\":\"<a>Образец СТС</a>\",\"value\":\"\"},{\"label\":\"<p>Серия и номер</p>\",\"value\":\"9923873237\"},{\"label\":\"<p>Дата выдачи</p>\",\"value\":\"2020-10-23\"},{\"label\":\"<p>Кем выдан</p>\",\"value\":\"ГУОБДД МВД России по го Лобня\"}],\"needDivider\":true},{\"groupName\":\"<h5 class='mb-12'>Паспорт ТС (ПТС)</h5>\",\"fields\":[{\"label\":\"<a>Образец СТС</a>\",\"value\":\"\"},{\"label\":\"<p>Серия и номер</p>\",\"value\":\"164301011374931\"},{\"label\":\"<p>Дата выдачи(создания)</p>\",\"value\":\"2020-09-21\"},{\"label\":\"<p>Кем выдан(оформлен)</p>\",\"value\":\"ООО ЭЛЛАДА ИНТЕРТРЕЙД\"}]}]}"
+            },
+            "pd19d": {
+                "visited": true,
+                "value": "1 000 000 ₽"
+            },
+            "add16": {
+                "visited": true,
+                "value": "1 233 456"
+            },
+            "dp1": {
+                "visited": true,
+                "value": "Ф"
+            },
+            "dp2": {
+                "visited": true,
+                "value": "И"
+            },
+            "dp3": {
+                "visited": true,
+                "value": "Я"
+            },
+            "dp4": {
+                "visited": true,
+                "value": "{\"rfPasportSeries\":\"0006\",\"rfPasportNumber\":\"234222\",\"oid\":\"1000473351\",\"snils\":\"000-234-222 55\",\"firstName\":\"Анна Мария\",\"lastName\":\"Ы\",\"exists\":true}"
+            },
+            "pdi1": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"\",\"fields\":[{\"label\":\"<b style='color:#000000; font-size: 18px' class='mt-0 mb-8'>Транспортное средство</b>\",\"value\":\"<p class='mt-8 mb-24'>KIA SPORTAGE , <span class='text-color--text-helper'>Е151ВЕ790</span></p>\"},{\"label\":\"\",\"value\":\"<p class='mt-24 mb-24'><a style='color: #0065B1'>Открыть проект договора</a></p>\"},{\"label\":\"<p style='color:#000000' class='mb-8'>Направьте договор покупателю:</p>\",\"value\":\"<p class='text-color--text-helper mt-8 mb-24'><img src='https://gu-st.ru/content/catalog/new/face_Blue.svg' style='float: left; margin-right: 12px;'/>Ф И Я</p>\"},{\"label\":\"<h5 style='color:#000000' class='mb-8'>Что дальше</h5>\",\"value\":\"<p class='mt-8 mb-12'>Вам придёт уведомление, когда покупатель согласует и подпишет договор.</p><p class='mb-12 mt-12'>Договор будет заключен после подписания обеими сторонами сделки.</p><p class='mt-12'>До подписания условия договора можно изменить.</p>\"}]}]}"
+            },
+            "sentTime": {
+                "value": "2021-03-12T11:55:35+03:00"
+            },
+            "booktimer1": {
+                "visited": true,
+                "value": "Проверить договор"
+            },
+            "contractOwner1": {
+                "visited": true,
+                "value": "Верно"
+            },
+            "pd11": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"Ы Анна Мария\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"25.01.1990\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0006 234222\"},{\"label\":\"Дата выдачи:\",\"value\":\"19.05.2020\"},{\"label\":\"Кем выдан:\",\"value\":\"ОТДЕЛОМ УФМС РОССИИ ПО СМОЛЕНСКОЙ ОБЛ. В ЛЕНИНСКОМ РАЙОНЕ Г. СМОЛЕНСКА\"},{\"label\":\"Код подразделения:\",\"value\":\"670-001\"},{\"label\":\"Место рождения:\",\"value\":\"Сыктывкар\"}]}],\"storedValues\":{\"firstName\":\"Анна Мария\",\"lastName\":\"Ы\",\"middleName\":\"\",\"birthDate\":\"25.01.1990\",\"birthPlace\":\"Сыктывкар\",\"gender\":\"F\",\"docType\":\"RF_PASSPORT\",\"rfPasportSeries\":\"0006\",\"rfPasportNumber\":\"234222\",\"rfPasportIssueDate\":\"19.05.2020\",\"rfPasportIssuedBy\":\"ОТДЕЛОМ УФМС РОССИИ ПО СМОЛЕНСКОЙ ОБЛ. В ЛЕНИНСКОМ РАЙОНЕ Г. СМОЛЕНСКА\",\"rfPasportIssuedById\":\"670001\",\"citizenship\":\"РОССИЯ\",\"citizenshipCode\":\"RUS\"},\"errors\":[]}"
+            },
+            "pd12": {
+                "visited": true,
+                "value": "+7(953)2121212"
+            },
+            "pd13": {
+                "visited": true,
+                "value": "irymar@luxoft.com"
+            },
+            "pd14": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":\"\",\"districtType\":\"\",\"geoLat\":\"55.4323067\",\"building2Type\":\"\",\"okato\":\"46460000000\",\"building1Type\":\"\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.4323067\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.5619233\",\"index\":\"142116\",\"townShortType\":\"\",\"district\":\"\",\"fullAddress\":\"142116, обл. Московская, г. Подольск, пр-кт. Революционный, д. 2/14, кв. 5\",\"houseCheckbox\":false,\"region\":\"Московская\",\"geoLon\":\"37.5619233\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Подольск\",\"apartmentShortType\":\"кв\",\"house\":\"2/14\",\"apartmentCheckbox\":false,\"townType\":\"\",\"additionalAreaType\":\"\",\"regionShortType\":\"обл\",\"regionCode\":\"50\",\"districtShortType\":\"\",\"street\":\"Революционный\",\"additionalStreetType\":\"\",\"inCityDistShortType\":\"\",\"additionalAreaShortType\":\"\",\"cityShortType\":\"г\",\"kladrCode\":\"5000002400003820014\",\"building1ShortType\":\"\",\"fiasCode\":\"b924607a-e2ea-438a-bdbf-a20579df8de3\",\"hasErrors\":0,\"inCityDistType\":\"\",\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Московская, г. Подольск, пр-кт. Революционный\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":\"\",\"apartment\":\"5\"}}"
+            },
+            "contractOwner2": {
+                "visited": true,
+                "value": "Подписать"
+            },
+            "booktimer2": {
+                "visited": true,
+                "value": "Проверить договор"
+            }
+        },
+        "cycledApplicantAnswers": {
+            "answerlist": []
+        },
+        "participants": {
+            "1000473351": {
+                "role": "Coapplicant",
+                "mode": "MentionedApplicant",
+                "component": "dp4"
+            }
+        },
+        "display": {
+            "id": "s27",
+            "name": "Данные договора",
+            "type": "QUESTION",
+            "header": "Данные договора",
+            "subHeader": {
+                "text": "<p class='mb-4 mt-8'>KIA SPORTAGE </p><p class='mt-4'>Е151ВЕ790</p>"
+            },
+            "components": [
+                {
+                    "id": "contractOwner3",
+                    "type": "QuestionScr",
+                    "label": "<div style='margin:0px 30px'><p class='mb-8'><b>Собственник(владелец)</b></p><p class='mt-4'>Мишка Мишкин Мишкович</p><p class='text-color--text-helper mb-4'>Дата рождения</p><p class='mt-4'>09.10.2000</p><p><b>Паспорт собственника</b></p><p class='text-color--text-helper mb-4'>Серия и номер</p><p class='mt-4'>0004 354645</p><p class='text-color--text-helper mb-4'>Дата выдачи</p><p class='mt-4'>25.06.2019</p><p class='text-color--text-helper mb-4'>Кем выдан</p><p class='mt-4'>УМВД РОССИИ ПО ЗАБАЙКАЛЬСКОМУ КРАЮ</p><p class='text-color--text-helper mb-4'>Место рождения</p><p class='mt-4'>г. Челекен Туркменской ССР</p><p class='text-color--text-helper mb-4'>Адрес регистрации</p><p class='mt-4'>127018, г. Москва, ул. Сущёвский Вал, д. 14, к. 3, кв. 4</p><p class='mb-8'><b>Покупатель</b></p><p class='mt-4'>Анна Мария Ы </p><p class='text-color--text-helper mb-4'>Дата рождения</p><p class='mt-4'>25.01.1990</p><p><b>Паспорт покупателя</b></p><p class='text-color--text-helper mb-4'>Серия и номер</p><p class='mt-4'>0006 234222</p><p class='text-color--text-helper mb-4'>Дата выдачи</p><p class='mt-4'>19.05.2020</p><p class='text-color--text-helper mb-4'>Кем выдан</p><p class='mt-4'>ОТДЕЛОМ УФМС РОССИИ ПО СМОЛЕНСКОЙ ОБЛ. В ЛЕНИНСКОМ РАЙОНЕ Г. СМОЛЕНСКА</p><p class='text-color--text-helper mb-4'>Место рождения</p><p class='mt-4'>Сыктывкар</p><p class='text-color--text-helper mb-4'>Адрес регистрации</p><p class='mt-4'>142116, обл. Московская, г. Подольск, пр-кт. Революционный, д. 2/14, кв. 5</p><p><b>Данные ТС</b></p><p class='text-color--text-helper mb-4'>VIN</p><p class='mt-4'>XWEPH81ABM0043185</p><p class='text-color--text-helper mb-4'>Тип ТС</p><p class='mt-4'>Легковой универсал</p><p class='text-color--text-helper mb-4'>Год выпуска</p><p class='mt-4'>2020</p><p class='text-color--text-helper mb-4'>Модель двигателя</p><p class='mt-4'>G4NA-5R</p><p class='text-color--text-helper mb-4'>Номер двигателя</p><p class='mt-4'>G4NALH310736</p><p class='text-color--text-helper mb-4'>Номер шасси (рамы)</p><p class='mt-4'></p><p class='text-color--text-helper mb-4'>Номер кузова</p><p class='mt-4'>XWEPH81ABM0043185</p><p class='text-color--text-helper mb-4'>Цвет</p><p class='mt-4'>СЕРЫЙ</p><p class='text-color--text-helper mb-4'>Мощность двигателя, л.с.</p><p class='mt-4'>149.6</p><p class='text-color--text-helper mb-4'>Объём двигателя (куб.см)</p><p class='mt-4'></p><p><b>Свидетельство о регистрации (СТС)</b></p><p class='text-color--text-helper mb-4'>Серия и номер</p><p class='mt-4'>9923873237</p><p class='text-color--text-helper mb-4'>Дата выдачи</p><p class='mt-4'>2020-10-23</p><p class='text-color--text-helper mb-4'>Кем выдан</p><p class='mt-4'>ГУОБДД МВД России по го Лобня</p><p><b>Паспорт транспортного средства (ПТС)</b></p><p class='text-color--text-helper mb-4'>Серия и номер</p><p class='mt-4'>164301011374931</p><p class='text-color--text-helper mb-4'>Дата выдачи(создания)</p><p class='mt-4'>2020-09-21</p><p class='text-color--text-helper mb-4'>Кем выдан(оформлен)</p><p class='mt-4'>ООО ЭЛЛАДА ИНТЕРТРЕЙД</p><p><b>Условия продажи</b></p><p class='text-color--text-helper mb-4'>Стоимость</p><p class='mt-4'>1</p><p class='text-color--text-helper mb-4'>Пробег</p><p class='mt-4'>1</p></div>",
+                    "attrs": {
+                        "actions": [
+                            {
+                                "label": "Подписать",
+                                "value": "Подписать",
+                                "type": "nextStep",
+                                "action": "getNextScreen"
+                            },
+                            {
+                                "label": "Отклонить",
+                                "value": "Отклонить",
+                                "type": "nextStep",
+                                "action": "getNextScreen"
+                            }
+                        ],
+                        "refs": {
+                            "carList.modelMarkName": "carList.value.vehicleInfo.modelMarkName",
+                            "carList.govRegNumber": "carList.value.vehicleInfo.govRegNumber",
+                            "pd1.firstName": "pd1.value.storedValues.firstName",
+                            "pd1.lastName": "pd1.value.storedValues.lastName",
+                            "pd1.middleName": "pd1.value.storedValues.middleName",
+                            "pd1.birthDate": "pd1.value.storedValues.birthDate",
+                            "pd1.rfPasportSeries": "pd1.value.storedValues.rfPasportSeries",
+                            "pd1.rfPasportNumber": "pd1.value.storedValues.rfPasportNumber",
+                            "pd1.rfPasportIssueDate": "pd1.value.storedValues.rfPasportIssueDate",
+                            "pd1.rfPasportIssuedBy": "pd1.value.storedValues.rfPasportIssuedBy",
+                            "pd1.birthPlace": "pd1.value.storedValues.birthPlace",
+                            "pd4.addr": "pd4.value.regAddr.fullAddress",
+                            "pd11.firstName": "pd11.value.storedValues.firstName",
+                            "pd11.lastName": "pd11.value.storedValues.lastName",
+                            "pd11.middleName": "pd11.value.storedValues.middleName",
+                            "pd11.birthDate": "pd11.value.storedValues.birthDate",
+                            "pd11.rfPasportSeries": "pd11.value.storedValues.rfPasportSeries",
+                            "pd11.rfPasportNumber": "pd11.value.storedValues.rfPasportNumber",
+                            "pd11.rfPasportIssueDate": "pd11.value.storedValues.rfPasportIssueDate",
+                            "pd11.rfPasportIssuedBy": "pd11.value.storedValues.rfPasportIssuedBy",
+                            "pd11.birthPlace": "pd11.value.storedValues.birthPlace",
+                            "pd14.addr": "pd14.value.regAddr.fullAddress",
+                            "carList.VIN": "carList.value.vehicleInfo.vin",
+                            "carList.TYPE": "carList.value.vehicleInfo.vehicleType",
+                            "carList.YEAR": "carList.value.vehicleInfo.manufacturedYear",
+                            "carList.ENGINEMODEL": "carList.value.vehicleInfo.engineModel",
+                            "carList.ENGINENUM": "carList.value.vehicleInfo.engineNum",
+                            "carList.CHASSIS": "carList.value.vehicleInfo.chassisNumber",
+                            "carList.CARCASE": "carList.value.vehicleInfo.carcaseNumber",
+                            "carList.COLOR": "carList.value.vehicleInfo.carcaseColor",
+                            "carList.ENGINEPOWER": "carList.value.vehicleInfo.enginePowerHorse",
+                            "carList.ENGINEVOLUME": "carList.value.vehicleInfo.engineVolume",
+                            "carList.stsSeriesNumber": "carList.value.vehicleInfo.stsSeriesNumber",
+                            "carList.stsDocumentDate": "carList.value.vehicleInfo.stsDocumentDate",
+                            "carList.stsIssueAgency": "carList.value.vehicleInfo.stsIssueAgency",
+                            "carList.ptsSeriesNumber": "carList.value.vehicleInfo.ptsNum",
+                            "carList.ptsDocumentDate": "carList.value.vehicleInfo.ptsRegDate",
+                            "carList.ptsIssueAgency": "carList.value.vehicleInfo.ptsIssueAgency",
+                            "pd19d.PRICE": "pd19d.value",
+                            "add16.MILEAGE": "add16.value"
+                        },
+                        "fields": []
+                    },
+                    "linkedValues": [],
+                    "arguments": {},
+                    "value": "",
+                    "required": true
+                }
+            ],
+            "infoComponents": [],
+            "terminal": false,
+            "accepted": true,
+            "impasse": false,
+            "firstScreen": false
+        },
+        "serviceInfo": {
+            "statusId": 0
+        },
+        "attachmentInfo": {},
+        "additionalParameters": {
+            "orderId": "763712770",
+            "oid": "1000473351",
+            "snils": "000-234-222 55",
+            "firstName": "Анна Мария",
+            "lastName": "Ы",
+            "birthDate": "25.01.1990",
+            "gender": "F",
+            "citizenship": "РОССИЯ",
+            "citizenshipCode": "RUS",
+            "serviceId": "10000000123",
+            "targetId": "-10000000123",
+            "timezone": "+3",
+            "masterId": "763712770",
+            "masterOid": "1000466662",
+            "masterSnils": "000-737-904 15",
+            "masterFirstName": "Мишка",
+            "masterLastName": "Мишкин",
+            "masterMiddleName": "Мишкович",
+            "masterBirthDate": "09.10.2000",
+            "masterGender": "M",
+            "masterCitizenship": "РОССИЯ",
+            "masterCitizenshipCode": "RUS",
+            "masterTimezone": "+3"
+        },
+        "generatedFiles": [],
+        "gender": "M"
+    }
+}

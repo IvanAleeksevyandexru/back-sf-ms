@@ -1,0 +1,334 @@
+{
+    "orderId": 763768526,
+    "oid": 1000299353,
+    "type": "10000000123",
+    "locked": false,
+    "updated": "2021-04-02T17:34:22.793Z",
+    "body": {
+        "serviceCode": "10000000123",
+        "targetCode": "-10000000123",
+        "orderId": 763768526,
+        "currentScenarioId": 1,
+        "currentUrl": "https://dev-l11.test.gosuslugi.ru/600123/1/form",
+        "finishedAndCurrentScreens": [
+            "s26",
+            "s27",
+            "s28"
+        ],
+        "cachedAnswers": {
+            "w1": {
+                "visited": true,
+                "value": ""
+            },
+            "q1": {
+                "visited": true,
+                "value": "Продавец"
+            },
+            "d1": {
+                "visited": true,
+                "value": ""
+            },
+            "pd1": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"Николаев Николай Николаевич\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"03.05.1974\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"2317 921985\"},{\"label\":\"Дата выдачи:\",\"value\":\"12.09.2018\"},{\"label\":\"Кем выдан:\",\"value\":\"УМВД России по Тюменской области\"},{\"label\":\"Код подразделения:\",\"value\":\"375-584\"},{\"label\":\"Место рождения:\",\"value\":\"Московская область деревня мисайлово\"}]},{\"groupName\":\"\",\"fields\":[{\"label\":\"СНИЛС:\",\"value\":\"000-000-000 57\"}]}],\"storedValues\":{\"firstName\":\"Николай\",\"lastName\":\"Николаев\",\"middleName\":\"Николаевич\",\"birthDate\":\"03.05.1974\",\"birthPlace\":\"Московская область деревня мисайлово\",\"gender\":\"M\",\"docType\":\"RF_PASSPORT\",\"rfPasportSeries\":\"2317\",\"rfPasportNumber\":\"921985\",\"rfPasportIssueDate\":\"12.09.2018\",\"rfPasportIssuedBy\":\"УМВД России по Тюменской области\",\"rfPasportIssuedById\":\"375584\",\"rfPasportIssuedByIdFormatted\":\"375-584\",\"citizenship\":\"РОССИЯ\",\"citizenshipCode\":\"RUS\",\"snils\":\"000-000-000 57\"},\"errors\":[]}"
+            },
+            "pd2": {
+                "visited": true,
+                "value": "+7(999)8388383"
+            },
+            "pd3": {
+                "visited": true,
+                "value": "rtlabs.test1123@gmail.com"
+            },
+            "pd4": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":\"\",\"districtType\":\"район\",\"geoLat\":\"52.5912896\",\"building2Type\":\"\",\"okato\":\"80404000000\",\"building1Type\":\"\",\"regionType\":\"республика\",\"additionalStreet\":\"\",\"lat\":\"52.5912896\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"58.3110998\",\"index\":\"453632\",\"townShortType\":\"\",\"district\":\"Баймакский\",\"fullAddress\":\"453632, Респ. Башкортостан, г. Баймак, р-н. Баймакский, ул. А.Алибаева, д. 1, кв. 1\",\"houseCheckbox\":false,\"region\":\"Башкортостан\",\"geoLon\":\"58.3110998\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Баймак\",\"apartmentShortType\":\"кв\",\"house\":\"1\",\"apartmentCheckbox\":false,\"townType\":\"\",\"additionalAreaType\":\"\",\"regionShortType\":\"Респ\",\"regionCode\":\"02\",\"districtShortType\":\"р-н\",\"street\":\"А.Алибаева\",\"additionalStreetType\":\"\",\"inCityDistShortType\":\"\",\"additionalAreaShortType\":\"\",\"cityShortType\":\"г\",\"kladrCode\":\"0200600100000030001\",\"building1ShortType\":\"\",\"fiasCode\":\"72cc79b7-c0d5-4a7f-9934-aca2b2d2d2aa\",\"hasErrors\":0,\"inCityDistType\":\"\",\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"Респ. Башкортостан, г. Баймак, р-н. Баймакский, ул. А.Алибаева\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":\"\",\"apartment\":\"1\"}}"
+            },
+            "carList": {
+                "visited": true,
+                "value": "{\"vehicleInfo\":{\"status\":\"На учёте\",\"statusIntValue\":\"1\",\"legals\":true,\"stsSeriesNumber\":\"9923873237\",\"ptsType\":\"ПТС\",\"ptsNum\":\"164301011374931\",\"restrictionsFlag\":false,\"category\":\"B\",\"searchingTransportFlag\":false,\"carcaseColor\":\"СЕРЫЙ\",\"markName\":\"KIA\",\"modelName\":\"SPORTAGE\",\"modelMarkName\":\"KIA SPORTAGE \",\"manufacturedYear\":\"2020\",\"govRegNumber\":\"Е151ВЕ790\",\"recordStatus\":\"1\",\"vin\":\"XWEPH81ABM0043185\",\"carcaseNumber\":\"XWEPH81ABM0043185\",\"vehicleType\":\"Легковой универсал\",\"engineModel\":\"G4NA-5R\",\"engineNum\":\"G4NALH310736\",\"enginePowerHorse\":\"149.6\",\"enginePowerVt\":\"110.0\",\"ecologyClass\":\"5\",\"ecologyClassDesc\":\"Пятый\",\"restrictions\":[{\"restrictionType\":\"Запрет на регистрационные действия\",\"status\":\"действует\",\"statusIntValue\":\"1\",\"initiateRegion\":\"г. Москва\",\"mainReason\":\"постановление 134\"}],\"ownerPeriods\":[{\"dateStart\":\"23.10.2020\"}],\"uniqueRowNumber\":\"9999993\",\"stsSeriesNumberFormatted\":\"9923 873237\",\"stsDocumentType\":\"СТС\",\"stsDocumentDate\":\"23.10.2020\",\"stsIssueAgency\":\"ГУОБДД МВД России по го Лобня\",\"ptsNumFormatted\":\"164301011374931\",\"ptsRegDate\":\"21.09.2020\",\"ptsIssueAgency\":\"ООО ЭЛЛАДА ИНТЕРТРЕЙД\",\"manufacturer\":\"ООО ЭЛЛАДА ИНТЕРТРЕЙД\",\"price\":\"250000\",\"gazEnvironmentFlag\":false,\"transmissionType\":\"2\",\"driveUnitType\":\"1\",\"engineType\":\"Бензиновый на бензине\",\"approveSerNum\":\"TC RU E-RU АЯ04 00245 Р2И1\",\"utilizStatus\":\"Уплачен\",\"regActions\":[],\"owner\":{\"lastName\":\"Мелешков\",\"firstName\":\"Александр\",\"middleName\":\"Александрович\",\"birthDay\":\"1986-02-26\",\"birthPlace\":\"ТУЛЬСКАЯ ОБЛАСТЬ\",\"inn\":\"717171717171\",\"regAddress\":\",  , Молодежная\",\"idDocumentType\":\"Свидетельство о регистрации  транспортного средства (приказ МВД России № 346-93)\",\"documentNumSer\":\"9923873237\",\"documentNumSerFormatted\":\"9923 873237\",\"documentDate\":\"2020-10-23\"}},\"notaryInfo\":{\"isPledged\":false},\"vehicleServiceCallResult\":\"SUCCESS\",\"notaryServiceCallResult\":\"SUCCESS\"}"
+            },
+            "carOwnerInfo1": {
+                "visited": true,
+                "value": "Верно"
+            },
+            "carOwnerInfo2": {
+                "visited": true,
+                "value": "Верно"
+            },
+            "pd19d": {
+                "visited": true,
+                "value": "1"
+            },
+            "add16": {
+                "visited": true,
+                "value": "1"
+            },
+            "dp1": {
+                "visited": true,
+                "value": "Перараоа"
+            },
+            "dp2": {
+                "visited": true,
+                "value": "Укпцукп"
+            },
+            "dp3": {
+                "visited": true,
+                "value": "Укпцукпцук"
+            },
+            "dp4": {
+                "visited": true,
+                "value": "{\"rfPasportSeries\":\"6662\",\"rfPasportNumber\":\"213123\",\"oid\":\"1000466578\",\"snils\":\"087-520-480 80\",\"firstName\":\"Инна\",\"lastName\":\"Стриж\",\"middleName\":\"Олеговна\",\"birthDate\":\"1972-10-20\",\"gender\":\"F\",\"exists\":true}"
+            },
+            "pdi1": {
+                "visited": true,
+                "value": ""
+            },
+            "sentTime": {
+                "value": "2021-04-02T20:32:46+03:00"
+            },
+            "booktimer1": {
+                "visited": true,
+                "value": "Проверить договор"
+            },
+            "contractOwner1": {
+                "visited": true,
+                "value": "Верно"
+            },
+            "pd11": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"Стриж Инна Олеговна\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"20.10.1972\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"6662 213123\"},{\"label\":\"Дата выдачи:\",\"value\":\"01.05.2001\"},{\"label\":\"Кем выдан:\",\"value\":\"Воронежским ГУВД\"},{\"label\":\"Код подразделения:\",\"value\":\"212-122\"},{\"label\":\"Место рождения:\",\"value\":\"Житомир\"}]},{\"groupName\":\"\",\"fields\":[{\"label\":\"СНИЛС:\",\"value\":\"087-520-480 80\"}]}],\"storedValues\":{\"firstName\":\"Инна\",\"lastName\":\"Стриж\",\"middleName\":\"Олеговна\",\"birthDate\":\"20.10.1972\",\"birthPlace\":\"Житомир\",\"gender\":\"F\",\"docType\":\"RF_PASSPORT\",\"rfPasportSeries\":\"6662\",\"rfPasportNumber\":\"213123\",\"rfPasportIssueDate\":\"01.05.2001\",\"rfPasportIssuedBy\":\"Воронежским ГУВД\",\"rfPasportIssuedById\":\"212122\",\"rfPasportIssuedByIdFormatted\":\"212-122\",\"citizenship\":\"РОССИЯ\",\"citizenshipCode\":\"RUS\",\"snils\":\"087-520-480 80\"},\"errors\":[]}"
+            },
+            "pd12": {
+                "visited": true,
+                "value": "+7(997)1237895"
+            },
+            "pd13": {
+                "visited": true,
+                "value": "666225646123525245@test.tst.ph"
+            },
+            "pd14": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":\"\",\"districtType\":\"\",\"geoLat\":\"55.162693\",\"building2Type\":\"строение\",\"okato\":\"75401380000\",\"building1Type\":\"\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.162693\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"61.4633775\",\"index\":\"454007\",\"townShortType\":\"\",\"district\":\"\",\"fullAddress\":\"454007, обл. Челябинская, г. Челябинск, пр-кт. Ленина, д. 2, стр. 1, кв. 59\",\"houseCheckbox\":false,\"region\":\"Челябинская\",\"geoLon\":\"61.4633775\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Челябинск\",\"apartmentShortType\":\"кв\",\"house\":\"2\",\"apartmentCheckbox\":false,\"townType\":\"\",\"additionalAreaType\":\"\",\"regionShortType\":\"обл\",\"regionCode\":\"74\",\"districtShortType\":\"\",\"street\":\"Ленина\",\"additionalStreetType\":\"\",\"inCityDistShortType\":\"\",\"additionalAreaShortType\":\"\",\"cityShortType\":\"г\",\"kladrCode\":\"7400000100005080242\",\"building1ShortType\":\"\",\"fiasCode\":\"87367bf7-a262-45e5-a4cb-b1d7728968b1\",\"hasErrors\":0,\"inCityDistType\":\"\",\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Челябинская, г. Челябинск, пр-кт. Ленина\",\"building1\":\"\",\"building2\":\"1\",\"houseShortType\":\"д\",\"building2ShortType\":\"стр\",\"apartment\":\"59\"}}"
+            },
+            "contractOwner2": {
+                "visited": true,
+                "value": "Подписать"
+            },
+            "booktimer2": {
+                "visited": true,
+                "value": "Проверить договор"
+            },
+            "contractOwner3": {
+                "visited": true,
+                "value": "Подписать"
+            }
+        },
+        "currentValue": {},
+        "errors": {},
+        "applicantAnswers": {
+            "q1": {
+                "visited": true,
+                "value": "Продавец"
+            },
+            "w1": {
+                "visited": true,
+                "value": ""
+            },
+            "pd1": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"Николаев Николай Николаевич\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"03.05.1974\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"2317 921985\"},{\"label\":\"Дата выдачи:\",\"value\":\"12.09.2018\"},{\"label\":\"Кем выдан:\",\"value\":\"УМВД России по Тюменской области\"},{\"label\":\"Код подразделения:\",\"value\":\"375-584\"},{\"label\":\"Место рождения:\",\"value\":\"Московская область деревня мисайлово\"}]},{\"groupName\":\"\",\"fields\":[{\"label\":\"СНИЛС:\",\"value\":\"000-000-000 57\"}]}],\"storedValues\":{\"firstName\":\"Николай\",\"lastName\":\"Николаев\",\"middleName\":\"Николаевич\",\"birthDate\":\"03.05.1974\",\"birthPlace\":\"Московская область деревня мисайлово\",\"gender\":\"M\",\"docType\":\"RF_PASSPORT\",\"rfPasportSeries\":\"2317\",\"rfPasportNumber\":\"921985\",\"rfPasportIssueDate\":\"12.09.2018\",\"rfPasportIssuedBy\":\"УМВД России по Тюменской области\",\"rfPasportIssuedById\":\"375584\",\"rfPasportIssuedByIdFormatted\":\"375-584\",\"citizenship\":\"РОССИЯ\",\"citizenshipCode\":\"RUS\",\"snils\":\"000-000-000 57\"},\"errors\":[]}"
+            },
+            "d1": {
+                "visited": true,
+                "value": ""
+            },
+            "pd3": {
+                "visited": true,
+                "value": "rtlabs.test1123@gmail.com"
+            },
+            "pd2": {
+                "visited": true,
+                "value": "+7(999)8388383"
+            },
+            "pd4": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":\"\",\"districtType\":\"район\",\"geoLat\":\"52.5912896\",\"building2Type\":\"\",\"okato\":\"80404000000\",\"building1Type\":\"\",\"regionType\":\"республика\",\"additionalStreet\":\"\",\"lat\":\"52.5912896\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"58.3110998\",\"index\":\"453632\",\"townShortType\":\"\",\"district\":\"Баймакский\",\"fullAddress\":\"453632, Респ. Башкортостан, г. Баймак, р-н. Баймакский, ул. А.Алибаева, д. 1, кв. 1\",\"houseCheckbox\":false,\"region\":\"Башкортостан\",\"geoLon\":\"58.3110998\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Баймак\",\"apartmentShortType\":\"кв\",\"house\":\"1\",\"apartmentCheckbox\":false,\"townType\":\"\",\"additionalAreaType\":\"\",\"regionShortType\":\"Респ\",\"regionCode\":\"02\",\"districtShortType\":\"р-н\",\"street\":\"А.Алибаева\",\"additionalStreetType\":\"\",\"inCityDistShortType\":\"\",\"additionalAreaShortType\":\"\",\"cityShortType\":\"г\",\"kladrCode\":\"0200600100000030001\",\"building1ShortType\":\"\",\"fiasCode\":\"72cc79b7-c0d5-4a7f-9934-aca2b2d2d2aa\",\"hasErrors\":0,\"inCityDistType\":\"\",\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"Респ. Башкортостан, г. Баймак, р-н. Баймакский, ул. А.Алибаева\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":\"\",\"apartment\":\"1\"}}"
+            },
+            "carList": {
+                "visited": true,
+                "value": "{\"vehicleInfo\":{\"status\":\"На учёте\",\"statusIntValue\":\"1\",\"legals\":true,\"stsSeriesNumber\":\"9923873237\",\"ptsType\":\"ПТС\",\"ptsNum\":\"164301011374931\",\"restrictionsFlag\":false,\"category\":\"B\",\"searchingTransportFlag\":false,\"carcaseColor\":\"СЕРЫЙ\",\"markName\":\"KIA\",\"modelName\":\"SPORTAGE\",\"modelMarkName\":\"KIA SPORTAGE \",\"manufacturedYear\":\"2020\",\"govRegNumber\":\"Е151ВЕ790\",\"recordStatus\":\"1\",\"vin\":\"XWEPH81ABM0043185\",\"carcaseNumber\":\"XWEPH81ABM0043185\",\"vehicleType\":\"Легковой универсал\",\"engineModel\":\"G4NA-5R\",\"engineNum\":\"G4NALH310736\",\"enginePowerHorse\":\"149.6\",\"enginePowerVt\":\"110.0\",\"ecologyClass\":\"5\",\"ecologyClassDesc\":\"Пятый\",\"restrictions\":[{\"restrictionType\":\"Запрет на регистрационные действия\",\"status\":\"действует\",\"statusIntValue\":\"1\",\"initiateRegion\":\"г. Москва\",\"mainReason\":\"постановление 134\"}],\"ownerPeriods\":[{\"dateStart\":\"23.10.2020\"}],\"uniqueRowNumber\":\"9999993\",\"stsSeriesNumberFormatted\":\"9923 873237\",\"stsDocumentType\":\"СТС\",\"stsDocumentDate\":\"23.10.2020\",\"stsIssueAgency\":\"ГУОБДД МВД России по го Лобня\",\"ptsNumFormatted\":\"164301011374931\",\"ptsRegDate\":\"21.09.2020\",\"ptsIssueAgency\":\"ООО ЭЛЛАДА ИНТЕРТРЕЙД\",\"manufacturer\":\"ООО ЭЛЛАДА ИНТЕРТРЕЙД\",\"price\":\"250000\",\"gazEnvironmentFlag\":false,\"transmissionType\":\"2\",\"driveUnitType\":\"1\",\"engineType\":\"Бензиновый на бензине\",\"approveSerNum\":\"TC RU E-RU АЯ04 00245 Р2И1\",\"utilizStatus\":\"Уплачен\",\"regActions\":[],\"owner\":{\"lastName\":\"Мелешков\",\"firstName\":\"Александр\",\"middleName\":\"Александрович\",\"birthDay\":\"1986-02-26\",\"birthPlace\":\"ТУЛЬСКАЯ ОБЛАСТЬ\",\"inn\":\"717171717171\",\"regAddress\":\",  , Молодежная\",\"idDocumentType\":\"Свидетельство о регистрации  транспортного средства (приказ МВД России № 346-93)\",\"documentNumSer\":\"9923873237\",\"documentNumSerFormatted\":\"9923 873237\",\"documentDate\":\"2020-10-23\"}},\"notaryInfo\":{\"isPledged\":false},\"vehicleServiceCallResult\":\"SUCCESS\",\"notaryServiceCallResult\":\"SUCCESS\"}"
+            },
+            "carOwnerInfo1": {
+                "visited": true,
+                "value": "Верно"
+            },
+            "carOwnerInfo2": {
+                "visited": true,
+                "value": "Верно"
+            },
+            "pd19d": {
+                "visited": true,
+                "value": "1"
+            },
+            "add16": {
+                "visited": true,
+                "value": "1"
+            },
+            "dp1": {
+                "visited": true,
+                "value": "Перараоа"
+            },
+            "dp2": {
+                "visited": true,
+                "value": "Укпцукп"
+            },
+            "dp3": {
+                "visited": true,
+                "value": "Укпцукпцук"
+            },
+            "dp4": {
+                "visited": true,
+                "value": "{\"rfPasportSeries\":\"6662\",\"rfPasportNumber\":\"213123\",\"oid\":\"1000466578\",\"snils\":\"087-520-480 80\",\"firstName\":\"Инна\",\"lastName\":\"Стриж\",\"middleName\":\"Олеговна\",\"birthDate\":\"1972-10-20\",\"gender\":\"F\",\"exists\":true}"
+            },
+            "pdi1": {
+                "visited": true,
+                "value": ""
+            },
+            "sentTime": {
+                "value": "2021-04-02T20:32:46+03:00"
+            },
+            "booktimer1": {
+                "visited": true,
+                "value": "Проверить договор"
+            },
+            "contractOwner1": {
+                "visited": true,
+                "value": "Верно"
+            },
+            "pd11": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"Стриж Инна Олеговна\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"20.10.1972\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"6662 213123\"},{\"label\":\"Дата выдачи:\",\"value\":\"01.05.2001\"},{\"label\":\"Кем выдан:\",\"value\":\"Воронежским ГУВД\"},{\"label\":\"Код подразделения:\",\"value\":\"212-122\"},{\"label\":\"Место рождения:\",\"value\":\"Житомир\"}]},{\"groupName\":\"\",\"fields\":[{\"label\":\"СНИЛС:\",\"value\":\"087-520-480 80\"}]}],\"storedValues\":{\"firstName\":\"Инна\",\"lastName\":\"Стриж\",\"middleName\":\"Олеговна\",\"birthDate\":\"20.10.1972\",\"birthPlace\":\"Житомир\",\"gender\":\"F\",\"docType\":\"RF_PASSPORT\",\"rfPasportSeries\":\"6662\",\"rfPasportNumber\":\"213123\",\"rfPasportIssueDate\":\"01.05.2001\",\"rfPasportIssuedBy\":\"Воронежским ГУВД\",\"rfPasportIssuedById\":\"212122\",\"rfPasportIssuedByIdFormatted\":\"212-122\",\"citizenship\":\"РОССИЯ\",\"citizenshipCode\":\"RUS\",\"snils\":\"087-520-480 80\"},\"errors\":[]}"
+            },
+            "pd12": {
+                "visited": true,
+                "value": "+7(997)1237895"
+            },
+            "pd13": {
+                "visited": true,
+                "value": "666225646123525245@test.tst.ph"
+            },
+            "pd14": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":\"\",\"districtType\":\"\",\"geoLat\":\"55.162693\",\"building2Type\":\"строение\",\"okato\":\"75401380000\",\"building1Type\":\"\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.162693\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"61.4633775\",\"index\":\"454007\",\"townShortType\":\"\",\"district\":\"\",\"fullAddress\":\"454007, обл. Челябинская, г. Челябинск, пр-кт. Ленина, д. 2, стр. 1, кв. 59\",\"houseCheckbox\":false,\"region\":\"Челябинская\",\"geoLon\":\"61.4633775\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Челябинск\",\"apartmentShortType\":\"кв\",\"house\":\"2\",\"apartmentCheckbox\":false,\"townType\":\"\",\"additionalAreaType\":\"\",\"regionShortType\":\"обл\",\"regionCode\":\"74\",\"districtShortType\":\"\",\"street\":\"Ленина\",\"additionalStreetType\":\"\",\"inCityDistShortType\":\"\",\"additionalAreaShortType\":\"\",\"cityShortType\":\"г\",\"kladrCode\":\"7400000100005080242\",\"building1ShortType\":\"\",\"fiasCode\":\"87367bf7-a262-45e5-a4cb-b1d7728968b1\",\"hasErrors\":0,\"inCityDistType\":\"\",\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Челябинская, г. Челябинск, пр-кт. Ленина\",\"building1\":\"\",\"building2\":\"1\",\"houseShortType\":\"д\",\"building2ShortType\":\"стр\",\"apartment\":\"59\"}}"
+            },
+            "contractOwner2": {
+                "visited": true,
+                "value": "Подписать"
+            },
+            "booktimer2": {
+                "visited": true,
+                "value": "Проверить договор"
+            },
+            "contractOwner3": {
+                "visited": true,
+                "value": "Подписать"
+            },
+            "SellerSignTime": {
+                "value": "2021-04-02T20:34:22.681+03:00"
+            }
+        },
+        "cycledApplicantAnswers": {
+            "answerlist": []
+        },
+        "participants": {
+            "1000466578": {
+                "role": "Coapplicant",
+                "mode": "MentionedApplicant",
+                "component": "dp4"
+            }
+        },
+        "display": {
+            "id": "s28",
+            "name": "Договор купли-продажи заключен",
+            "type": "INFO",
+            "components": [
+                {
+                    "id": "pdi3s",
+                    "type": "InfoScr",
+                    "label": "<h3 class='mb-24'>Договор купли-продажи заключен</h3><h5 class='mt-24 mb-4'>Дата продажи</h5><p class='mt-4 mb-16'>Какая-та дата</p><h5 class='mt-16 mb-4'>Транспортное средство</h5><p class='mt-4 mb-24'>KIA SPORTAGE , <span class='text-color--text-helper'>Е151ВЕ790</span></p><h5 class='mt-24 mb-8'>Что дальше</h5><ol class='mt-8 mb-24'><li>При наличии ПТС заполните ФИО и адрес покупателя, дату продажи и данные договора купли-продажи. Подпишите вместе с покупателем</li><li>Передайте покупателю ключи и оригиналы документов - ПТС, СТС, другие документы (диагностическая карта, сервисная книжка, договор КАСКО)</li></ol><h5 class='mb-12'>Как прекратить учёт</h5><p class='mt-12 mb-8'>В личном кабинете уже создан черновик заявления. Проверьте его и отправьте, если покупатель не зарегистрирует транспортное средство в течение 10 календарных дней</p><p class='mt-8'><a>Открыть заявление</a></p>",
+                    "attrs": {
+                        "actions": [
+                            {
+                                "label": "В личный кабинет",
+                                "value": "В личный кабинет",
+                                "type": "RedirectToLK",
+                                "action": "getNextScreen"
+                            }
+                        ],
+                        "refs": {
+                            "carList.modelMarkName": "carList.value.vehicleInfo.modelMarkName",
+                            "carList.govRegNumber": "carList.value.vehicleInfo.govRegNumber"
+                        }
+                    },
+                    "arguments": {},
+                    "value": "",
+                    "required": true
+                }
+            ],
+            "infoComponents": [],
+            "terminal": true,
+            "accepted": true,
+            "firstScreen": true,
+            "impasse": false
+        },
+        "serviceInfo": {
+            "department": {
+                "id": "10000001197",
+                "title": "Министерство внутренних дел Российской Федерации"
+            },
+            "error": "Region not found",
+            "userRegion": {
+                "name": "Белгородская область",
+                "path": "Белгородская область",
+                "codes": [
+                    "14000000000"
+                ]
+            },
+            "statusId": 0
+        },
+        "attachmentInfo": {},
+        "additionalParameters": {
+            "orderId": 763768526,
+            "oid": "1000299353",
+            "snils": "000-000-000 57",
+            "firstName": "Николай",
+            "lastName": "Николаев",
+            "middleName": "Николаевич",
+            "birthDate": "03.05.1974",
+            "gender": "M",
+            "citizenship": "РОССИЯ",
+            "citizenshipCode": "RUS",
+            "serviceId": "10000000123",
+            "targetId": "-10000000123",
+            "timezone": "+3",
+            "masterId": "763768526",
+            "masterOid": "1000299353",
+            "masterSnils": "000-000-000 57",
+            "masterFirstName": "Николай",
+            "masterLastName": "Николаев",
+            "masterMiddleName": "Николаевич",
+            "masterBirthDate": "03.05.1974",
+            "masterGender": "M",
+            "masterCitizenship": "РОССИЯ",
+            "masterCitizenshipCode": "RUS",
+            "masterTimezone": "+3"
+        },
+        "serviceParameters": {},
+        "generatedFiles": [],
+        "gender": "M",
+        "version": 2,
+        "id": 763768526,
+        "extId": 763768526
+    }
+}

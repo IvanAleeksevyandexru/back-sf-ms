@@ -1,0 +1,30 @@
+server:
+  port: 8095
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: voskhod-adapter-service
+    env: dev
+
+pgu.uddi.url: http://pgu-dev-fednlb.test.gosuslugi.ru/juddiv3/services/inquiry?wsdl
+
+ru.nvg.idecs.uddi.inquiryUrl: http://pgu-dev-fednlb.test.gosuslugi.ru/juddiv3/services/inquiry
+
+sp:
+  integration: http://localhost:8090
+
+esep-service:
+  # Включение интеграции с сервисом EsepService (Восход).
+  enabled: false
+  # url mock сервиса Esep.
+  mock-url: http://localhost:8096
+
+config-service:
+  # Включение интеграции с сервисом ConfigService.
+  enabled: true
+
+esep:
+  login: uat
+  password: uat+1

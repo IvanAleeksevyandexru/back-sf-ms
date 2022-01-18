@@ -1,0 +1,63 @@
+#if($q1 == "Зарегистрироваться")
+##    Applicant part
+    #if($fai2 && $fai2!="")
+        {"className":"FormStep", "label": "Ваши дополнительные данные", "value": ""},
+        ##{"className":"Panel", "label": "Сведения о гражданстве", "value": ""},
+        {"className":"Panel", "label": "Место рождения", "value": ""},
+        {"className":"FieldText", "label": "Страна", "value": "$fai2['text']"},
+
+        #if($fai3_1 && $fai3_1['text']!="")
+            {"className":"FieldText", "label": "Субъект", "value": "$fai3_1['text']"},
+        #end
+        #if($fai3 && $fai3['text']!="")
+            {"className":"FieldText", "label": "Республика", "value": "$fai3['text']"},
+        #end
+        #if($fai3_2 && $fai3_2!="")
+            {"className":"FieldText", "label": "Район", "value": "$fai3_2"},
+        #end
+        #if($fai3_3 && $fai3_3!="")
+            {"className":"FieldText", "label": "Регион", "value": "$fai3_3"},
+        #end
+        #if($fai3_1 && $fai3_1['text'] == "г. Москва" || $fai3_1['text'] == "г. Санкт-Петербург" || $fai3_1['text'] == "г. Севастополь")
+            {"className":"FieldText", "label": "Город", "value": "$fai3_1['text']"},
+        #end
+        #if($fai4)
+            {"className":"FieldText", "label": "Населенный пункт", "value": "$fai4"},
+        #end
+        #if($fai99)
+            {"className":"FieldText", "label": "Административный район", "value": "$fai99"},
+        #end
+
+        #if($fai6 && $fai6['text'])
+            {"className":"Panel", "label": "Предыдущее место проживания", "value": ""},
+            {"className":"FieldText", "label": "Страна", "value": "$fai6['text']"},
+        #if($fai6_1 && $fai6_1['text']!="")
+            {"className":"FieldText", "label": "Республика", "value": "$fai6_1['text']"},
+        #end
+        #if($fai7 && $fai7['text']!="")
+            {"className":"FieldText", "label": "Субъект", "value": "$fai7['text']"},
+        #end
+        #if($fai8)
+            {"className":"FieldText", "label": "Район", "value": "$fai8"},
+        #end
+        #if($fai8_1)
+            {"className":"FieldText", "label": "Регион (область,район)", "value": "$fai8_1"},
+        #end
+        #if($fai9)
+            {"className":"FieldText", "label": "Населенный пункт", "value": "$fai9"},
+        #end
+        #if($fai9_1)
+            {"className":"FieldText", "label": "Населенный пункт", "value": "$fai9_1"},
+        #end
+            {"className":"FieldText", "label": "Год, с которого проживали на предыдущем месте", "value": "$fai10['text']"},
+            {"className":"FieldText", "label": "Причина переселения", "value": "$fai12['text']"},
+        #end
+
+        #if($fai14 && $fai14['text'])
+            {"className":"Panel", "label": "Личная информация", "value": ""},
+            {"className":"FieldText", "label": "Вид занятий (профессия)", "value": "$fai14['text']"},
+            {"className":"FieldText", "label": "Образование", "value": "$fai15['text']"},
+            {"className":"FieldText", "label": "Семейное положение", "value": "$fai16['text']"},
+        #end
+    #end
+#end

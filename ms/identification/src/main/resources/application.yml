@@ -1,0 +1,34 @@
+server:
+  port: 8097
+  servlet:
+    context-path: /identification-ms
+  encoding:
+    charset: UTF-8
+
+esia:
+  auth:
+    exclude-urls: /identification-ms/actuator,/identification-ms/swagger-ui.html,/identification-ms/v3/api-docs,/identification-ms/webjar,/identification-ms/swagger-resources
+
+spring:
+  application:
+    name: identification-service
+    env: dev
+    version: 0.1
+
+luna:
+  handler-id: ca2520ac-f80a-4aaa-9451-f172e2794313
+  account-id: 6d071cca-fda5-4a03-84d5-5bea65904480
+  verifier-id: a746de3f-7539-4a45-8162-ee3064d63db5
+  api-url: http://guc.notamedia.ru:5000
+
+smart-engine:
+  enabled: true
+  config-path: /jni-lib/bundle_passport_anywhere.se
+  document-type: rus.passport.*
+  token: 70f93a3fe0d21fc2c1a7e35937693aeaa47d40532d7ae339f455d7042a770734c7e18c3658c103c965886a800ea2ac8efdc3be433cfc0bb1bf2c1db7406f1e37577e99be6b9bd5c8af87e5faf351bcbd3e0695e3e7e72514d0df6e0d6fb616dfe46512f94460b0cd3167095864dd353d7009c2dd50f419127036002406998467
+
+terrabyte:
+  client:
+    storage-url: http://pgu-uat-fed.test.gosuslugi.ru/api/storage/v1
+    internal-storage-url: http://pgu-uat-feddsnlb.test.gosuslugi.ru/storageservice/internal/api/storage
+    internal-dataservice-url: http://pgu-uat-feddsnlb.test.gosuslugi.ru/storageservice/internal/api/dataservice

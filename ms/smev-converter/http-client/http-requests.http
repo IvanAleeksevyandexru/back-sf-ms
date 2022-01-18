@@ -1,0 +1,35 @@
+### Эталонный запрос №3 в СМЭВ конвертер
+POST http://local.test.gosuslugi.ru:8092/api/services/get
+Accept: application/json
+Content-Type: application/json
+
+{
+  "data": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ns1:InputData env=\"TCOD\" xmlns:ns1=\"urn://egisz.rosminzdrav.ru/ChoiceMedicalOrg/1.0.4\">\n  <ns1:MedicalOrgListRequest>\n    <ns1:RegionCode>79000</ns1:RegionCode>\n    <ns1:ApplicationSpec>Терапевтический</ns1:ApplicationSpec>\n    <ns1:AgeCategory>взрослое</ns1:AgeCategory>\n    <ns1:Address>\n      <ns1:FullAddressText>385003, Республика Адыгея, г.Майкоп, ул.Прохладная, д.21, кв.1</ns1:FullAddressText>\n      <ns1:RegionCode>79000</ns1:RegionCode>\n      <ns1:RegionName code=\"d8327a56-80de-4df2-815c-4f6ab1224c50\">Республика Адыгея (Адыгея)</ns1:RegionName>\n      <ns1:City code=\"8cfbe842-e803-49ca-9347-1ef90481dd98\">Майкоп</ns1:City>\n      <ns1:Street code=\"b24d08cf-c46b-4859-9590-6cf7b1387185\">Прохладная</ns1:Street>\n      <ns1:House code=\"b81ac4fa-ca17-4e93-986f-e5b78894f67f\">21</ns1:House>\n      <ns1:Flat>1</ns1:Flat>\n      <ns1:PostalIndex>385003</ns1:PostalIndex>\n    </ns1:Address>\n  </ns1:MedicalOrgListRequest>\n</ns1:InputData>",
+  "serviceId": "10000000360",
+  "templateName": "MedicalOrgList"
+}
+
+
+### Томск
+POST http://local.test.gosuslugi.ru:8092/api/services/get
+Accept: application/json
+Content-Type: application/json
+
+{
+  "data": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><ns1:InputData env=\"TCOD\" xmlns:ns1=\"urn://egisz.rosminzdrav.ru/ChoiceMedicalOrg/1.0.4\"><ns1:MedicalOrgListRequest><ns1:RegionCode>69000</ns1:RegionCode><ns1:ApplicationSpec>Терапевтический</ns1:ApplicationSpec><ns1:AgeCategory>взрослое</ns1:AgeCategory><ns1:Address><ns1:FullAddressText>170021, г Тверь, ул Докучаева, д 11</ns1:FullAddressText><ns1:RegionCode>69000</ns1:RegionCode><ns1:RegionName code=\"61723327-1c20-42fe-8dfa-402638d9b396\">Тверская</ns1:RegionName><ns1:City code=\"c52ea942-555e-45c6-9751-58897717b02f\">Тверь</ns1:City><ns1:Street code=\"563dee7e-2d11-4e93-9ff5-b96efd2d59d6\">Докучаева</ns1:Street><ns1:House code=\"73b9acf6-8700-4774-abce-a53595a3a243\">11</ns1:House><ns1:Flat></ns1:Flat><ns1:PostalIndex>170021</ns1:PostalIndex></ns1:Address></ns1:MedicalOrgListRequest></ns1:InputData>",
+  "serviceId": "10000000360",
+  "templateName": "MedicalOrgList"
+}
+
+
+### Эталонный запрос №3 в барбарбок (СМЭВ)
+POST http://kuber.gosuslugi.local:15227/barbarbok/internal/api/barbarbok/v1/get
+Accept: application/json
+Content-Type: application/json
+
+{
+  "data": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ns1:InputData env=\"TCOD\" xmlns:ns1=\"urn://egisz.rosminzdrav.ru/ChoiceMedicalOrg/1.0.4\">\n  <ns1:MedicalOrgListRequest>\n    <ns1:RegionCode>79000</ns1:RegionCode>\n    <ns1:ApplicationSpec>Терапевтический</ns1:ApplicationSpec>\n    <ns1:AgeCategory>взрослое</ns1:AgeCategory>\n    <ns1:Address>\n      <ns1:FullAddressText>385003, Республика Адыгея, г.Майкоп, ул.Прохладная, д.21, кв.1</ns1:FullAddressText>\n      <ns1:RegionCode>79000</ns1:RegionCode>\n      <ns1:RegionName code=\"d8327a56-80de-4df2-815c-4f6ab1224c50\">Республика Адыгея (Адыгея)</ns1:RegionName>\n      <ns1:City code=\"8cfbe842-e803-49ca-9347-1ef90481dd98\">Майкоп</ns1:City>\n      <ns1:Street code=\"b24d08cf-c46b-4859-9590-6cf7b1387185\">Прохладная</ns1:Street>\n      <ns1:House code=\"b81ac4fa-ca17-4e93-986f-e5b78894f67f\">21</ns1:House>\n      <ns1:Flat>1</ns1:Flat>\n      <ns1:PostalIndex>385003</ns1:PostalIndex>\n    </ns1:Address>\n  </ns1:MedicalOrgListRequest>\n</ns1:InputData>",
+  "ttl": 10,
+  "timeout" : 300,
+  "smevVersion": "SMEV30MESSAGE"
+}

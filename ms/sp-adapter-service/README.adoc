@@ -1,0 +1,151 @@
+# Service Processing Adapter
+
+.таблица кофигурирования
+
+|===
+|Ключ |Тип  |Описание
+
+|spring.kafka
+|Section
+|Настройка обмена через kafka
+
+#Дальше ниже тильда ~ как spring.kafka#
+
+|~.bootstrap-servers
+|Строка
+|Адрес подключения к kafka
+
+```localhost:9092```
+
+|~.analytics
+|Секция
+|Настрока топика для  аналитиков
+
+|~.analytics.enabled
+|boolean
+|Флаг включения
+
+|~.analytics.topic-auto-creation
+|Логический
+|Флаг автоматического создания
+
+|~.analytics.target-topic
+|Секция
+|Секция настройки топика
+
+|~.analytics.target-topic.topic-name
+|Строка
+|Название топика
+
+|~.analytics.target-topic.topic-partitions
+|Целое
+|Кол-во партиций
+
+|~.analytics.target-topic.topic-replication-factor
+|Целое
+|Количество копий данных по нескольким брокерам
+
+|~.suggestions
+|Секция
+|Сагешны (я не знаю, так сказали... ```¯\\_(ツ)_/¯```)
+
+|~.suggestions.topic-auto-creation
+|Логический
+|Флаг автоматического создания
+
+|~.suggestions.target-topic
+|Секция
+|Секция настройки топика
+
+|~.suggestions.target-topic.topic-name
+|Строка
+|Название топика
+
+|~.suggestions.target-topic.topic-partitions
+|Целое
+|Кол-во партиций
+
+|~.suggestions.target-topic.topic-replication-factor
+|Целое
+|Количество копий данных по нескольким брокерам
+
+|~.form-service
+|Секция
+|Секция настройки обмена с сервисом форм
+
+|~.form-service.enabled
+|Логический
+|Флаг включение обмена с сервисом форм через кафка (интерфейс http остается доступным)
+
+|~.form-service.topic-name
+|Строка
+|Название топика севиса форм
+
+|~.form-service.sp-errors-topic-name
+|Строка
+|Названпие топика для ошибочных запросов, которые завершились с ошибкой на стороне SP
+
+|~.form-service.self-errors-topic-name
+|Строка
+|Название топика для ошибочных запросов которые заершились с ошибкой на стороне SPAdapter
+
+|~.form-service.sp-errors-partitions
+|Целое
+|Кол-во партиций
+
+|~.form-service.self-errors-partitions
+|Целое
+|Кол-во партиций
+
+|~.form-service.sp-errors-replication-factor
+|Целое
+|Количество копий данных по нескольким брокерам
+
+|~.form-service.self-errors-replication-factor
+|Целое
+|Количество копий данных по нескольким брокерам
+
+|~.zipkin
+|Секция
+|Секция настройки zipkin
+
+https://cloud.spring.io/spring-cloud-sleuth/reference/html/appendix.html[ссылка на описание] ```(╭ರ_⊙)```
+
+|===
+
+.Пример
+```
+spring:
+  kafka:
+    # Адрес для подключения к кафке
+    bootstrap-servers: localhost:9092
+
+    analytics:
+        # Включает или выключает отправку событий по JMS
+        enabled: false
+        sender-threads: 5
+        topic-auto-creation: true
+        target-topic:
+          topic-name: analitics-topic
+          topic-partitions: 1
+          topic-replication-factor: 1
+
+    suggestions:
+        # Включает или выключает отправку событий
+        enabled: false
+        sender-threads: 5
+        target-topic:
+          topic-name: suggestions-topic
+          topic-partitions: 1
+          topic-replication-factor: 1
+
+    form-service:
+      enabled: true
+      topic-name: sp-adapter
+      sp-errors-topic-name: sp-errors
+      self-errors-topic-name: self-errors
+      sp-errors-partitions: 1
+      self-errors-partitions: 1
+      sp-errors-replication-factor: 1
+      self-errors-replication-factor: 1
+```

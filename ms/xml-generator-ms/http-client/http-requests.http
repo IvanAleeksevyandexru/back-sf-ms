@@ -1,0 +1,60 @@
+# Коллекция запросов для локального тестирования xml-service (требуется IDEA Ultimate).
+# Alt+Enter на первой строке запроса > Run with 'local' environment
+# В ./http-client/http-client.env.json можно определить переменные xmlService,
+# serviceId, userId.
+
+### business xml
+POST {{xmlService}}/api/services/xml/generate
+Content-Type: application/json
+Accept: application/xml;charset=utf-8, application/json
+
+{
+  "serviceId": {{serviceId}},
+  "orderId": 764207324,
+  "userId": {{userId}},
+  "fileDescription": {
+    "type" : "REQUEST",
+    "fileName" : "req.xml",
+    "extensionDisplay" : true,
+    "addedFileName" : "GUID",
+    "mnemonic" : null,
+    "addedMnemonic" : "NONE",
+    "attachmentType" : "REQUEST",
+    "templates" : {
+      "Coapplicant" : "{{serviceId}}/{{serviceId}}_Coapplicant",
+      "Applicant" : "{{serviceId}}/{{serviceId}}_Applicant",
+      "ChildrenAbove14" : "{{serviceId}}/{{serviceId}}_ChildrenAbove14",
+      "NotParticipant" : "{{serviceId}}/{{serviceId}}_NotParticipant",
+      "ChildrenUnder14" : "{{serviceId}}/{{serviceId}}_ChildrenUnder14"
+    }
+  },
+  "roleId": "Applicant"
+}
+
+### transport xml
+POST {{xmlService}}/api/services/xml/generate/stream
+Content-Type: application/json
+Accept: application/xml;charset=utf-8, application/json
+
+{
+  "serviceId": {{serviceId}},
+  "orderId": 764207380,
+  "userId": {{userId}},
+  "fileDescription": {
+    "type" : "XML",
+    "fileName" : "trans.xml",
+    "extensionDisplay" : true,
+    "addedFileName" : "GUID",
+    "mnemonic" : null,
+    "addedMnemonic" : "NONE",
+    "attachmentType" : "LK",
+    "templates" : {
+      "Coapplicant" : "{{serviceId}}/t_{{serviceId}}",
+      "Applicant" : "{{serviceId}}/t_{{serviceId}}",
+      "ChildrenAbove14" : "{{serviceId}}/t_{{serviceId}}",
+      "NotParticipant" : "{{serviceId}}/t_{{serviceId}}",
+      "ChildrenUnder14" : "{{serviceId}}/t_{{serviceId}}"
+    }
+  },
+  "roleId": "ChildrenUnder14"
+}

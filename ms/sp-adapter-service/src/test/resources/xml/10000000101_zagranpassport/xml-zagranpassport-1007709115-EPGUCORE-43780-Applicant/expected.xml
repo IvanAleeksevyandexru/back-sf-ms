@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:PgsDocumentsRequest dateTime="2020-12-30T15:50:47+06:00" env="TCOD"
+    xmlns="http://xsd.gspvd/v001/smev3/pgs/types/1.0.3" xmlns:ns2="http://xsd.gspvd/v001/smev3/pgs/1.0.3">
+    <ns2:OrderId>1007709115</ns2:OrderId>
+    <ns2:PassportIssueRequest>
+        <Department>MVD</Department>
+        <ServiceCode>10001959166</ServiceCode>
+        <TargetCode>10001970310_5</TargetCode>
+        <StatementDate>2021-01-12</StatementDate>
+        <OKTMO>00000000000</OKTMO>
+        <DepartmentCode>100050002</DepartmentCode>
+        <AdultOrIncapablePerson>
+            <PersonData>
+                <FirstName>ИННА</FirstName>
+                <LastName>ИМБИРНАЯ</LastName>
+                <Patronymic>ИОАНОВНА</Patronymic>
+                <Gender>М</Gender>
+                <BirthDate>
+                    <year>2003</year>
+                    <month>--07</month>
+                    <day>---17</day>
+                </BirthDate>
+                <BirthPlace>
+                    <CountryCyr>РОССИЯ</CountryCyr>
+                    <OriginalPlaceOfBirth>Ярославль</OriginalPlaceOfBirth>
+                </BirthPlace>
+            </PersonData>
+            <PermanentResidence>
+                <Location>
+                    <Country>Россия</Country>
+                    <RegionName>Московская обл.</RegionName>
+                    <Locality>Балашиха г.</Locality>
+                    <Street>Восточная ул.</Street>
+                    <House>5</House>
+                    <Flat>3</Flat>
+                </Location>
+                <RegistrationDate>2017-08-31</RegistrationDate>
+            </PermanentResidence>
+            <ContactInfo>
+                <Phone>+7(901)7896872</Phone>
+                <Email>olyalya94@mail.ru</Email>
+            </ContactInfo>
+            <Document>
+                <Series>0001</Series>
+                <Number>253353</Number>
+                <IssueDate>2015-09-16</IssueDate>
+                <DocumentIssuer>ФМС</DocumentIssuer>
+            </Document>
+            <ReceiptMode>Первичное</ReceiptMode>
+            <ControlInfo>
+                <IsRecruited>false</IsRecruited>
+                <IsConvicted>false</IsConvicted>
+                <IsSuspectedOrDefendant>false</IsSuspectedOrDefendant>
+                <IsJudicialObligated>false</IsJudicialObligated>
+                <IsInsolvent>false</IsInsolvent>
+            </ControlInfo>
+            <DoNotHaveAnotherForeignPassports>true</DoNotHaveAnotherForeignPassports>
+            <EmploymentHistory>
+                <JoinUpDate>09.2009</JoinUpDate>
+                <DismissalDate>07.2011</DismissalDate>
+                <EmployerData>Обучался усш</EmployerData>
+                <EmployerAddress>шангалы</EmployerAddress>
+            </EmploymentHistory>
+            <EmploymentHistory>
+                <JoinUpDate>08.2011</JoinUpDate>
+                <DismissalDate>08.2011</DismissalDate>
+                <EmployerData>Не работал</EmployerData>
+                <EmployerAddress>дом</EmployerAddress>
+            </EmploymentHistory>
+            <EmploymentHistory>
+                <JoinUpDate>09.2011</JoinUpDate>
+                <DismissalDate>09.2015</DismissalDate>
+                <EmployerData>Обучался яргу</EmployerData>
+                <EmployerAddress>ярославль</EmployerAddress>
+            </EmploymentHistory>
+            <EmploymentHistory>
+                <JoinUpDate>09.2015</JoinUpDate>
+                <DismissalDate>12.2020</DismissalDate>
+                <EmployerData>руководитель ао ртлабс</EmployerData>
+                <EmployerAddress>москва</EmployerAddress>
+            </EmploymentHistory>
+            <PhotoId>d33.PhotoUploadComponent.passport_photo.0</PhotoId>
+        </AdultOrIncapablePerson>
+    </ns2:PassportIssueRequest>
+</ns2:PgsDocumentsRequest>

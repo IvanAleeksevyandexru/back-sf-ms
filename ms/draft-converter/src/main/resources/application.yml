@@ -1,0 +1,21 @@
+server:
+    port: 8097
+    servlet:
+      context-path: /api
+
+spring:
+    application:
+        name: draft-converter
+        env: dev
+        version: 1.0
+
+service-descriptor-storage-client:
+    url: http://127.0.0.1:8096
+    integration: true
+
+template-service:
+    file-resource-loader-path: ms/draft-converter/vm-templates
+
+springdoc:
+    packagesToScan: ru.gosuslugi.pgu.draftconverter
+    pathsToMatch: /**

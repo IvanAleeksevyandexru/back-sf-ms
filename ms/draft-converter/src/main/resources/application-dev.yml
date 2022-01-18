@@ -1,0 +1,21 @@
+server:
+    port: 8097
+    servlet:
+      context-path: /api
+
+spring:
+    application:
+        name: draft-converter
+        env: dev
+        version: 1.0
+
+service-descriptor-storage-client:
+    url: http://dev01.pgu2-pub.test.gosuslugi.ru/service-descriptor-storage/
+    integration: true
+
+template-service:
+    file-resource-loader-path: ms/draft-converter/vm-templates
+
+springdoc:
+    packagesToScan: ru.gosuslugi.pgu.draftconverter
+    pathsToMatch: /**

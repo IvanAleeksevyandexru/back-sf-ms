@@ -1,0 +1,34 @@
+
+= Сервис для взаимодействия с отдельными шаблонами процесса
+
+== Получение шаблона документа по заданному serviceId и пути шаблона
+
+_/v1/singletemplates/{*serviceId*}?*path*=**...**_
+
+include::{snippets}/singletemplates/get/path-parameters.adoc[]
+include::{snippets}/singletemplates/get/request-parameters.adoc[]
+
+include::{snippets}/singletemplates/get/curl-request.adoc[]
+
+Возможные ответы: +
+Положительный результат - файл шаблона в виде Base64 строки
+include::{snippets}/singletemplates/get/http-response.adoc[]
+Шаблон по указанному пути не найден
+include::{snippets}/singletemplates/wrongpath/http-response.adoc[]
+Архив шаблонов не является ZIP файлом или повреждён:
+include::{snippets}/singletemplates/wrongarchive/http-response.adoc[]
+
+== Получение CRC шаблона документа по заданному serviceId и пути шаблона
+/v1/singletemplates/{*serviceId*}/crc?*path*=...
+include::{snippets}/singletemplatescrc/get/path-parameters.adoc[]
+include::{snippets}/singletemplatescrc/get/request-parameters.adoc[]
+
+include::{snippets}/singletemplatescrc/get/curl-request.adoc[]
+
+Возможные ответы: +
+Положительный результат - Long значение CRC в виде строки
+include::{snippets}/singletemplatescrc/get/http-response.adoc[]
+Шаблон по указанному пути не найден
+include::{snippets}/singletemplatescrc/wrongpath/http-response.adoc[]
+Архив шаблонов не является ZIP файлом или повреждён:
+include::{snippets}/singletemplatescrc/wrongarchive/http-response.adoc[]

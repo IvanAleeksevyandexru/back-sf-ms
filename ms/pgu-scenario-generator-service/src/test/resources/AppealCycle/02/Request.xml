@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:AppealCycleRequest xmlns:ns3="urn://web.gibdd.ru/appeal-fines-gibdd/appeal-cycle/1.0.2"
+                        xmlns="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2"
+                        Id="Q-80ba80d8-a7d5-4655-b482-25d1d448fc07"
+                        routeNumber="MVDR22"
+                        timestamp="2020-12-22T18:56:28.712+03:00"
+                        uin="18810520210211000017">
+    <ns3:Callback RefId="R-87d04904-85dc-4ff0-91a8-f98babb5cecf">
+        <Result code="0"/>
+    </ns3:Callback>
+</ns3:AppealCycleRequest>

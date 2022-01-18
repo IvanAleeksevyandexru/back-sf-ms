@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="http://xsd.gspvd/v001/smev3/pgs/types/1.0.3"
+            targetNamespace="http://xsd.gspvd/v001/smev3/pgs/types/1.0.3"
+            elementFormDefault="qualified">
+
+  <xsd:complexType name="PassportIssueRequestType">
+    <xsd:annotation>
+      <xsd:documentation>Запрос с заявлением о выдаче заграничного паспорта нового поколения.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="Department" type="tns:String20Type"/>
+      <xsd:element name="ServiceCode" type="tns:String20Type"/>
+      <xsd:element name="TargetCode" type="tns:TargetCodeType"/>
+      <xsd:element name="StatementDate" type="xsd:date"/>
+      <xsd:element name="OKTMO" type="tns:String11Type"/>
+      <xsd:element name="DepartmentCode" type="tns:DepartmentCodeType"/>
+      <xsd:choice>
+        <xsd:element name="AdultOrIncapablePerson" type="tns:AdultOrIncapablePersonType"/>
+        <xsd:element name="UnderagePerson" type="tns:UnderagePersonType"/>
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="PassportIssueResponseType">
+    <xsd:annotation>
+      <xsd:documentation>Ответ на запрос о выдаче заграничного паспорта нового поколения.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="StatusCode" type="tns:StatusCodeType"/>
+      <xsd:element name="Comment" type="tns:TextType" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CancelRequestType">
+    <xsd:annotation>
+      <xsd:documentation>Запрос на отмену заявления.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="Reason" type="tns:String2048Type" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CancelResponseType">
+    <xsd:annotation>
+      <xsd:documentation>Ответ на запрос на отмену заявления.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="Result" type="tns:CancelResultType"/>
+      <xsd:element name="Comment" type="tns:TextType" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="TextMessageRequestType">
+    <xsd:annotation>
+      <xsd:documentation>Текстовое сообщение.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="Text" type="tns:TextType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="TextMessageResponseType">
+    <xsd:annotation>
+      <xsd:documentation>Ответ на текстовое сообщение.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="Result" type="xsd:string" fixed="OK"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="UnderagePersonType">
+    <xsd:annotation>
+      <xsd:documentation>Несовершеннолетний гражданин.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="PersonData" type="tns:PersonDataType"/>
+      <xsd:element name="PersonDataChangeInfo" type="tns:PersonDataChangeInfoType" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="PermanentResidence" type="tns:PermanentResidenceType" minOccurs="0"/>
+      <xsd:element name="TemporaryResidence" type="tns:TemporaryResidenceType" minOccurs="0"/>
+      <xsd:element name="Document" type="tns:DocumentType"/>
+      <xsd:element name="ReceiptMode" type="tns:ReceiptModeType"/>
+      <xsd:element name="ForeignPassport" type="tns:ExistingForeignPassport" minOccurs="0" maxOccurs="2"/>
+      <xsd:element name="DoNotHaveAnotherForeignPassports" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>Других действующих паспортов не имею.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="LegalRepresentative" type="tns:LegalRepresentativeType"/>
+      <xsd:element name="PhotoId" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Фотография (Идентификатор вложения в СМЭВ-конверте
+            //AttachmentHeaderList/AttachmentHeader/contentId).
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="AdultOrIncapablePersonType">
+    <xsd:annotation>
+      <xsd:documentation>Совершеннолетний гражданин или гражданин, признанный недееспособным.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="PersonData" type="tns:PersonDataType"/>
+      <xsd:element name="PersonDataChangeInfo" type="tns:PersonDataChangeInfoType" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="PermanentResidence" type="tns:PermanentResidenceType" minOccurs="0"/>
+      <xsd:element name="TemporaryResidence" type="tns:TemporaryResidenceType" minOccurs="0"/>
+      <xsd:element name="ContactInfo" type="tns:ContactInfoType" minOccurs="0"/>
+      <xsd:element name="Document" type="tns:DocumentType"/>
+      <xsd:element name="ReceiptMode" type="tns:ReceiptModeType"/>
+      <xsd:element name="ControlInfo" type="tns:ControlInfoType"/>
+      <xsd:element name="ForeignPassport" type="tns:ExistingForeignPassport" minOccurs="0" maxOccurs="2"/>
+      <xsd:element name="DoNotHaveAnotherForeignPassports" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>Других действующих паспортов не имею.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="EmploymentHistory" type="tns:EmploymentHistoryRecordType" maxOccurs="unbounded"/>
+      <xsd:element name="LegalRepresentative" type="tns:LegalRepresentativeType" minOccurs="0"/>
+      <xsd:element name="PhotoId" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Фотография (Идентификатор вложения в СМЭВ-конверте
+            //AttachmentHeaderList/AttachmentHeader/contentId).
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="LegalRepresentativeType">
+    <xsd:annotation>
+      <xsd:documentation>Сведения о законном представителе недееспособного.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="PersonData" type="tns:LegalRepresentativePersonDataType"/>
+      <xsd:element name="PermanentResidence" type="tns:PermanentResidenceType" minOccurs="0"/>
+      <xsd:element name="TemporaryResidence" type="tns:TemporaryResidenceType" minOccurs="0"/>
+      <xsd:element name="ContactInfo" type="tns:ContactInfoType" minOccurs="0"/>
+      <xsd:element name="Document" type="tns:DocumentType"/>
+      <xsd:element name="TheRightToBe" type="tns:TheRightToBeType"/>
+      <xsd:element name="AnotherLegalRepresentativePersonData" type="tns:LegalRepresentativePersonDataType"
+                   minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Персональные данные другого законного представителя.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="TheRightToBeType">
+    <xsd:annotation>
+      <xsd:documentation>Документ, подтверждающий право законного представителя.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="Series" type="tns:SeriesType" minOccurs="0"/>
+      <xsd:element name="Number" type="tns:NumberType" minOccurs="0"/>
+      <xsd:element name="IssueDate" type="tns:DateType"/>
+      <xsd:element name="DocumentIssuer" type="tns:Address255Type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="DocumentType">
+    <xsd:annotation>
+      <xsd:documentation>Документ, удостоверяющий личность.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="Series" type="tns:SeriesType" minOccurs="0"/>
+      <xsd:element name="Number" type="tns:NumberType"/>
+      <xsd:element name="IssueDate" type="tns:DateType"/>
+      <xsd:element name="DocumentIssuer" type="tns:Address255Type"/>
+      <xsd:element name="DocumentName" type="tns:DocumentNameType" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="EmploymentHistoryRecordType">
+    <xsd:annotation>
+      <xsd:documentation>Сведения о трудовой деятельности.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="JoinUpDate" type="tns:JoinUpDateType"/>
+      <xsd:element name="DismissalDate" type="tns:DismissalDateType"/>
+      <xsd:element name="EmployerData" type="tns:EmployerStringType">
+        <xsd:annotation>
+          <xsd:documentation>Должность и место работы (учебы, службы, номер войсковой части).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="EmployerAddress" type="tns:EmployerAddressType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="ControlInfoType">
+    <xsd:annotation>
+      <xsd:documentation>Обстоятельства, при которых может быть ограничено право на выезд.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="SecretAccessAndContractObligation" type="tns:SecretAccessAndContractObligationType"
+                   minOccurs="0"/>
+      <xsd:element name="IsRecruited" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>Призваны на военную службу или направлены на альтернативную гражданскую службу (для мужчин
+            в возрасте от 18 до 27 лет).
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="IsConvicted" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>Осуждены за совершение преступления (не указывать после отбытия (исполнения наказания) или
+            освобождения от наказания).
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="IsSuspectedOrDefendant" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>Являетесь подозреваемым или обвиняемым.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="IsJudicialObligated" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>Уклоняетесь от исполнения обязательств, наложенных суд.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="IsInsolvent" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>Признаны несостоятельным/банкротом.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SecretAccessAndContractObligationType">
+    <xsd:annotation>
+      <xsd:documentation>Сведения об организации, перед которой имеются обязательства или в которой оформлен допуск к
+        государственной тайне.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="SecretAccess" type="xsd:boolean"/>
+      <xsd:element name="ContractObligation" type="xsd:boolean"/>
+      <xsd:element name="Organization" type="tns:LongStringType" minOccurs="0"/>
+      <xsd:element name="Year" minOccurs="0">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:gYear">
+            <xsd:minInclusive value="1900"/>
+            <xsd:maxInclusive value="2200"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="ExistingForeignPassport">
+    <xsd:annotation>
+      <xsd:documentation>Сведения о заграничном паспорте нового поколения.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="Series" type="tns:PVDNPSimpleSeriesType"/>
+      <xsd:element name="Number" type="tns:PVDNPSimpleNumberType"/>
+      <xsd:element name="IssueDate" type="tns:DateType"/>
+      <xsd:element name="DocumentIssuer" type="tns:DocumentIssuerType"/>
+      <xsd:element name="WillBeGivenForAnnul" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>Будет представлен для аннулирования.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Lost" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>Утрачен.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="ContactInfoType">
+    <xsd:annotation>
+      <xsd:documentation>Контактная информация.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="Phone" type="tns:PhoneType" minOccurs="0"/>
+      <xsd:element name="Email" type="tns:EmailType" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="TemporaryResidenceType">
+    <xsd:annotation>
+      <xsd:documentation>Адрес места пребывания или фактического проживания.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="Location" type="tns:LocationType"/>
+      <xsd:element name="RegistrationDate" type="tns:RegistrationPeriodType" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="RegistrationPeriodType">
+    <xsd:annotation>
+      <xsd:documentation>Срок регистрации по месту пребывания.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="RegistrationDate" type="tns:DateType">
+        <xsd:annotation>
+          <xsd:documentation>Срок регистрации c.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="RegistrationExpiryDate" type="tns:DateType">
+        <xsd:annotation>
+          <xsd:documentation>Срок регистрации по.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="PermanentResidenceType">
+    <xsd:annotation>
+      <xsd:documentation>Адрес места жительства.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="Location" type="tns:LocationType"/>
+      <xsd:element name="RegistrationDate" type="tns:DateType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="LocationType">
+    <xsd:annotation>
+      <xsd:documentation>Место жительства (регистрации).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="Country" type="tns:Address255Type" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Страна.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="RegionName" type="tns:Address255Type">
+        <xsd:annotation>
+          <xsd:documentation>Субъект.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="District" type="tns:Address255Type" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Район.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Locality" type="tns:Address255Type">
+        <xsd:annotation>
+          <xsd:documentation>Населенный пункт.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Street" type="tns:Address255Type" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Улица.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="House" type="tns:Address10Type">
+        <xsd:annotation>
+          <xsd:documentation>Дом.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Housing" type="tns:Address10Type" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Корпус.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Building" type="tns:Address10Type" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Строение.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Flat" type="tns:Address10Type" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Квартира.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="PersonDataChangeInfoType">
+    <xsd:annotation>
+      <xsd:documentation>Сведения об изменении персональных данных.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="OldLastName" type="tns:FIO255Type" minOccurs="0"/>
+      <xsd:element name="OldFirstName" type="tns:FIO255Type" minOccurs="0"/>
+      <xsd:element name="OldPatronymic" type="tns:FIO255Type" minOccurs="0"/>
+      <xsd:element name="PersonDataChangeDate" type="tns:DateType"/>
+      <xsd:element name="PersonDataChangePlace" type="tns:MiddleStringType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="PersonDataType">
+    <xsd:annotation>
+      <xsd:documentation>Персональные данные.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="FirstName" type="tns:FirstNameType" minOccurs="0"/>
+      <xsd:element name="LastName" type="tns:LastNameType" minOccurs="0"/>
+      <xsd:element name="Patronymic" type="tns:PatronymicType" minOccurs="0"/>
+      <xsd:element name="Gender" type="tns:RussianGenderType"/>
+      <xsd:element name="BirthDate" type="tns:BirthDateType"/>
+      <xsd:element name="BirthPlace" type="tns:BirthPlaceType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="LegalRepresentativePersonDataType">
+    <xsd:annotation>
+      <xsd:documentation>Персональные данные.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="FirstName" type="tns:LegalRepresentativeStringType" minOccurs="0"/>
+      <xsd:element name="LastName" type="tns:LegalRepresentativeStringType" minOccurs="0"/>
+      <xsd:element name="Patronymic" type="tns:LegalRepresentativeStringType" minOccurs="0"/>
+      <xsd:element name="Gender" type="tns:RussianGenderType"/>
+      <xsd:element name="BirthDate" type="tns:BirthDateType"/>
+      <xsd:element name="BirthPlace" type="tns:BirthPlaceType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="StatusCodeType">
+    <xsd:annotation>
+      <xsd:documentation>Код статуса.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:choice>
+      <xsd:element name="OrgCode" type="tns:Number20Type">
+        <xsd:annotation>
+          <xsd:documentation>Код ведомственного статуса.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="TechCode" type="xsd:byte">
+        <xsd:annotation>
+          <xsd:documentation>Код статуса ЕПГУ.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:choice>
+  </xsd:complexType>
+
+  <xsd:simpleType name="Address10Type">
+    <xsd:restriction base="tns:Address255Type">
+      <xsd:maxLength value="10"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="String11Type">
+    <xsd:restriction base="xsd:normalizedString">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="11"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="DateType">
+    <xsd:annotation>
+      <xsd:documentation>Дата, заданная с разумными ограничениями.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:date">
+      <xsd:minInclusive value="1900-01-01"/>
+      <xsd:maxInclusive value="2099-12-31"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:complexType name="BirthDateType">
+    <xsd:annotation>
+      <xsd:documentation>Дата рождения заявителя.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="tns:ComplexDateType"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="ComplexDateType">
+    <xsd:annotation>
+      <xsd:documentation>Составная дата рождения.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="year">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:gYear">
+            <xsd:minInclusive value="1900"/>
+            <xsd:maxInclusive value="2200"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="month" minOccurs="0" type="xsd:gMonth"/>
+      <xsd:element name="day" minOccurs="0" type="xsd:gDay"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="BirthPlaceType">
+    <xsd:annotation>
+      <xsd:documentation>Место рождения заявителя.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="CountryCyr" type="tns:BirthCountryStringType" minOccurs="0"/>
+      <xsd:element name="Region" type="tns:BirthPlaceRegionStringType" minOccurs="0"/>
+      <xsd:element name="OriginalPlaceOfBirth" type="tns:MiddleStringType" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:simpleType name="DocumentNameType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Свидетельство о рождении РФ"/>
+      <xsd:enumeration value="Иностранное свидетельство о рождении"/>
+      <xsd:enumeration value="Свидетельство о рождении, выданное за пределами РФ"/>
+      <xsd:enumeration value="Паспорт гражданина РФ"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="RussianGenderType">
+    <xsd:annotation>
+      <xsd:documentation>Пол заявителя на русском языке. Задаётся одной буквой.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:length value="1"/>
+      <xsd:enumeration value="М">
+        <xsd:annotation>
+          <xsd:documentation>мужской пол</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="Ж">
+        <xsd:annotation>
+          <xsd:documentation>женский пол</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="EnvType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="DEV"/>
+      <xsd:enumeration value="UAT"/>
+      <xsd:enumeration value="EXUAT"/>
+      <xsd:enumeration value="SVCDEV"/>
+      <xsd:enumeration value="TCOD"/>
+      <xsd:enumeration value="PROD"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ReceiptModeType">
+    <xsd:annotation>
+      <xsd:documentation>Получение документа.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Первичное"/>
+      <xsd:enumeration value="В дополнение к действующему"/>
+      <xsd:enumeration value="Взамен действующего(-их)"/>
+      <xsd:enumeration value="Взамен утраченного"/>
+      <xsd:enumeration value="Взамен использованного/испорченного"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="DismissalDateType">
+    <xsd:annotation>
+      <xsd:documentation>Дата увольнения.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[А-Яа-яЁёA-Za-z\d\s\./]{1,10}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="TargetCodeType">
+    <xsd:annotation>
+      <xsd:documentation>Код цели:
+        - 10001970310_5 – указывается, если заявление о выдаче заграничного паспорта нового поколения подано в отношении
+        гражданина Российской Федерации, достигшим 18-летнего возраста
+        - 10001971213_6 – указывается, если заявление о выдаче заграничного паспорта нового поколения подано в отношении
+        гражданина Российской Федерации, не достигшего 18-летнего возраста
+        - 10001971775_6 – указывается, если заявление о выдаче заграничного паспорта нового поколения подано в отношении
+        гражданина Российской Федерации, признанного судом недееспособными (ограниченно дееспособными)
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="10001970310_5"/>
+      <xsd:enumeration value="10001971213_6"/>
+      <xsd:enumeration value="10001971775_6"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="CancelResultType">
+    <xsd:annotation>
+      <xsd:documentation>Результат передачи запроса на отмену заявления.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="CANCELLED"/>
+      <xsd:enumeration value="IN_PROGRESS"/>
+      <xsd:enumeration value="REJECTED"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="String2048Type">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="2048"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="String20Type">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="20"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Number20Type">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[\d]{1,20}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="PVDNPSimpleSeriesType">
+    <xsd:annotation>
+      <xsd:documentation>Серия ПВДНП.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:length value="2"/>
+      <xsd:pattern value="\d{2}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="PVDNPSimpleNumberType">
+    <xsd:annotation>
+      <xsd:documentation>Номер ПВДНП.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:length value="7"/>
+      <xsd:pattern value="\d{7}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="DepartmentCodeType">
+    <xsd:annotation>
+      <xsd:documentation>Код объекта ГС ПВДНП.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:length value="9"/>
+      <xsd:pattern value="\d{9}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="LongStringType">
+    <xsd:annotation>
+      <xsd:documentation>
+        Базовый класс строки для использования в анкетах.
+        Содержит общий набор ограничений, как на длину, так и в виде регулярного выражения.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[a-zA-Zа-яА-ЯёЁ\d\s\(\)\?\.&quot;,#№:;\-\+/'\*]{1,4096}"/>
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="4096"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="EmployerStringType">
+    <xsd:annotation>
+      <xsd:documentation>Должность и место работы (учебы, службы, номер войсковой части)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="5530"/>
+      <xsd:pattern value="[a-zA-Zа-яА-ЯёЁ\d\s\(\)\?\.&quot;,#№:;\-\+/'*&lt;&gt;&amp;]{1,5530}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="EmployerAddressType">
+    <xsd:annotation>
+      <xsd:documentation>Место нахождения организации, учебного заведения (полный адрес организации), войсковой
+        части.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="255"/>
+      <xsd:pattern value="[a-zA-Zа-яА-ЯёЁ\d\s\(\)\?\.&quot;,#№:;\-\+/'*&lt;&gt;&amp;]{1,255}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="EmailType">
+    <xsd:annotation>
+      <xsd:documentation>Адрес электронной почты.(6573, 7032)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="100"/>
+      <xsd:pattern
+          value="[А-Яа-яЁёa-zA-Z&lt;&gt;&quot;\d\s\[\]\\/\^\.\|\?\*\+\-\(\)\{\}$,;:_'`!№#\*%=@~]{0,100}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="JoinUpDateType">
+    <xsd:annotation>
+      <xsd:documentation>Дата поступления.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{2}\.\d{4}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="TextType">
+    <xsd:annotation>
+      <xsd:documentation>Текстовое сообщение.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="2048"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="PhoneType">
+    <xsd:annotation>
+      <xsd:documentation>Телефон.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[А-Яа-яЁёA-Za-z\d\s\(\)\.,;\-\+]{1,50}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="FIO255Type">
+    <xsd:annotation>
+      <xsd:documentation>Тип строки для персональных полей ФИО.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[а-яА-ЯёЁ\sIVXLCDM'\.\-\(\)/]{1,255}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="SeriesType">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[А-Яа-яЁёA-Z\d\.\-']{1,10}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="NumberType">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[А-ЯёЁA-Z\d\s\.:\-\\/]{1,15}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Address255Type">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[А-Яа-яЁёMDCLXVI\d\s\(\)\.,;:\-'&quot;№/]{1,255}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="MiddleStringType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="255"/>
+      <xsd:pattern value="[a-zA-Zа-яА-ЯёЁ\d\s\(\)\?\.&quot;,#№:;\-\+/'\*]{1,255}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="LegalRepresentativeStringType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="100"/>
+      <xsd:pattern value="[а-яА-ЯёЁ\sIVXLCDM'\.\-\(\)]{1,100}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="FirstNameType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="ru">
+        Имя заявителя
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="40"/>
+      <xsd:pattern value="[А-ЯЁ\sIVXLCDM'\.\-\(\)]{1,40}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="LastNameType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="ru">
+        Фамилия заявителя
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="34"/>
+      <xsd:pattern value="[А-ЯЁ\sIVXLCDM'\.\-\(\)]{1,34}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="PatronymicType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="ru">
+        Отчество заявителя
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="40"/>
+      <xsd:pattern value="[А-ЯЁ\sIVXLCDM'\.\-\(\)]{1,40}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="BirthCountryStringType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="ru">
+        Название страны
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="35"/>
+      <xsd:pattern value="[А-ЯЁ\s\-\(\)\.,']{1,35}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="BirthPlaceRegionStringType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="ru">
+        Название региона
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="34"/>
+      <xsd:pattern value="[А-ЯЁ\s\-\(\)\.,']{1,34}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="DocumentIssuerType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="ru">
+        Базовый класс строки для использования в анкетах.
+        Содержит общий набор ограничений, как на длину, так и в виде регулярного выражения.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="255"/>
+      <xsd:pattern value="[А-ЯЁ\d\s\(\)\.,№:;\-'&quot;]{1,255}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+</xsd:schema>

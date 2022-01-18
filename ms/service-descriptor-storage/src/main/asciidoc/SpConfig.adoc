@@ -1,0 +1,16 @@
+= Сервис для получения секции spConfig из Json сервиса
+
+== Получение spConfig по заданному serviceId
+
+_/sp/config/{*serviceId*}_
+
+include::{snippets}/sp/config/path-parameters.adoc[]
+
+include::{snippets}/sp/config/curl-request.adoc[]
+
+Возможные ответы: +
+JSON из секции spConfig
+include::{snippets}/sp/config/http-response.adoc[]
+либо
+include::{snippets}/sp/noconfigs/http-response.adoc[]
+в случае отсутствия секции с параметрами SP или Json сервиса

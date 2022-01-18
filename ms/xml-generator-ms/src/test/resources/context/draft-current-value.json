@@ -1,0 +1,13 @@
+{
+  "body": {
+    "serviceDescriptorId": "1",
+    "currentValue": {
+      "simpleAnswer": {
+        "visited": true,
+        "value": "Simple Answer"
+      }
+    },
+    "applicantAnswers": {
+    }
+  }
+}

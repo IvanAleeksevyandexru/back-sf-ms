@@ -1,0 +1,15 @@
+{
+  "body": {
+    "serviceDescriptorId": "1",
+    "applicantAnswers": {
+      "jsonArrayAnswer": {
+        "visited": true,
+        "value": "[\"Valid Json Array\"]"
+      },
+      "jsonObjectAnswer": {
+        "visited": true,
+        "value": "{\"field\": \"Valid Json Object\"}"
+      }
+    }
+  }
+}

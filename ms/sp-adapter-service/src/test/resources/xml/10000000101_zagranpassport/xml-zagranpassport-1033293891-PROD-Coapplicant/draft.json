@@ -1,0 +1,431 @@
+{
+  "orderId": 1033293891,
+  "type": "10000000101",
+  "locked": false,
+  "updated": "2021-01-11T19:47:43.809Z",
+  "body": {
+    "serviceCode": "10000000101",
+    "targetCode": "-10000000101",
+    "orderId": 1033293891,
+    "currentScenarioId": 1,
+    "currentUrl": "https://www.gosuslugi.ru/600101/1/form",
+    "finishedAndCurrentScreens": [
+      "s1",
+      "s2",
+      "s3",
+      "s4",
+      "s66",
+      "s11",
+      "s19",
+      "s19_a",
+      "s20",
+      "s21",
+      "s22",
+      "s53",
+      "s39",
+      "s60",
+      "s81"
+    ],
+    "cachedAnswers": {
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "q1": {
+        "visited": true,
+        "value": "Нового образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Детям"
+      },
+      "q3": {
+        "visited": true,
+        "value": "До 14 лет"
+      },
+      "q20": {
+        "visited": true,
+        "value": "По месту жительства"
+      },
+      "d2": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Васин Ярослав Николаевич\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"12.02.1979\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"4102 800167\"},{\"label\":\"Дата выдачи:\",\"value\":\"21.11.2002\"},{\"label\":\"Кем выдан:\",\"value\":\"Рощинским отделом милиции Выборгского района Ленинградской области\"},{\"label\":\"Код подразделения:\",\"value\":\"473-011\"},{\"label\":\"Место рождения:\",\"value\":\"Санкт-Петербург\"}]}],\"storedValues\":{\"firstName\":\"Ярослав\",\"lastName\":\"Васин\",\"birthPlace\":\"Санкт-Петербург\",\"rfPasportIssuedBy\":\"Рощинским отделом милиции Выборгского района Ленинградской области\",\"gender\":\"M\",\"rfPasportIssuedById\":\"473011\",\"rfPasportSeries\":\"4102\",\"middleName\":\"Николаевич\",\"birthDate\":\"12.02.1979\",\"rfPasportNumber\":\"800167\",\"rfPasportIssueDate\":\"21.11.2002\"}}"
+      },
+      "cb1": {
+        "visited": true,
+        "value": "{\"id\":\"SUN\",\"text\":\"СССР\",\"formatted\":\"\",\"originalItem\":{\"value\":\"SUN\",\"parentValue\":null,\"title\":\"СССР\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(911)9259954"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "vasin_yaroslav12@rambler.ru"
+      },
+      "pd4": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":null,\"additionalStreetShortType\":null,\"districtType\":\"район\",\"geoLat\":\"59.8245766\",\"building2Type\":null,\"okato\":\"41225000002\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"59.8245766\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":null,\"town\":\"Молодцово\",\"lng\":\"31.0978405\",\"index\":\"187327\",\"townShortType\":\"п\",\"district\":\"Кировский\",\"fullAddress\":\"187327, обл. Ленинградская, р-н. Кировский, п. Молодцово, д. 6, кв. 60\",\"houseCheckbox\":false,\"region\":\"Ленинградская\",\"geoLon\":\"31.0978405\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":\"поселок\",\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"47\",\"districtShortType\":\"р-н\",\"street\":\"\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"4701000000400000004\",\"building1ShortType\":null,\"fiasCode\":\"2a6d5c7a-ad0e-47a6-a425-8d8af88429ff\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Ленинградская, р-н. Кировский, п. Молодцово\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"60\"},\"regDate\":\"20.11.2006\"}"
+      },
+      "q16": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "ai18": {
+        "visited": true,
+        "value": "[{\"ai18_4\":\"Ксения\",\"ai18_5\":\"Ярославовна\",\"ai18_6\":\"false\",\"bd20_0\":\"\",\"ai18_0\":\"113308836\",\"clr3\":{\"regDate\":\"16.03.2010\",\"regAddr\":{\"districtType\":\"район\",\"geoLat\":\"59.8245766\",\"okato\":\"41225000002\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"59.8245766\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"town\":\"Молодцово\",\"lng\":\"31.0978405\",\"index\":\"187327\",\"townShortType\":\"п\",\"district\":\"Кировский\",\"fullAddress\":\"187327, обл. Ленинградская, р-н. Кировский, п. Молодцово, д. 6, кв. 60\",\"houseCheckbox\":false,\"region\":\"Ленинградская\",\"geoLon\":\"31.0978405\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":\"поселок\",\"regionShortType\":\"обл\",\"regionCode\":\"47\",\"districtShortType\":\"р-н\",\"street\":\"\",\"kladrCode\":\"4701000000400000004\",\"fiasCode\":\"2a6d5c7a-ad0e-47a6-a425-8d8af88429ff\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Ленинградская, р-н. Кировский, п. Молодцово\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"60\"}},\"d34\":{\"name\":\"Foto_5fbaf4ff-624d-484b-9605-fd561eb74f72.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.113308836\",\"mimeType\":\"image/jpeg\",\"objectId\":1032256805,\"objectType\":2},\"ai18_1\":\"2010-03-03T00:00:00Z\",\"ai18_2\":\"F\",\"ai18_3\":\"Васина\",\"pd21\":{\"storedValues\":{\"firstName\":\"Ксения\",\"lastName\":\"Васина\",\"rfBirthCertificateIssuedBy\":\"Отдел ЗАГС администрации муниципального образования Кировский муниципальный район Ленинградской области\",\"rfBirthCertificateIssueDate\":\"10.03.2010\",\"rfBirthCertificateSeries\":\"I-ВО\",\"middleName\":\"Ярославовна\",\"rfBirthCertificateNumber\":\"718670\",\"birthDate\":\"03.03.2010\",\"rfBirthCertificateActNumber\":\"81\"},\"states\":[{\"groupName\":\"Васина Ксения Ярославовна\",\"fields\":[{\"label\":\"Дата рождения\",\"value\":\"03.03.2010\"}]},{\"groupName\":\"Свидетельство о рождении\",\"fields\":[{\"label\":\"Серия и Номер\",\"value\":\"I-ВО 718670\"},{\"label\":\"Дата выдачи\",\"value\":\"10.03.2010\"},{\"label\":\"Кем выдан\",\"value\":\"Отдел ЗАГС администрации муниципального образования Кировский муниципальный район Ленинградской области\"},{\"label\":\"Актовый номер\",\"value\":\"81\"}]}]},\"bd20\":{\"date\":\"2010-03-10T00:00:00.000+03:00\",\"number\":\"718670\",\"series\":\"I-ВО\",\"emitter\":\"Отдел ЗАГС администрации МО Кировский муниципальный район Ленинградской области\"},\"ai6\":\"[{\\\"lab1\\\":\\\"\\\",\\\"lab2\\\":\\\"\\\",\\\"zps20\\\":{\\\"date\\\":\\\"2011-03-28T00:00:00.000+04:00\\\",\\\"number\\\":\\\"3797338\\\",\\\"series\\\":\\\"71\\\",\\\"emitter\\\":\\\"ФМС 78024\\\",\\\"expirationDate\\\":\\\"2021-03-28T00:00:00.000+03:00\\\"},\\\"zps6\\\":\\\"\\\",\\\"rb30\\\":\\\"1\\\"}]\",\"q22\":\"Нет\",\"pd21_1\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"q26\":\"Нет\",\"q28\":\"Взамен использованного/испорченного\",\"q27\":\"Да\",\"pd21_4\":\"САНКТ-ПЕТЕРБУРГ\"}]"
+      },
+      "ms1": {
+        "visited": true,
+        "value": "{\"value\":\"7800130\",\"parentValue\":null,\"title\":\"Отдел по вопросам миграции ОМВД России по Кировскому району Ленинградской области\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"email_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"vopros@ufms.spb.ru\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"vopros@ufms.spb.ru\"},\"valueAsOfType\":\"vopros@ufms.spb.ru\"},{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"Кировский район, город Отрадное, ул. Щурова, д. 2\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"Кировский район, город Отрадное, ул. Щурова, д. 2\"},\"valueAsOfType\":\"Кировский район, город Отрадное, ул. Щурова, д. 2\"},{\"name\":\"phone_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"+7(81362)20363\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"+7(81362)20363\"},\"valueAsOfType\":\"+7(81362)20363\"},{\"name\":\"fax_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"schedule_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Вт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Ср: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Чт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Пт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Сб: выходной<br/>\\n                        Воскресенье: выходной\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Вт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Ср: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Чт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Пт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Сб: выходной<br/>\\n                        Воскресенье: выходной\\n                \"},\"valueAsOfType\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Вт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Ср: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Чт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Пт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Сб: выходной<br/>\\n                        Воскресенье: выходной\\n                \"},{\"name\":\"scheduleComment_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                \"},\"valueAsOfType\":\"\\n                \"}],\"source\":\"fms_5\",\"attributeValues\":{\"phone_out\":\"+7(81362)20363\",\"email_out\":\"vopros@ufms.spb.ru\",\"schedule_out\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Вт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Ср: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Чт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Пт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Сб: выходной<br/>\\n                        Воскресенье: выходной\\n                \",\"fax_out\":\"\",\"scheduleComment_out\":\"\\n                \",\"address_out\":\"Кировский район, город Отрадное, ул. Щурова, д. 2\"},\"idForMap\":1,\"center\":[30.795739,59.767956],\"baloonContent\":[{\"value\":\"Кировский район, город Отрадное, ул. Щурова, д. 2\",\"label\":\"Адрес\"},{\"value\":\"+7(81362)20363\",\"label\":\"Телефон\"},{\"value\":\"vopros@ufms.spb.ru\",\"label\":\"Электронная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"41000000000\",\"okato\":\"41225000002\"}"
+      }
+    },
+    "currentValue": {},
+    "errors": {},
+    "applicantAnswers": {
+      "q1": {
+        "visited": true,
+        "value": "Нового образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Детям"
+      },
+      "pd4": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":null,\"additionalStreetShortType\":null,\"districtType\":\"район\",\"geoLat\":\"59.8245766\",\"building2Type\":null,\"okato\":\"41225000002\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"59.8245766\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":null,\"town\":\"Молодцово\",\"lng\":\"31.0978405\",\"index\":\"187327\",\"townShortType\":\"п\",\"district\":\"Кировский\",\"fullAddress\":\"187327, обл. Ленинградская, р-н. Кировский, п. Молодцово, д. 6, кв. 60\",\"houseCheckbox\":false,\"region\":\"Ленинградская\",\"geoLon\":\"31.0978405\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":\"поселок\",\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"47\",\"districtShortType\":\"р-н\",\"street\":\"\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"4701000000400000004\",\"building1ShortType\":null,\"fiasCode\":\"2a6d5c7a-ad0e-47a6-a425-8d8af88429ff\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Ленинградская, р-н. Кировский, п. Молодцово\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"60\"},\"regDate\":\"20.11.2006\"}"
+      },
+      "q3": {
+        "visited": true,
+        "value": "До 14 лет"
+      },
+      "ai18": {
+        "visited": true,
+        "value": "[{\"ai18_4\":\"Ксения\",\"ai18_5\":\"Ярославовна\",\"ai18_6\":\"false\",\"bd20_0\":\"\",\"ai18_0\":\"113308836\",\"clr3\":{\"regDate\":\"16.03.2010\",\"regAddr\":{\"districtType\":\"район\",\"geoLat\":\"59.8245766\",\"okato\":\"41225000002\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"59.8245766\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"town\":\"Молодцово\",\"lng\":\"31.0978405\",\"index\":\"187327\",\"townShortType\":\"п\",\"district\":\"Кировский\",\"fullAddress\":\"187327, обл. Ленинградская, р-н. Кировский, п. Молодцово, д. 6, кв. 60\",\"houseCheckbox\":false,\"region\":\"Ленинградская\",\"geoLon\":\"31.0978405\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":\"поселок\",\"regionShortType\":\"обл\",\"regionCode\":\"47\",\"districtShortType\":\"р-н\",\"street\":\"\",\"kladrCode\":\"4701000000400000004\",\"fiasCode\":\"2a6d5c7a-ad0e-47a6-a425-8d8af88429ff\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Ленинградская, р-н. Кировский, п. Молодцово\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"60\"}},\"d34\":{\"name\":\"Foto_5fbaf4ff-624d-484b-9605-fd561eb74f72.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.113308836\",\"mimeType\":\"image/jpeg\",\"objectId\":1032256805,\"objectType\":2},\"ai18_1\":\"2010-03-03T00:00:00Z\",\"ai18_2\":\"F\",\"ai18_3\":\"Васина\",\"pd21\":{\"storedValues\":{\"firstName\":\"Ксения\",\"lastName\":\"Васина\",\"rfBirthCertificateIssuedBy\":\"Отдел ЗАГС администрации муниципального образования Кировский муниципальный район Ленинградской области\",\"rfBirthCertificateIssueDate\":\"10.03.2010\",\"rfBirthCertificateSeries\":\"I-ВО\",\"middleName\":\"Ярославовна\",\"rfBirthCertificateNumber\":\"718670\",\"birthDate\":\"03.03.2010\",\"rfBirthCertificateActNumber\":\"81\"},\"states\":[{\"groupName\":\"Васина Ксения Ярославовна\",\"fields\":[{\"label\":\"Дата рождения\",\"value\":\"03.03.2010\"}]},{\"groupName\":\"Свидетельство о рождении\",\"fields\":[{\"label\":\"Серия и Номер\",\"value\":\"I-ВО 718670\"},{\"label\":\"Дата выдачи\",\"value\":\"10.03.2010\"},{\"label\":\"Кем выдан\",\"value\":\"Отдел ЗАГС администрации муниципального образования Кировский муниципальный район Ленинградской области\"},{\"label\":\"Актовый номер\",\"value\":\"81\"}]}]},\"bd20\":{\"date\":\"2010-03-10T00:00:00.000+03:00\",\"number\":\"718670\",\"series\":\"I-ВО\",\"emitter\":\"Отдел ЗАГС администрации МО Кировский муниципальный район Ленинградской области\"},\"ai6\":\"[{\\\"lab1\\\":\\\"\\\",\\\"lab2\\\":\\\"\\\",\\\"zps20\\\":{\\\"date\\\":\\\"2011-03-28T00:00:00.000+04:00\\\",\\\"number\\\":\\\"3797338\\\",\\\"series\\\":\\\"71\\\",\\\"emitter\\\":\\\"ФМС 78024\\\",\\\"expirationDate\\\":\\\"2021-03-28T00:00:00.000+03:00\\\"},\\\"zps6\\\":\\\"\\\",\\\"rb30\\\":\\\"1\\\"}]\",\"q22\":\"Нет\",\"pd21_1\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"q26\":\"Нет\",\"q28\":\"Взамен использованного/испорченного\",\"q27\":\"Да\",\"pd21_4\":\"САНКТ-ПЕТЕРБУРГ\"}]"
+      },
+      "q20": {
+        "visited": true,
+        "value": "По месту жительства"
+      },
+      "d2": {
+        "visited": true,
+        "value": ""
+      },
+      "cb1": {
+        "visited": true,
+        "value": "{\"id\":\"SUN\",\"text\":\"СССР\",\"formatted\":\"\",\"originalItem\":{\"value\":\"SUN\",\"parentValue\":null,\"title\":\"СССР\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+      },
+      "q16": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Васин Ярослав Николаевич\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"12.02.1979\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"4102 800167\"},{\"label\":\"Дата выдачи:\",\"value\":\"21.11.2002\"},{\"label\":\"Кем выдан:\",\"value\":\"Рощинским отделом милиции Выборгского района Ленинградской области\"},{\"label\":\"Код подразделения:\",\"value\":\"473-011\"},{\"label\":\"Место рождения:\",\"value\":\"Санкт-Петербург\"}]}],\"storedValues\":{\"firstName\":\"Ярослав\",\"lastName\":\"Васин\",\"birthPlace\":\"Санкт-Петербург\",\"rfPasportIssuedBy\":\"Рощинским отделом милиции Выборгского района Ленинградской области\",\"gender\":\"M\",\"rfPasportIssuedById\":\"473011\",\"rfPasportSeries\":\"4102\",\"middleName\":\"Николаевич\",\"birthDate\":\"12.02.1979\",\"rfPasportNumber\":\"800167\",\"rfPasportIssueDate\":\"21.11.2002\"}}"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "vasin_yaroslav12@rambler.ru"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(911)9259954"
+      },
+      "ms1": {
+        "visited": true,
+        "value": "{\"value\":\"7800130\",\"parentValue\":null,\"title\":\"Отдел по вопросам миграции ОМВД России по Кировскому району Ленинградской области\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"email_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"vopros@ufms.spb.ru\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"vopros@ufms.spb.ru\"},\"valueAsOfType\":\"vopros@ufms.spb.ru\"},{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"Кировский район, город Отрадное, ул. Щурова, д. 2\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"Кировский район, город Отрадное, ул. Щурова, д. 2\"},\"valueAsOfType\":\"Кировский район, город Отрадное, ул. Щурова, д. 2\"},{\"name\":\"phone_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"+7(81362)20363\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"+7(81362)20363\"},\"valueAsOfType\":\"+7(81362)20363\"},{\"name\":\"fax_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"schedule_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Вт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Ср: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Чт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Пт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Сб: выходной<br/>\\n                        Воскресенье: выходной\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Вт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Ср: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Чт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Пт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Сб: выходной<br/>\\n                        Воскресенье: выходной\\n                \"},\"valueAsOfType\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Вт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Ср: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Чт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Пт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Сб: выходной<br/>\\n                        Воскресенье: выходной\\n                \"},{\"name\":\"scheduleComment_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                \"},\"valueAsOfType\":\"\\n                \"}],\"source\":\"fms_5\",\"attributeValues\":{\"phone_out\":\"+7(81362)20363\",\"email_out\":\"vopros@ufms.spb.ru\",\"schedule_out\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Вт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Ср: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Чт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Пт: с 09:00 по 18:00; перерыв с 13:00 по 13:45;<br/>\\n                        Сб: выходной<br/>\\n                        Воскресенье: выходной\\n                \",\"fax_out\":\"\",\"scheduleComment_out\":\"\\n                \",\"address_out\":\"Кировский район, город Отрадное, ул. Щурова, д. 2\"},\"idForMap\":1,\"center\":[30.795739,59.767956],\"baloonContent\":[{\"value\":\"Кировский район, город Отрадное, ул. Щурова, д. 2\",\"label\":\"Адрес\"},{\"value\":\"+7(81362)20363\",\"label\":\"Телефон\"},{\"value\":\"vopros@ufms.spb.ru\",\"label\":\"Электронная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"41000000000\",\"okato\":\"41225000002\"}"
+      }
+    },
+    "cycledApplicantAnswers": {
+      "currentAnswerId": "ai18",
+      "answerlist": [
+        {
+          "id": "ai18",
+          "initScreen": "s39",
+          "currentItemId": "113308836",
+          "items": [
+            {
+              "id": "113308836",
+              "itemAnswers": {
+                "ai18_4": {
+                  "visited": true,
+                  "value": "Ксения"
+                },
+                "ai18_5": {
+                  "visited": true,
+                  "value": "Ярославовна"
+                },
+                "ai18_6": {
+                  "visited": true,
+                  "value": "false"
+                },
+                "ai18_0": {
+                  "visited": true,
+                  "value": "113308836"
+                },
+                "ai18_1": {
+                  "visited": true,
+                  "value": "2010-03-03T00:00:00Z"
+                },
+                "ai18_2": {
+                  "visited": true,
+                  "value": "F"
+                },
+                "ai18_3": {
+                  "visited": true,
+                  "value": "Васина"
+                },
+                "pd21": {
+                  "visited": true,
+                  "value": "{\"states\":[{\"groupName\":\"Васина Ксения Ярославовна\",\"fields\":[{\"label\":\"Дата рождения\",\"value\":\"03.03.2010\"}]},{\"groupName\":\"Свидетельство о рождении\",\"fields\":[{\"label\":\"Серия и Номер\",\"value\":\"I-ВО 718670\"},{\"label\":\"Дата выдачи\",\"value\":\"10.03.2010\"},{\"label\":\"Кем выдан\",\"value\":\"Отдел ЗАГС администрации муниципального образования Кировский муниципальный район Ленинградской области\"},{\"label\":\"Актовый номер\",\"value\":\"81\"}]}],\"storedValues\":{\"firstName\":\"Ксения\",\"lastName\":\"Васина\",\"rfBirthCertificateIssuedBy\":\"Отдел ЗАГС администрации муниципального образования Кировский муниципальный район Ленинградской области\",\"rfBirthCertificateIssueDate\":\"10.03.2010\",\"rfBirthCertificateSeries\":\"I-ВО\",\"middleName\":\"Ярославовна\",\"rfBirthCertificateNumber\":\"718670\",\"birthDate\":\"03.03.2010\",\"rfBirthCertificateActNumber\":\"81\"}}"
+                },
+                "pd21_1": {
+                  "visited": true,
+                  "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                },
+                "pd21_4": {
+                  "visited": true,
+                  "value": "САНКТ-ПЕТЕРБУРГ"
+                },
+                "clr3": {
+                  "visited": true,
+                  "value": "{\"regDate\":\"16.03.2010\",\"regAddr\":{\"cityType\":null,\"streetShortType\":null,\"additionalStreetShortType\":null,\"districtType\":\"район\",\"geoLat\":\"59.8245766\",\"building2Type\":null,\"okato\":\"41225000002\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"59.8245766\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":null,\"town\":\"Молодцово\",\"lng\":\"31.0978405\",\"index\":\"187327\",\"townShortType\":\"п\",\"district\":\"Кировский\",\"fullAddress\":\"187327, обл. Ленинградская, р-н. Кировский, п. Молодцово, д. 6, кв. 60\",\"houseCheckbox\":false,\"region\":\"Ленинградская\",\"geoLon\":\"31.0978405\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":\"поселок\",\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"47\",\"districtShortType\":\"р-н\",\"street\":\"\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"4701000000400000004\",\"building1ShortType\":null,\"fiasCode\":\"2a6d5c7a-ad0e-47a6-a425-8d8af88429ff\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Ленинградская, р-н. Кировский, п. Молодцово\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"60\"}}"
+                },
+                "d34": {
+                  "visited": true,
+                  "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.113308836\",\"name\":\"Foto_5fbaf4ff-624d-484b-9605-fd561eb74f72.jpg\",\"objectType\":2,\"objectId\":1032256805,\"mimeType\":\"image/jpeg\"}"
+                },
+                "q26": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q27": {
+                  "visited": true,
+                  "value": "Да"
+                },
+                "ai6": {
+                  "visited": true,
+                  "value": "[{\"lab1\":\"\",\"lab2\":\"\",\"zps20\":{\"date\":\"2011-03-28T00:00:00.000+04:00\",\"number\":\"3797338\",\"series\":\"71\",\"emitter\":\"ФМС 78024\",\"expirationDate\":\"2021-03-28T00:00:00.000+03:00\"},\"zps6\":\"\",\"rb30\":\"1\"}]"
+                },
+                "q28": {
+                  "visited": true,
+                  "value": "Взамен использованного/испорченного"
+                },
+                "bd20_0": {
+                  "visited": true,
+                  "value": ""
+                },
+                "bd20": {
+                  "visited": true,
+                  "value": "{\"series\":\"I-ВО\",\"number\":\"718670\",\"date\":\"2010-03-10T00:00:00.000+03:00\",\"emitter\":\"Отдел ЗАГС администрации МО Кировский муниципальный район Ленинградской области\"}"
+                },
+                "q22": {
+                  "visited": true,
+                  "value": "Нет"
+                }
+              },
+              "cachedAnswers": {
+                "ai18_4": {
+                  "visited": true,
+                  "value": "Ксения"
+                },
+                "ai18_5": {
+                  "visited": true,
+                  "value": "Ярославовна"
+                },
+                "ai18_6": {
+                  "visited": true,
+                  "value": "false"
+                },
+                "ai18_0": {
+                  "visited": true,
+                  "value": "113308836"
+                },
+                "ai18_1": {
+                  "visited": true,
+                  "value": "2010-03-03T00:00:00Z"
+                },
+                "ai18_2": {
+                  "visited": true,
+                  "value": "F"
+                },
+                "ai18_3": {
+                  "visited": true,
+                  "value": "Васина"
+                },
+                "pd21": {
+                  "visited": true,
+                  "value": "{\"states\":[{\"groupName\":\"Васина Ксения Ярославовна\",\"fields\":[{\"label\":\"Дата рождения\",\"value\":\"03.03.2010\"}]},{\"groupName\":\"Свидетельство о рождении\",\"fields\":[{\"label\":\"Серия и Номер\",\"value\":\"I-ВО 718670\"},{\"label\":\"Дата выдачи\",\"value\":\"10.03.2010\"},{\"label\":\"Кем выдан\",\"value\":\"Отдел ЗАГС администрации муниципального образования Кировский муниципальный район Ленинградской области\"},{\"label\":\"Актовый номер\",\"value\":\"81\"}]}],\"storedValues\":{\"firstName\":\"Ксения\",\"lastName\":\"Васина\",\"rfBirthCertificateIssuedBy\":\"Отдел ЗАГС администрации муниципального образования Кировский муниципальный район Ленинградской области\",\"rfBirthCertificateIssueDate\":\"10.03.2010\",\"rfBirthCertificateSeries\":\"I-ВО\",\"middleName\":\"Ярославовна\",\"rfBirthCertificateNumber\":\"718670\",\"birthDate\":\"03.03.2010\",\"rfBirthCertificateActNumber\":\"81\"}}"
+                },
+                "pd21_1": {
+                  "visited": true,
+                  "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                },
+                "pd21_4": {
+                  "visited": true,
+                  "value": "САНКТ-ПЕТЕРБУРГ"
+                },
+                "clr3": {
+                  "visited": true,
+                  "value": "{\"regDate\":\"16.03.2010\",\"regAddr\":{\"cityType\":null,\"streetShortType\":null,\"additionalStreetShortType\":null,\"districtType\":\"район\",\"geoLat\":\"59.8245766\",\"building2Type\":null,\"okato\":\"41225000002\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"59.8245766\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":null,\"town\":\"Молодцово\",\"lng\":\"31.0978405\",\"index\":\"187327\",\"townShortType\":\"п\",\"district\":\"Кировский\",\"fullAddress\":\"187327, обл. Ленинградская, р-н. Кировский, п. Молодцово, д. 6, кв. 60\",\"houseCheckbox\":false,\"region\":\"Ленинградская\",\"geoLon\":\"31.0978405\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":\"поселок\",\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"47\",\"districtShortType\":\"р-н\",\"street\":\"\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"4701000000400000004\",\"building1ShortType\":null,\"fiasCode\":\"2a6d5c7a-ad0e-47a6-a425-8d8af88429ff\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Ленинградская, р-н. Кировский, п. Молодцово\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"60\"}}"
+                },
+                "d34": {
+                  "visited": true,
+                  "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.113308836\",\"name\":\"Foto_5fbaf4ff-624d-484b-9605-fd561eb74f72.jpg\",\"objectType\":2,\"objectId\":1032256805,\"mimeType\":\"image/jpeg\"}"
+                },
+                "q26": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q27": {
+                  "visited": true,
+                  "value": "Да"
+                },
+                "ai6": {
+                  "visited": true,
+                  "value": "[{\"lab1\":\"\",\"lab2\":\"\",\"zps20\":{\"date\":\"2011-03-28T00:00:00.000+04:00\",\"number\":\"3797338\",\"series\":\"71\",\"emitter\":\"ФМС 78024\",\"expirationDate\":\"2021-03-28T00:00:00.000+03:00\"},\"zps6\":\"\",\"rb30\":\"1\"}]"
+                },
+                "q28": {
+                  "visited": true,
+                  "value": "Взамен использованного/испорченного"
+                },
+                "bd20_0": {
+                  "visited": true,
+                  "value": ""
+                },
+                "bd20": {
+                  "visited": true,
+                  "value": "{\"series\":\"I-ВО\",\"number\":\"718670\",\"date\":\"2010-03-10T00:00:00.000+03:00\",\"emitter\":\"Отдел ЗАГС администрации МО Кировский муниципальный район Ленинградской области\"}"
+                },
+                "q22": {
+                  "visited": true,
+                  "value": "Нет"
+                }
+              },
+              "esiaData": {
+                "lastName": "Васина",
+                "rfBirthCertificateIssueDate": "2010-03-10T00:00:00Z",
+                "gender": "F",
+                "regDate": "",
+                "isNew": false,
+                "relationshipToChild": "",
+                "birthDate": "2010-03-03T00:00:00Z",
+                "regAddr": "",
+                "firstName": "Ксения",
+                "rfBirthCertificateIssuedBy": "Отдел ЗАГС администрации муниципального образования Кировский муниципальный район Ленинградской области",
+                "rfBirthCertificateSeries": "I-ВО",
+                "middleName": "Ярославовна",
+                "id": "113308836",
+                "rfBirthCertificateNumber": "718670",
+                "rfBirthCertificateActNumber": "81",
+                "birthPlaceLocality": "САНКТ-ПЕТЕРБУРГ"
+              },
+              "finishedScreens": [
+                "scrchld16",
+                "scrchld16_1",
+                "scrchld10",
+                "scrchld9",
+                "scrchld11",
+                "scrchld13",
+                "scrchld14",
+                "scrchld15",
+                "s70",
+                "s71"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "participants": {
+      "-10000": {
+        "role": "Coapplicant",
+        "mode": "SlaveApplicant",
+        "component": "ai18",
+        "index": 0
+      }
+    },
+    "display": {
+      "id": "s81",
+      "name": "Заявление отправлено! новый, дети до 14, регистрация",
+      "type": "INFO",
+      "header": "Заявление отправлено!",
+      "components": [
+        {
+          "id": "d18",
+          "type": "InfoScr",
+          "label": "<p>Оформление загранпаспорта будет производиться подразделением Отдел по вопросам миграции ОМВД России по Кировскому району Ленинградской области по адресу   </p><div class='block--with-icon'><img src='{staticDomainAssetsPath}/assets/icons/svg/house.svg'><span><a target='_blank' href='http://yandex.ru/maps/?pt=30.795739,59.767956&z=13'>Кировский район, город Отрадное, ул. Щурова, д. 2</a></span></div><div class='block--with-icon'><img src='{staticDomainAssetsPath}/assets/icons/svg/clock.svg'><span>Процедура займет до <b>1 месяца</b></span></div><br><b>Что дальше</b><br><p><span style='color:blue'><b>1.</b></span> После рассмотрения заявления в ваш личный кабинет придет уведомление о возможности оплатить пошлину онлайн со скидкой 30%</p><p><span style='color:blue'><b>2.</b></span> Дождитесь в личном кабинете приглашения в подразделение. Принесите с собой <a id='DocOrigonals'>оригиналы документов</a></p><p><span style='color:blue'><b>3.</b></span> В отделении МВД сотрудник полиции сверит данные из электронного заявления с оригинальными документами, сфотографирует ребенка и сообщит о сроке готовности загранпаспорта</p>",
+          "attrs": {
+            "actions": [
+              {
+                "label": "В личный кабинет",
+                "value": "В личный кабинет",
+                "type": "redirectToLK",
+                "action": "getNextScreen"
+              }
+            ],
+            "clarifications": {
+              "DocOrigonals": {
+                "title": "Какие документы взять в МВД",
+                "text": "<ul><li>Ваш паспорт РФ</li><li><a><span id='docofright'>Документ</span></a>, подтверждающий права законного представителя ребенка <div data-hidden-id='docofright' hidden>Это может быть свидетельство о рождении ребенка, документ об усыновлении или акт органа опеки и попечительства о назначении опекуна или попечителя</div></li><li>Свидетельство о рождении для детей до 14 лет</li><li><a><span id='docfright'>Документ</span></a>, подтверждающий наличие гражданства РФ у ребенка <div data-hidden-id='docfright' hidden>Это может быть свидетельство о рождении с отметкой о принадлежности к гражданству РФ либо вкладыш с отметкой о наличии российского гражданства к свидетельству о рождении, ранее выданный загранпаспорт</div></li><li>Ранее выданный загранпаспорт ребенка (при наличии)</li></ul>"
+              }
+            },
+            "refs": {
+              "reference_to_name": "ms1.value.title",
+              "reference_to_x": "ms1.value.center[0]",
+              "reference_to_y": "ms1.value.center[1]",
+              "reference_to_address": "ms1.value.attributeValues.address_out"
+            }
+          },
+          "linkedValues": [],
+          "arguments": {},
+          "value": "",
+          "required": true
+        }
+      ],
+      "terminal": true,
+      "accepted": true,
+      "firstScreen": false,
+      "impasse": false
+    },
+    "attachmentInfo": {
+      "d34": [
+        {
+          "uploadId": "child_passport_photo",
+          "uploadMnemonic": "d34.PhotoUploadComponent.child_passport_photo.113308836",
+          "uploadFilename": "Foto_5fbaf4ff-624d-484b-9605-fd561eb74f72.jpg",
+          "objectId": "1032256805",
+          "objectTypeId": "2"
+        }
+      ]
+    },
+    "additionalParameters": {
+      "orderId": "1033293891",
+      "oid": "-10000",
+      "snils": "187-527-008 97",
+      "gender": "M",
+      "citizenship": "РОССИЯ",
+      "citizenshipCode": "RUS",
+      "serviceId": "10000000101",
+      "masterId": "1032256805",
+      "masterOid": "1057273060",
+      "masterSnils": "187-527-008 97",
+      "masterGender": "M",
+      "masterCitizenship": "РОССИЯ",
+      "masterCitizenshipCode": "RUS"
+    },
+    "generatedFiles": [
+      "req_25821e4f-2353-41ca-b698-b3117d19535c.xml",
+      "req_preview.pdf"
+    ],
+    "gender": "M"
+  }
+}

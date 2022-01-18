@@ -1,0 +1,87 @@
+server:
+  port: 8098
+  servlet.context-path: /service-publisher
+  encoding.charset: UTF-8
+
+spring:
+  application:
+    name: service-publisher
+    env: dev
+    version: 0.1
+  jpa:
+    open-in-view: false
+    generate-ddl: false
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        order_updates: true
+        order_inserts: true
+        default_schema: pgu_publisher
+        jdbc:
+          batch_versioned_data: true
+          batch_size: 50
+          fetch_size: 50
+          use_streams_for_binary: false
+  datasource:
+    url: jdbc:postgresql://localhost:35432/publisher
+    username: postgres
+    password: example
+    hikari:
+      auto-commit: true
+      login-timeout: 5000
+      connection-test-query: "select 1"
+      connection-timeout: 5000
+      pool-name: publisher-pool
+      idle-timeout: 30000
+      maximum-pool-size: 20
+      max-lifetime: 0
+      minimum-idle: 1
+      register-mbeans: true
+
+vcs:
+  repo-url: http://git.gosuslugi.local/luxoft/epgu2-services-json.git
+  user-name: login
+  user-pass: example
+  local-repo-path: /tmp/repos
+  vm-templates-dir: xml-templates
+  services-temp-path: /tmp/repo2
+  schedule-rate-milliseconds: 60000
+  all-services-config-file: config
+  service-config-dir: configs
+  config-source-enabled: false
+  services:
+    10000000100: registration.json
+    10000000101: zagranpassport.json
+    10000000102: passportrf.json
+    10000000103: sudimost.json
+    10000000104: registration_ts.json
+    10000000105: brak.json
+
+job-service:
+  schedule-rate-milliseconds: 6000
+  task-select-minutes-count: 5
+  environments:
+    uat:
+      descriptorUrl: http://localhost:8096
+      templatesUrl: http://localhost:8096
+      configUrl: http://localhost:8096
+    dev:
+      descriptorUrl: http://localhost:8096
+      templatesUrl: http://localhost:8096
+      configUrl: http://localhost:8096
+    dev01:
+      descriptorUrl: http://localhost:8096
+      templatesUrl: http://localhost:8096
+      configUrl: http://localhost:8096
+  service-catalog:
+    publisher:
+      url: http://pgu-dev-fednlb.test.gosuslugi.ru/internal/api/publisher
+
+logging:
+  level:
+    root: INFO
+    ru.gosuslugi.pgu.service.publisher: DEBUG
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG

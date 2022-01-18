@@ -1,0 +1,666 @@
+{
+  "orderId": 763545399,
+  "type": "10000000101",
+  "locked": false,
+  "updated": "2020-12-30T10:24:12.401Z",
+  "body": {
+    "serviceCode": "10000000101",
+    "targetCode": "-10000000101",
+    "orderId": 763545399,
+    "currentScenarioId": 1,
+    "currentUrl": "http://local.test.gosuslugi.ru:4200/",
+    "finishedAndCurrentScreens": [
+      "s1",
+      "s2",
+      "s3",
+      "s4",
+      "s7",
+      "s8",
+      "s9",
+      "s14",
+      "s19",
+      "s20",
+      "s21",
+      "s22",
+      "s53",
+      "s55",
+      "s24",
+      "s25",
+      "s29",
+      "s30",
+      "s5",
+      "s34",
+      "s35",
+      "s36",
+      "s39",
+      "s60",
+      "s84"
+    ],
+    "cachedAnswers": {
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "q1": {
+        "visited": true,
+        "value": "Старого образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Мне и детям"
+      },
+      "q3": {
+        "visited": true,
+        "value": "До 14 лет"
+      },
+      "q6": {
+        "visited": true,
+        "value": "Да"
+      },
+      "q7": {
+        "visited": true,
+        "value": "Оформить загранпаспорт нового образца"
+      },
+      "q8": {
+        "visited": true,
+        "value": "По месту жительства"
+      },
+      "d5": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Ы Анна Мария\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"25.01.1990\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0006 234222\"},{\"label\":\"Дата выдачи:\",\"value\":\"19.05.2020\"},{\"label\":\"Кем выдан:\",\"value\":\"ОТДЕЛОМ УФМС РОССИИ ПО СМОЛЕНСКОЙ ОБЛ. В ЛЕНИНСКОМ РАЙОНЕ Г. СМОЛЕНСКА\"},{\"label\":\"Код подразделения:\",\"value\":\"670-001\"},{\"label\":\"Место рождения:\",\"value\":\"Сыктывкар\"}]}],\"storedValues\":{\"firstName\":\"Анна Мария\",\"lastName\":\"Ы\",\"birthPlace\":\"Сыктывкар\",\"rfPasportIssuedBy\":\"ОТДЕЛОМ УФМС РОССИИ ПО СМОЛЕНСКОЙ ОБЛ. В ЛЕНИНСКОМ РАЙОНЕ Г. СМОЛЕНСКА\",\"gender\":\"F\",\"rfPasportIssuedById\":\"670001\",\"rfPasportSeries\":\"0006\",\"birthDate\":\"25.01.1990\",\"rfPasportNumber\":\"234222\",\"rfPasportIssueDate\":\"19.05.2020\"}}"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(953)2121212"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "irymar@luxoft.com"
+      },
+      "pd4": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.4323067\",\"building2Type\":null,\"okato\":\"46460000000\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.4323067\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.5619233\",\"index\":\"142116\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"142116, обл. Московская, г. Подольск, пр-кт. Революционный, д. 2/14, кв. 5\",\"houseCheckbox\":false,\"region\":\"Московская\",\"geoLon\":\"37.5619233\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Подольск\",\"apartmentShortType\":\"кв\",\"house\":\"2/14\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"50\",\"districtShortType\":null,\"street\":\"Революционный\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"5000002400003820014\",\"building1ShortType\":null,\"fiasCode\":\"b924607a-e2ea-438a-bdbf-a20579df8de3\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Московская, г. Подольск, пр-кт. Революционный\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"5\"},\"regDate\":\"11.12.2020\"}"
+      },
+      "q16": {
+        "visited": true,
+        "value": "Да"
+      },
+      "q18": {
+        "visited": true,
+        "value": "Да"
+      },
+      "pd6": {
+        "visited": true,
+        "value": "{\"regionType\":\"город\",\"regionShortType\":\"г\",\"region\":\"Москва\",\"city\":\"\",\"district\":\"\",\"town\":\"\",\"inCityDist\":\"\",\"streetType\":\"шоссе\",\"streetShortType\":\"ш\",\"street\":\"Варшавское\",\"additionalArea\":\"\",\"additionalStreet\":\"\",\"houseType\":\"дом\",\"houseShortType\":\"д\",\"house\":\"141А\",\"houseCheckbox\":false,\"houseCheckboxClosed\":false,\"building1Type\":\"корпус\",\"building1ShortType\":\"к\",\"building1\":\"3\",\"building2\":\"\",\"apartmentType\":\"квартира\",\"apartmentShortType\":\"кв\",\"apartment\":\"999\",\"apartmentCheckbox\":false,\"apartmentCheckboxClosed\":false,\"index\":\"117405\",\"geoLat\":\"55.584645\",\"geoLon\":\"37.603487\",\"fullAddress\":\"117405, г. Москва, ш. Варшавское, д. 141А, к. 3, кв. 999\",\"addressStr\":\"г. Москва, ш. Варшавское\",\"lat\":\"55.584645\",\"lng\":\"37.603487\",\"fiasCode\":\"4ff7be6b-e016-49b1-aee7-cd98c1f15e2a\",\"okato\":\"45296597000\",\"hasErrors\":0,\"kladrCode\":\"7700000000004761533\",\"regionCode\":\"77\"}"
+      },
+      "pd9": {
+        "visited": true,
+        "value": ""
+      },
+      "pd7": {
+        "visited": true,
+        "value": "2020-12-08T00:00:00.000+06:00"
+      },
+      "pd8": {
+        "visited": true,
+        "value": "2021-01-02T00:00:00.000+06:00"
+      },
+      "d33": {
+        "visited": true,
+        "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"ACDC.jpg\",\"objectType\":2,\"objectId\":763545399,\"mimeType\":\"image/jpeg\"}"
+      },
+      "eh1": {
+        "visited": true,
+        "value": "[{\"type\":\"student\",\"label\":\"Я училась\",\"from\":{\"year\":2000,\"month\":0,\"monthCode\":\"Январь\"},\"to\":{\"year\":2020,\"month\":11,\"monthCode\":\"Декабрь\"},\"place\":\"e\",\"address\":\"e\",\"checkboxToDate\":false}]"
+      },
+      "q9": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q4": {
+        "visited": true,
+        "value": "Да"
+      },
+      "ai1": {
+        "visited": true,
+        "value": "[{\"lab3\":\"\",\"lab4\":\"\",\"zps1\":{\"date\":\"2020-12-09T00:00:00.000+06:00\",\"number\":\"3224235\",\"series\":\"12\",\"emitter\":\"выдан\",\"expirationDate\":\"2021-01-02T00:00:00.000+06:00\"},\"zps5\":\"\",\"rb40\":\"2\"}]"
+      },
+      "fai6": {
+        "visited": true,
+        "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+      },
+      "rb9": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb10": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb11": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb12": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb13": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb14": {
+        "visited": true,
+        "value": "0"
+      },
+      "q10": {
+        "visited": true,
+        "value": "Взамен использованного/испорченного"
+      },
+      "ai18": {
+        "visited": true,
+        "value": "[{\"rf68\":\"У3322к3\",\"clr3\":{\"regDate\":\"02.12.2020\",\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"пр-кт\",\"geoLat\":\"55.4323067\",\"okato\":\"46460000000\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.4323067\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.5619233\",\"index\":\"142116\",\"district\":\"\",\"fullAddress\":\"142116, обл. Московская, г. Подольск, пр-кт. Революционный, д. 2/14, кв. 5\",\"houseCheckbox\":false,\"region\":\"Московская\",\"geoLon\":\"37.5619233\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Подольск\",\"apartmentShortType\":\"кв\",\"house\":\"2/14\",\"apartmentCheckbox\":false,\"regionShortType\":\"обл\",\"regionCode\":\"50\",\"street\":\"Революционный\",\"cityShortType\":\"г\",\"kladrCode\":\"5000002400003820014\",\"fiasCode\":\"b924607a-e2ea-438a-bdbf-a20579df8de3\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Московская, г. Подольск, пр-кт. Революционный\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"5\"}},\"d34\":{\"name\":\"Russkie bukvy.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.2370e82f-9eed-4080-94f9-e3c6912899fe\",\"mimeType\":\"image/jpeg\",\"objectId\":763545399,\"objectType\":2},\"rf63\":\"M\",\"rf62\":\"Маратович\",\"rf65\":\"false\",\"rf64\":\"2002-12-03T00:00:00.000+06:00\",\"ai6\":\"[{\\\"lab1\\\":\\\"\\\",\\\"lab2\\\":\\\"\\\",\\\"zps20\\\":{\\\"date\\\":\\\"2020-12-09T00:00:00.000+06:00\\\",\\\"number\\\":\\\"2323456\\\",\\\"series\\\":\\\"12\\\",\\\"emitter\\\":\\\"ауца\\\",\\\"expirationDate\\\":\\\"2021-01-01T00:00:00.000+06:00\\\"},\\\"zps6\\\":\\\"\\\",\\\"rb30\\\":\\\"1\\\"}]\",\"q13\":\"Свидетельство о рождении, выданное на территории РФ\",\"rf61\":\"Дамир\",\"rf60\":\"Хабибулин\",\"ai18_4\":\"Дамир\",\"ai18_5\":\"Маратович\",\"ai18_6\":\"true\",\"bd20_0\":\"\",\"ai18_0\":\"2370e82f-9eed-4080-94f9-e3c6912899fe\",\"ai18_1\":\"2020-12-01T00:00:00.000+06:00\",\"ai18_2\":\"M\",\"ai18_3\":\"Хабибулин\",\"bd1\":{\"date\":\"2020-12-01T00:00:00.000+06:00\",\"number\":\"1212122\",\"series\":\"XX-аа\",\"emitter\":\"Кем выдан\"},\"bd20\":{\"date\":\"2020-12-08T00:00:00.000+06:00\",\"number\":\"3333\",\"series\":\"333\",\"emitter\":\"кеу\"},\"q22\":\"Да\",\"bd1_1\":\"23233\",\"bd5\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"bd7\":\"232вув\",\"q26\":\"Нет\",\"q28\":\"Взамен использованного/испорченного\",\"q27\":\"Да\"}]"
+      },
+      "ms1": {
+        "visited": true,
+        "value": "{\"value\":\"7700087\",\"parentValue\":null,\"title\":\"Отдел УФМС России по г. Москве по району Южное Бутово\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"email_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"ufms-uzao@rambler.ru\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"ufms-uzao@rambler.ru\"},\"valueAsOfType\":\"ufms-uzao@rambler.ru\"},{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"город Москва, Маршала Савицкого, д. 30, 32\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"город Москва, Маршала Савицкого, д. 30, 32\"},\"valueAsOfType\":\"город Москва, Маршала Савицкого, д. 30, 32\"},{\"name\":\"phone_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"+7(499)9409818\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"+7(499)9409818\"},\"valueAsOfType\":\"+7(499)9409818\"},{\"name\":\"fax_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"schedule_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},\"valueAsOfType\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},{\"name\":\"scheduleComment_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                \"},\"valueAsOfType\":\"\\n                \"}],\"source\":\"fms_5\",\"attributeValues\":{\"phone_out\":\"+7(499)9409818\",\"email_out\":\"ufms-uzao@rambler.ru\",\"schedule_out\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"fax_out\":\"\",\"scheduleComment_out\":\"\\n                \",\"address_out\":\"город Москва, Маршала Савицкого, д. 30, 32\"},\"idForMap\":52,\"center\":[37.598708,55.502447],\"baloonContent\":[{\"value\":\"город Москва, Маршала Савицкого, д. 30, 32\",\"label\":\"Адрес\"},{\"value\":\"+7(499)9409818\",\"label\":\"Телефон\"},{\"value\":\"ufms-uzao@rambler.ru\",\"label\":\"Электронная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"46000000000\",\"okato\":\"46460000000\"}"
+      }
+    },
+    "currentValue": {},
+    "errors": {},
+    "applicantAnswers": {
+      "q1": {
+        "visited": true,
+        "value": "Старого образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Мне и детям"
+      },
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "q3": {
+        "visited": true,
+        "value": "До 14 лет"
+      },
+      "q6": {
+        "visited": true,
+        "value": "Да"
+      },
+      "q7": {
+        "visited": true,
+        "value": "Оформить загранпаспорт нового образца"
+      },
+      "q8": {
+        "visited": true,
+        "value": "По месту жительства"
+      },
+      "d5": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Ы Анна Мария\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"25.01.1990\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0006 234222\"},{\"label\":\"Дата выдачи:\",\"value\":\"19.05.2020\"},{\"label\":\"Кем выдан:\",\"value\":\"ОТДЕЛОМ УФМС РОССИИ ПО СМОЛЕНСКОЙ ОБЛ. В ЛЕНИНСКОМ РАЙОНЕ Г. СМОЛЕНСКА\"},{\"label\":\"Код подразделения:\",\"value\":\"670-001\"},{\"label\":\"Место рождения:\",\"value\":\"Сыктывкар\"}]}],\"storedValues\":{\"firstName\":\"Анна Мария\",\"lastName\":\"Ы\",\"birthPlace\":\"Сыктывкар\",\"rfPasportIssuedBy\":\"ОТДЕЛОМ УФМС РОССИИ ПО СМОЛЕНСКОЙ ОБЛ. В ЛЕНИНСКОМ РАЙОНЕ Г. СМОЛЕНСКА\",\"gender\":\"F\",\"rfPasportIssuedById\":\"670001\",\"rfPasportSeries\":\"0006\",\"birthDate\":\"25.01.1990\",\"rfPasportNumber\":\"234222\",\"rfPasportIssueDate\":\"19.05.2020\"}}"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(953)2121212"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "irymar@luxoft.com"
+      },
+      "pd4": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.4323067\",\"building2Type\":null,\"okato\":\"46460000000\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.4323067\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.5619233\",\"index\":\"142116\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"142116, обл. Московская, г. Подольск, пр-кт. Революционный, д. 2/14, кв. 5\",\"houseCheckbox\":false,\"region\":\"Московская\",\"geoLon\":\"37.5619233\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Подольск\",\"apartmentShortType\":\"кв\",\"house\":\"2/14\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"50\",\"districtShortType\":null,\"street\":\"Революционный\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"5000002400003820014\",\"building1ShortType\":null,\"fiasCode\":\"b924607a-e2ea-438a-bdbf-a20579df8de3\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Московская, г. Подольск, пр-кт. Революционный\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"5\"},\"regDate\":\"11.12.2020\"}"
+      },
+      "q16": {
+        "visited": true,
+        "value": "Да"
+      },
+      "q18": {
+        "visited": true,
+        "value": "Да"
+      },
+      "pd6": {
+        "visited": true,
+        "value": "{\"regionType\":\"город\",\"regionShortType\":\"г\",\"region\":\"Москва\",\"city\":\"\",\"district\":\"\",\"town\":\"\",\"inCityDist\":\"\",\"streetType\":\"шоссе\",\"streetShortType\":\"ш\",\"street\":\"Варшавское\",\"additionalArea\":\"\",\"additionalStreet\":\"\",\"houseType\":\"дом\",\"houseShortType\":\"д\",\"house\":\"141А\",\"houseCheckbox\":false,\"houseCheckboxClosed\":false,\"building1Type\":\"корпус\",\"building1ShortType\":\"к\",\"building1\":\"3\",\"building2\":\"\",\"apartmentType\":\"квартира\",\"apartmentShortType\":\"кв\",\"apartment\":\"999\",\"apartmentCheckbox\":false,\"apartmentCheckboxClosed\":false,\"index\":\"117405\",\"geoLat\":\"55.584645\",\"geoLon\":\"37.603487\",\"fullAddress\":\"117405, г. Москва, ш. Варшавское, д. 141А, к. 3, кв. 999\",\"addressStr\":\"г. Москва, ш. Варшавское\",\"lat\":\"55.584645\",\"lng\":\"37.603487\",\"fiasCode\":\"4ff7be6b-e016-49b1-aee7-cd98c1f15e2a\",\"okato\":\"45296597000\",\"hasErrors\":0,\"kladrCode\":\"7700000000004761533\",\"regionCode\":\"77\"}"
+      },
+      "pd9": {
+        "visited": true,
+        "value": ""
+      },
+      "pd7": {
+        "visited": true,
+        "value": "2020-12-08T00:00:00.000+06:00"
+      },
+      "pd8": {
+        "visited": true,
+        "value": "2021-01-02T00:00:00.000+06:00"
+      },
+      "d33": {
+        "visited": true,
+        "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"ACDC.jpg\",\"objectType\":2,\"objectId\":763545399,\"mimeType\":\"image/jpeg\"}"
+      },
+      "eh1": {
+        "visited": true,
+        "value": "[{\"type\":\"student\",\"label\":\"Я училась\",\"from\":{\"year\":2000,\"month\":0,\"monthCode\":\"Январь\"},\"to\":{\"year\":2020,\"month\":11,\"monthCode\":\"Декабрь\"},\"place\":\"e\",\"address\":\"e\",\"checkboxToDate\":false}]"
+      },
+      "q9": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q4": {
+        "visited": true,
+        "value": "Да"
+      },
+      "ai1": {
+        "visited": true,
+        "value": "[{\"lab3\":\"\",\"lab4\":\"\",\"zps1\":{\"date\":\"2020-12-09T00:00:00.000+06:00\",\"number\":\"3224235\",\"series\":\"12\",\"emitter\":\"выдан\",\"expirationDate\":\"2021-01-02T00:00:00.000+06:00\"},\"zps5\":\"\",\"rb40\":\"2\"}]"
+      },
+      "fai6": {
+        "visited": true,
+        "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+      },
+      "rb9": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb10": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb11": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb12": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb13": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb14": {
+        "visited": true,
+        "value": "0"
+      },
+      "q10": {
+        "visited": true,
+        "value": "Взамен использованного/испорченного"
+      },
+      "ai18": {
+        "visited": true,
+        "value": "[{\"rf68\":\"У3322к3\",\"clr3\":{\"regDate\":\"02.12.2020\",\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"пр-кт\",\"geoLat\":\"55.4323067\",\"okato\":\"46460000000\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.4323067\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.5619233\",\"index\":\"142116\",\"district\":\"\",\"fullAddress\":\"142116, обл. Московская, г. Подольск, пр-кт. Революционный, д. 2/14, кв. 5\",\"houseCheckbox\":false,\"region\":\"Московская\",\"geoLon\":\"37.5619233\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Подольск\",\"apartmentShortType\":\"кв\",\"house\":\"2/14\",\"apartmentCheckbox\":false,\"regionShortType\":\"обл\",\"regionCode\":\"50\",\"street\":\"Революционный\",\"cityShortType\":\"г\",\"kladrCode\":\"5000002400003820014\",\"fiasCode\":\"b924607a-e2ea-438a-bdbf-a20579df8de3\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Московская, г. Подольск, пр-кт. Революционный\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"5\"}},\"d34\":{\"name\":\"Russkie bukvy.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.2370e82f-9eed-4080-94f9-e3c6912899fe\",\"mimeType\":\"image/jpeg\",\"objectId\":763545399,\"objectType\":2},\"rf63\":\"M\",\"rf62\":\"Маратович\",\"rf65\":\"false\",\"rf64\":\"2002-12-03T00:00:00.000+06:00\",\"ai6\":\"[{\\\"lab1\\\":\\\"\\\",\\\"lab2\\\":\\\"\\\",\\\"zps20\\\":{\\\"date\\\":\\\"2020-12-09T00:00:00.000+06:00\\\",\\\"number\\\":\\\"2323456\\\",\\\"series\\\":\\\"12\\\",\\\"emitter\\\":\\\"ауца\\\",\\\"expirationDate\\\":\\\"2021-01-01T00:00:00.000+06:00\\\"},\\\"zps6\\\":\\\"\\\",\\\"rb30\\\":\\\"1\\\"}]\",\"q13\":\"Свидетельство о рождении, выданное на территории РФ\",\"rf61\":\"Дамир\",\"rf60\":\"Хабибулин\",\"ai18_4\":\"Дамир\",\"ai18_5\":\"Маратович\",\"ai18_6\":\"true\",\"bd20_0\":\"\",\"ai18_0\":\"2370e82f-9eed-4080-94f9-e3c6912899fe\",\"ai18_1\":\"2020-12-01T00:00:00.000+06:00\",\"ai18_2\":\"M\",\"ai18_3\":\"Хабибулин\",\"bd1\":{\"date\":\"2020-12-01T00:00:00.000+06:00\",\"number\":\"1212122\",\"series\":\"XX-аа\",\"emitter\":\"Кем выдан\"},\"bd20\":{\"date\":\"2020-12-08T00:00:00.000+06:00\",\"number\":\"3333\",\"series\":\"333\",\"emitter\":\"кеу\"},\"q22\":\"Да\",\"bd1_1\":\"23233\",\"bd5\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"bd7\":\"232вув\",\"q26\":\"Нет\",\"q28\":\"Взамен использованного/испорченного\",\"q27\":\"Да\"}]"
+      },
+      "ms1": {
+        "visited": true,
+        "value": "{\"value\":\"7700087\",\"parentValue\":null,\"title\":\"Отдел УФМС России по г. Москве по району Южное Бутово\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"email_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"ufms-uzao@rambler.ru\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"ufms-uzao@rambler.ru\"},\"valueAsOfType\":\"ufms-uzao@rambler.ru\"},{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"город Москва, Маршала Савицкого, д. 30, 32\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"город Москва, Маршала Савицкого, д. 30, 32\"},\"valueAsOfType\":\"город Москва, Маршала Савицкого, д. 30, 32\"},{\"name\":\"phone_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"+7(499)9409818\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"+7(499)9409818\"},\"valueAsOfType\":\"+7(499)9409818\"},{\"name\":\"fax_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"schedule_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},\"valueAsOfType\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},{\"name\":\"scheduleComment_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                \"},\"valueAsOfType\":\"\\n                \"}],\"source\":\"fms_5\",\"attributeValues\":{\"phone_out\":\"+7(499)9409818\",\"email_out\":\"ufms-uzao@rambler.ru\",\"schedule_out\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"fax_out\":\"\",\"scheduleComment_out\":\"\\n                \",\"address_out\":\"город Москва, Маршала Савицкого, д. 30, 32\"},\"idForMap\":52,\"center\":[37.598708,55.502447],\"baloonContent\":[{\"value\":\"город Москва, Маршала Савицкого, д. 30, 32\",\"label\":\"Адрес\"},{\"value\":\"+7(499)9409818\",\"label\":\"Телефон\"},{\"value\":\"ufms-uzao@rambler.ru\",\"label\":\"Электронная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"46000000000\",\"okato\":\"46460000000\"}"
+      }
+    },
+    "cycledApplicantAnswers": {
+      "currentAnswerId": "ai18",
+      "answerlist": [
+        {
+          "id": "ai18",
+          "initScreen": "s39",
+          "currentItemId": "2370e82f-9eed-4080-94f9-e3c6912899fe",
+          "items": [
+            {
+              "id": "2370e82f-9eed-4080-94f9-e3c6912899fe",
+              "itemAnswers": {
+                "ai18_4": {
+                  "visited": true,
+                  "value": "Дамир"
+                },
+                "ai18_5": {
+                  "visited": true,
+                  "value": "Маратович"
+                },
+                "ai18_6": {
+                  "visited": true,
+                  "value": "true"
+                },
+                "ai18_0": {
+                  "visited": true,
+                  "value": "2370e82f-9eed-4080-94f9-e3c6912899fe"
+                },
+                "ai18_1": {
+                  "visited": true,
+                  "value": "2020-12-01T00:00:00.000+06:00"
+                },
+                "ai18_2": {
+                  "visited": true,
+                  "value": "M"
+                },
+                "ai18_3": {
+                  "visited": true,
+                  "value": "Хабибулин"
+                },
+                "q13": {
+                  "visited": true,
+                  "value": "Свидетельство о рождении, выданное на территории РФ"
+                },
+                "bd1": {
+                  "visited": true,
+                  "value": "{\"series\":\"XX-аа\",\"number\":\"1212122\",\"date\":\"2020-12-01T00:00:00.000+06:00\",\"emitter\":\"Кем выдан\"}"
+                },
+                "bd1_1": {
+                  "visited": true,
+                  "value": "23233"
+                },
+                "bd5": {
+                  "visited": true,
+                  "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                },
+                "bd7": {
+                  "visited": true,
+                  "value": "232вув"
+                },
+                "clr3": {
+                  "visited": true,
+                  "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.4323067\",\"building2Type\":null,\"okato\":\"46460000000\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.4323067\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.5619233\",\"index\":\"142116\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"142116, обл. Московская, г. Подольск, пр-кт. Революционный, д. 2/14, кв. 5\",\"houseCheckbox\":false,\"region\":\"Московская\",\"geoLon\":\"37.5619233\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Подольск\",\"apartmentShortType\":\"кв\",\"house\":\"2/14\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"50\",\"districtShortType\":null,\"street\":\"Революционный\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"5000002400003820014\",\"building1ShortType\":null,\"fiasCode\":\"b924607a-e2ea-438a-bdbf-a20579df8de3\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Московская, г. Подольск, пр-кт. Революционный\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"5\"},\"regDate\":\"02.12.2020\"}"
+                },
+                "d34": {
+                  "visited": true,
+                  "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.2370e82f-9eed-4080-94f9-e3c6912899fe\",\"name\":\"Russkie bukvy.jpg\",\"objectType\":2,\"objectId\":763545399,\"mimeType\":\"image/jpeg\"}"
+                },
+                "q26": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q27": {
+                  "visited": true,
+                  "value": "Да"
+                },
+                "ai6": {
+                  "visited": true,
+                  "value": "[{\"lab1\":\"\",\"lab2\":\"\",\"zps20\":{\"date\":\"2020-12-09T00:00:00.000+06:00\",\"number\":\"2323456\",\"series\":\"12\",\"emitter\":\"ауца\",\"expirationDate\":\"2021-01-01T00:00:00.000+06:00\"},\"zps6\":\"\",\"rb30\":\"1\"}]"
+                },
+                "q28": {
+                  "visited": true,
+                  "value": "Взамен использованного/испорченного"
+                },
+                "bd20_0": {
+                  "visited": true,
+                  "value": ""
+                },
+                "bd20": {
+                  "visited": true,
+                  "value": "{\"series\":\"333\",\"number\":\"3333\",\"date\":\"2020-12-08T00:00:00.000+06:00\",\"emitter\":\"кеу\"}"
+                },
+                "q22": {
+                  "visited": true,
+                  "value": "Да"
+                },
+                "rf60": {
+                  "visited": true,
+                  "value": "Хабибулин"
+                },
+                "rf61": {
+                  "visited": true,
+                  "value": "Дамир"
+                },
+                "rf62": {
+                  "visited": true,
+                  "value": "Маратович"
+                },
+                "rf63": {
+                  "visited": true,
+                  "value": "M"
+                },
+                "rf64": {
+                  "visited": true,
+                  "value": "2002-12-03T00:00:00.000+06:00"
+                },
+                "rf65": {
+                  "visited": true,
+                  "value": "false"
+                },
+                "rf68": {
+                  "visited": true,
+                  "value": "У3322к3"
+                }
+              },
+              "cachedAnswers": {
+                "ai18_4": {
+                  "visited": true,
+                  "value": "Дамир"
+                },
+                "ai18_5": {
+                  "visited": true,
+                  "value": "Маратович"
+                },
+                "ai18_6": {
+                  "visited": true,
+                  "value": "true"
+                },
+                "ai18_0": {
+                  "visited": true,
+                  "value": "2370e82f-9eed-4080-94f9-e3c6912899fe"
+                },
+                "ai18_1": {
+                  "visited": true,
+                  "value": "2020-12-01T00:00:00.000+06:00"
+                },
+                "ai18_2": {
+                  "visited": true,
+                  "value": "M"
+                },
+                "ai18_3": {
+                  "visited": true,
+                  "value": "Хабибулин"
+                },
+                "q13": {
+                  "visited": true,
+                  "value": "Свидетельство о рождении, выданное на территории РФ"
+                },
+                "bd1": {
+                  "visited": true,
+                  "value": "{\"series\":\"XX-аа\",\"number\":\"1212122\",\"date\":\"2020-12-01T00:00:00.000+06:00\",\"emitter\":\"Кем выдан\"}"
+                },
+                "bd1_1": {
+                  "visited": true,
+                  "value": "23233"
+                },
+                "bd5": {
+                  "visited": true,
+                  "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                },
+                "bd7": {
+                  "visited": true,
+                  "value": "232вув"
+                },
+                "clr3": {
+                  "visited": true,
+                  "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.4323067\",\"building2Type\":null,\"okato\":\"46460000000\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.4323067\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.5619233\",\"index\":\"142116\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"142116, обл. Московская, г. Подольск, пр-кт. Революционный, д. 2/14, кв. 5\",\"houseCheckbox\":false,\"region\":\"Московская\",\"geoLon\":\"37.5619233\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Подольск\",\"apartmentShortType\":\"кв\",\"house\":\"2/14\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"50\",\"districtShortType\":null,\"street\":\"Революционный\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"5000002400003820014\",\"building1ShortType\":null,\"fiasCode\":\"b924607a-e2ea-438a-bdbf-a20579df8de3\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Московская, г. Подольск, пр-кт. Революционный\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"5\"},\"regDate\":\"02.12.2020\"}"
+                },
+                "d34": {
+                  "visited": true,
+                  "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.2370e82f-9eed-4080-94f9-e3c6912899fe\",\"name\":\"Russkie bukvy.jpg\",\"objectType\":2,\"objectId\":763545399,\"mimeType\":\"image/jpeg\"}"
+                },
+                "q26": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q27": {
+                  "visited": true,
+                  "value": "Да"
+                },
+                "ai6": {
+                  "visited": true,
+                  "value": "[{\"lab1\":\"\",\"lab2\":\"\",\"zps20\":{\"date\":\"2020-12-09T00:00:00.000+06:00\",\"number\":\"2323456\",\"series\":\"12\",\"emitter\":\"ауца\",\"expirationDate\":\"2021-01-01T00:00:00.000+06:00\"},\"zps6\":\"\",\"rb30\":\"1\"}]"
+                },
+                "q28": {
+                  "visited": true,
+                  "value": "Взамен использованного/испорченного"
+                },
+                "bd20_0": {
+                  "visited": true,
+                  "value": ""
+                },
+                "bd20": {
+                  "visited": true,
+                  "value": "{\"series\":\"333\",\"number\":\"3333\",\"date\":\"2020-12-08T00:00:00.000+06:00\",\"emitter\":\"кеу\"}"
+                },
+                "q22": {
+                  "visited": true,
+                  "value": "Да"
+                },
+                "rf60": {
+                  "visited": true,
+                  "value": "Хабибулин"
+                },
+                "rf61": {
+                  "visited": true,
+                  "value": "Дамир"
+                },
+                "rf62": {
+                  "visited": true,
+                  "value": "Маратович"
+                },
+                "rf63": {
+                  "visited": true,
+                  "value": "M"
+                },
+                "rf64": {
+                  "visited": true,
+                  "value": "2002-12-03T00:00:00.000+06:00"
+                },
+                "rf65": {
+                  "visited": true,
+                  "value": "false"
+                },
+                "rf68": {
+                  "visited": true,
+                  "value": "У3322к3"
+                }
+              },
+              "esiaData": {
+                "firstName": "Дамир",
+                "lastName": "Хабибулин",
+                "middleName": "Маратович",
+                "id": "2370e82f-9eed-4080-94f9-e3c6912899fe",
+                "birthPlaceLocality": "232вув"
+              },
+              "finishedScreens": [
+                "scrchld1",
+                "scrchld2",
+                "scrchld10",
+                "scrchld9",
+                "scrchld11",
+                "scrchld13",
+                "scrchld14",
+                "scrchld15",
+                "s70",
+                "s71",
+                "s72"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "participants": {
+      "-10000": {
+        "role": "Coapplicant",
+        "mode": "SlaveApplicant",
+        "component": "ai18",
+        "index": 0
+      }
+    },
+    "display": {
+      "id": "s84",
+      "name": "Заявление отправлено! новый, взрослый и дети до 14, регистрация",
+      "type": "INFO",
+      "header": "Заявление отправлено!",
+      "components": [
+        {
+          "id": "d21",
+          "type": "InfoScr",
+          "label": "<p>Оформление загранпаспорта будет производиться подразделением Отдел УФМС России по г. Москве по району Южное Бутово по адресу      </p><div class='block--with-icon'><img src='{staticDomainAssetsPath}/assets/icons/svg/house.svg'><span><a target='_blank' href='http://yandex.ru/maps/?pt=37.598708,55.502447&z=13'>город Москва, Маршала Савицкого, д. 30, 32</a></span></div><div class='block--with-icon'><img src='{staticDomainAssetsPath}/assets/icons/svg/clock.svg'><span>Процедура займет до <b>1 месяца</b> (до 3-х месяцев в случае  допуска к сведениям, составляющим государственную тайну)</span></div><br><b>Что дальше</b><br><p><span style='color:blue'><b>1.</b></span> После рассмотрения заявления в ваш личный кабинет придет уведомление о возможности оплатить пошлину онлайн со скидкой 30%</p><p><span style='color:blue'><b>2.</b></span> Дождитесь в личном кабинете приглашения в подразделение. Принесите с собой <a id='DocOrigonals'>оригиналы документов</a></p><p><span style='color:blue'><b>3.</b></span> В отделении МВД сотрудник полиции сверит данные из электронного заявления с оригинальными документами, сфотографирует вас и ребенка и сообщит о сроке готовности загранпаспорта</p>",
+          "attrs": {
+            "actions": [
+              {
+                "label": "В личный кабинет",
+                "value": "В личный кабинет",
+                "type": "redirectToLK",
+                "action": "getNextScreen"
+              }
+            ],
+            "clarifications": {
+              "DocOrigonals": {
+                "title": "Какие документы взять в МВД",
+                "text": "<ul><li>Ваш паспорт РФ</li><li>Разрешение командования — для служащих в Вооруженных Силах России, а также в федеральных органах власти, в которых предусмотрена военная служба (за исключением службы по призыву)</li><li><a><span id='docofright'>Документ</span></a>, подтверждающий права законного представителя ребенка <div data-hidden-id='docofright' hidden>Это может быть свидетельство о рождении ребенка, документ об усыновлении или акт органа опеки и попечительства о назначении опекуна или попечителя</div></li><li>Свидетельство о рождении для детей до 14 лет</li><li><a><span id='docfright'>Документ</span></a>, подтверждающий наличие гражданства РФ у ребенка <div data-hidden-id='docfright' hidden>Это может быть свидетельство о рождении с отметкой о принадлежности к гражданству РФ либо вкладыш с отметкой о наличии российского гражданства к свидетельству о рождении, ранее выданный загранпаспорт</div></li><li>Ранее выданный загранпаспорт ребенка (при наличии)</li></ul>"
+              }
+            },
+            "refs": {
+              "reference_to_name": "ms1.value.title",
+              "reference_to_x": "ms1.value.center[0]",
+              "reference_to_y": "ms1.value.center[1]",
+              "reference_to_address": "ms1.value.attributeValues.address_out"
+            }
+          },
+          "linkedValues": [],
+          "arguments": {},
+          "value": "",
+          "required": true
+        }
+      ],
+      "accepted": true,
+      "firstScreen": false,
+      "impasse": false,
+      "terminal": true
+    },
+    "attachmentInfo": {
+      "d33": [
+        {
+          "uploadId": "passport_photo",
+          "uploadMnemonic": "d33.PhotoUploadComponent.passport_photo.0",
+          "uploadFilename": "ACDC.jpg",
+          "objectId": "763545399",
+          "objectTypeId": "2"
+        }
+      ],
+      "d34": [
+        {
+          "uploadId": "child_passport_photo",
+          "uploadMnemonic": "d34.PhotoUploadComponent.child_passport_photo.2370e82f-9eed-4080-94f9-e3c6912899fe",
+          "uploadFilename": "Russkie bukvy.jpg",
+          "objectId": "763545399",
+          "objectTypeId": "2"
+        }
+      ]
+    },
+    "additionalParameters": {
+      "orderId": "763545399",
+      "oid": "1000473351",
+      "snils": "000-234-222 55",
+      "gender": "F",
+      "citizenship": "РОССИЯ",
+      "citizenshipCode": "RUS",
+      "serviceId": "10000000101",
+      "timezone": "+3",
+      "masterId": "763545399",
+      "masterOid": "1000473351",
+      "masterSnils": "000-234-222 55",
+      "masterGender": "F",
+      "masterCitizenship": "РОССИЯ",
+      "masterCitizenshipCode": "RUS",
+      "masterTimezone": "+3"
+    },
+    "generatedFiles": [
+      "req_preview.pdf",
+      "req_1db3a080-545d-4cb1-96a5-398d099eeae7.xml"
+    ],
+    "gender": "F"
+  }
+}

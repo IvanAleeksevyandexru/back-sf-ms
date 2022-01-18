@@ -1,0 +1,557 @@
+{
+  "orderId": 1007709115,
+  "type": "10000000101",
+  "locked": false,
+  "updated": "2020-12-11T14:09:17.87Z",
+  "body": {
+    "serviceCode": "10000000101",
+    "targetCode": "-10000000101",
+    "orderId": 1007709115,
+    "currentScenarioId": 1,
+    "currentUrl": "https://pgu-uat-fed.test.gosuslugi.ru/600101/1/form",
+    "finishedAndCurrentScreens": [
+      "s1",
+      "s2",
+      "s3",
+      "s4",
+      "s9",
+      "s14",
+      "s19",
+      "s20",
+      "s21",
+      "s22",
+      "s25",
+      "s29",
+      "s30",
+      "s5",
+      "s35",
+      "s113",
+      "s39",
+      "s53",
+      "s60",
+      "s84"
+    ],
+    "cachedAnswers": {
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "q1": {
+        "visited": true,
+        "value": "Нового образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Мне и детям"
+      },
+      "q3": {
+        "visited": true,
+        "value": "До 14 лет"
+      },
+      "q8": {
+        "visited": true,
+        "value": "По месту жительства"
+      },
+      "d5": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Имбирная Инна Иоановна\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"17.07.2003\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0001 253353\"},{\"label\":\"Дата выдачи:\",\"value\":\"16.09.2015\"},{\"label\":\"Кем выдан:\",\"value\":\"ФМС\"},{\"label\":\"Код подразделения:\",\"value\":\"265-022\"},{\"label\":\"Место рождения:\",\"value\":\"Ярославль\"}]}],\"storedValues\":{\"firstName\":\"Инна\",\"lastName\":\"Имбирная\",\"birthPlace\":\"Ярославль\",\"rfPasportIssuedBy\":\"ФМС\",\"gender\":\"M\",\"rfPasportIssuedById\":\"265022\",\"rfPasportSeries\":\"0001\",\"middleName\":\"Иоановна\",\"birthDate\":\"17.07.2003\",\"rfPasportNumber\":\"253353\",\"rfPasportIssueDate\":\"16.09.2015\"}}"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(901)7896872"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "olyalya94@mail.ru"
+      },
+      "pd4": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.8046346\",\"building2Type\":null,\"okato\":\"46404000000\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.8046346\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.9842461\",\"index\":\"143903\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"143903, обл. Московская, г. Балашиха, ул. Восточная, д. 5, кв. 3\",\"houseCheckbox\":false,\"region\":\"Московская\",\"geoLon\":\"37.9842461\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Балашиха\",\"apartmentShortType\":\"кв\",\"house\":\"5\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"50\",\"districtShortType\":null,\"street\":\"Восточная\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"5000003600000200001\",\"building1ShortType\":null,\"fiasCode\":\"8e000f63-007d-4ec2-9b6e-800b83b24e15\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Московская, г. Балашиха, ул. Восточная\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"3\"},\"regDate\":\"31.08.2017\"}"
+      },
+      "d33": {
+        "visited": true,
+        "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"photo_2019-10-24_16-25-55.jpg\",\"objectType\":2,\"objectId\":1007709115,\"mimeType\":\"image/jpeg\"}"
+      },
+      "eh1": {
+        "visited": true,
+        "value": "[{\"type\":\"student\",\"label\":\"Я учился\",\"from\":{\"year\":2009,\"month\":8,\"monthCode\":\"Сентябрь\"},\"to\":{\"year\":2011,\"month\":6,\"monthCode\":\"Июль\"},\"place\":\"усш\",\"address\":\"шангалы\",\"checkboxToDate\":false},{\"type\":\"unemployed\",\"label\":\"Я не работал\",\"from\":{\"year\":2011,\"month\":7,\"monthCode\":\"Август\"},\"to\":{\"year\":2011,\"month\":7,\"monthCode\":\"Август\"},\"address\":\"дом\",\"checkboxToDate\":false},{\"type\":\"student\",\"label\":\"Я учился\",\"from\":{\"year\":2011,\"month\":8,\"monthCode\":\"Сентябрь\"},\"to\":{\"year\":2015,\"month\":8,\"monthCode\":\"Сентябрь\"},\"place\":\"яргу\",\"address\":\"ярославль\",\"checkboxToDate\":false},{\"type\":\"employed\",\"label\":\"Я работал\",\"from\":{\"year\":2015,\"month\":8,\"monthCode\":\"Сентябрь\"},\"to\":{\"year\":2020,\"month\":11,\"monthCode\":\"Декабрь\"},\"position\":\"руководитель\",\"place\":\"ао ртлабс\",\"address\":\"москва\",\"checkboxToDate\":true}]"
+      },
+      "q9": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q4": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "fai6": {
+        "visited": true,
+        "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+      },
+      "rf34": {
+        "visited": true,
+        "value": "false"
+      },
+      "rb9": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb10": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb11": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb12": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb13": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb14": {
+        "visited": true,
+        "value": "0"
+      },
+      "q30": {
+        "visited": true,
+        "value": "Получение впервые"
+      },
+      "ai18": {
+        "visited": true,
+        "value": "[{\"ai18_4\":\"Мальчик\",\"ai18_6\":\"false\",\"bd20_0\":\"\",\"ai18_0\":\"7482391\",\"clr3\":{\"regDate\":\"07.12.2020\",\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"geoLat\":\"55.8054626\",\"okato\":\"46404000000\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.8054626\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.9844372\",\"index\":\"143903\",\"district\":\"\",\"fullAddress\":\"143903, обл. Московская, г. Балашиха, ул. Восточная, д. 3, кв. 3\",\"houseCheckbox\":false,\"region\":\"Московская\",\"geoLon\":\"37.9844372\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Балашиха\",\"apartmentShortType\":\"кв\",\"house\":\"3\",\"apartmentCheckbox\":false,\"regionShortType\":\"обл\",\"regionCode\":\"50\",\"street\":\"Восточная\",\"cityShortType\":\"г\",\"kladrCode\":\"5000003600000200005\",\"fiasCode\":\"05c13c3e-1b82-4b47-9eac-bd9cef717403\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Московская, г. Балашиха, ул. Восточная\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"3\"}},\"d34\":{\"name\":\"f9x12ru-rospas.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.7482391\",\"mimeType\":\"image/jpeg\",\"objectId\":1007709115,\"objectType\":2},\"ai18_1\":\"2019-01-11T00:00:00Z\",\"q28_2\":\"Получение впервые\",\"ai18_2\":\"M\",\"ai18_3\":\"Тестовый\",\"pd21\":{\"storedValues\":{\"firstName\":\"Мальчик\",\"lastName\":\"Тестовый\",\"rfBirthCertificateIssuedBy\":\"Загс\",\"rfBirthCertificateIssueDate\":\"11.01.2019\",\"rfBirthCertificateSeries\":\"II-ВЙ\",\"middleName\":\"\",\"rfBirthCertificateNumber\":\"121212\",\"birthDate\":\"11.01.2019\",\"rfBirthCertificateActNumber\":\"-\"},\"states\":[{\"groupName\":\"Тестовый Мальчик \",\"fields\":[{\"label\":\"Дата рождения\",\"value\":\"11.01.2019\"}]},{\"groupName\":\"Свидетельство о рождении\",\"fields\":[{\"label\":\"Серия и номер\",\"value\":\"II-ВЙ-121212\"},{\"label\":\"Дата выдачи\",\"value\":\"11.01.2019\"},{\"label\":\"Кем выдан\",\"value\":\"Загс\"},{\"label\":\"Актовый номер\",\"value\":\"-\"}]}]},\"bd22\":\"2020-11-30T00:00:00.000+03:00\",\"bd23\":\"загс 34567890\",\"bd20\":\"XX-АВ\",\"bd21\":\"564564\",\"q22\":\"Нет\",\"pd21_2\":\"false\",\"pd21_1\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"q26\":\"Нет\",\"q27\":\"Нет\",\"pd21_4\":\"Тыва\"}]"
+      },
+      "q16": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "ms1": {
+        "visited": true,
+        "value": "{\"value\":\"100050002\",\"parentValue\":null,\"title\":\"ОВМ МУМВД России «Балашихинское»\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"},\"valueAsOfType\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"}],\"source\":\"mvd_organization\",\"attributeValues\":{\"address_out\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"},\"idForMap\":0,\"center\":[38.082226,55.756118],\"baloonContent\":[{\"value\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\",\"label\":\"Адрес\"},{\"label\":\"Телефон\"},{\"label\":\"Электроная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"46000000000\",\"okato\":\"46404000000\"}"
+      }
+    },
+    "currentValue": {},
+    "errors": {},
+    "applicantAnswers": {
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "q1": {
+        "visited": true,
+        "value": "Нового образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Мне и детям"
+      },
+      "q3": {
+        "visited": true,
+        "value": "До 14 лет"
+      },
+      "q8": {
+        "visited": true,
+        "value": "По месту жительства"
+      },
+      "d5": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Имбирная Инна Иоановна\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"17.07.2003\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0001 253353\"},{\"label\":\"Дата выдачи:\",\"value\":\"16.09.2015\"},{\"label\":\"Кем выдан:\",\"value\":\"ФМС\"},{\"label\":\"Код подразделения:\",\"value\":\"265-022\"},{\"label\":\"Место рождения:\",\"value\":\"Ярославль\"}]}],\"storedValues\":{\"firstName\":\"Инна\",\"lastName\":\"Имбирная\",\"birthPlace\":\"Ярославль\",\"rfPasportIssuedBy\":\"ФМС\",\"gender\":\"M\",\"rfPasportIssuedById\":\"265022\",\"rfPasportSeries\":\"0001\",\"middleName\":\"Иоановна\",\"birthDate\":\"17.07.2003\",\"rfPasportNumber\":\"253353\",\"rfPasportIssueDate\":\"16.09.2015\"}}"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(901)7896872"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "olyalya94@mail.ru"
+      },
+      "pd4": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.8046346\",\"building2Type\":null,\"okato\":\"46404000000\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.8046346\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.9842461\",\"index\":\"143903\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"143903, обл. Московская, г. Балашиха, ул. Восточная, д. 5, кв. 3\",\"houseCheckbox\":false,\"region\":\"Московская\",\"geoLon\":\"37.9842461\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Балашиха\",\"apartmentShortType\":\"кв\",\"house\":\"5\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"50\",\"districtShortType\":null,\"street\":\"Восточная\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"5000003600000200001\",\"building1ShortType\":null,\"fiasCode\":\"8e000f63-007d-4ec2-9b6e-800b83b24e15\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Московская, г. Балашиха, ул. Восточная\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"3\"},\"regDate\":\"31.08.2017\"}"
+      },
+      "d33": {
+        "visited": true,
+        "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"photo_2019-10-24_16-25-55.jpg\",\"objectType\":2,\"objectId\":1007709115,\"mimeType\":\"image/jpeg\"}"
+      },
+      "eh1": {
+        "visited": true,
+        "value": "[{\"type\":\"student\",\"label\":\"Я учился\",\"from\":{\"year\":2009,\"month\":8,\"monthCode\":\"Сентябрь\"},\"to\":{\"year\":2011,\"month\":6,\"monthCode\":\"Июль\"},\"place\":\"усш\",\"address\":\"шангалы\",\"checkboxToDate\":false},{\"type\":\"unemployed\",\"label\":\"Я не работал\",\"from\":{\"year\":2011,\"month\":7,\"monthCode\":\"Август\"},\"to\":{\"year\":2011,\"month\":7,\"monthCode\":\"Август\"},\"address\":\"дом\",\"checkboxToDate\":false},{\"type\":\"student\",\"label\":\"Я учился\",\"from\":{\"year\":2011,\"month\":8,\"monthCode\":\"Сентябрь\"},\"to\":{\"year\":2015,\"month\":8,\"monthCode\":\"Сентябрь\"},\"place\":\"яргу\",\"address\":\"ярославль\",\"checkboxToDate\":false},{\"type\":\"employed\",\"label\":\"Я работал\",\"from\":{\"year\":2015,\"month\":8,\"monthCode\":\"Сентябрь\"},\"to\":{\"year\":2020,\"month\":11,\"monthCode\":\"Декабрь\"},\"position\":\"руководитель\",\"place\":\"ао ртлабс\",\"address\":\"москва\",\"checkboxToDate\":true}]"
+      },
+      "q9": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q4": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "fai6": {
+        "visited": true,
+        "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+      },
+      "rf34": {
+        "visited": true,
+        "value": "false"
+      },
+      "rb9": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb10": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb11": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb12": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb13": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb14": {
+        "visited": true,
+        "value": "0"
+      },
+      "q30": {
+        "visited": true,
+        "value": "Получение впервые"
+      },
+      "ai18": {
+        "visited": true,
+        "value": "[{\"ai18_4\":\"Мальчик\",\"ai18_6\":\"false\",\"bd20_0\":\"\",\"ai18_0\":\"7482391\",\"clr3\":{\"regDate\":\"07.12.2020\",\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"geoLat\":\"55.8054626\",\"okato\":\"46404000000\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.8054626\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.9844372\",\"index\":\"143903\",\"district\":\"\",\"fullAddress\":\"143903, обл. Московская, г. Балашиха, ул. Восточная, д. 3, кв. 3\",\"houseCheckbox\":false,\"region\":\"Московская\",\"geoLon\":\"37.9844372\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Балашиха\",\"apartmentShortType\":\"кв\",\"house\":\"3\",\"apartmentCheckbox\":false,\"regionShortType\":\"обл\",\"regionCode\":\"50\",\"street\":\"Восточная\",\"cityShortType\":\"г\",\"kladrCode\":\"5000003600000200005\",\"fiasCode\":\"05c13c3e-1b82-4b47-9eac-bd9cef717403\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Московская, г. Балашиха, ул. Восточная\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"3\"}},\"d34\":{\"name\":\"f9x12ru-rospas.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.7482391\",\"mimeType\":\"image/jpeg\",\"objectId\":1007709115,\"objectType\":2},\"ai18_1\":\"2019-01-11T00:00:00Z\",\"q28_2\":\"Получение впервые\",\"ai18_2\":\"M\",\"ai18_3\":\"Тестовый\",\"pd21\":{\"storedValues\":{\"firstName\":\"Мальчик\",\"lastName\":\"Тестовый\",\"rfBirthCertificateIssuedBy\":\"Загс\",\"rfBirthCertificateIssueDate\":\"11.01.2019\",\"rfBirthCertificateSeries\":\"II-ВЙ\",\"middleName\":\"\",\"rfBirthCertificateNumber\":\"121212\",\"birthDate\":\"11.01.2019\",\"rfBirthCertificateActNumber\":\"-\"},\"states\":[{\"groupName\":\"Тестовый Мальчик \",\"fields\":[{\"label\":\"Дата рождения\",\"value\":\"11.01.2019\"}]},{\"groupName\":\"Свидетельство о рождении\",\"fields\":[{\"label\":\"Серия и номер\",\"value\":\"II-ВЙ-121212\"},{\"label\":\"Дата выдачи\",\"value\":\"11.01.2019\"},{\"label\":\"Кем выдан\",\"value\":\"Загс\"},{\"label\":\"Актовый номер\",\"value\":\"-\"}]}]},\"bd22\":\"2020-11-30T00:00:00.000+03:00\",\"bd23\":\"загс 34567890\",\"bd20\":\"XX-АВ\",\"bd21\":\"564564\",\"q22\":\"Нет\",\"pd21_2\":\"false\",\"pd21_1\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"q26\":\"Нет\",\"q27\":\"Нет\",\"pd21_4\":\"Тыва\"}]"
+      },
+      "q16": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "ms1": {
+        "visited": true,
+        "value": "{\"value\":\"100050002\",\"parentValue\":null,\"title\":\"ОВМ МУМВД России «Балашихинское»\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"},\"valueAsOfType\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"}],\"source\":\"mvd_organization\",\"attributeValues\":{\"address_out\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"},\"idForMap\":0,\"center\":[38.082226,55.756118],\"baloonContent\":[{\"value\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\",\"label\":\"Адрес\"},{\"label\":\"Телефон\"},{\"label\":\"Электроная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"46000000000\",\"okato\":\"46404000000\"}"
+      }
+    },
+    "cycledApplicantAnswers": {
+      "currentAnswerId": "ai18",
+      "answerlist": [
+        {
+          "id": "ai18",
+          "initScreen": "s39",
+          "currentItemId": "7482391",
+          "items": [
+            {
+              "id": "7482391",
+              "itemAnswers": {
+                "ai18_4": {
+                  "visited": true,
+                  "value": "Мальчик"
+                },
+                "ai18_6": {
+                  "visited": true,
+                  "value": "false"
+                },
+                "ai18_0": {
+                  "visited": true,
+                  "value": "7482391"
+                },
+                "ai18_1": {
+                  "visited": true,
+                  "value": "2019-01-11T00:00:00Z"
+                },
+                "ai18_2": {
+                  "visited": true,
+                  "value": "M"
+                },
+                "ai18_3": {
+                  "visited": true,
+                  "value": "Тестовый"
+                },
+                "pd21": {
+                  "visited": true,
+                  "value": "{\"states\":[{\"groupName\":\"Тестовый Мальчик \",\"fields\":[{\"label\":\"Дата рождения\",\"value\":\"11.01.2019\"}]},{\"groupName\":\"Свидетельство о рождении\",\"fields\":[{\"label\":\"Серия и номер\",\"value\":\"II-ВЙ-121212\"},{\"label\":\"Дата выдачи\",\"value\":\"11.01.2019\"},{\"label\":\"Кем выдан\",\"value\":\"Загс\"},{\"label\":\"Актовый номер\",\"value\":\"-\"}]}],\"storedValues\":{\"firstName\":\"Мальчик\",\"lastName\":\"Тестовый\",\"rfBirthCertificateIssuedBy\":\"Загс\",\"rfBirthCertificateIssueDate\":\"11.01.2019\",\"rfBirthCertificateSeries\":\"II-ВЙ\",\"middleName\":\"\",\"rfBirthCertificateNumber\":\"121212\",\"birthDate\":\"11.01.2019\",\"rfBirthCertificateActNumber\":\"-\"}}"
+                },
+                "pd21_1": {
+                  "visited": true,
+                  "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                },
+                "pd21_2": {
+                  "visited": true,
+                  "value": "false"
+                },
+                "pd21_4": {
+                  "visited": true,
+                  "value": "Тыва"
+                },
+                "clr3": {
+                  "visited": true,
+                  "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.8054626\",\"building2Type\":null,\"okato\":\"46404000000\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.8054626\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.9844372\",\"index\":\"143903\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"143903, обл. Московская, г. Балашиха, ул. Восточная, д. 3, кв. 3\",\"houseCheckbox\":false,\"region\":\"Московская\",\"geoLon\":\"37.9844372\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Балашиха\",\"apartmentShortType\":\"кв\",\"house\":\"3\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"50\",\"districtShortType\":null,\"street\":\"Восточная\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"5000003600000200005\",\"building1ShortType\":null,\"fiasCode\":\"05c13c3e-1b82-4b47-9eac-bd9cef717403\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Московская, г. Балашиха, ул. Восточная\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"3\"},\"regDate\":\"07.12.2020\"}"
+                },
+                "d34": {
+                  "visited": true,
+                  "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.7482391\",\"name\":\"f9x12ru-rospas.jpg\",\"objectType\":2,\"objectId\":1007709115,\"mimeType\":\"image/jpeg\"}"
+                },
+                "q26": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q27": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q28_2": {
+                  "visited": true,
+                  "value": "Получение впервые"
+                },
+                "bd20_0": {
+                  "visited": true,
+                  "value": ""
+                },
+                "bd20": {
+                  "visited": true,
+                  "value": "XX-АВ"
+                },
+                "bd21": {
+                  "visited": true,
+                  "value": "564564"
+                },
+                "bd22": {
+                  "visited": true,
+                  "value": "2020-11-30T00:00:00.000+03:00"
+                },
+                "bd23": {
+                  "visited": true,
+                  "value": "загс 34567890"
+                },
+                "q22": {
+                  "visited": true,
+                  "value": "Нет"
+                }
+              },
+              "cachedAnswers": {
+                "ai18_4": {
+                  "visited": true,
+                  "value": "Мальчик"
+                },
+                "ai18_6": {
+                  "visited": true,
+                  "value": "false"
+                },
+                "ai18_0": {
+                  "visited": true,
+                  "value": "7482391"
+                },
+                "ai18_1": {
+                  "visited": true,
+                  "value": "2019-01-11T00:00:00Z"
+                },
+                "ai18_2": {
+                  "visited": true,
+                  "value": "M"
+                },
+                "ai18_3": {
+                  "visited": true,
+                  "value": "Тестовый"
+                },
+                "pd21": {
+                  "visited": true,
+                  "value": "{\"states\":[{\"groupName\":\"Тестовый Мальчик \",\"fields\":[{\"label\":\"Дата рождения\",\"value\":\"11.01.2019\"}]},{\"groupName\":\"Свидетельство о рождении\",\"fields\":[{\"label\":\"Серия и номер\",\"value\":\"II-ВЙ-121212\"},{\"label\":\"Дата выдачи\",\"value\":\"11.01.2019\"},{\"label\":\"Кем выдан\",\"value\":\"Загс\"},{\"label\":\"Актовый номер\",\"value\":\"-\"}]}],\"storedValues\":{\"firstName\":\"Мальчик\",\"lastName\":\"Тестовый\",\"rfBirthCertificateIssuedBy\":\"Загс\",\"rfBirthCertificateIssueDate\":\"11.01.2019\",\"rfBirthCertificateSeries\":\"II-ВЙ\",\"middleName\":\"\",\"rfBirthCertificateNumber\":\"121212\",\"birthDate\":\"11.01.2019\",\"rfBirthCertificateActNumber\":\"-\"}}"
+                },
+                "pd21_1": {
+                  "visited": true,
+                  "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                },
+                "pd21_2": {
+                  "visited": true,
+                  "value": "false"
+                },
+                "pd21_4": {
+                  "visited": true,
+                  "value": "Тыва"
+                },
+                "clr3": {
+                  "visited": true,
+                  "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.8054626\",\"building2Type\":null,\"okato\":\"46404000000\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"55.8054626\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.9844372\",\"index\":\"143903\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"143903, обл. Московская, г. Балашиха, ул. Восточная, д. 3, кв. 3\",\"houseCheckbox\":false,\"region\":\"Московская\",\"geoLon\":\"37.9844372\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Балашиха\",\"apartmentShortType\":\"кв\",\"house\":\"3\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"50\",\"districtShortType\":null,\"street\":\"Восточная\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"5000003600000200005\",\"building1ShortType\":null,\"fiasCode\":\"05c13c3e-1b82-4b47-9eac-bd9cef717403\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Московская, г. Балашиха, ул. Восточная\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"3\"},\"regDate\":\"07.12.2020\"}"
+                },
+                "d34": {
+                  "visited": true,
+                  "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.7482391\",\"name\":\"f9x12ru-rospas.jpg\",\"objectType\":2,\"objectId\":1007709115,\"mimeType\":\"image/jpeg\"}"
+                },
+                "q26": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q27": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q28_2": {
+                  "visited": true,
+                  "value": "Получение впервые"
+                },
+                "bd20_0": {
+                  "visited": true,
+                  "value": ""
+                },
+                "bd20": {
+                  "visited": true,
+                  "value": "XX-АВ"
+                },
+                "bd21": {
+                  "visited": true,
+                  "value": "564564"
+                },
+                "bd22": {
+                  "visited": true,
+                  "value": "2020-11-30T00:00:00.000+03:00"
+                },
+                "bd23": {
+                  "visited": true,
+                  "value": "загс 34567890"
+                },
+                "q22": {
+                  "visited": true,
+                  "value": "Нет"
+                }
+              },
+              "esiaData": {
+                "lastName": "Тестовый",
+                "rfBirthCertificateIssueDate": "2019-01-11T00:00:00Z",
+                "gender": "M",
+                "regDate": "",
+                "isNew": false,
+                "relationshipToChild": "",
+                "birthDate": "2019-01-11T00:00:00Z",
+                "regAddr": "",
+                "firstName": "Мальчик",
+                "rfBirthCertificateIssuedBy": "Загс",
+                "rfBirthCertificateSeries": "II-ВЙ",
+                "id": "7482391",
+                "rfBirthCertificateNumber": "121212",
+                "rfBirthCertificateActNumber": "-",
+                "birthPlaceLocality": "Тыва",
+                "Series": "XX-АВ",
+                "Number": "564564",
+                "IssuedBy": "загс 34567890"
+              },
+              "finishedScreens": [
+                "scrchld16",
+                "scrchld16_1",
+                "scrchld10",
+                "scrchld9",
+                "scrchld11",
+                "scrchld13",
+                "scrchld15_2",
+                "s70",
+                "s71"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "participants": {
+      "-10000": {
+        "role": "Coapplicant",
+        "mode": "SlaveApplicant",
+        "component": "ai18",
+        "index": 0
+      }
+    },
+    "display": {
+      "id": "s84",
+      "name": "Заявление отправлено! новый, взрослый и дети до 14, регистрация",
+      "type": "INFO",
+      "header": "Заявление отправлено!",
+      "components": [
+        {
+          "id": "d21",
+          "type": "InfoScr",
+          "label": "<p>Оформление загранпаспорта будет производиться подразделением ОВМ МУМВД России «Балашихинское» по адресу:      </p><p><br><a target='_blank' href='http://yandex.ru/maps/?pt=38.082226,55.756118&z=13'></a></p><p>Процедура получения паспорта займет до <b>1 месяца</b> (до 3-х месяцев в случае  допуска к сведениям, составляющим государственную тайну)</p><p><b>Что дальше</b></p><p>1. После рассмотрения заявления в ваш личный кабинет придет уведомление о возможности оплатить пошлину онлайн со скидкой 30%</p><p>2. Дождитесь в личном кабинете приглашения в подразделение. Принесите с собой <a id='DocOrigonals'>оригиналы документов</a></p><p>3. В отделении МВД сотрудник полиции сверит данные из электронного заявления с оригинальными документами, сфотографирует ребенка и сообщит о сроке готовности загранпаспорта</p>",
+          "attrs": {
+            "actions": [
+              {
+                "label": "В личный кабинет",
+                "value": "В личный кабинет",
+                "type": "redirectToLK",
+                "action": "getNextScreen"
+              }
+            ],
+            "clarifications": {
+              "DocOrigonals": {
+                "title": "Какие документы взять в МВД",
+                "text": "Вам нужно взять с собой:<ul><li>Ваш паспорт РФ</li><li>Разрешение командования — для служащих в Вооруженных Силах России, а также в федеральных органах власти, в которых предусмотрена военная служба (за исключением службы по призыву)</li><li><a href='javascript:void(0)'><span id='docofright'>Документ</span></a>, подтверждающий права законного представителя ребенка <div data-hidden-id='docofright' hidden>Это может быть свидетельство о рождении ребенка, документ об усыновлении или акт органа опеки и попечительства о назначении опекуна или попечителя</div></li><li>Свидетельство о рождении для детей до 14 лет</li><li><a href='javascript:void(0)'><span id='docfright'>Документ</span></a>, подтверждающий наличие гражданства РФ у ребенка <div data-hidden-id='docfright' hidden>Это может быть свидетельство о рождении с отметкой о принадлежности к гражданству РФ либо вкладыш с отметкой о наличии российского гражданства к свидетельству о рождении, ранее выданный загранпаспорт</div></li><li>Ранее выданный загранпаспорт ребенка (при наличии)</li></ul>"
+              }
+            },
+            "refs": {
+              "reference_to_name": "ms1.value.title",
+              "reference_to_x": "ms1.value.center[0]",
+              "reference_to_y": "ms1.value.center[1]",
+              "reference_to_address": "ms1.value.attributes[1].valueAsOfType"
+            }
+          },
+          "linkedValues": [],
+          "arguments": {},
+          "value": "",
+          "required": true,
+          "cycled": false,
+          "componentInCycle": false
+        }
+      ],
+      "terminal": true,
+      "impasse": false,
+      "accepted": true,
+      "firstScreen": false
+    },
+    "attachmentInfo": {
+      "d33": [
+        {
+          "uploadId": "passport_photo",
+          "uploadMnemonic": "d33.PhotoUploadComponent.passport_photo.0",
+          "uploadFilename": "photo_2019-10-24_16-25-55.jpg",
+          "objectId": "1007709115",
+          "objectTypeId": "2"
+        }
+      ],
+      "d34": [
+        {
+          "uploadId": "child_passport_photo",
+          "uploadMnemonic": "d34.PhotoUploadComponent.child_passport_photo.7482391",
+          "uploadFilename": "f9x12ru-rospas.jpg",
+          "objectId": "1007709115",
+          "objectTypeId": "2"
+        }
+      ]
+    },
+    "additionalParameters": {
+      "orderId": "1007709115",
+      "oid": "1000349811",
+      "snils": "000-253-353 55",
+      "gender": "M",
+      "citizenship": "РОССИЯ",
+      "citizenshipCode": "RUS",
+      "serviceCode": "10000000101",
+      "timezone": "+3",
+      "masterId": "1007709115",
+      "masterOid": "1000349811",
+      "masterSnils": "000-253-353 55",
+      "masterGender": "M",
+      "masterCitizenship": "РОССИЯ",
+      "masterCitizenshipCode": "RUS",
+      "masterTimezone": "+3"
+    }
+  }
+}

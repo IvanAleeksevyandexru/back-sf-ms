@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/storageservice/internal/api/storage/file-content/([0-9]*)/15\\?mnemonic=appeal_result"
+  },
+  "response": {
+    "bodyFileName": "../__files/FinesXmlDownload/TestAdditionDocsRequest.xml",
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/xml"
+    }
+  }
+}

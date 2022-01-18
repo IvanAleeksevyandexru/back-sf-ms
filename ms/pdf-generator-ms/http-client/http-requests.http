@@ -1,0 +1,27 @@
+# Коллекция запросов для локального тестирования pdf-generator (требуется IDEA Ultimate).
+
+### business pdf
+POST http://localhost:8094/api/v1/template/generate
+Accept: application/json
+Content-Type: application/json
+
+{
+  "additional": false,
+  "prefix": "pdf",
+  "orderId": 1682094142,
+  "userId": 1000305289,
+  "userRole": "Coapplicant"
+}
+
+### additional pdf
+POST http://localhost:8094/api/v1/template/generate
+Accept: application/json
+Content-Type: application/json
+
+{
+  "additional": true,
+  "prefix": "pdf_add",
+  "orderId": 764262821,
+  "userId": 1000485511,
+  "userRole": "Applicant"
+}

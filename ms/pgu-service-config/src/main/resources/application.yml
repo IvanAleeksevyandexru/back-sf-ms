@@ -1,0 +1,25 @@
+acceptFromPost: false
+defaultKey: default-config
+spring:
+  application:
+    version: 8.0
+defaultConfig: |
+  {
+    "brakRouteNumber": "45382000",
+    "divorceRouteNumber": "45382000",
+    "gibddRouteNumber": "46000000000"
+  }
+
+initConfig: |
+    {
+       "default-config" : {
+          "brakRouteNumber": "45382000",
+          "divorceRouteNumber": "45382000",
+          "gibddRouteNumber": "46000000000"
+       },
+       "quiz" : {
+            "brakRouteNumber": "45382000",
+            "divorceRouteNumber": "45382000",
+            "gibddRouteNumber": "46000000000"
+       }
+    }

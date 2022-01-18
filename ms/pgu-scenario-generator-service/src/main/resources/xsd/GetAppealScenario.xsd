@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:com="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2"
+            xmlns:scn="urn://web.gibdd.ru/appeal-fines-gibdd/commons/scenario/1.0.2"
+            xmlns="urn://web.gibdd.ru/appeal-fines-gibdd/get-scenario/1.0.2"
+            targetNamespace="urn://web.gibdd.ru/appeal-fines-gibdd/get-scenario/1.0.2"
+            elementFormDefault="qualified">
+
+    <xsd:import namespace="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2"
+                schemaLocation="commons/common.xsd"/>
+    <xsd:import namespace="urn://web.gibdd.ru/appeal-fines-gibdd/commons/scenario/1.0.2"
+                schemaLocation="commons/scenario.xsd"/>
+
+    <xsd:annotation>
+        <xsd:documentation xml:lang="ru">
+            Вид сведений для запроса печатных форм и сценариев обжалования постановлений по делам об административных
+            правонарушениях в области дорожного движения и в области благоустройства территории, зафиксированных в
+            автоматическом режиме, посредством ЕПГУ
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="GetAppealScenarioRequest">
+        <xsd:annotation>
+            <xsd:documentation>Запрос документа и сценария для обжалования
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:complexContent>
+                <xsd:extension base="com:RequestType">
+                    <xsd:choice>
+                        <xsd:element ref="GetScenario"/>
+                        <xsd:element ref="Callback"/>
+                    </xsd:choice>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="GetScenario">
+        <xsd:annotation>
+            <xsd:documentation>Запрос печатной формы и сценария обжалования</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="UserType" type="com:UserType"/>
+                <xsd:choice>
+                    <xsd:element name="PhysicalPerson" type="com:PersonType"/>
+                    <xsd:element name="BusinessPerson" type="com:BusinessPersonType"/>
+                    <xsd:element name="LegalCompany" type="com:LegalCompanyType"/>
+                </xsd:choice>
+                <xsd:element name="DelegatePerson" type="com:PersonType" minOccurs="0"/>
+            </xsd:sequence>
+            <xsd:attribute name="doNotSendDocument" type="xsd:boolean">
+                <xsd:annotation>
+                    <xsd:documentation>Не прислать документ(только сценарий обжалования)</xsd:documentation>
+                </xsd:annotation>
+            </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Callback" type="com:CallbackType">
+        <xsd:annotation>
+            <xsd:documentation>Запрошенное ранее подтверждение обработки ответа</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+    <xsd:element name="GetAppealScenarioResponse">
+        <xsd:annotation>
+            <xsd:documentation>Ответ на запрос документа сценария обжалования
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:complexContent>
+                <xsd:extension base="com:ResponseType">
+                    <xsd:choice>
+                        <xsd:element name="Scenario">
+                            <xsd:annotation>
+                                <xsd:documentation>Доступный сценарий обжалования</xsd:documentation>
+                            </xsd:annotation>
+                            <xsd:complexType>
+                                <xsd:sequence>
+                                    <xsd:element name="Document" type="com:AppliedDocumentType" minOccurs="0"/>
+                                    <xsd:element name="AppealScenario" type="scn:AppealScenarioType" minOccurs="0"/>
+                                </xsd:sequence>
+                            </xsd:complexType>
+                        </xsd:element>
+                        <xsd:element name="CallbackResponse" type="com:CallbackResponseType"/>
+                    </xsd:choice>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

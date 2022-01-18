@@ -1,0 +1,11 @@
+{
+  "body": {
+    "serviceDescriptorId": "1",
+    "applicantAnswers": {
+      "jsonObjectAnswer": {
+        "visited": true,
+        "value": "{\"field\": \"Invalid Json Object}"
+      }
+    }
+  }
+}

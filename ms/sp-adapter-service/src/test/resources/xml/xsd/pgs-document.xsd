@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="http://xsd.gspvd/v001/smev3/pgs/1.0.3"
+            targetNamespace="http://xsd.gspvd/v001/smev3/pgs/1.0.3"
+            xmlns:cd="http://xsd.gspvd/v001/smev3/pgs/types/1.0.3"
+            elementFormDefault="qualified">
+
+  <xsd:import namespace="http://xsd.gspvd/v001/smev3/pgs/types/1.0.3" schemaLocation="commons/pgs-document-types.xsd"/>
+
+  <xsd:element name="PgsDocumentsRequest" type="tns:PgsDocumentRequestType"/>
+  <xsd:element name="PgsDocumentsResponse" type="tns:PgsDocumentResponseType"/>
+
+  <xsd:complexType name="PgsDocumentRequestType">
+    <xsd:annotation>
+      <xsd:documentation>Запрос через СМЭВ3 по части ЕПГУ.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="OrderId" type="xsd:long">
+        <xsd:annotation>
+          <xsd:documentation>Номер заявления</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:choice>
+        <xsd:element name="PassportIssueRequest" type="cd:PassportIssueRequestType"/>
+        <xsd:element name="CancelRequest" type="cd:CancelRequestType"/>
+        <xsd:element name="TextMessageRequest" type="cd:TextMessageRequestType"/>
+      </xsd:choice>
+    </xsd:sequence>
+    <xsd:attribute name="env" type="cd:EnvType" use="required"/>
+    <xsd:attribute name="dateTime" type="xsd:dateTime" use="required"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="PgsDocumentResponseType">
+    <xsd:annotation>
+      <xsd:documentation>Ответ на запрос через СМЭВ3 по части ЕПГУ.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="OrderId" type="xsd:long">
+        <xsd:annotation>
+          <xsd:documentation>Номер заявления</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:choice>
+        <xsd:element name="PassportIssueResponse" type="cd:PassportIssueResponseType"/>
+        <xsd:element name="CancelResponse" type="cd:CancelResponseType"/>
+        <xsd:element name="TextMessageResponse" type="cd:TextMessageResponseType"/>
+      </xsd:choice>
+    </xsd:sequence>
+    <xsd:attribute name="dateTime" type="xsd:dateTime" use="required"/>
+  </xsd:complexType>
+
+</xsd:schema>

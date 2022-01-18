@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:com="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2"
+            xmlns:scn="urn://web.gibdd.ru/appeal-fines-gibdd/commons/scenario/1.0.2"
+            xmlns="urn://web.gibdd.ru/appeal-fines-gibdd/appeal-cycle/1.0.2"
+            targetNamespace="urn://web.gibdd.ru/appeal-fines-gibdd/appeal-cycle/1.0.2"
+            elementFormDefault="qualified">
+
+    <xsd:import namespace="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2"
+                schemaLocation="commons/common.xsd"/>
+    <xsd:import namespace="urn://web.gibdd.ru/appeal-fines-gibdd/commons/scenario/1.0.2"
+                schemaLocation="commons/scenario.xsd"/>
+
+    <xsd:annotation>
+        <xsd:documentation xml:lang="ru">
+            Вид сведений для направления жалоб на постановления по делам об административных правонарушениях
+            в области дорожного движения и в области благоустройства территории, зафиксированных в автоматическом
+            режиме, посредством ЕПГУ
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="AppealCycleRequest">
+        <xsd:annotation>
+            <xsd:documentation>Запрос обжалования постановления (предоставление дополнительных данных в рамках
+                обжалования постановления)
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:complexContent>
+                <xsd:extension base="com:RequestType">
+                    <xsd:choice>
+                        <xsd:element ref="AppealBegin"/>
+                        <xsd:element ref="AppealAppend"/>
+                        <xsd:element ref="Callback"/>
+                    </xsd:choice>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="AppealBegin">
+        <xsd:annotation>
+            <xsd:documentation>Начало обжалования постановления</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:complexContent>
+                <xsd:extension base="AppealInitiatorType">
+                    <xsd:sequence>
+                        <xsd:element name="Reason" type="scn:ReasonType"/>
+                    </xsd:sequence>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="AppealAppend">
+        <xsd:annotation>
+            <xsd:documentation>Передача дополнительных материалов доказательств</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:complexContent>
+                <xsd:extension base="AppealInitiatorType">
+                    <xsd:sequence>
+                        <xsd:element name="Evidences" type="scn:EvidenceListType"/>
+                    </xsd:sequence>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="AppealInitiatorType">
+        <xsd:annotation>
+            <xsd:documentation>Инициатор обжалования</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="UserType" type="com:UserType"/>
+            <xsd:choice>
+                <xsd:element name="PhysicalPerson" type="com:PersonType"/>
+                <xsd:element name="BusinessPerson" type="com:BusinessPersonType"/>
+                <xsd:element name="LegalCompany" type="com:LegalCompanyType"/>
+            </xsd:choice>
+            <xsd:sequence minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Доверенный представитель</xsd:documentation>
+                </xsd:annotation>
+                <xsd:element name="DelegatePerson" type="com:PersonType">
+                    <xsd:annotation>
+                        <xsd:documentation>Сведения о представителе</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+
+                <xsd:element name="Procuration" minOccurs="0">
+                    <xsd:annotation>
+                        <xsd:documentation>Доверенность</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Document" type="com:AppliedDocumentType" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Файл доверенности в структурированном формате (например, xml)</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="DocumentSignature" type="com:AppliedDocumentType" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Откреплённая подпись файла доверенности (обязательно при наличии доверенности в структурированном формате)</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="Additional" type="com:AppliedDocumentListType" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Дополнительные документы. Например, сканы оригиналов (не обязательно)</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="Callback" type="com:CallbackType">
+        <xsd:annotation>
+            <xsd:documentation>Затребованное в ответе подтверждение</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+    <xsd:element name="AppealCycleResponse">
+        <xsd:annotation>
+            <xsd:documentation>Ответ на запрос обжалования (в т.ч. и промежуточные состояния)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:complexContent>
+                <xsd:extension base="com:ResponseType">
+                    <xsd:sequence>
+                        <xsd:choice>
+                            <xsd:element name="StatusUpdate">
+                                <xsd:annotation>
+                                    <xsd:documentation>Обновление статуса рассмотрения дела</xsd:documentation>
+                                </xsd:annotation>
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Document" type="com:AppliedDocumentType"
+                                                     minOccurs="0"
+                                                     maxOccurs="20">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Сопутствующие документы (решения, извещения и пр.)
+                                                </xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="AdditionalEvidenceRequest">
+                                <xsd:complexType>
+                                    <xsd:annotation>
+                                        <xsd:documentation>Запрос дополнительного доказательства</xsd:documentation>
+                                    </xsd:annotation>
+                                    <xsd:sequence>
+                                        <xsd:element name="Evidences" type="scn:EvidenceTemplateListType"
+                                                     minOccurs="1"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="CallbackResponse" type="com:CallbackResponseType"/>
+                        </xsd:choice>
+                    </xsd:sequence>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

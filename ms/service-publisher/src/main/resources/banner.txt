@@ -1,0 +1,5 @@
+{
+  "application": "${application.title:EPGU - Service-publisher}"
+  "version"    : "${application.version:0.0.1}"
+  "spring boot": "${spring-boot.version}"
+}

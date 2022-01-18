@@ -1,0 +1,307 @@
+{
+  "orderId": 993304405,
+  "type": "10000000101",
+  "locked": false,
+  "updated": "2020-11-24T12:15:55.023Z",
+  "body": {
+    "serviceCode": "10000000101",
+    "targetCode": "-10000000101",
+    "orderId": 993304405,
+    "currentScenarioId": 1,
+    "currentUrl": "https://pgu-uat-fed.test.gosuslugi.ru/600101/1/form",
+    "finishedAndCurrentScreens": [
+      "s1",
+      "s2",
+      "s3",
+      "s5",
+      "s9",
+      "s17",
+      "s19",
+      "s20",
+      "s21",
+      "s22",
+      "s25",
+      "s29",
+      "s30",
+      "s35",
+      "s59",
+      "s113",
+      "s60",
+      "s88"
+    ],
+    "cachedAnswers": {
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "q1": {
+        "visited": true,
+        "value": "Старого образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Мне"
+      },
+      "q4": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q8": {
+        "visited": true,
+        "value": "По месту жительства"
+      },
+      "d8": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"РОДИОНОВА АВРОРА АЛЬБЕРТОВНА\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"09.10.1989\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"4512 907856\"},{\"label\":\"Дата выдачи:\",\"value\":\"09.11.2003\"},{\"label\":\"Кем выдан:\",\"value\":\"ОВД г. Канска\"},{\"label\":\"Код подразделения:\",\"value\":\"777-888\"},{\"label\":\"Место рождения:\",\"value\":\"г Канск\"}]}],\"storedValues\":{\"firstName\":\"АВРОРА\",\"lastName\":\"РОДИОНОВА\",\"birthPlace\":\"г Канск\",\"rfPasportIssuedBy\":\"ОВД г. Канска\",\"rfPasportIssuedById\":\"777888\",\"rfPasportSeries\":\"4512\",\"middleName\":\"АЛЬБЕРТОВНА\",\"birthDate\":\"09.10.1989\",\"rfPasportNumber\":\"907856\",\"rfPasportIssueDate\":\"09.11.2003\"}}"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(926)5369779"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "gusigusi2020@yandex.ru"
+      },
+      "pd4": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"56.1025325\",\"building2Type\":null,\"okato\":\"04401374000\",\"building1Type\":null,\"regionType\":\"край\",\"additionalStreet\":\"\",\"lat\":\"56.1025325\",\"apartmentCheckboxClosed\":true,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"92.8988966\",\"index\":\"660132\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"660132, край. Красноярский, г. Красноярск, ул. Веселовская, д. 2\",\"houseCheckbox\":false,\"region\":\"Красноярский\",\"geoLon\":\"92.8988966\",\"additionalArea\":\"\",\"apartmentType\":null,\"city\":\"Красноярск\",\"apartmentShortType\":null,\"house\":\"2\",\"apartmentCheckbox\":true,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"край\",\"regionCode\":\"24\",\"districtShortType\":null,\"street\":\"Веселовская\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"2400000100013670001\",\"building1ShortType\":null,\"fiasCode\":\"0a20aa65-70af-49e0-adc2-2ce3bfd2dead\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"край. Красноярский, г. Красноярск, ул. Веселовская\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"\"},\"regDate\":\"05.09.2020\"}"
+      },
+      "d33": {
+        "visited": true,
+        "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"78156404.jpg\",\"objectType\":2,\"objectId\":993304405}"
+      },
+      "eh1": {
+        "visited": true,
+        "value": "[{\"type\":\"student\",\"label\":\"Я училась\",\"from\":{\"year\":2010,\"month\":8,\"monthCode\":\"Сентябрь\"},\"to\":{\"year\":2015,\"month\":7,\"monthCode\":\"Август\"},\"place\":\"СамГУПС\",\"address\":\"Самарский железнодорожный\",\"checkboxToDate\":false},{\"type\":\"employed\",\"label\":\"Я работала\",\"from\":{\"year\":2015,\"month\":7,\"monthCode\":\"Август\"},\"to\":{\"year\":2020,\"month\":10,\"monthCode\":\"Ноябрь\"},\"position\":\"тестировщик\",\"place\":\"ООО Элоконт\",\"address\":\"Самара Ново-Садовая 35 44\",\"checkboxToDate\":true}]"
+      },
+      "q9": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "fai6": {
+        "visited": true,
+        "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}}"
+      },
+      "fai6_2": {
+        "visited": true,
+        "value": ""
+      },
+      "rf34": {
+        "visited": true,
+        "value": "false"
+      },
+      "rb9": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb10": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb11": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb12": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb13": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb14": {
+        "visited": true,
+        "value": "0"
+      },
+      "q19": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q30": {
+        "visited": true,
+        "value": "Получение впервые"
+      },
+      "ms1": {
+        "visited": true,
+        "value": "{\"value\":\"7700143\",\"parentValue\":null,\"title\":\"Отделение УФМС России по г. Москве по району Некрасовка\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"email_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"ufms-uvao@mail.ru\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"ufms-uvao@mail.ru\"},\"valueAsOfType\":\"ufms-uvao@mail.ru\"},{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"город Москва, Рождественская, д. 21, стр. 6\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"город Москва, Рождественская, д. 21, стр. 6\"},\"valueAsOfType\":\"город Москва, Рождественская, д. 21, стр. 6\"},{\"name\":\"phone_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"+7(499)9404320\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"+7(499)9404320\"},\"valueAsOfType\":\"+7(499)9404320\"},{\"name\":\"fax_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"schedule_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},\"valueAsOfType\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},{\"name\":\"scheduleComment_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                \"},\"valueAsOfType\":\"\\n                \"}],\"attributeValues\":{\"phone_out\":\"+7(499)9404320\",\"email_out\":\"ufms-uvao@mail.ru\",\"schedule_out\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"fax_out\":\"\",\"scheduleComment_out\":\"\\n                \",\"address_out\":\"город Москва, Рождественская, д. 21, стр. 6\"},\"idForMap\":7,\"center\":[37.917331,55.706467],\"baloonContent\":[{\"value\":\"город Москва, Рождественская, д. 21, стр. 6\",\"label\":\"Адрес\"},{\"value\":\"+7(499)9404320\",\"label\":\"Телефон\"},{\"value\":\"ufms-uvao@mail.ru\",\"label\":\"Электроная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\"}"
+      }
+    },
+    "currentValue": {},
+    "errors": {},
+    "applicantAnswers": {
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "q1": {
+        "visited": true,
+        "value": "Старого образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Мне"
+      },
+      "q4": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q8": {
+        "visited": true,
+        "value": "По месту жительства"
+      },
+      "d8": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"РОДИОНОВА АВРОРА АЛЬБЕРТОВНА\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"09.10.1989\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"4512 907856\"},{\"label\":\"Дата выдачи:\",\"value\":\"09.11.2003\"},{\"label\":\"Кем выдан:\",\"value\":\"ОВД г. Канска\"},{\"label\":\"Код подразделения:\",\"value\":\"777-888\"},{\"label\":\"Место рождения:\",\"value\":\"г Канск\"}]}],\"storedValues\":{\"firstName\":\"АВРОРА\",\"lastName\":\"РОДИОНОВА\",\"birthPlace\":\"г Канск\",\"rfPasportIssuedBy\":\"ОВД г. Канска\",\"rfPasportIssuedById\":\"777888\",\"rfPasportSeries\":\"4512\",\"middleName\":\"АЛЬБЕРТОВНА\",\"birthDate\":\"09.10.1989\",\"rfPasportNumber\":\"907856\",\"rfPasportIssueDate\":\"09.11.2003\"}}"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(926)5369779"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "gusigusi2020@yandex.ru"
+      },
+      "pd4": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"56.1025325\",\"building2Type\":null,\"okato\":\"04401374000\",\"building1Type\":null,\"regionType\":\"край\",\"additionalStreet\":\"\",\"lat\":\"56.1025325\",\"apartmentCheckboxClosed\":true,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"92.8988966\",\"index\":\"660132\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"660132, край. Красноярский, г. Красноярск, ул. Веселовская, д. 2\",\"houseCheckbox\":false,\"region\":\"Красноярский\",\"geoLon\":\"92.8988966\",\"additionalArea\":\"\",\"apartmentType\":null,\"city\":\"Красноярск\",\"apartmentShortType\":null,\"house\":\"2\",\"apartmentCheckbox\":true,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"край\",\"regionCode\":\"24\",\"districtShortType\":null,\"street\":\"Веселовская\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"2400000100013670001\",\"building1ShortType\":null,\"fiasCode\":\"0a20aa65-70af-49e0-adc2-2ce3bfd2dead\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"край. Красноярский, г. Красноярск, ул. Веселовская\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"\"},\"regDate\":\"05.09.2020\"}"
+      },
+      "d33": {
+        "visited": true,
+        "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"78156404.jpg\",\"objectType\":2,\"objectId\":993304405}"
+      },
+      "eh1": {
+        "visited": true,
+        "value": "[{\"type\":\"student\",\"label\":\"Я училась\",\"from\":{\"year\":2010,\"month\":8,\"monthCode\":\"Сентябрь\"},\"to\":{\"year\":2015,\"month\":7,\"monthCode\":\"Август\"},\"place\":\"СамГУПС\",\"address\":\"Самарский железнодорожный\",\"checkboxToDate\":false},{\"type\":\"employed\",\"label\":\"Я работала\",\"from\":{\"year\":2015,\"month\":7,\"monthCode\":\"Август\"},\"to\":{\"year\":2020,\"month\":10,\"monthCode\":\"Ноябрь\"},\"position\":\"тестировщик\",\"place\":\"ООО Элоконт\",\"address\":\"Самара Ново-Садовая 35 44\",\"checkboxToDate\":true}]"
+      },
+      "q9": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "fai6": {
+        "visited": true,
+        "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}}"
+      },
+      "fai6_2": {
+        "visited": true,
+        "value": ""
+      },
+      "rf34": {
+        "visited": true,
+        "value": "false"
+      },
+      "rb9": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb10": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb11": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb12": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb13": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb14": {
+        "visited": true,
+        "value": "0"
+      },
+      "q19": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q30": {
+        "visited": true,
+        "value": "Получение впервые"
+      },
+      "ms1": {
+        "visited": true,
+        "value": "{\"value\":\"7700143\",\"parentValue\":null,\"title\":\"Отделение УФМС России по г. Москве по району Некрасовка\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"email_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"ufms-uvao@mail.ru\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"ufms-uvao@mail.ru\"},\"valueAsOfType\":\"ufms-uvao@mail.ru\"},{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"город Москва, Рождественская, д. 21, стр. 6\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"город Москва, Рождественская, д. 21, стр. 6\"},\"valueAsOfType\":\"город Москва, Рождественская, д. 21, стр. 6\"},{\"name\":\"phone_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"+7(499)9404320\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"+7(499)9404320\"},\"valueAsOfType\":\"+7(499)9404320\"},{\"name\":\"fax_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"schedule_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},\"valueAsOfType\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},{\"name\":\"scheduleComment_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                \"},\"valueAsOfType\":\"\\n                \"}],\"attributeValues\":{\"phone_out\":\"+7(499)9404320\",\"email_out\":\"ufms-uvao@mail.ru\",\"schedule_out\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"fax_out\":\"\",\"scheduleComment_out\":\"\\n                \",\"address_out\":\"город Москва, Рождественская, д. 21, стр. 6\"},\"idForMap\":7,\"center\":[37.917331,55.706467],\"baloonContent\":[{\"value\":\"город Москва, Рождественская, д. 21, стр. 6\",\"label\":\"Адрес\"},{\"value\":\"+7(499)9404320\",\"label\":\"Телефон\"},{\"value\":\"ufms-uvao@mail.ru\",\"label\":\"Электроная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\"}"
+      }
+    },
+    "cycledApplicantAnswers": {
+      "answerlist": []
+    },
+    "participants": {},
+    "display": {
+      "id": "s88",
+      "name": "Заявление отправлено! старый, взрослый, регистрация",
+      "type": "INFO",
+      "header": "Заявление отправлено!",
+      "components": [
+        {
+          "id": "d25",
+          "type": "InfoScr",
+          "label": "<p><center><img src='https://gu-st.ru/content/catalog/new/status_1.svg'></center></p><p>Оформление загранпаспорта будет производиться подразделением <b>Отделение УФМС России по г. Москве по району Некрасовка</b> по адресу:<br><a target='_blank' href='http://yandex.ru/maps/?pt=37.917331,55.706467&z=13'>город Москва, Рождественская, д. 21, стр. 6</a></p><p>Процедура оформления паспорта займет до <b>1 месяца</b></p><p>(до 3-х месяцев в случае допуска к сведениям, составляющим государственную тайну)</p><p>После рассмотрения заявления в ваш личный кабинет придет уведомление о возможности оплатить пошлину онлайн со скидкой 30%</p><p>Дождитесь в личном кабинете приглашения в подразделение</p><p>Принесите с собой <a id='DocOrigonals'>оригиналы документов</a></p><p>Сотрудник полиции сверит данные из электронного заявления с оригинальными документами и сообщит о сроке готовности загранпаспорта</p>",
+          "attrs": {
+            "actions": [
+              {
+                "label": "Перейти в личный кабинет",
+                "value": "Перейти в личный кабинет",
+                "type": "redirectToLK",
+                "action": "getNextScreen"
+              }
+            ],
+            "clarifications": {
+              "DocOrigonals": {
+                "title": "Какие документы взять в МВД",
+                "text": "<ul><li>паспорт РФ</li><li>три черно-белые или цветные фотографии размером 35 на 45 миллиметров с четким изображением лица строго анфас, лицо должно занимать 70-80% от фотографии, фото в форме не допускаются, разрешается фотография в головном уборе, не скрывающем овал лица, если религия гражданина не позволяет показываться перед посторонними без покрытой головы</li><li>ранее выданный загранпаспорт (при наличии)</li><li>разрешение командования — для служащих в Вооруженных Силах России, а также в федеральных органах власти, в которых предусмотрена военная служба (за исключением службы по призыву)</li><li>по две черно-белые или цветные фотографии на каждого несовершеннолетнего ребенка — размером 35 на 45 миллиметров с четким изображением лица строго анфас, лицо должно занимать 70-80% от фотографии, разрешается фотография в головном уборе, не скрывающем овал лица, если религия гражданина не позволяет показываться перед посторонними без покрытой головы; свидетельства о рождении детей до 14 лет</li></ul>"
+              }
+            },
+            "refs": {
+              "reference_to_name": "ms1.value.title",
+              "reference_to_x": "ms1.value.center[0]",
+              "reference_to_y": "ms1.value.center[1]",
+              "reference_to_address": "ms1.value.attributes[1].valueAsOfType"
+            }
+          },
+          "arguments": {},
+          "value": "",
+          "required": true,
+          "cycled": false
+        }
+      ],
+      "terminal": true,
+      "accepted": true,
+      "firstScreen": false,
+      "impasse": false
+    },
+    "attachmentInfo": {
+      "d33": [
+        {
+          "uploadId": "passport_photo",
+          "uploadMnemonic": "d33.PhotoUploadComponent.passport_photo.0",
+          "uploadFilename": "78156404.jpg"
+        }
+      ]
+    },
+    "additionalParameters": {
+      "masterOid": "1000422556",
+      "masterId": "993304405",
+      "citizenshipCode": "RUS",
+      "gender": "F",
+      "orderId": "993304405",
+      "citizenship": "РОССИЯ",
+      "oid": "1000422556",
+      "snils": "204-953-305 50",
+      "masterSnils": "204-953-305 50"
+    },
+    "gender": "F"
+  }
+}

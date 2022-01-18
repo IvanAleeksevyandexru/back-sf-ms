@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:AppealCycleResponse xmlns:ns3="urn://web.gibdd.ru/appeal-fines-gibdd/appeal-cycle/1.0.2"
+                         xmlns="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2"
+                         Id="R-e4e14282-dc1d-4a70-8dc9-c99db5195e32"
+                         ReqId="Q-80ba80d8-a7d5-4655-b482-25d1d448fc07"
+                         timestamp="2020-12-22T18:56:28.699+03:00">
+    <Status code="0"/>
+    <ns3:CallbackResponse code="0"/>
+</ns3:AppealCycleResponse>

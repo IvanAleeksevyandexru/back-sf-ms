@@ -1,0 +1,11 @@
+## exmpale of date transformation
+$dateTool.format('dd.MM.yyyy',$dateTool.toDate('yyyy-MM-dd', '1957-05-04'))
+#set( $a = "+7-916-666-66-66" )
+#set ($strTest = "Не себя")
+## example of possible phone transformation
+$a.replace('+7','').replace('-','')
+#if ($strTest == "На себя")
+    all good
+#end
+
+<common:Surname>$pd1['firstName']</common:Surname>

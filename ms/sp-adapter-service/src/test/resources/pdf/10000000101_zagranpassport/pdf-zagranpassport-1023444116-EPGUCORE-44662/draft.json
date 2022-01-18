@@ -1,0 +1,744 @@
+{
+    "orderId": 1023444116,
+    "type": "10000000101",
+    "locked": false,
+    "updated": "2020-12-26T08:09:36.709Z",
+    "body": {
+        "serviceCode": "10000000101",
+        "targetCode": "-10000000101",
+        "orderId": 1023444116,
+        "currentScenarioId": 1,
+        "currentUrl": "https://pgu-uat-fed.test.gosuslugi.ru/600101/1/form",
+        "finishedAndCurrentScreens": [
+            "s1",
+            "s2",
+            "s3",
+            "s4",
+            "s7",
+            "s9",
+            "s226_1",
+            "s19",
+            "s20",
+            "s21",
+            "s8_1",
+            "s23",
+            "s25",
+            "s29",
+            "s30",
+            "s35",
+            "s36_1",
+            "s39",
+            "s63",
+            "s59",
+            "s110",
+            "s260"
+        ],
+        "cachedAnswers": {
+            "w1": {
+                "visited": true,
+                "value": ""
+            },
+            "q1": {
+                "visited": true,
+                "value": "Старого образца"
+            },
+            "q2": {
+                "visited": true,
+                "value": "Мне и детям"
+            },
+            "q3": {
+                "visited": true,
+                "value": "До 14 лет и от 14 до 18 лет"
+            },
+            "q8": {
+                "visited": true,
+                "value": "По месту обращения (фактического проживания)"
+            },
+            "q6": {
+                "visited": true,
+                "value": "Нет"
+            },
+            "d66_1": {
+                "visited": true,
+                "value": ""
+            },
+            "pd1": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"Берёза Антонина Семёновна\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"31.10.1990\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0003 333333\"},{\"label\":\"Дата выдачи:\",\"value\":\"02.11.2015\"},{\"label\":\"Кем выдан:\",\"value\":\"пук\"},{\"label\":\"Код подразделения:\",\"value\":\"123-123\"},{\"label\":\"Место рождения:\",\"value\":\"Сосновка\"}]}],\"storedValues\":{\"firstName\":\"Антонина\",\"lastName\":\"Берёза\",\"birthPlace\":\"Сосновка\",\"rfPasportIssuedBy\":\"пук\",\"gender\":\"F\",\"rfPasportIssuedById\":\"123123\",\"rfPasportSeries\":\"0003\",\"middleName\":\"Семёновна\",\"birthDate\":\"31.10.1990\",\"rfPasportNumber\":\"333333\",\"rfPasportIssueDate\":\"02.11.2015\"}}"
+            },
+            "pd2": {
+                "visited": true,
+                "value": "+7(999)5554433"
+            },
+            "pd3": {
+                "visited": true,
+                "value": "testepgu2@yandex.ru"
+            },
+            "pd44": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.7307845\",\"building2Type\":null,\"okato\":\"45286580000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Волгоградский\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"7700000000000130111\",\"building1ShortType\":null,\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"16\"},\"regDate\":\"30.11.2020\"}"
+            },
+            "pd5": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.763065\",\"building2Type\":null,\"okato\":\"45286555000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.763065\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.6456946\",\"index\":\"101000\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"101000, г. Москва, ул. Жуковского, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6456946\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Жуковского\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"77000000000129200\",\"building1ShortType\":null,\"fiasCode\":\"35f5e14a-1dbd-42fe-93a6-ddd9382ff60c\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, ул. Жуковского\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"66\"}}"
+            },
+            "d33": {
+                "visited": true,
+                "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"photo_2020-10-14_12-44-50.jpg\",\"objectType\":2,\"objectId\":1023444116,\"mimeType\":\"image/jpeg\"}"
+            },
+            "eh1": {
+                "visited": true,
+                "value": "[{\"type\":\"student\",\"label\":\"Я училась\",\"from\":{\"year\":2010,\"month\":9,\"monthCode\":\"Октябрь\"},\"to\":{\"year\":2020,\"month\":11,\"monthCode\":\"Декабрь\"},\"place\":\"h\",\"address\":\"j\",\"checkboxToDate\":true}]"
+            },
+            "q9": {
+                "visited": true,
+                "value": "Нет"
+            },
+            "fai6": {
+                "visited": true,
+                "value": "{\"id\":\"SUN\",\"text\":\"СССР\",\"formatted\":\"\",\"originalItem\":{\"value\":\"SUN\",\"parentValue\":null,\"title\":\"СССР\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+            },
+            "rb9": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb10": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb11": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb12": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb13": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb14": {
+                "visited": true,
+                "value": "0"
+            },
+            "q30": {
+                "visited": true,
+                "value": "Получение впервые"
+            },
+            "ai18": {
+                "visited": true,
+                "value": "[{\"ai18_4\":\"Имя\",\"ai18_5\":\"\",\"pd12\":{\"regAddr\":{\"streetShortType\":\"ул\",\"geoLat\":\"55.763065\",\"okato\":\"45286555000\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.763065\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.6456946\",\"index\":\"101000\",\"district\":\"\",\"fullAddress\":\"101000, г. Москва, ул. Жуковского, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6456946\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"street\":\"Жуковского\",\"kladrCode\":\"77000000000129200\",\"fiasCode\":\"35f5e14a-1dbd-42fe-93a6-ddd9382ff60c\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, ул. Жуковского\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"66\"}},\"ai18_6\":\"true\",\"bd20_0\":\"\",\"ai18_0\":\"790ddf4f-532a-4008-97de-450065518d78\",\"d34\":{\"name\":\"photo_2020-10-14_12-45-12.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.790ddf4f-532a-4008-97de-450065518d78\",\"mimeType\":\"image/jpeg\",\"objectId\":1023444116,\"objectType\":2},\"ai18_1\":\"2020-12-01T00:00:00.000+06:00\",\"q28_2\":\"Получение впервые\",\"ai18_2\":\"M\",\"ai18_3\":\"Младший\",\"clr2\":{\"regDate\":\"30.11.2020\",\"regAddr\":{\"streetShortType\":\"пр-кт\",\"geoLat\":\"55.7307845\",\"okato\":\"45286580000\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"street\":\"Волгоградский\",\"kladrCode\":\"7700000000000130111\",\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"16\"}},\"bd1\":{\"date\":\"2020-12-01T00:00:00.000+06:00\",\"number\":\"2345555\",\"series\":\"I-ФЫ\",\"emitter\":\"е\"},\"bd20\":{\"date\":\"2020-12-01T00:00:00.000+06:00\",\"number\":\"3456\",\"emitter\":\"ке\"},\"q22\":\"Нет\",\"q13\":\"Свидетельство о рождении, выданное на территории РФ\",\"bd1_1\":\"123\",\"bd5\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"bd7\":\"М\",\"q26\":\"Нет\"}]"
+            },
+            "ai19": {
+                "visited": true,
+                "value": "[{\"ai19_3\":\"Старший\",\"ai19_4\":\"Имя\",\"pd12\":{\"regAddr\":{\"streetShortType\":\"ул\",\"geoLat\":\"55.763065\",\"okato\":\"45286555000\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.763065\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.6456946\",\"index\":\"101000\",\"district\":\"\",\"fullAddress\":\"101000, г. Москва, ул. Жуковского, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6456946\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"street\":\"Жуковского\",\"kladrCode\":\"77000000000129200\",\"fiasCode\":\"35f5e14a-1dbd-42fe-93a6-ddd9382ff60c\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, ул. Жуковского\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"66\"}},\"ai19_5\":\"\",\"bd20_0\":\"\",\"ai19_6\":\"true\",\"d34\":{\"name\":\"photo_2020-10-14_12-44-42.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.3c78b3f6-cb9e-4b51-8895-29df4bacd33b\",\"mimeType\":\"image/jpeg\",\"objectId\":1023444116,\"objectType\":2},\"ai19_0\":\"3c78b3f6-cb9e-4b51-8895-29df4bacd33b\",\"q28_2\":\"Получение впервые\",\"ai19_1\":\"2006-11-29T00:00:00.000+06:00\",\"ai19_2\":\"M\",\"clr2\":{\"regDate\":\"30.11.2020\",\"regAddr\":{\"streetShortType\":\"пр-кт\",\"geoLat\":\"55.7307845\",\"okato\":\"45286580000\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"street\":\"Волгоградский\",\"kladrCode\":\"7700000000000130111\",\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"16\"}},\"bd20\":{\"date\":\"2020-12-10T00:00:00.000+06:00\",\"number\":\"234567\",\"emitter\":\"ке\"},\"ps1\":{\"date\":\"2020-12-09T00:00:00.000+06:00\",\"number\":\"345678\",\"series\":\"1234\",\"emitter\":\"ке\"},\"q22\":\"Нет\",\"ps6\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"ps5\":\"456-789\",\"q26\":\"Нет\",\"ps7\":\"И\"}]"
+            },
+            "q19": {
+                "visited": true,
+                "value": "Нет"
+            },
+            "ms2": {
+                "visited": true,
+                "value": "{\"value\":\"100050002\",\"parentValue\":null,\"title\":\"ОВМ МУМВД России «Балашихинское»\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"Московская область, г. Балашиха, мкр. Заря,  ул. Советская д.15\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"Московская область, г. Балашиха, мкр. Заря,  ул. Советская д.15\"},\"valueAsOfType\":\"Московская область, г. Балашиха, мкр. Заря,  ул. Советская д.15\"}],\"source\":\"mvd_organization\",\"attributeValues\":{\"address_out\":\"Московская область, г. Балашиха, мкр. Заря,  ул. Советская д.15\"},\"idForMap\":118,\"center\":[38.082226,55.756118],\"baloonContent\":[{\"value\":\"Московская область, г. Балашиха, мкр. Заря,  ул. Советская д.15\",\"label\":\"Адрес\"},{\"label\":\"Телефон\"},{\"label\":\"Электронная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"45000000000\",\"okato\":\"45286555000\"}"
+            }
+        },
+        "currentValue": {},
+        "errors": {},
+        "applicantAnswers": {
+            "w1": {
+                "visited": true,
+                "value": ""
+            },
+            "q1": {
+                "visited": true,
+                "value": "Старого образца"
+            },
+            "q2": {
+                "visited": true,
+                "value": "Мне и детям"
+            },
+            "q3": {
+                "visited": true,
+                "value": "До 14 лет и от 14 до 18 лет"
+            },
+            "q6": {
+                "visited": true,
+                "value": "Нет"
+            },
+            "q8": {
+                "visited": true,
+                "value": "По месту обращения (фактического проживания)"
+            },
+            "d66_1": {
+                "visited": true,
+                "value": ""
+            },
+            "pd1": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"Берёза Антонина Семёновна\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"31.10.1990\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0003 333333\"},{\"label\":\"Дата выдачи:\",\"value\":\"02.11.2015\"},{\"label\":\"Кем выдан:\",\"value\":\"пук\"},{\"label\":\"Код подразделения:\",\"value\":\"123-123\"},{\"label\":\"Место рождения:\",\"value\":\"Сосновка\"}]}],\"storedValues\":{\"firstName\":\"Антонина\",\"lastName\":\"Берёза\",\"birthPlace\":\"Сосновка\",\"rfPasportIssuedBy\":\"пук\",\"gender\":\"F\",\"rfPasportIssuedById\":\"123123\",\"rfPasportSeries\":\"0003\",\"middleName\":\"Семёновна\",\"birthDate\":\"31.10.1990\",\"rfPasportNumber\":\"333333\",\"rfPasportIssueDate\":\"02.11.2015\"}}"
+            },
+            "pd2": {
+                "visited": true,
+                "value": "+7(999)5554433"
+            },
+            "pd3": {
+                "visited": true,
+                "value": "testepgu2@yandex.ru"
+            },
+            "pd44": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.7307845\",\"building2Type\":null,\"okato\":\"45286580000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Волгоградский\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"7700000000000130111\",\"building1ShortType\":null,\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"16\"},\"regDate\":\"30.11.2020\"}"
+            },
+            "pd5": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.763065\",\"building2Type\":null,\"okato\":\"45286555000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.763065\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.6456946\",\"index\":\"101000\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"101000, г. Москва, ул. Жуковского, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6456946\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Жуковского\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"77000000000129200\",\"building1ShortType\":null,\"fiasCode\":\"35f5e14a-1dbd-42fe-93a6-ddd9382ff60c\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, ул. Жуковского\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"66\"}}"
+            },
+            "d33": {
+                "visited": true,
+                "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"photo_2020-10-14_12-44-50.jpg\",\"objectType\":2,\"objectId\":1023444116,\"mimeType\":\"image/jpeg\"}"
+            },
+            "eh1": {
+                "visited": true,
+                "value": "[{\"type\":\"student\",\"label\":\"Я училась\",\"from\":{\"year\":2010,\"month\":9,\"monthCode\":\"Октябрь\"},\"to\":{\"year\":2020,\"month\":11,\"monthCode\":\"Декабрь\"},\"place\":\"h\",\"address\":\"j\",\"checkboxToDate\":true}]"
+            },
+            "q9": {
+                "visited": true,
+                "value": "Нет"
+            },
+            "fai6": {
+                "visited": true,
+                "value": "{\"id\":\"SUN\",\"text\":\"СССР\",\"formatted\":\"\",\"originalItem\":{\"value\":\"SUN\",\"parentValue\":null,\"title\":\"СССР\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+            },
+            "rb9": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb10": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb11": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb12": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb13": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb14": {
+                "visited": true,
+                "value": "0"
+            },
+            "q30": {
+                "visited": true,
+                "value": "Получение впервые"
+            },
+            "ai18": {
+                "visited": true,
+                "value": "[{\"ai18_4\":\"Имя\",\"ai18_5\":\"\",\"pd12\":{\"regAddr\":{\"streetShortType\":\"ул\",\"geoLat\":\"55.763065\",\"okato\":\"45286555000\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.763065\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.6456946\",\"index\":\"101000\",\"district\":\"\",\"fullAddress\":\"101000, г. Москва, ул. Жуковского, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6456946\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"street\":\"Жуковского\",\"kladrCode\":\"77000000000129200\",\"fiasCode\":\"35f5e14a-1dbd-42fe-93a6-ddd9382ff60c\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, ул. Жуковского\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"66\"}},\"ai18_6\":\"true\",\"bd20_0\":\"\",\"ai18_0\":\"790ddf4f-532a-4008-97de-450065518d78\",\"d34\":{\"name\":\"photo_2020-10-14_12-45-12.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.790ddf4f-532a-4008-97de-450065518d78\",\"mimeType\":\"image/jpeg\",\"objectId\":1023444116,\"objectType\":2},\"ai18_1\":\"2020-12-01T00:00:00.000+06:00\",\"q28_2\":\"Получение впервые\",\"ai18_2\":\"M\",\"ai18_3\":\"Младший\",\"clr2\":{\"regDate\":\"30.11.2020\",\"regAddr\":{\"streetShortType\":\"пр-кт\",\"geoLat\":\"55.7307845\",\"okato\":\"45286580000\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"street\":\"Волгоградский\",\"kladrCode\":\"7700000000000130111\",\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"16\"}},\"bd1\":{\"date\":\"2020-12-01T00:00:00.000+06:00\",\"number\":\"2345555\",\"series\":\"I-ФЫ\",\"emitter\":\"е\"},\"bd20\":{\"date\":\"2020-12-01T00:00:00.000+06:00\",\"number\":\"3456\",\"emitter\":\"ке\"},\"q22\":\"Нет\",\"q13\":\"Свидетельство о рождении, выданное на территории РФ\",\"bd1_1\":\"123\",\"bd5\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"bd7\":\"М\",\"q26\":\"Нет\"}]"
+            },
+            "ai19": {
+                "visited": true,
+                "value": "[{\"ai19_3\":\"Старший\",\"ai19_4\":\"Имя\",\"pd12\":{\"regAddr\":{\"streetShortType\":\"ул\",\"geoLat\":\"55.763065\",\"okato\":\"45286555000\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.763065\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.6456946\",\"index\":\"101000\",\"district\":\"\",\"fullAddress\":\"101000, г. Москва, ул. Жуковского, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6456946\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"street\":\"Жуковского\",\"kladrCode\":\"77000000000129200\",\"fiasCode\":\"35f5e14a-1dbd-42fe-93a6-ddd9382ff60c\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, ул. Жуковского\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"66\"}},\"ai19_5\":\"\",\"bd20_0\":\"\",\"ai19_6\":\"true\",\"d34\":{\"name\":\"photo_2020-10-14_12-44-42.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.3c78b3f6-cb9e-4b51-8895-29df4bacd33b\",\"mimeType\":\"image/jpeg\",\"objectId\":1023444116,\"objectType\":2},\"ai19_0\":\"3c78b3f6-cb9e-4b51-8895-29df4bacd33b\",\"q28_2\":\"Получение впервые\",\"ai19_1\":\"2006-11-29T00:00:00.000+06:00\",\"ai19_2\":\"M\",\"clr2\":{\"regDate\":\"30.11.2020\",\"regAddr\":{\"streetShortType\":\"пр-кт\",\"geoLat\":\"55.7307845\",\"okato\":\"45286580000\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"street\":\"Волгоградский\",\"kladrCode\":\"7700000000000130111\",\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"16\"}},\"bd20\":{\"date\":\"2020-12-10T00:00:00.000+06:00\",\"number\":\"234567\",\"emitter\":\"ке\"},\"ps1\":{\"date\":\"2020-12-09T00:00:00.000+06:00\",\"number\":\"345678\",\"series\":\"1234\",\"emitter\":\"ке\"},\"q22\":\"Нет\",\"ps6\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"ps5\":\"456-789\",\"q26\":\"Нет\",\"ps7\":\"И\"}]"
+            },
+            "q19": {
+                "visited": true,
+                "value": "Нет"
+            },
+            "ms2": {
+                "visited": true,
+                "value": "{\"value\":\"100050002\",\"parentValue\":null,\"title\":\"ОВМ МУМВД России «Балашихинское»\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"Московская область, г. Балашиха, мкр. Заря,  ул. Советская д.15\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"Московская область, г. Балашиха, мкр. Заря,  ул. Советская д.15\"},\"valueAsOfType\":\"Московская область, г. Балашиха, мкр. Заря,  ул. Советская д.15\"}],\"source\":\"mvd_organization\",\"attributeValues\":{\"address_out\":\"Московская область, г. Балашиха, мкр. Заря,  ул. Советская д.15\"},\"idForMap\":118,\"center\":[38.082226,55.756118],\"baloonContent\":[{\"value\":\"Московская область, г. Балашиха, мкр. Заря,  ул. Советская д.15\",\"label\":\"Адрес\"},{\"label\":\"Телефон\"},{\"label\":\"Электронная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"45000000000\",\"okato\":\"45286555000\"}"
+            }
+        },
+        "cycledApplicantAnswers": {
+            "currentAnswerId": "ai19",
+            "answerlist": [
+                {
+                    "id": "ai18",
+                    "initScreen": "s39",
+                    "currentItemId": "790ddf4f-532a-4008-97de-450065518d78",
+                    "items": [
+                        {
+                            "id": "790ddf4f-532a-4008-97de-450065518d78",
+                            "itemAnswers": {
+                                "ai18_4": {
+                                    "visited": true,
+                                    "value": "Имя"
+                                },
+                                "ai18_5": {
+                                    "visited": true,
+                                    "value": ""
+                                },
+                                "ai18_6": {
+                                    "visited": true,
+                                    "value": "true"
+                                },
+                                "ai18_0": {
+                                    "visited": true,
+                                    "value": "790ddf4f-532a-4008-97de-450065518d78"
+                                },
+                                "ai18_1": {
+                                    "visited": true,
+                                    "value": "2020-12-01T00:00:00.000+06:00"
+                                },
+                                "ai18_2": {
+                                    "visited": true,
+                                    "value": "M"
+                                },
+                                "ai18_3": {
+                                    "visited": true,
+                                    "value": "Младший"
+                                },
+                                "q13": {
+                                    "visited": true,
+                                    "value": "Свидетельство о рождении, выданное на территории РФ"
+                                },
+                                "bd1": {
+                                    "visited": true,
+                                    "value": "{\"series\":\"I-ФЫ\",\"number\":\"2345555\",\"date\":\"2020-12-01T00:00:00.000+06:00\",\"emitter\":\"е\"}"
+                                },
+                                "bd1_1": {
+                                    "visited": true,
+                                    "value": "123"
+                                },
+                                "bd5": {
+                                    "visited": true,
+                                    "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                                },
+                                "bd7": {
+                                    "visited": true,
+                                    "value": "М"
+                                },
+                                "clr2": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.7307845\",\"building2Type\":null,\"okato\":\"45286580000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Волгоградский\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"7700000000000130111\",\"building1ShortType\":null,\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"16\"},\"regDate\":\"30.11.2020\"}"
+                                },
+                                "pd12": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.763065\",\"building2Type\":null,\"okato\":\"45286555000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.763065\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.6456946\",\"index\":\"101000\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"101000, г. Москва, ул. Жуковского, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6456946\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Жуковского\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"77000000000129200\",\"building1ShortType\":null,\"fiasCode\":\"35f5e14a-1dbd-42fe-93a6-ddd9382ff60c\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, ул. Жуковского\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"66\"}}"
+                                },
+                                "d34": {
+                                    "visited": true,
+                                    "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.790ddf4f-532a-4008-97de-450065518d78\",\"name\":\"photo_2020-10-14_12-45-12.jpg\",\"objectType\":2,\"objectId\":1023444116,\"mimeType\":\"image/jpeg\"}"
+                                },
+                                "q26": {
+                                    "visited": true,
+                                    "value": "Нет"
+                                },
+                                "q28_2": {
+                                    "visited": true,
+                                    "value": "Получение впервые"
+                                },
+                                "bd20_0": {
+                                    "visited": true,
+                                    "value": ""
+                                },
+                                "bd20": {
+                                    "visited": true,
+                                    "value": "{\"series\":null,\"number\":\"3456\",\"date\":\"2020-12-01T00:00:00.000+06:00\",\"emitter\":\"ке\"}"
+                                },
+                                "q22": {
+                                    "visited": true,
+                                    "value": "Нет"
+                                }
+                            },
+                            "cachedAnswers": {
+                                "ai18_4": {
+                                    "visited": true,
+                                    "value": "Имя"
+                                },
+                                "ai18_5": {
+                                    "visited": true,
+                                    "value": ""
+                                },
+                                "ai18_6": {
+                                    "visited": true,
+                                    "value": "true"
+                                },
+                                "ai18_0": {
+                                    "visited": true,
+                                    "value": "790ddf4f-532a-4008-97de-450065518d78"
+                                },
+                                "ai18_1": {
+                                    "visited": true,
+                                    "value": "2020-12-01T00:00:00.000+06:00"
+                                },
+                                "ai18_2": {
+                                    "visited": true,
+                                    "value": "M"
+                                },
+                                "ai18_3": {
+                                    "visited": true,
+                                    "value": "Младший"
+                                },
+                                "q13": {
+                                    "visited": true,
+                                    "value": "Свидетельство о рождении, выданное на территории РФ"
+                                },
+                                "bd1": {
+                                    "visited": true,
+                                    "value": "{\"series\":\"I-ФЫ\",\"number\":\"2345555\",\"date\":\"2020-12-01T00:00:00.000+06:00\",\"emitter\":\"е\"}"
+                                },
+                                "bd1_1": {
+                                    "visited": true,
+                                    "value": "123"
+                                },
+                                "bd5": {
+                                    "visited": true,
+                                    "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                                },
+                                "bd7": {
+                                    "visited": true,
+                                    "value": "М"
+                                },
+                                "clr2": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.7307845\",\"building2Type\":null,\"okato\":\"45286580000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Волгоградский\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"7700000000000130111\",\"building1ShortType\":null,\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"16\"},\"regDate\":\"30.11.2020\"}"
+                                },
+                                "pd12": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.763065\",\"building2Type\":null,\"okato\":\"45286555000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.763065\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.6456946\",\"index\":\"101000\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"101000, г. Москва, ул. Жуковского, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6456946\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Жуковского\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"77000000000129200\",\"building1ShortType\":null,\"fiasCode\":\"35f5e14a-1dbd-42fe-93a6-ddd9382ff60c\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, ул. Жуковского\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"66\"}}"
+                                },
+                                "d34": {
+                                    "visited": true,
+                                    "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.790ddf4f-532a-4008-97de-450065518d78\",\"name\":\"photo_2020-10-14_12-45-12.jpg\",\"objectType\":2,\"objectId\":1023444116,\"mimeType\":\"image/jpeg\"}"
+                                },
+                                "q26": {
+                                    "visited": true,
+                                    "value": "Нет"
+                                },
+                                "q28_2": {
+                                    "visited": true,
+                                    "value": "Получение впервые"
+                                },
+                                "bd20_0": {
+                                    "visited": true,
+                                    "value": ""
+                                },
+                                "bd20": {
+                                    "visited": true,
+                                    "value": "{\"series\":null,\"number\":\"3456\",\"date\":\"2020-12-01T00:00:00.000+06:00\",\"emitter\":\"ке\"}"
+                                },
+                                "q22": {
+                                    "visited": true,
+                                    "value": "Нет"
+                                }
+                            },
+                            "esiaData": {
+                                "firstName": "Имя",
+                                "lastName": "Младший",
+                                "id": "790ddf4f-532a-4008-97de-450065518d78",
+                                "birthPlaceLocality": "М"
+                            },
+                            "finishedScreens": [
+                                "scrchld1",
+                                "scrchld2",
+                                "scrchld4",
+                                "scrchld7",
+                                "scrchld9",
+                                "scrchld11",
+                                "scrchld15_2",
+                                "s70",
+                                "s71"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ai19",
+                    "initScreen": "s63",
+                    "currentItemId": "3c78b3f6-cb9e-4b51-8895-29df4bacd33b",
+                    "items": [
+                        {
+                            "id": "3c78b3f6-cb9e-4b51-8895-29df4bacd33b",
+                            "itemAnswers": {
+                                "ai19_3": {
+                                    "visited": true,
+                                    "value": "Старший"
+                                },
+                                "ai19_4": {
+                                    "visited": true,
+                                    "value": "Имя"
+                                },
+                                "ai19_5": {
+                                    "visited": true,
+                                    "value": ""
+                                },
+                                "ai19_6": {
+                                    "visited": true,
+                                    "value": "true"
+                                },
+                                "ai19_0": {
+                                    "visited": true,
+                                    "value": "3c78b3f6-cb9e-4b51-8895-29df4bacd33b"
+                                },
+                                "ai19_1": {
+                                    "visited": true,
+                                    "value": "2006-11-29T00:00:00.000+06:00"
+                                },
+                                "ai19_2": {
+                                    "visited": true,
+                                    "value": "M"
+                                },
+                                "ps1": {
+                                    "visited": true,
+                                    "value": "{\"series\":\"1234\",\"number\":\"345678\",\"date\":\"2020-12-09T00:00:00.000+06:00\",\"emitter\":\"ке\"}"
+                                },
+                                "ps5": {
+                                    "visited": true,
+                                    "value": "456-789"
+                                },
+                                "ps6": {
+                                    "visited": true,
+                                    "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                                },
+                                "ps7": {
+                                    "visited": true,
+                                    "value": "И"
+                                },
+                                "clr2": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.7307845\",\"building2Type\":null,\"okato\":\"45286580000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Волгоградский\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"7700000000000130111\",\"building1ShortType\":null,\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"16\"},\"regDate\":\"30.11.2020\"}"
+                                },
+                                "pd12": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.763065\",\"building2Type\":null,\"okato\":\"45286555000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.763065\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.6456946\",\"index\":\"101000\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"101000, г. Москва, ул. Жуковского, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6456946\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Жуковского\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"77000000000129200\",\"building1ShortType\":null,\"fiasCode\":\"35f5e14a-1dbd-42fe-93a6-ddd9382ff60c\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, ул. Жуковского\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"66\"}}"
+                                },
+                                "d34": {
+                                    "visited": true,
+                                    "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.3c78b3f6-cb9e-4b51-8895-29df4bacd33b\",\"name\":\"photo_2020-10-14_12-44-42.jpg\",\"objectType\":2,\"objectId\":1023444116,\"mimeType\":\"image/jpeg\"}"
+                                },
+                                "q26": {
+                                    "visited": true,
+                                    "value": "Нет"
+                                },
+                                "q28_2": {
+                                    "visited": true,
+                                    "value": "Получение впервые"
+                                },
+                                "bd20_0": {
+                                    "visited": true,
+                                    "value": ""
+                                },
+                                "bd20": {
+                                    "visited": true,
+                                    "value": "{\"series\":null,\"number\":\"234567\",\"date\":\"2020-12-10T00:00:00.000+06:00\",\"emitter\":\"ке\"}"
+                                },
+                                "q22": {
+                                    "visited": true,
+                                    "value": "Нет"
+                                }
+                            },
+                            "cachedAnswers": {
+                                "ai19_3": {
+                                    "visited": true,
+                                    "value": "Старший"
+                                },
+                                "ai19_4": {
+                                    "visited": true,
+                                    "value": "Имя"
+                                },
+                                "ai19_5": {
+                                    "visited": true,
+                                    "value": ""
+                                },
+                                "ai19_6": {
+                                    "visited": true,
+                                    "value": "true"
+                                },
+                                "ai19_0": {
+                                    "visited": true,
+                                    "value": "3c78b3f6-cb9e-4b51-8895-29df4bacd33b"
+                                },
+                                "ai19_1": {
+                                    "visited": true,
+                                    "value": "2006-11-29T00:00:00.000+06:00"
+                                },
+                                "ai19_2": {
+                                    "visited": true,
+                                    "value": "M"
+                                },
+                                "ps1": {
+                                    "visited": true,
+                                    "value": "{\"series\":\"1234\",\"number\":\"345678\",\"date\":\"2020-12-09T00:00:00.000+06:00\",\"emitter\":\"ке\"}"
+                                },
+                                "ps5": {
+                                    "visited": true,
+                                    "value": "456-789"
+                                },
+                                "ps6": {
+                                    "visited": true,
+                                    "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                                },
+                                "ps7": {
+                                    "visited": true,
+                                    "value": "И"
+                                },
+                                "clr2": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.7307845\",\"building2Type\":null,\"okato\":\"45286580000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Волгоградский\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"7700000000000130111\",\"building1ShortType\":null,\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"16\"},\"regDate\":\"30.11.2020\"}"
+                                },
+                                "pd12": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.763065\",\"building2Type\":null,\"okato\":\"45286555000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.763065\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"37.6456946\",\"index\":\"101000\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"101000, г. Москва, ул. Жуковского, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6456946\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Жуковского\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"77000000000129200\",\"building1ShortType\":null,\"fiasCode\":\"35f5e14a-1dbd-42fe-93a6-ddd9382ff60c\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, ул. Жуковского\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"66\"}}"
+                                },
+                                "d34": {
+                                    "visited": true,
+                                    "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.3c78b3f6-cb9e-4b51-8895-29df4bacd33b\",\"name\":\"photo_2020-10-14_12-44-42.jpg\",\"objectType\":2,\"objectId\":1023444116,\"mimeType\":\"image/jpeg\"}"
+                                },
+                                "q26": {
+                                    "visited": true,
+                                    "value": "Нет"
+                                },
+                                "q28_2": {
+                                    "visited": true,
+                                    "value": "Получение впервые"
+                                },
+                                "bd20_0": {
+                                    "visited": true,
+                                    "value": ""
+                                },
+                                "bd20": {
+                                    "visited": true,
+                                    "value": "{\"series\":null,\"number\":\"234567\",\"date\":\"2020-12-10T00:00:00.000+06:00\",\"emitter\":\"ке\"}"
+                                },
+                                "q22": {
+                                    "visited": true,
+                                    "value": "Нет"
+                                }
+                            },
+                            "esiaData": {
+                                "lastName": "Старший",
+                                "firstName": "Имя",
+                                "id": "3c78b3f6-cb9e-4b51-8895-29df4bacd33b",
+                                "rfPasportIssuedById": "456-789",
+                                "birthPlaceLocality": "И"
+                            },
+                            "finishedScreens": [
+                                "scrchld5",
+                                "scrchld4",
+                                "scrchld7",
+                                "scrchld9",
+                                "scrchld11",
+                                "scrchld15_2",
+                                "s70",
+                                "s71"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "participants": {
+            "-20000": {
+                "role": "Coapplicant",
+                "mode": "SlaveApplicant",
+                "component": "ai19",
+                "index": 0
+            },
+            "-10000": {
+                "role": "Coapplicant",
+                "mode": "SlaveApplicant",
+                "component": "ai18",
+                "index": 0
+            }
+        },
+        "display": {
+            "id": "s260",
+            "name": "Заявление отправлено! старый, взрослый и дети от 0 до 18, жительство",
+            "type": "INFO",
+            "header": "Заявление отправлено!",
+            "components": [
+                {
+                    "id": "d100",
+                    "type": "InfoScr",
+                    "label": "<p>Оформление загранпаспорта будет производиться подразделением ОВМ МУМВД России «Балашихинское» по адресу </p><div class='block--with-icon'><img src='{staticDomainAssetsPath}/assets/icons/svg/house.svg'><span><a target='_blank' href='http://yandex.ru/maps/?pt=38.082226,55.756118&z=13'>Московская область, г. Балашиха, мкр. Заря,  ул. Советская д.15</a></span></div><div class='block--with-icon'><img src='{staticDomainAssetsPath}/assets/icons/svg/clock.svg'><span>Процедура займет до <b>1 месяца</b> (до 3-х месяцев, если регион подачи заявления отличается от региона места жительства (прописки) или был допуск к сведениям, составляющим государственную тайну)</span></div><br><b>Что дальше</b><br><p><span style='color:blue'><b>1.</b></span> После рассмотрения заявления в ваш личный кабинет придет уведомление о возможности оплатить пошлину онлайн со скидкой 30%</p><p><span style='color:blue'><b>2.</b></span> Дождитесь в личном кабинете приглашения в подразделение. Принесите с собой <a id='DocOrigonals'>оригиналы документов</a></p><p><span style='color:blue'><b>3.</b></span> В отделении МВД сотрудник полиции сверит данные из электронного заявления с оригинальными документами и сообщит о сроке готовности загранпаспорта</p>",
+                    "attrs": {
+                        "actions": [
+                            {
+                                "label": "В личный кабинет",
+                                "value": "В личный кабинет",
+                                "type": "redirectToLK",
+                                "action": "getNextScreen"
+                            }
+                        ],
+                        "clarifications": {
+                            "DocOrigonals": {
+                                "title": "Какие документы взять в МВД",
+                                "text": "<ul><li>Ваш паспорт РФ</li><li>Разрешение командования — для служащих в Вооруженных Силах России, а также в федеральных органах власти, в которых предусмотрена военная служба (за исключением службы по призыву)</li><li><a><span id='docofright'>Документ</span></a>, подтверждающий права законного представителя ребенка до 14 лет<div data-hidden-id='docofright' hidden>Это может быть свидетельство о рождении ребенка, документ об усыновлении или акт органа опеки и попечительства о назначении опекуна или попечителя</div></li><li>Свидетельство о рождении для детей до 14 лет</li><li><a><span id='docfright'>Документ</span></a>, подтверждающий наличие гражданства РФ у ребенка <div data-hidden-id='docfright' hidden>Это может быть свидетельство о рождении с отметкой о принадлежности к гражданству РФ либо вкладыш с отметкой о наличии российского гражданства к свидетельству о рождении, ранее выданный загранпаспорт</div></li><li>Паспорт РФ для детей от 14 лет</li><li>По две черно-белые или цветные фотографии для вас и по две для каждого ребенка — размером 35 на 45 миллиметров с четким изображением лица строго анфас, лицо должно занимать 70-80% от фотографии, фото в форме не допускаются, разрешается фотография в головном уборе, не скрывающем овал лица, если религия гражданина не позволяет показываться перед посторонними без покрытой головы</li><li>Ранее выданный загранпаспорт ребенка (при наличии)</li><li>Если вы хотите <a><span id='docofchild'>внести</span></a> в свой загранпаспорт информацию о детях младше 14 лет <div data-hidden-id='docofchild' hidden>Принесите по две черно-белые или цветные фотографии на каждого несовершеннолетнего ребенка (к фото ребёнка те же требования, что и к фото взрослого), свидетельства о рождении детей до 14 лет, документ об усыновлении или акт органа опеки и попечительства о назначении опекуна или попечителя (при наличии соответствующего основания)</div></li></ul>"
+                            }
+                        },
+                        "refs": {
+                            "reference_to_name": "ms2.value.title",
+                            "reference_to_x": "ms2.value.center[0]",
+                            "reference_to_y": "ms2.value.center[1]",
+                            "reference_to_address": "ms2.value.attributeValues.address_out"
+                        }
+                    },
+                    "linkedValues": [],
+                    "arguments": {},
+                    "value": "",
+                    "required": true
+                }
+            ],
+            "accepted": true,
+            "firstScreen": false,
+            "impasse": false,
+            "terminal": true
+        },
+        "attachmentInfo": {
+            "d33": [
+                {
+                    "uploadId": "passport_photo",
+                    "uploadMnemonic": "d33.PhotoUploadComponent.passport_photo.0",
+                    "uploadFilename": "photo_2020-10-14_12-44-50.jpg",
+                    "objectId": "1023444116",
+                    "objectTypeId": "2"
+                }
+            ],
+            "d34": [
+                {
+                    "uploadId": "child_passport_photo",
+                    "uploadMnemonic": "d34.PhotoUploadComponent.child_passport_photo.790ddf4f-532a-4008-97de-450065518d78",
+                    "uploadFilename": "photo_2020-10-14_12-45-12.jpg",
+                    "objectId": "1023444116",
+                    "objectTypeId": "2"
+                },
+                {
+                    "uploadId": "child_passport_photo",
+                    "uploadMnemonic": "d34.PhotoUploadComponent.child_passport_photo.3c78b3f6-cb9e-4b51-8895-29df4bacd33b",
+                    "uploadFilename": "photo_2020-10-14_12-44-42.jpg",
+                    "objectId": "1023444116",
+                    "objectTypeId": "2"
+                }
+            ]
+        },
+        "additionalParameters": {
+            "orderId": "1023444116",
+            "oid": "1000472429",
+            "snils": "010-732-732 01",
+            "gender": "F",
+            "citizenship": "РОССИЯ",
+            "citizenshipCode": "RUS",
+            "serviceId": "10000000101",
+            "timezone": "+3",
+            "masterId": "1023444116",
+            "masterOid": "1000472429",
+            "masterSnils": "010-732-732 01",
+            "masterGender": "F",
+            "masterCitizenship": "РОССИЯ",
+            "masterCitizenshipCode": "RUS",
+            "masterTimezone": "+3"
+        },
+        "generatedFiles": [
+            "req_0c88b84d-1419-4c5d-bc4f-72bd9447a942.xml",
+            "req_preview.pdf"
+        ],
+        "gender": "F"
+    }
+}

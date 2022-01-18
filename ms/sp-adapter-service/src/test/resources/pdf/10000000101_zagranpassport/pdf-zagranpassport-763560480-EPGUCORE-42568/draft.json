@@ -1,0 +1,291 @@
+{
+    "orderId": 763560480,
+    "type": "10000000101",
+    "locked": false,
+    "updated": "2020-12-22T03:49:32.223Z",
+    "body": {
+        "serviceCode": "10000000101",
+        "targetCode": "-10000000101",
+        "orderId": 763560480,
+        "currentScenarioId": 1,
+        "currentUrl": "http://dev01.pgu2-pub.test.gosuslugi.ru/",
+        "finishedAndCurrentScreens": [
+            "s1",
+            "s2",
+            "s3",
+            "s9",
+            "s10",
+            "s19",
+            "s20",
+            "s21",
+            "s22",
+            "s25",
+            "s29",
+            "s30",
+            "s5",
+            "s35",
+            "s36_1",
+            "s60",
+            "s80"
+        ],
+        "cachedAnswers": {
+            "w1": {
+                "visited": true,
+                "value": ""
+            },
+            "q1": {
+                "visited": true,
+                "value": "Нового образца"
+            },
+            "q2": {
+                "visited": true,
+                "value": "Мне"
+            },
+            "q8": {
+                "visited": true,
+                "value": "По месту жительства"
+            },
+            "d1": {
+                "visited": true,
+                "value": ""
+            },
+            "pd1": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"Ёршин Александр Федорович\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"01.11.2000\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"5623 432423\"},{\"label\":\"Дата выдачи:\",\"value\":\"01.11.2014\"},{\"label\":\"Кем выдан:\",\"value\":\"Отделом УФМС России\"},{\"label\":\"Код подразделения:\",\"value\":\"342-434\"},{\"label\":\"Место рождения:\",\"value\":\"г. Москва\"}]}],\"storedValues\":{\"firstName\":\"Александр\",\"lastName\":\"Ёршин\",\"birthPlace\":\"г. Москва\",\"rfPasportIssuedBy\":\"Отделом УФМС России\",\"gender\":\"M\",\"rfPasportIssuedById\":\"342434\",\"rfPasportSeries\":\"5623\",\"middleName\":\"Федорович\",\"birthDate\":\"01.11.2000\",\"rfPasportNumber\":\"432423\",\"rfPasportIssueDate\":\"01.11.2014\"}}"
+            },
+            "pd2": {
+                "visited": true,
+                "value": "+7(453)6483345"
+            },
+            "pd3": {
+                "visited": true,
+                "value": "alexanderyorshin@yandex.ru"
+            },
+            "pd4": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ш\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.584645\",\"building2Type\":null,\"okato\":\"45296597000\",\"building1Type\":\"корпус\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.584645\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"шоссе\",\"town\":\"\",\"lng\":\"37.603487\",\"index\":\"117405\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"117405, г. Москва, ш. Варшавское, д. 141А, к. 3, кв. 999\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.603487\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"141А\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Варшавское\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"7700000000004761533\",\"building1ShortType\":\"к\",\"fiasCode\":\"4ff7be6b-e016-49b1-aee7-cd98c1f15e2a\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, ш. Варшавское\",\"building1\":\"3\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"999\"},\"regDate\":\"02.12.2020\"}"
+            },
+            "d33": {
+                "visited": true,
+                "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"ACDC.jpg\",\"objectType\":2,\"objectId\":763560480,\"mimeType\":\"image/jpeg\"}"
+            },
+            "eh1": {
+                "visited": true,
+                "value": "[{\"type\":\"unemployed\",\"label\":\"Я не работал\",\"from\":{\"year\":1988,\"month\":0,\"monthCode\":\"Январь\"},\"to\":{\"year\":2020,\"month\":11,\"monthCode\":\"Декабрь\"},\"address\":\"Лукашевича 2 - 22\",\"checkboxToDate\":false},{\"type\":\"military\",\"label\":\"Я служил\",\"from\":{\"year\":1995,\"month\":0,\"monthCode\":\"Январь\"},\"to\":{\"year\":2020,\"month\":11,\"monthCode\":\"Декабрь\"},\"position\":\"Рядовой\",\"place\":\"ВЧ 15\",\"address\":\"Прохоровка\",\"checkboxToDate\":false},{\"type\":\"student\",\"label\":\"Я учился\",\"from\":{\"year\":2000,\"month\":0,\"monthCode\":\"Январь\"},\"to\":{\"year\":2020,\"month\":11,\"monthCode\":\"Декабрь\"},\"place\":\"ОмГТУ\",\"address\":\"Мира 23\",\"checkboxToDate\":false},{\"type\":\"employed\",\"label\":\"Я работал\",\"from\":{\"year\":2020,\"month\":5,\"monthCode\":\"Июнь\"},\"to\":{\"year\":2020,\"month\":10,\"monthCode\":\"Ноябрь\"},\"position\":\"Разработчик\",\"place\":\"Люксофт\",\"address\":\"Маркса 41/7\",\"checkboxToDate\":false}]"
+            },
+            "q9": {
+                "visited": true,
+                "value": "Нет"
+            },
+            "q4": {
+                "visited": true,
+                "value": "Нет"
+            },
+            "fai6": {
+                "visited": true,
+                "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+            },
+            "rb9": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb10": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb11": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb12": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb13": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb14": {
+                "visited": true,
+                "value": "0"
+            },
+            "q30": {
+                "visited": true,
+                "value": "Получение впервые"
+            },
+            "ms1": {
+                "visited": true,
+                "value": "{\"value\":\"100050002\",\"parentValue\":null,\"title\":\"ОВМ МУМВД России «Балашихинское»\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"},\"valueAsOfType\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"}],\"source\":\"mvd_organization\",\"attributeValues\":{\"address_out\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"},\"idForMap\":0,\"center\":[38.082226,55.756118],\"baloonContent\":[{\"value\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\",\"label\":\"Адрес\"},{\"label\":\"Телефон\"},{\"label\":\"Электронная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"45000000000\",\"okato\":\"45296597000\"}"
+            }
+        },
+        "currentValue": {},
+        "errors": {},
+        "applicantAnswers": {
+            "q1": {
+                "visited": true,
+                "value": "Нового образца"
+            },
+            "q2": {
+                "visited": true,
+                "value": "Мне"
+            },
+            "pd4": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ш\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.584645\",\"building2Type\":null,\"okato\":\"45296597000\",\"building1Type\":\"корпус\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.584645\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"шоссе\",\"town\":\"\",\"lng\":\"37.603487\",\"index\":\"117405\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"117405, г. Москва, ш. Варшавское, д. 141А, к. 3, кв. 999\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.603487\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"141А\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Варшавское\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"7700000000004761533\",\"building1ShortType\":\"к\",\"fiasCode\":\"4ff7be6b-e016-49b1-aee7-cd98c1f15e2a\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, ш. Варшавское\",\"building1\":\"3\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"999\"},\"regDate\":\"02.12.2020\"}"
+            },
+            "q4": {
+                "visited": true,
+                "value": "Нет"
+            },
+            "rb12": {
+                "visited": true,
+                "value": "0"
+            },
+            "d33": {
+                "visited": true,
+                "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"ACDC.jpg\",\"objectType\":2,\"objectId\":763560480,\"mimeType\":\"image/jpeg\"}"
+            },
+            "rb11": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb14": {
+                "visited": true,
+                "value": "0"
+            },
+            "q8": {
+                "visited": true,
+                "value": "По месту жительства"
+            },
+            "fai6": {
+                "visited": true,
+                "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+            },
+            "rb13": {
+                "visited": true,
+                "value": "0"
+            },
+            "q9": {
+                "visited": true,
+                "value": "Нет"
+            },
+            "rb9": {
+                "visited": true,
+                "value": "0"
+            },
+            "d1": {
+                "visited": true,
+                "value": ""
+            },
+            "eh1": {
+                "visited": true,
+                "value": "[{\"type\":\"unemployed\",\"label\":\"Я не работал\",\"from\":{\"year\":1988,\"month\":0,\"monthCode\":\"Январь\"},\"to\":{\"year\":2020,\"month\":11,\"monthCode\":\"Декабрь\"},\"address\":\"Лукашевича 2 - 22\",\"checkboxToDate\":false},{\"type\":\"military\",\"label\":\"Я служил\",\"from\":{\"year\":1995,\"month\":0,\"monthCode\":\"Январь\"},\"to\":{\"year\":2020,\"month\":11,\"monthCode\":\"Декабрь\"},\"position\":\"Рядовой\",\"place\":\"ВЧ 15\",\"address\":\"Прохоровка\",\"checkboxToDate\":false},{\"type\":\"student\",\"label\":\"Я учился\",\"from\":{\"year\":2000,\"month\":0,\"monthCode\":\"Январь\"},\"to\":{\"year\":2020,\"month\":11,\"monthCode\":\"Декабрь\"},\"place\":\"ОмГТУ\",\"address\":\"Мира 23\",\"checkboxToDate\":false},{\"type\":\"employed\",\"label\":\"Я работал\",\"from\":{\"year\":2020,\"month\":5,\"monthCode\":\"Июнь\"},\"to\":{\"year\":2020,\"month\":10,\"monthCode\":\"Ноябрь\"},\"position\":\"Разработчик\",\"place\":\"Люксофт\",\"address\":\"Маркса 41/7\",\"checkboxToDate\":false}]"
+            },
+            "w1": {
+                "visited": true,
+                "value": ""
+            },
+            "rb10": {
+                "visited": true,
+                "value": "0"
+            },
+            "pd1": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"Ёршин Александр Федорович\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"01.11.2000\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"5623 432423\"},{\"label\":\"Дата выдачи:\",\"value\":\"01.11.2014\"},{\"label\":\"Кем выдан:\",\"value\":\"Отделом УФМС России\"},{\"label\":\"Код подразделения:\",\"value\":\"342-434\"},{\"label\":\"Место рождения:\",\"value\":\"г. Москва\"}]}],\"storedValues\":{\"firstName\":\"Александр\",\"lastName\":\"Ёршин\",\"birthPlace\":\"г. Москва\",\"rfPasportIssuedBy\":\"Отделом УФМС России\",\"gender\":\"M\",\"rfPasportIssuedById\":\"342434\",\"rfPasportSeries\":\"5623\",\"middleName\":\"Федорович\",\"birthDate\":\"01.11.2000\",\"rfPasportNumber\":\"432423\",\"rfPasportIssueDate\":\"01.11.2014\"}}"
+            },
+            "pd3": {
+                "visited": true,
+                "value": "alexanderyorshin@yandex.ru"
+            },
+            "pd2": {
+                "visited": true,
+                "value": "+7(453)6483345"
+            },
+            "q30": {
+                "visited": true,
+                "value": "Получение впервые"
+            },
+            "ms1": {
+                "visited": true,
+                "value": "{\"value\":\"100050002\",\"parentValue\":null,\"title\":\"ОВМ МУМВД России «Балашихинское»\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"},\"valueAsOfType\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"}],\"source\":\"mvd_organization\",\"attributeValues\":{\"address_out\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\"},\"idForMap\":0,\"center\":[38.082226,55.756118],\"baloonContent\":[{\"value\":\"Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15\",\"label\":\"Адрес\"},{\"label\":\"Телефон\"},{\"label\":\"Электронная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"45000000000\",\"okato\":\"45296597000\"}"
+            }
+        },
+        "cycledApplicantAnswers": {
+            "answerlist": []
+        },
+        "participants": {},
+        "display": {
+            "id": "s80",
+            "name": "Заявление отправлено! новый, взрослый, регистрация",
+            "type": "INFO",
+            "header": "Заявление отправлено!",
+            "components": [
+                {
+                    "id": "d17",
+                    "type": "InfoScr",
+                    "label": "<p>Оформление загранпаспорта будет производиться подразделением ОВМ МУМВД России «Балашихинское» по адресу</p><div class='block--with-icon'><img src='{staticDomainAssetsPath}/assets/icons/svg/house.svg'><span><a target='_blank' href='http://yandex.ru/maps/?pt=38.082226,55.756118&z=13'>Московская область, г. Балашиха, мкр. Заря, ул. Советская д.15</a></span></div><div class='block--with-icon'><img src='{staticDomainAssetsPath}/assets/icons/svg/clock.svg'><span>Процедура займет до <b>1 месяца</b> (до 3-х месяцев в случае  допуска к сведениям, составляющим государственную тайну)</span></div><br><b>Что дальше</b><br><p><span style='color:blue'><b>1.</b></span> После рассмотрения заявления в ваш личный кабинет придет уведомление о возможности оплатить пошлину онлайн со скидкой 30%</p><p><span style='color:blue'><b>2.</b></span> Дождитесь в личном кабинете приглашения в подразделение. Принесите с собой <a id='DocOrigonals'>оригиналы документов</a></p><p><span style='color:blue'><b>3.</b></span> В отделении МВД сотрудник полиции сверит данные из электронного заявления с оригинальными документами, сфотографирует вас и сообщит о сроке готовности загранпаспорта</p>",
+                    "attrs": {
+                        "actions": [
+                            {
+                                "label": "В личный кабинет",
+                                "value": "В личный кабинет",
+                                "type": "redirectToLK",
+                                "action": "getNextScreen"
+                            }
+                        ],
+                        "clarifications": {
+                            "DocOrigonals": {
+                                "title": "Какие документы взять в МВД",
+                                "text": "<ul><li>Паспорт РФ</li><li>Ранее выданный загранпаспорт (при наличии)</li><li>Разрешение командования — для служащих в Вооруженных Силах России, а также в федеральных органах власти, в которых предусмотрена военная служба (за исключением службы по призыву)</li></ul>"
+                            }
+                        },
+                        "refs": {
+                            "reference_to_name": "ms1.value.title",
+                            "reference_to_x": "ms1.value.center[0]",
+                            "reference_to_y": "ms1.value.center[1]",
+                            "reference_to_address": "ms1.value.attributeValues.address_out"
+                        }
+                    },
+                    "linkedValues": [],
+                    "arguments": {},
+                    "value": "",
+                    "required": true
+                }
+            ],
+            "accepted": true,
+            "firstScreen": false,
+            "impasse": false,
+            "terminal": true
+        },
+        "attachmentInfo": {
+            "d33": [
+                {
+                    "uploadId": "passport_photo",
+                    "uploadMnemonic": "d33.PhotoUploadComponent.passport_photo.0",
+                    "uploadFilename": "ACDC.jpg",
+                    "objectId": "763560480",
+                    "objectTypeId": "2"
+                }
+            ]
+        },
+        "additionalParameters": {
+            "orderId": "763560480",
+            "oid": "1000472519",
+            "snils": "849-614-170 39",
+            "gender": "M",
+            "citizenship": "РОССИЯ",
+            "citizenshipCode": "RUS",
+            "serviceId": "10000000101",
+            "masterId": "763560480",
+            "masterOid": "1000472519",
+            "masterSnils": "849-614-170 39",
+            "masterGender": "M",
+            "masterCitizenship": "РОССИЯ",
+            "masterCitizenshipCode": "RUS"
+        },
+        "generatedFiles": [
+            "req_preview.pdf"
+        ],
+        "gender": "M"
+    }
+}

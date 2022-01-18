@@ -1,0 +1,772 @@
+{
+    "orderId": 1019749174,
+    "type": "10000000101",
+    "locked": false,
+    "updated": "2020-12-22T09:47:49.089Z",
+    "body": {
+        "serviceCode": "10000000101",
+        "targetCode": "-10000000101",
+        "orderId": 1019749174,
+        "currentScenarioId": 1,
+        "currentUrl": "https://pgu-uat-fed.test.gosuslugi.ru/600101/1/form",
+        "finishedAndCurrentScreens": [
+            "s1",
+            "s2",
+            "s3",
+            "s4",
+            "s7",
+            "s9",
+            "s226_1",
+            "s19",
+            "s20",
+            "s21",
+            "s8_1",
+            "s23",
+            "s25",
+            "s29",
+            "s30",
+            "s31",
+            "s35",
+            "s36_1",
+            "s39",
+            "s63",
+            "s59",
+            "s110",
+            "s260"
+        ],
+        "cachedAnswers": {
+            "w1": {
+                "visited": true,
+                "value": ""
+            },
+            "q1": {
+                "visited": true,
+                "value": "Старого образца"
+            },
+            "q2": {
+                "visited": true,
+                "value": "Мне и детям"
+            },
+            "q3": {
+                "visited": true,
+                "value": "До 14 лет и от 14 до 18 лет"
+            },
+            "q6": {
+                "visited": true,
+                "value": "Нет"
+            },
+            "q8": {
+                "visited": true,
+                "value": "По месту обращения (фактического проживания)"
+            },
+            "d66_1": {
+                "visited": true,
+                "value": ""
+            },
+            "pd1": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"Берёза Антонина Семёновна\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"31.10.1990\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0003 333333\"},{\"label\":\"Дата выдачи:\",\"value\":\"02.11.2015\"},{\"label\":\"Кем выдан:\",\"value\":\"пук\"},{\"label\":\"Код подразделения:\",\"value\":\"123-123\"},{\"label\":\"Место рождения:\",\"value\":\"Сосновка\"}]}],\"storedValues\":{\"firstName\":\"Антонина\",\"lastName\":\"Берёза\",\"birthPlace\":\"Сосновка\",\"rfPasportIssuedBy\":\"пук\",\"gender\":\"F\",\"rfPasportIssuedById\":\"123123\",\"rfPasportSeries\":\"0003\",\"middleName\":\"Семёновна\",\"birthDate\":\"31.10.1990\",\"rfPasportNumber\":\"333333\",\"rfPasportIssueDate\":\"02.11.2015\"}}"
+            },
+            "pd2": {
+                "visited": true,
+                "value": "+7(999)5554433"
+            },
+            "pd3": {
+                "visited": true,
+                "value": "testepgu2@yandex.ru"
+            },
+            "pd44": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.7307845\",\"building2Type\":null,\"okato\":\"45286580000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Волгоградский\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"7700000000000130111\",\"building1ShortType\":null,\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"16\"},\"regDate\":\"01.12.2020\"}"
+            },
+            "pd5": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"43.1211906\",\"building2Type\":null,\"okato\":\"05401360000\",\"building1Type\":null,\"regionType\":\"край\",\"additionalStreet\":\"\",\"lat\":\"43.1211906\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"131.8855782\",\"index\":\"690091\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"690091, край. Приморский, г. Владивосток, ул. Пологая, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Приморский\",\"geoLon\":\"131.8855782\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Владивосток\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"край\",\"regionCode\":\"25\",\"districtShortType\":null,\"street\":\"Пологая\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"2500000100004100007\",\"building1ShortType\":null,\"fiasCode\":\"fd3e17f4-a718-4f89-a3ae-9388b396ccce\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"край. Приморский, г. Владивосток, ул. Пологая\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"66\"}}"
+            },
+            "d33": {
+                "visited": true,
+                "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"photo_2020-10-14_12-44-50.jpg\",\"objectType\":2,\"objectId\":1019749174,\"mimeType\":\"image/jpeg\"}"
+            },
+            "eh1": {
+                "visited": true,
+                "value": "[{\"type\":\"employed\",\"label\":\"Я работала\",\"from\":{\"year\":2010,\"month\":11,\"monthCode\":\"Декабрь\"},\"to\":{\"year\":2020,\"month\":11,\"monthCode\":\"Декабрь\"},\"position\":\"долж\",\"place\":\"место работы\",\"address\":\"адрес работы\",\"checkboxToDate\":true}]"
+            },
+            "q9": {
+                "visited": true,
+                "value": "Да"
+            },
+            "ai4": {
+                "visited": true,
+                "value": "[{\"rf1\":\"Прежфам\",\"rf2\":\"Прежимя\",\"rf3\":\"Прежотч\",\"rf4\":\"Место Изм\",\"rf5\":\"1999-12-01T00:00:00.000+06:00\"}]"
+            },
+            "fai6": {
+                "visited": true,
+                "value": "{\"id\":\"SUN\",\"text\":\"СССР\",\"formatted\":\"\",\"originalItem\":{\"value\":\"SUN\",\"parentValue\":null,\"title\":\"СССР\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+            },
+            "rb9": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb10": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb11": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb12": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb13": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb14": {
+                "visited": true,
+                "value": "0"
+            },
+            "q30": {
+                "visited": true,
+                "value": "Получение впервые"
+            },
+            "ai18": {
+                "visited": true,
+                "value": "[{\"ai18_4\":\"Имя\",\"ai18_5\":\"Отч\",\"pd12\":{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"geoLat\":\"43.1211906\",\"okato\":\"05401360000\",\"regionType\":\"край\",\"additionalStreet\":\"\",\"lat\":\"43.1211906\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"131.8855782\",\"index\":\"690091\",\"district\":\"\",\"fullAddress\":\"690091, край. Приморский, г. Владивосток, ул. Пологая, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Приморский\",\"geoLon\":\"131.8855782\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Владивосток\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"regionShortType\":\"край\",\"regionCode\":\"25\",\"street\":\"Пологая\",\"cityShortType\":\"г\",\"kladrCode\":\"2500000100004100007\",\"fiasCode\":\"fd3e17f4-a718-4f89-a3ae-9388b396ccce\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"край. Приморский, г. Владивосток, ул. Пологая\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"66\"}},\"ai18_6\":\"true\",\"bd20_0\":\"\",\"ai17\":\"[{\\\"rf51\\\":\\\"Йцу\\\",\\\"rf52\\\":\\\"Фыв\\\",\\\"rf53\\\":\\\"\\\",\\\"rf54\\\":\\\"Место\\\",\\\"rf55\\\":\\\"2020-12-02T00:00:00.000+06:00\\\"}]\",\"ai18_0\":\"21b0e151-2ca7-44f0-b88d-585fe05de918\",\"d34\":{\"name\":\"photo_2020-10-14_12-45-12.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.21b0e151-2ca7-44f0-b88d-585fe05de918\",\"mimeType\":\"image/jpeg\",\"objectId\":1019749174,\"objectType\":2},\"ai18_1\":\"2012-12-21T00:00:00.000+07:00\",\"q28_2\":\"Получение впервые\",\"ai18_2\":\"F\",\"ai18_3\":\"Фам\",\"clr2\":{\"regDate\":\"30.11.2020\",\"regAddr\":{\"streetShortType\":\"пр-кт\",\"geoLat\":\"55.7307845\",\"okato\":\"45286580000\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"street\":\"Волгоградский\",\"kladrCode\":\"7700000000000130111\",\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"16\"}},\"bd1\":{\"date\":\"2016-12-01T00:00:00.000+06:00\",\"number\":\"1234567\",\"series\":\"IV-ФЫ\",\"emitter\":\"кем\"},\"bd20\":{\"date\":\"2020-12-01T00:00:00.000+06:00\",\"number\":\"1234\",\"emitter\":\"кем\"},\"q22\":\"Нет\",\"q13\":\"Свидетельство о рождении, выданное на территории РФ\",\"bd1_1\":\"123\",\"bd5\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"bd7\":\"Место\",\"q26\":\"Да\"}]"
+            },
+            "ai19": {
+                "visited": true,
+                "value": "[{\"ai19_3\":\"Фамилия\",\"ai19_4\":\"Имя\",\"pd12\":{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"geoLat\":\"43.1211906\",\"okato\":\"05401360000\",\"regionType\":\"край\",\"additionalStreet\":\"\",\"lat\":\"43.1211906\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"131.8855782\",\"index\":\"690091\",\"district\":\"\",\"fullAddress\":\"690091, край. Приморский, г. Владивосток, ул. Пологая, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Приморский\",\"geoLon\":\"131.8855782\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Владивосток\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"regionShortType\":\"край\",\"regionCode\":\"25\",\"street\":\"Пологая\",\"cityShortType\":\"г\",\"kladrCode\":\"2500000100004100007\",\"fiasCode\":\"fd3e17f4-a718-4f89-a3ae-9388b396ccce\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"край. Приморский, г. Владивосток, ул. Пологая\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"66\"}},\"ai19_5\":\"Отчество\",\"bd20_0\":\"\",\"ai19_6\":\"true\",\"ai17\":\"[{\\\"rf51\\\":\\\"Прежфам\\\",\\\"rf52\\\":\\\"Прежимя\\\",\\\"rf53\\\":\\\"Прежотч\\\",\\\"rf54\\\":\\\"Место\\\",\\\"rf55\\\":\\\"2020-12-01T00:00:00.000+06:00\\\"}]\",\"d34\":{\"name\":\"photo_2020-10-14_12-44-50.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.84f681e6-4ece-4cd1-be2f-4ae0f690a598\",\"mimeType\":\"image/jpeg\",\"objectId\":1019749174,\"objectType\":2},\"ai19_0\":\"84f681e6-4ece-4cd1-be2f-4ae0f690a598\",\"q28_2\":\"Получение впервые\",\"ai19_1\":\"2006-11-27T00:00:00.000+06:00\",\"ai19_2\":\"M\",\"clr2\":{\"regDate\":\"30.11.2020\",\"regAddr\":{\"streetShortType\":\"пр-кт\",\"geoLat\":\"55.7307845\",\"okato\":\"45286580000\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"street\":\"Волгоградский\",\"kladrCode\":\"7700000000000130111\",\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"16\"}},\"bd20\":{\"date\":\"2020-11-30T00:00:00.000+06:00\",\"number\":\"1234567\",\"series\":\"123\",\"emitter\":\"кем\"},\"ps1\":{\"date\":\"2010-12-29T00:00:00.000+06:00\",\"number\":\"123456\",\"series\":\"1234\",\"emitter\":\"кем\"},\"q22\":\"Нет\",\"ps6\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"ps5\":\"123-456\",\"q26\":\"Да\",\"ps7\":\"Место\"}]"
+            },
+            "q19": {
+                "visited": true,
+                "value": "Нет"
+            },
+            "ms2": {
+                "visited": true,
+                "value": "{\"value\":\"7700149\",\"parentValue\":null,\"title\":\"Отделение УФМС России по г. Москве по району Нижегородский\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"email_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"ufms-uvao@mail.ru\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"ufms-uvao@mail.ru\"},\"valueAsOfType\":\"ufms-uvao@mail.ru\"},{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"город Москва, Новохохловская, д. 27\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"город Москва, Новохохловская, д. 27\"},\"valueAsOfType\":\"город Москва, Новохохловская, д. 27\"},{\"name\":\"phone_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"+7(495)6702325;+7(495)6700327\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"+7(495)6702325;+7(495)6700327\"},\"valueAsOfType\":\"+7(495)6702325;+7(495)6700327\"},{\"name\":\"fax_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"schedule_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},\"valueAsOfType\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},{\"name\":\"scheduleComment_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                \"},\"valueAsOfType\":\"\\n                \"}],\"source\":\"fms_5\",\"attributeValues\":{\"phone_out\":\"+7(495)6702325;+7(495)6700327\",\"email_out\":\"ufms-uvao@mail.ru\",\"schedule_out\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"fax_out\":\"\",\"scheduleComment_out\":\"\\n                \",\"address_out\":\"город Москва, Новохохловская, д. 27\"},\"idForMap\":1,\"center\":[37.715695,55.72599],\"baloonContent\":[{\"value\":\"город Москва, Новохохловская, д. 27\",\"label\":\"Адрес\"},{\"value\":\"+7(495)6702325;+7(495)6700327\",\"label\":\"Телефон\"},{\"value\":\"ufms-uvao@mail.ru\",\"label\":\"Электронная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"05000000000\",\"okato\":\"05401360000\"}"
+            }
+        },
+        "currentValue": {},
+        "errors": {},
+        "applicantAnswers": {
+            "q1": {
+                "visited": true,
+                "value": "Старого образца"
+            },
+            "pd44": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.7307845\",\"building2Type\":null,\"okato\":\"45286580000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Волгоградский\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"7700000000000130111\",\"building1ShortType\":null,\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"16\"},\"regDate\":\"01.12.2020\"}"
+            },
+            "pd5": {
+                "visited": true,
+                "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"43.1211906\",\"building2Type\":null,\"okato\":\"05401360000\",\"building1Type\":null,\"regionType\":\"край\",\"additionalStreet\":\"\",\"lat\":\"43.1211906\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"131.8855782\",\"index\":\"690091\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"690091, край. Приморский, г. Владивосток, ул. Пологая, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Приморский\",\"geoLon\":\"131.8855782\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Владивосток\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"край\",\"regionCode\":\"25\",\"districtShortType\":null,\"street\":\"Пологая\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"2500000100004100007\",\"building1ShortType\":null,\"fiasCode\":\"fd3e17f4-a718-4f89-a3ae-9388b396ccce\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"край. Приморский, г. Владивосток, ул. Пологая\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"66\"}}"
+            },
+            "q2": {
+                "visited": true,
+                "value": "Мне и детям"
+            },
+            "q3": {
+                "visited": true,
+                "value": "До 14 лет и от 14 до 18 лет"
+            },
+            "q6": {
+                "visited": true,
+                "value": "Нет"
+            },
+            "d33": {
+                "visited": true,
+                "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"photo_2020-10-14_12-44-50.jpg\",\"objectType\":2,\"objectId\":1019749174,\"mimeType\":\"image/jpeg\"}"
+            },
+            "q8": {
+                "visited": true,
+                "value": "По месту обращения (фактического проживания)"
+            },
+            "q9": {
+                "visited": true,
+                "value": "Да"
+            },
+            "d66_1": {
+                "visited": true,
+                "value": ""
+            },
+            "eh1": {
+                "visited": true,
+                "value": "[{\"type\":\"employed\",\"label\":\"Я работала\",\"from\":{\"year\":2010,\"month\":11,\"monthCode\":\"Декабрь\"},\"to\":{\"year\":2020,\"month\":11,\"monthCode\":\"Декабрь\"},\"position\":\"долж\",\"place\":\"место работы\",\"address\":\"адрес работы\",\"checkboxToDate\":true}]"
+            },
+            "w1": {
+                "visited": true,
+                "value": ""
+            },
+            "pd1": {
+                "visited": true,
+                "value": "{\"states\":[{\"groupName\":\"Берёза Антонина Семёновна\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"31.10.1990\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0003 333333\"},{\"label\":\"Дата выдачи:\",\"value\":\"02.11.2015\"},{\"label\":\"Кем выдан:\",\"value\":\"пук\"},{\"label\":\"Код подразделения:\",\"value\":\"123-123\"},{\"label\":\"Место рождения:\",\"value\":\"Сосновка\"}]}],\"storedValues\":{\"firstName\":\"Антонина\",\"lastName\":\"Берёза\",\"birthPlace\":\"Сосновка\",\"rfPasportIssuedBy\":\"пук\",\"gender\":\"F\",\"rfPasportIssuedById\":\"123123\",\"rfPasportSeries\":\"0003\",\"middleName\":\"Семёновна\",\"birthDate\":\"31.10.1990\",\"rfPasportNumber\":\"333333\",\"rfPasportIssueDate\":\"02.11.2015\"}}"
+            },
+            "pd3": {
+                "visited": true,
+                "value": "testepgu2@yandex.ru"
+            },
+            "pd2": {
+                "visited": true,
+                "value": "+7(999)5554433"
+            },
+            "ai4": {
+                "visited": true,
+                "value": "[{\"rf1\":\"Прежфам\",\"rf2\":\"Прежимя\",\"rf3\":\"Прежотч\",\"rf4\":\"Место Изм\",\"rf5\":\"1999-12-01T00:00:00.000+06:00\"}]"
+            },
+            "fai6": {
+                "visited": true,
+                "value": "{\"id\":\"SUN\",\"text\":\"СССР\",\"formatted\":\"\",\"originalItem\":{\"value\":\"SUN\",\"parentValue\":null,\"title\":\"СССР\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+            },
+            "rb9": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb10": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb11": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb12": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb13": {
+                "visited": true,
+                "value": "0"
+            },
+            "rb14": {
+                "visited": true,
+                "value": "0"
+            },
+            "q30": {
+                "visited": true,
+                "value": "Получение впервые"
+            },
+            "ai18": {
+                "visited": true,
+                "value": "[{\"ai18_4\":\"Имя\",\"ai18_5\":\"Отч\",\"pd12\":{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"geoLat\":\"43.1211906\",\"okato\":\"05401360000\",\"regionType\":\"край\",\"additionalStreet\":\"\",\"lat\":\"43.1211906\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"131.8855782\",\"index\":\"690091\",\"district\":\"\",\"fullAddress\":\"690091, край. Приморский, г. Владивосток, ул. Пологая, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Приморский\",\"geoLon\":\"131.8855782\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Владивосток\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"regionShortType\":\"край\",\"regionCode\":\"25\",\"street\":\"Пологая\",\"cityShortType\":\"г\",\"kladrCode\":\"2500000100004100007\",\"fiasCode\":\"fd3e17f4-a718-4f89-a3ae-9388b396ccce\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"край. Приморский, г. Владивосток, ул. Пологая\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"66\"}},\"ai18_6\":\"true\",\"bd20_0\":\"\",\"ai17\":\"[{\\\"rf51\\\":\\\"Йцу\\\",\\\"rf52\\\":\\\"Фыв\\\",\\\"rf53\\\":\\\"\\\",\\\"rf54\\\":\\\"Место\\\",\\\"rf55\\\":\\\"2020-12-02T00:00:00.000+06:00\\\"}]\",\"ai18_0\":\"21b0e151-2ca7-44f0-b88d-585fe05de918\",\"d34\":{\"name\":\"photo_2020-10-14_12-45-12.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.21b0e151-2ca7-44f0-b88d-585fe05de918\",\"mimeType\":\"image/jpeg\",\"objectId\":1019749174,\"objectType\":2},\"ai18_1\":\"2012-12-21T00:00:00.000+07:00\",\"q28_2\":\"Получение впервые\",\"ai18_2\":\"F\",\"ai18_3\":\"Фам\",\"clr2\":{\"regDate\":\"30.11.2020\",\"regAddr\":{\"streetShortType\":\"пр-кт\",\"geoLat\":\"55.7307845\",\"okato\":\"45286580000\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"street\":\"Волгоградский\",\"kladrCode\":\"7700000000000130111\",\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"16\"}},\"bd1\":{\"date\":\"2016-12-01T00:00:00.000+06:00\",\"number\":\"1234567\",\"series\":\"IV-ФЫ\",\"emitter\":\"кем\"},\"bd20\":{\"date\":\"2020-12-01T00:00:00.000+06:00\",\"number\":\"1234\",\"emitter\":\"кем\"},\"q22\":\"Нет\",\"q13\":\"Свидетельство о рождении, выданное на территории РФ\",\"bd1_1\":\"123\",\"bd5\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"bd7\":\"Место\",\"q26\":\"Да\"}]"
+            },
+            "ai19": {
+                "visited": true,
+                "value": "[{\"ai19_3\":\"Фамилия\",\"ai19_4\":\"Имя\",\"pd12\":{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"geoLat\":\"43.1211906\",\"okato\":\"05401360000\",\"regionType\":\"край\",\"additionalStreet\":\"\",\"lat\":\"43.1211906\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"131.8855782\",\"index\":\"690091\",\"district\":\"\",\"fullAddress\":\"690091, край. Приморский, г. Владивосток, ул. Пологая, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Приморский\",\"geoLon\":\"131.8855782\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Владивосток\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"regionShortType\":\"край\",\"regionCode\":\"25\",\"street\":\"Пологая\",\"cityShortType\":\"г\",\"kladrCode\":\"2500000100004100007\",\"fiasCode\":\"fd3e17f4-a718-4f89-a3ae-9388b396ccce\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"край. Приморский, г. Владивосток, ул. Пологая\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"66\"}},\"ai19_5\":\"Отчество\",\"bd20_0\":\"\",\"ai19_6\":\"true\",\"ai17\":\"[{\\\"rf51\\\":\\\"Прежфам\\\",\\\"rf52\\\":\\\"Прежимя\\\",\\\"rf53\\\":\\\"Прежотч\\\",\\\"rf54\\\":\\\"Место\\\",\\\"rf55\\\":\\\"2020-12-01T00:00:00.000+06:00\\\"}]\",\"d34\":{\"name\":\"photo_2020-10-14_12-44-50.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.84f681e6-4ece-4cd1-be2f-4ae0f690a598\",\"mimeType\":\"image/jpeg\",\"objectId\":1019749174,\"objectType\":2},\"ai19_0\":\"84f681e6-4ece-4cd1-be2f-4ae0f690a598\",\"q28_2\":\"Получение впервые\",\"ai19_1\":\"2006-11-27T00:00:00.000+06:00\",\"ai19_2\":\"M\",\"clr2\":{\"regDate\":\"30.11.2020\",\"regAddr\":{\"streetShortType\":\"пр-кт\",\"geoLat\":\"55.7307845\",\"okato\":\"45286580000\",\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"street\":\"Волгоградский\",\"kladrCode\":\"7700000000000130111\",\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"apartment\":\"16\"}},\"bd20\":{\"date\":\"2020-11-30T00:00:00.000+06:00\",\"number\":\"1234567\",\"series\":\"123\",\"emitter\":\"кем\"},\"ps1\":{\"date\":\"2010-12-29T00:00:00.000+06:00\",\"number\":\"123456\",\"series\":\"1234\",\"emitter\":\"кем\"},\"q22\":\"Нет\",\"ps6\":{\"formatted\":\"\",\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"originalItem\":{\"value\":\"RUS\",\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"attributeValues\":{}}},\"ps5\":\"123-456\",\"q26\":\"Да\",\"ps7\":\"Место\"}]"
+            },
+            "q19": {
+                "visited": true,
+                "value": "Нет"
+            },
+            "ms2": {
+                "visited": true,
+                "value": "{\"value\":\"7700149\",\"parentValue\":null,\"title\":\"Отделение УФМС России по г. Москве по району Нижегородский\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"email_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"ufms-uvao@mail.ru\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"ufms-uvao@mail.ru\"},\"valueAsOfType\":\"ufms-uvao@mail.ru\"},{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"город Москва, Новохохловская, д. 27\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"город Москва, Новохохловская, д. 27\"},\"valueAsOfType\":\"город Москва, Новохохловская, д. 27\"},{\"name\":\"phone_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"+7(495)6702325;+7(495)6700327\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"+7(495)6702325;+7(495)6700327\"},\"valueAsOfType\":\"+7(495)6702325;+7(495)6700327\"},{\"name\":\"fax_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"schedule_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},\"valueAsOfType\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},{\"name\":\"scheduleComment_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                \"},\"valueAsOfType\":\"\\n                \"}],\"source\":\"fms_5\",\"attributeValues\":{\"phone_out\":\"+7(495)6702325;+7(495)6700327\",\"email_out\":\"ufms-uvao@mail.ru\",\"schedule_out\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"fax_out\":\"\",\"scheduleComment_out\":\"\\n                \",\"address_out\":\"город Москва, Новохохловская, д. 27\"},\"idForMap\":1,\"center\":[37.715695,55.72599],\"baloonContent\":[{\"value\":\"город Москва, Новохохловская, д. 27\",\"label\":\"Адрес\"},{\"value\":\"+7(495)6702325;+7(495)6700327\",\"label\":\"Телефон\"},{\"value\":\"ufms-uvao@mail.ru\",\"label\":\"Электронная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\",\"regOkato\":\"05000000000\",\"okato\":\"05401360000\"}"
+            }
+        },
+        "cycledApplicantAnswers": {
+            "currentAnswerId": "ai19",
+            "answerlist": [
+                {
+                    "id": "ai18",
+                    "initScreen": "s39",
+                    "currentItemId": "21b0e151-2ca7-44f0-b88d-585fe05de918",
+                    "items": [
+                        {
+                            "id": "21b0e151-2ca7-44f0-b88d-585fe05de918",
+                            "itemAnswers": {
+                                "ai18_4": {
+                                    "visited": true,
+                                    "value": "Имя"
+                                },
+                                "ai18_5": {
+                                    "visited": true,
+                                    "value": "Отч"
+                                },
+                                "ai18_6": {
+                                    "visited": true,
+                                    "value": "true"
+                                },
+                                "ai18_0": {
+                                    "visited": true,
+                                    "value": "21b0e151-2ca7-44f0-b88d-585fe05de918"
+                                },
+                                "ai18_1": {
+                                    "visited": true,
+                                    "value": "2012-12-21T00:00:00.000+07:00"
+                                },
+                                "ai18_2": {
+                                    "visited": true,
+                                    "value": "F"
+                                },
+                                "ai18_3": {
+                                    "visited": true,
+                                    "value": "Фам"
+                                },
+                                "q13": {
+                                    "visited": true,
+                                    "value": "Свидетельство о рождении, выданное на территории РФ"
+                                },
+                                "bd1": {
+                                    "visited": true,
+                                    "value": "{\"series\":\"IV-ФЫ\",\"number\":\"1234567\",\"date\":\"2016-12-01T00:00:00.000+06:00\",\"emitter\":\"кем\"}"
+                                },
+                                "bd1_1": {
+                                    "visited": true,
+                                    "value": "123"
+                                },
+                                "bd5": {
+                                    "visited": true,
+                                    "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                                },
+                                "bd7": {
+                                    "visited": true,
+                                    "value": "Место"
+                                },
+                                "clr2": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.7307845\",\"building2Type\":null,\"okato\":\"45286580000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Волгоградский\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"7700000000000130111\",\"building1ShortType\":null,\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"16\"},\"regDate\":\"30.11.2020\"}"
+                                },
+                                "pd12": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"43.1211906\",\"building2Type\":null,\"okato\":\"05401360000\",\"building1Type\":null,\"regionType\":\"край\",\"additionalStreet\":\"\",\"lat\":\"43.1211906\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"131.8855782\",\"index\":\"690091\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"690091, край. Приморский, г. Владивосток, ул. Пологая, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Приморский\",\"geoLon\":\"131.8855782\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Владивосток\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"край\",\"regionCode\":\"25\",\"districtShortType\":null,\"street\":\"Пологая\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"2500000100004100007\",\"building1ShortType\":null,\"fiasCode\":\"fd3e17f4-a718-4f89-a3ae-9388b396ccce\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"край. Приморский, г. Владивосток, ул. Пологая\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"66\"}}"
+                                },
+                                "d34": {
+                                    "visited": true,
+                                    "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.21b0e151-2ca7-44f0-b88d-585fe05de918\",\"name\":\"photo_2020-10-14_12-45-12.jpg\",\"objectType\":2,\"objectId\":1019749174,\"mimeType\":\"image/jpeg\"}"
+                                },
+                                "q26": {
+                                    "visited": true,
+                                    "value": "Да"
+                                },
+                                "ai17": {
+                                    "visited": true,
+                                    "value": "[{\"rf51\":\"Йцу\",\"rf52\":\"Фыв\",\"rf53\":\"\",\"rf54\":\"Место\",\"rf55\":\"2020-12-02T00:00:00.000+06:00\"}]"
+                                },
+                                "q28_2": {
+                                    "visited": true,
+                                    "value": "Получение впервые"
+                                },
+                                "bd20_0": {
+                                    "visited": true,
+                                    "value": ""
+                                },
+                                "bd20": {
+                                    "visited": true,
+                                    "value": "{\"series\":null,\"number\":\"1234\",\"date\":\"2020-12-01T00:00:00.000+06:00\",\"emitter\":\"кем\"}"
+                                },
+                                "q22": {
+                                    "visited": true,
+                                    "value": "Нет"
+                                }
+                            },
+                            "cachedAnswers": {
+                                "ai18_4": {
+                                    "visited": true,
+                                    "value": "Имя"
+                                },
+                                "ai18_5": {
+                                    "visited": true,
+                                    "value": "Отч"
+                                },
+                                "ai18_6": {
+                                    "visited": true,
+                                    "value": "true"
+                                },
+                                "ai18_0": {
+                                    "visited": true,
+                                    "value": "21b0e151-2ca7-44f0-b88d-585fe05de918"
+                                },
+                                "ai18_1": {
+                                    "visited": true,
+                                    "value": "2012-12-21T00:00:00.000+07:00"
+                                },
+                                "ai18_2": {
+                                    "visited": true,
+                                    "value": "F"
+                                },
+                                "ai18_3": {
+                                    "visited": true,
+                                    "value": "Фам"
+                                },
+                                "q13": {
+                                    "visited": true,
+                                    "value": "Свидетельство о рождении, выданное на территории РФ"
+                                },
+                                "bd1": {
+                                    "visited": true,
+                                    "value": "{\"series\":\"IV-ФЫ\",\"number\":\"1234567\",\"date\":\"2016-12-01T00:00:00.000+06:00\",\"emitter\":\"кем\"}"
+                                },
+                                "bd1_1": {
+                                    "visited": true,
+                                    "value": "123"
+                                },
+                                "bd5": {
+                                    "visited": true,
+                                    "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                                },
+                                "bd7": {
+                                    "visited": true,
+                                    "value": "Место"
+                                },
+                                "clr2": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.7307845\",\"building2Type\":null,\"okato\":\"45286580000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Волгоградский\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"7700000000000130111\",\"building1ShortType\":null,\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"16\"},\"regDate\":\"30.11.2020\"}"
+                                },
+                                "pd12": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"43.1211906\",\"building2Type\":null,\"okato\":\"05401360000\",\"building1Type\":null,\"regionType\":\"край\",\"additionalStreet\":\"\",\"lat\":\"43.1211906\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"131.8855782\",\"index\":\"690091\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"690091, край. Приморский, г. Владивосток, ул. Пологая, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Приморский\",\"geoLon\":\"131.8855782\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Владивосток\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"край\",\"regionCode\":\"25\",\"districtShortType\":null,\"street\":\"Пологая\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"2500000100004100007\",\"building1ShortType\":null,\"fiasCode\":\"fd3e17f4-a718-4f89-a3ae-9388b396ccce\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"край. Приморский, г. Владивосток, ул. Пологая\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"66\"}}"
+                                },
+                                "d34": {
+                                    "visited": true,
+                                    "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.21b0e151-2ca7-44f0-b88d-585fe05de918\",\"name\":\"photo_2020-10-14_12-45-12.jpg\",\"objectType\":2,\"objectId\":1019749174,\"mimeType\":\"image/jpeg\"}"
+                                },
+                                "q26": {
+                                    "visited": true,
+                                    "value": "Да"
+                                },
+                                "ai17": {
+                                    "visited": true,
+                                    "value": "[{\"rf51\":\"Йцу\",\"rf52\":\"Фыв\",\"rf53\":\"\",\"rf54\":\"Место\",\"rf55\":\"2020-12-02T00:00:00.000+06:00\"}]"
+                                },
+                                "q28_2": {
+                                    "visited": true,
+                                    "value": "Получение впервые"
+                                },
+                                "bd20_0": {
+                                    "visited": true,
+                                    "value": ""
+                                },
+                                "bd20": {
+                                    "visited": true,
+                                    "value": "{\"series\":null,\"number\":\"1234\",\"date\":\"2020-12-01T00:00:00.000+06:00\",\"emitter\":\"кем\"}"
+                                },
+                                "q22": {
+                                    "visited": true,
+                                    "value": "Нет"
+                                }
+                            },
+                            "esiaData": {
+                                "firstName": "Имя",
+                                "lastName": "Фам",
+                                "middleName": "Отч",
+                                "id": "21b0e151-2ca7-44f0-b88d-585fe05de918",
+                                "birthPlaceLocality": "Место"
+                            },
+                            "finishedScreens": [
+                                "scrchld1",
+                                "scrchld2",
+                                "scrchld4",
+                                "scrchld7",
+                                "scrchld9",
+                                "scrchld11",
+                                "scrchld12",
+                                "scrchld15_2",
+                                "s70",
+                                "s71"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ai19",
+                    "initScreen": "s63",
+                    "currentItemId": "84f681e6-4ece-4cd1-be2f-4ae0f690a598",
+                    "items": [
+                        {
+                            "id": "84f681e6-4ece-4cd1-be2f-4ae0f690a598",
+                            "itemAnswers": {
+                                "ai19_3": {
+                                    "visited": true,
+                                    "value": "Фамилия"
+                                },
+                                "ai19_4": {
+                                    "visited": true,
+                                    "value": "Имя"
+                                },
+                                "ai19_5": {
+                                    "visited": true,
+                                    "value": "Отчество"
+                                },
+                                "ai19_6": {
+                                    "visited": true,
+                                    "value": "true"
+                                },
+                                "ai19_0": {
+                                    "visited": true,
+                                    "value": "84f681e6-4ece-4cd1-be2f-4ae0f690a598"
+                                },
+                                "ai19_1": {
+                                    "visited": true,
+                                    "value": "2006-11-27T00:00:00.000+06:00"
+                                },
+                                "ai19_2": {
+                                    "visited": true,
+                                    "value": "M"
+                                },
+                                "ps1": {
+                                    "visited": true,
+                                    "value": "{\"series\":\"1234\",\"number\":\"123456\",\"date\":\"2010-12-29T00:00:00.000+06:00\",\"emitter\":\"кем\"}"
+                                },
+                                "ps5": {
+                                    "visited": true,
+                                    "value": "123-456"
+                                },
+                                "ps6": {
+                                    "visited": true,
+                                    "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                                },
+                                "ps7": {
+                                    "visited": true,
+                                    "value": "Место"
+                                },
+                                "clr2": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.7307845\",\"building2Type\":null,\"okato\":\"45286580000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Волгоградский\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"7700000000000130111\",\"building1ShortType\":null,\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"16\"},\"regDate\":\"30.11.2020\"}"
+                                },
+                                "pd12": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"43.1211906\",\"building2Type\":null,\"okato\":\"05401360000\",\"building1Type\":null,\"regionType\":\"край\",\"additionalStreet\":\"\",\"lat\":\"43.1211906\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"131.8855782\",\"index\":\"690091\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"690091, край. Приморский, г. Владивосток, ул. Пологая, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Приморский\",\"geoLon\":\"131.8855782\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Владивосток\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"край\",\"regionCode\":\"25\",\"districtShortType\":null,\"street\":\"Пологая\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"2500000100004100007\",\"building1ShortType\":null,\"fiasCode\":\"fd3e17f4-a718-4f89-a3ae-9388b396ccce\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"край. Приморский, г. Владивосток, ул. Пологая\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"66\"}}"
+                                },
+                                "d34": {
+                                    "visited": true,
+                                    "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.84f681e6-4ece-4cd1-be2f-4ae0f690a598\",\"name\":\"photo_2020-10-14_12-44-50.jpg\",\"objectType\":2,\"objectId\":1019749174,\"mimeType\":\"image/jpeg\"}"
+                                },
+                                "q26": {
+                                    "visited": true,
+                                    "value": "Да"
+                                },
+                                "ai17": {
+                                    "visited": true,
+                                    "value": "[{\"rf51\":\"Прежфам\",\"rf52\":\"Прежимя\",\"rf53\":\"Прежотч\",\"rf54\":\"Место\",\"rf55\":\"2020-12-01T00:00:00.000+06:00\"}]"
+                                },
+                                "q28_2": {
+                                    "visited": true,
+                                    "value": "Получение впервые"
+                                },
+                                "bd20_0": {
+                                    "visited": true,
+                                    "value": ""
+                                },
+                                "bd20": {
+                                    "visited": true,
+                                    "value": "{\"series\":\"123\",\"number\":\"1234567\",\"date\":\"2020-11-30T00:00:00.000+06:00\",\"emitter\":\"кем\"}"
+                                },
+                                "q22": {
+                                    "visited": true,
+                                    "value": "Нет"
+                                }
+                            },
+                            "cachedAnswers": {
+                                "ai19_3": {
+                                    "visited": true,
+                                    "value": "Фамилия"
+                                },
+                                "ai19_4": {
+                                    "visited": true,
+                                    "value": "Имя"
+                                },
+                                "ai19_5": {
+                                    "visited": true,
+                                    "value": "Отчество"
+                                },
+                                "ai19_6": {
+                                    "visited": true,
+                                    "value": "true"
+                                },
+                                "ai19_0": {
+                                    "visited": true,
+                                    "value": "84f681e6-4ece-4cd1-be2f-4ae0f690a598"
+                                },
+                                "ai19_1": {
+                                    "visited": true,
+                                    "value": "2006-11-27T00:00:00.000+06:00"
+                                },
+                                "ai19_2": {
+                                    "visited": true,
+                                    "value": "M"
+                                },
+                                "ps1": {
+                                    "visited": true,
+                                    "value": "{\"series\":\"1234\",\"number\":\"123456\",\"date\":\"2010-12-29T00:00:00.000+06:00\",\"emitter\":\"кем\"}"
+                                },
+                                "ps5": {
+                                    "visited": true,
+                                    "value": "123-456"
+                                },
+                                "ps6": {
+                                    "visited": true,
+                                    "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+                                },
+                                "ps7": {
+                                    "visited": true,
+                                    "value": "Место"
+                                },
+                                "clr2": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"пр-кт\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"55.7307845\",\"building2Type\":null,\"okato\":\"45286580000\",\"building1Type\":null,\"regionType\":\"город\",\"additionalStreet\":\"\",\"lat\":\"55.7307845\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"проспект\",\"town\":\"\",\"lng\":\"37.6699793\",\"index\":\"109316\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"109316, г. Москва, пр-кт. Волгоградский, д. 4, кв. 16\",\"houseCheckbox\":false,\"region\":\"Москва\",\"geoLon\":\"37.6699793\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"4\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"г\",\"regionCode\":\"77\",\"districtShortType\":null,\"street\":\"Волгоградский\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"7700000000000130111\",\"building1ShortType\":null,\"fiasCode\":\"6008bfa7-eca0-48e2-91c0-d1e03f9b0c52\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"г. Москва, пр-кт. Волгоградский\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"16\"},\"regDate\":\"30.11.2020\"}"
+                                },
+                                "pd12": {
+                                    "visited": true,
+                                    "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"43.1211906\",\"building2Type\":null,\"okato\":\"05401360000\",\"building1Type\":null,\"regionType\":\"край\",\"additionalStreet\":\"\",\"lat\":\"43.1211906\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"\",\"lng\":\"131.8855782\",\"index\":\"690091\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"690091, край. Приморский, г. Владивосток, ул. Пологая, д. 6, кв. 66\",\"houseCheckbox\":false,\"region\":\"Приморский\",\"geoLon\":\"131.8855782\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"Владивосток\",\"apartmentShortType\":\"кв\",\"house\":\"6\",\"apartmentCheckbox\":false,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"край\",\"regionCode\":\"25\",\"districtShortType\":null,\"street\":\"Пологая\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"2500000100004100007\",\"building1ShortType\":null,\"fiasCode\":\"fd3e17f4-a718-4f89-a3ae-9388b396ccce\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"край. Приморский, г. Владивосток, ул. Пологая\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":\"д\",\"building2ShortType\":null,\"apartment\":\"66\"}}"
+                                },
+                                "d34": {
+                                    "visited": true,
+                                    "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.84f681e6-4ece-4cd1-be2f-4ae0f690a598\",\"name\":\"photo_2020-10-14_12-44-50.jpg\",\"objectType\":2,\"objectId\":1019749174,\"mimeType\":\"image/jpeg\"}"
+                                },
+                                "q26": {
+                                    "visited": true,
+                                    "value": "Да"
+                                },
+                                "ai17": {
+                                    "visited": true,
+                                    "value": "[{\"rf51\":\"Прежфам\",\"rf52\":\"Прежимя\",\"rf53\":\"Прежотч\",\"rf54\":\"Место\",\"rf55\":\"2020-12-01T00:00:00.000+06:00\"}]"
+                                },
+                                "q28_2": {
+                                    "visited": true,
+                                    "value": "Получение впервые"
+                                },
+                                "bd20_0": {
+                                    "visited": true,
+                                    "value": ""
+                                },
+                                "bd20": {
+                                    "visited": true,
+                                    "value": "{\"series\":\"123\",\"number\":\"1234567\",\"date\":\"2020-11-30T00:00:00.000+06:00\",\"emitter\":\"кем\"}"
+                                },
+                                "q22": {
+                                    "visited": true,
+                                    "value": "Нет"
+                                }
+                            },
+                            "esiaData": {
+                                "lastName": "Фамилия",
+                                "firstName": "Имя",
+                                "middleName": "Отчество",
+                                "id": "84f681e6-4ece-4cd1-be2f-4ae0f690a598",
+                                "rfPasportIssuedById": "123-456",
+                                "birthPlaceLocality": "Место"
+                            },
+                            "finishedScreens": [
+                                "scrchld5",
+                                "scrchld4",
+                                "scrchld7",
+                                "scrchld9",
+                                "scrchld11",
+                                "scrchld12",
+                                "scrchld15_2",
+                                "s70",
+                                "s71"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "participants": {
+            "-20000": {
+                "role": "Coapplicant",
+                "mode": "SlaveApplicant",
+                "component": "ai19",
+                "index": 0
+            },
+            "-10000": {
+                "role": "Coapplicant",
+                "mode": "SlaveApplicant",
+                "component": "ai18",
+                "index": 0
+            }
+        },
+        "display": {
+            "id": "s260",
+            "name": "Заявление отправлено! старый, взрослый и дети от 0 до 18, жительство",
+            "type": "INFO",
+            "header": "Заявление отправлено!",
+            "components": [
+                {
+                    "id": "d100",
+                    "type": "InfoScr",
+                    "label": "<p>Оформление загранпаспорта будет производиться подразделением Отделение УФМС России по г. Москве по району Нижегородский по адресу </p><div class='block--with-icon'><img src='{staticDomainAssetsPath}/assets/icons/svg/house.svg'><span><a target='_blank' href='http://yandex.ru/maps/?pt=37.715695,55.72599&z=13'>город Москва, Новохохловская, д. 27</a></span></div><div class='block--with-icon'><img src='{staticDomainAssetsPath}/assets/icons/svg/clock.svg'><span>Процедура займет до <b>1 месяца</b> (до 3-х месяцев, если регион подачи заявления отличается от региона места жительства (прописки))</span></div><br><b>Что дальше</b><br><p><span style='color:blue'><b>1.</b></span> После рассмотрения заявления в ваш личный кабинет придет уведомление о возможности оплатить пошлину онлайн со скидкой 30%</p><p><span style='color:blue'><b>2.</b></span> Дождитесь в личном кабинете приглашения в подразделение. Принесите с собой <a id='DocOrigonals'>оригиналы документов</a></p><p><span style='color:blue'><b>3.</b></span> В отделении МВД сотрудник полиции сверит данные из электронного заявления с оригинальными документами и сообщит о сроке готовности загранпаспорта</p>",
+                    "attrs": {
+                        "actions": [
+                            {
+                                "label": "В личный кабинет",
+                                "value": "В личный кабинет",
+                                "type": "redirectToLK",
+                                "action": "getNextScreen"
+                            }
+                        ],
+                        "clarifications": {
+                            "DocOrigonals": {
+                                "title": "Какие документы взять в МВД",
+                                "text": "<ul><li>Ваш паспорт РФ</li><li>Разрешение командования — для служащих в Вооруженных Силах России, а также в федеральных органах власти, в которых предусмотрена военная служба (за исключением службы по призыву)</li><li><a><span id='docofright'>Документ</span></a>, подтверждающий права законного представителя ребенка <div data-hidden-id='docofright' hidden>Это может быть свидетельство о рождении ребенка, документ об усыновлении или акт органа опеки и попечительства о назначении опекуна или попечителя</div></li><li>Свидетельство о рождении для детей до 14 лет</li><li><a><span id='docfright'>Документ</span></a>, подтверждающий наличие гражданства РФ у ребенка <div data-hidden-id='docfright' hidden>Это может быть свидетельство о рождении с отметкой о принадлежности к гражданству РФ либо вкладыш с отметкой о наличии российского гражданства к свидетельству о рождении, ранее выданный загранпаспорт</div></li><li>Паспорт РФ для детей от 14 лет</li><li>По две черно-белые или цветные фотографии для вас и по две для каждого ребенка — размером 35 на 45 миллиметров с четким изображением лица строго анфас, лицо должно занимать 70-80% от фотографии, фото в форме не допускаются, разрешается фотография в головном уборе, не скрывающем овал лица, если религия гражданина не позволяет показываться перед посторонними без покрытой головы</li><li>Ранее выданный загранпаспорт ребенка (при наличии)</li><li>Если вы хотите <a><span id='docofchild'>внести</span></a> в свой загранпаспорт информацию о детях младше 14 лет <div data-hidden-id='docofchild' hidden>Принесите по две черно-белые или цветные фотографии на каждого несовершеннолетнего ребенка (к фото ребёнка те же требования, что и к фото взрослого), свидетельства о рождении детей до 14 лет, документ об усыновлении или акт органа опеки и попечительства о назначении опекуна или попечителя (при наличии соответствующего основания)</div></li></ul>"
+                            }
+                        },
+                        "refs": {
+                            "reference_to_name": "ms2.value.title",
+                            "reference_to_x": "ms2.value.center[0]",
+                            "reference_to_y": "ms2.value.center[1]",
+                            "reference_to_address": "ms2.value.attributes[1].valueAsOfType"
+                        }
+                    },
+                    "linkedValues": [],
+                    "arguments": {},
+                    "value": "",
+                    "required": true
+                }
+            ],
+            "impasse": false,
+            "firstScreen": false,
+            "terminal": true,
+            "accepted": true
+        },
+        "attachmentInfo": {
+            "d33": [
+                {
+                    "uploadId": "passport_photo",
+                    "uploadMnemonic": "d33.PhotoUploadComponent.passport_photo.0",
+                    "uploadFilename": "photo_2020-10-14_12-44-50.jpg",
+                    "objectId": "1019749174",
+                    "objectTypeId": "2"
+                }
+            ],
+            "d34": [
+                {
+                    "uploadId": "child_passport_photo",
+                    "uploadMnemonic": "d34.PhotoUploadComponent.child_passport_photo.21b0e151-2ca7-44f0-b88d-585fe05de918",
+                    "uploadFilename": "photo_2020-10-14_12-45-12.jpg",
+                    "objectId": "1019749174",
+                    "objectTypeId": "2"
+                },
+                {
+                    "uploadId": "child_passport_photo",
+                    "uploadMnemonic": "d34.PhotoUploadComponent.child_passport_photo.84f681e6-4ece-4cd1-be2f-4ae0f690a598",
+                    "uploadFilename": "photo_2020-10-14_12-44-50.jpg",
+                    "objectId": "1019749174",
+                    "objectTypeId": "2"
+                }
+            ]
+        },
+        "additionalParameters": {
+            "orderId": "1019749174",
+            "oid": "1000472429",
+            "snils": "010-732-732 01",
+            "gender": "F",
+            "citizenship": "РОССИЯ",
+            "citizenshipCode": "RUS",
+            "serviceId": "10000000101",
+            "timezone": "+3",
+            "masterId": "1019749174",
+            "masterOid": "1000472429",
+            "masterSnils": "010-732-732 01",
+            "masterGender": "F",
+            "masterCitizenship": "РОССИЯ",
+            "masterCitizenshipCode": "RUS",
+            "masterTimezone": "+3"
+        },
+        "generatedFiles": [
+            "req_ae055abf-4874-4aae-9c5b-e790c634f503.xml"
+        ],
+        "gender": "F"
+    }
+}

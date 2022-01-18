@@ -1,0 +1,21 @@
+server:
+  port: 8096
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: service-descriptor-storage
+    env: dev
+    version: 0.1
+  data:
+    cassandra:
+      contact-points: 10.65.37.27:9042,10.65.37.28:9042,10.65.37.29:9042,10.65.37.30:9042,10.65.37.32:9042
+      username: cassandra
+      password: cassandra
+      keyspace-name: pub_dev_l11
+      schema-action: none
+      local-datacenter: dc1
+      request:
+        consistency: quorum
+      compression: LZ4

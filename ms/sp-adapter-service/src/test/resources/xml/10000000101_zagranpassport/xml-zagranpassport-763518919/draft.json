@@ -1,0 +1,629 @@
+{
+  "orderId": 763518919,
+  "type": "10000000101",
+  "locked": false,
+  "updated": "2020-11-26T08:33:52.479Z",
+  "body": {
+    "serviceCode": "10000000101",
+    "targetCode": "-10000000101",
+    "orderId": 763518919,
+    "currentScenarioId": 1,
+    "currentUrl": "http://local.test.gosuslugi.ru:4200/",
+    "finishedAndCurrentScreens": [
+      "s1",
+      "s2",
+      "s3",
+      "s4",
+      "s9",
+      "s14",
+      "s19",
+      "s20",
+      "s21",
+      "s22",
+      "s25",
+      "s29",
+      "s30",
+      "s5",
+      "s35",
+      "s113",
+      "s39",
+      "s53",
+      "s55",
+      "s24",
+      "s60",
+      "s84"
+    ],
+    "cachedAnswers": {
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "q1": {
+        "visited": true,
+        "value": "Нового образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Мне и детям"
+      },
+      "q3": {
+        "visited": true,
+        "value": "До 14 лет"
+      },
+      "q8": {
+        "visited": true,
+        "value": "По месту жительства"
+      },
+      "d5": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Фёдоров Фёдор Акакиевич\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"06.06.1987\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0011 111111\"},{\"label\":\"Дата выдачи:\",\"value\":\"16.07.2011\"},{\"label\":\"Кем выдан:\",\"value\":\"Место 1\"},{\"label\":\"Код подразделения:\",\"value\":\"000-001\"},{\"label\":\"Место рождения:\",\"value\":\"вапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап вап вап вапвапва вапвапвапвапвапвапвпвапв авапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап в\"}]}],\"storedValues\":{\"firstName\":\"Фёдор\",\"lastName\":\"Фёдоров\",\"birthPlace\":\"вапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап вап вап вапвапва вапвапвапвапвапвапвпвапв авапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап в\",\"rfPasportIssuedBy\":\"Место 1\",\"gender\":\"M\",\"rfPasportIssuedById\":\"000001\",\"rfPasportSeries\":\"0011\",\"middleName\":\"Акакиевич\",\"birthDate\":\"06.06.1987\",\"rfPasportNumber\":\"111111\",\"rfPasportIssueDate\":\"16.07.2011\"}}"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(100)0000002"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "bedward70@mail.ru"
+      },
+      "pd4": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"тер\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"59.5681332\",\"building2Type\":null,\"okato\":\"44401000000\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"59.5681332\",\"apartmentCheckboxClosed\":true,\"houseCheckboxClosed\":true,\"streetType\":\"территория\",\"town\":\"\",\"lng\":\"150.8084956\",\"index\":\"685000\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"685000, обл. Магаданская, г. Магадан, тер. Автодром\",\"houseCheckbox\":true,\"region\":\"Магаданская\",\"geoLon\":\"150.8084956\",\"additionalArea\":\"\",\"apartmentType\":null,\"city\":\"Магадан\",\"apartmentShortType\":null,\"house\":\"\",\"apartmentCheckbox\":true,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"49\",\"districtShortType\":null,\"street\":\"Автодром\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"49000001000035799\",\"building1ShortType\":null,\"fiasCode\":\"ed2f65b5-f0b6-4cb4-9f8d-5f498076e4e8\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":null,\"inCityDist\":\"\",\"addressStr\":\"обл. Магаданская, г. Магадан, тер. Автодром\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":null,\"building2ShortType\":null,\"apartment\":\"\"},\"regDate\":\"28.10.2020\"}"
+      },
+      "d33": {
+        "visited": true,
+        "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"HF_tYEhcH_8.jpg\",\"objectType\":2,\"objectId\":763518919}"
+      },
+      "eh1": {
+        "visited": true,
+        "value": "[{\"type\":\"unemployed\",\"label\":\"Я не работал\",\"from\":{\"year\":2009,\"month\":1,\"monthCode\":\"Февраль\"},\"to\":{\"year\":2020,\"month\":10,\"monthCode\":\"Ноябрь\"},\"address\":\"asx\",\"checkboxToDate\":true}]"
+      },
+      "q9": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q4": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "fai6": {
+        "visited": true,
+        "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+      },
+      "rf34": {
+        "visited": true,
+        "value": "false"
+      },
+      "rb9": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb10": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb11": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb12": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb13": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb14": {
+        "visited": true,
+        "value": "0"
+      },
+      "q30": {
+        "visited": true,
+        "value": "Получение впервые"
+      },
+      "ai18_4": {
+        "visited": true,
+        "value": "Ирина"
+      },
+      "ai18_5": {
+        "visited": true,
+        "value": "Алексеевна"
+      },
+      "ai18_6": {
+        "visited": true,
+        "value": "false"
+      },
+      "ai18_0": {
+        "visited": true,
+        "value": "7580304"
+      },
+      "ai18_1": {
+        "visited": true,
+        "value": "2020-01-01T00:00:00Z"
+      },
+      "ai18_2": {
+        "visited": true,
+        "value": "F"
+      },
+      "ai18_3": {
+        "visited": true,
+        "value": "Орлова"
+      },
+      "ai18": {
+        "visited": true,
+        "value": "[{\"ai18_4\":\"Ирина\",\"ai18_5\":\"Алексеевна\",\"ai18_6\":\"false\",\"ai18_0\":\"7580304\",\"clr3\":{\"regDate\":\"29.10.2020\",\"regAddr\":{\"streetShortType\":\"ул\",\"districtType\":\"район\",\"geoLat\":\"56.7172303\",\"building2Type\":\"строение\",\"okato\":\"65249000016\",\"building1Type\":\"корпус\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"56.7172303\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Бутка\",\"lng\":\"63.7783514\",\"index\":\"623610\",\"townShortType\":\"с\",\"district\":\"Талицкий\",\"fullAddress\":\"623610, обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина, д. 15, к. 2, стр. 14, кв. 3\",\"houseCheckbox\":false,\"region\":\"Свердловская\",\"geoLon\":\"63.7783514\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"15\",\"apartmentCheckbox\":false,\"townType\":\"село\",\"regionShortType\":\"обл\",\"regionCode\":\"66\",\"districtShortType\":\"р-н\",\"street\":\"Ленина\",\"kladrCode\":\"66028000018003400\",\"building1ShortType\":\"к\",\"fiasCode\":\"a532f63d-624a-4fbe-9cef-f9923ce7a19f\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина\",\"building1\":\"2\",\"building2\":\"14\",\"houseShortType\":\"д\",\"building2ShortType\":\"стр\",\"apartment\":\"3\"}},\"d34\":{\"name\":\"1qrRZLRJ0wc.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.7580304\",\"objectId\":763518919,\"objectType\":2},\"ai18_1\":\"2020-01-01T00:00:00Z\",\"q28_2\":\"Получение впервые\",\"ai18_2\":\"F\",\"ai18_3\":\"Орлова\",\"pd21\":{\"storedValues\":{\"firstName\":\"Ирина\",\"lastName\":\"Орлова\",\"rfBirthCertificateIssuedBy\":\"Отделение ЗАГС Академического района г.Москва\",\"rfBirthCertificateIssueDate\":\"30.09.2020\",\"rfBirthCertificateSeries\":\"XI-АА\",\"middleName\":\"Алексеевна\",\"rfBirthCertificateNumber\":\"123456\",\"birthDate\":\"01.01.2020\",\"rfBirthCertificateActNumber\":\"В-444\"},\"states\":[{\"groupName\":\"Орлова Ирина Алексеевна\",\"fields\":[{\"label\":\"Дата рождения\",\"value\":\"01.01.2020\"}]},{\"groupName\":\"Свидетельство о рождении\",\"fields\":[{\"label\":\"Серия и номер\",\"value\":\"XI-АА-123456\"},{\"label\":\"Дата выдачи\",\"value\":\"30.09.2020\"},{\"label\":\"Кем выдан\",\"value\":\"Отделение ЗАГС Академического района г.Москва\"},{\"label\":\"Актовый номер\",\"value\":\"В-444\"}]}]},\"bd22\":\"2020-10-27T00:00:00.000+06:00\",\"bd23\":\"22222\",\"bd20\":\"ww22223\",\"bd21\":\"22\",\"q22\":\"Нет\",\"q26\":\"Нет\",\"q27\":\"Нет\"}]"
+      },
+      "pd21": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Орлова Ирина Алексеевна\",\"fields\":[{\"label\":\"Дата рождения\",\"value\":\"01.01.2020\"}]},{\"groupName\":\"Свидетельство о рождении\",\"fields\":[{\"label\":\"Серия и номер\",\"value\":\"XI-АА-123456\"},{\"label\":\"Дата выдачи\",\"value\":\"30.09.2020\"},{\"label\":\"Кем выдан\",\"value\":\"Отделение ЗАГС Академического района г.Москва\"},{\"label\":\"Актовый номер\",\"value\":\"В-444\"}]}],\"storedValues\":{\"firstName\":\"Ирина\",\"lastName\":\"Орлова\",\"rfBirthCertificateIssuedBy\":\"Отделение ЗАГС Академического района г.Москва\",\"rfBirthCertificateIssueDate\":\"30.09.2020\",\"rfBirthCertificateSeries\":\"XI-АА\",\"middleName\":\"Алексеевна\",\"rfBirthCertificateNumber\":\"123456\",\"birthDate\":\"01.01.2020\",\"rfBirthCertificateActNumber\":\"В-444\"}}"
+      },
+      "clr3": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":\"район\",\"geoLat\":\"56.7172303\",\"building2Type\":\"строение\",\"okato\":\"65249000016\",\"building1Type\":\"корпус\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"56.7172303\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Бутка\",\"lng\":\"63.7783514\",\"index\":\"623610\",\"townShortType\":\"с\",\"district\":\"Талицкий\",\"fullAddress\":\"623610, обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина, д. 15, к. 2, стр. 14, кв. 3\",\"houseCheckbox\":false,\"region\":\"Свердловская\",\"geoLon\":\"63.7783514\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"15\",\"apartmentCheckbox\":false,\"townType\":\"село\",\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"66\",\"districtShortType\":\"р-н\",\"street\":\"Ленина\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"66028000018003400\",\"building1ShortType\":\"к\",\"fiasCode\":\"a532f63d-624a-4fbe-9cef-f9923ce7a19f\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина\",\"building1\":\"2\",\"building2\":\"14\",\"houseShortType\":\"д\",\"building2ShortType\":\"стр\",\"apartment\":\"3\"},\"regDate\":\"29.10.2020\"}"
+      },
+      "d34": {
+        "visited": true,
+        "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.7580304\",\"name\":\"1qrRZLRJ0wc.jpg\",\"objectType\":2,\"objectId\":763518919}"
+      },
+      "q26": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q27": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q28_2": {
+        "visited": true,
+        "value": "Получение впервые"
+      },
+      "bd20": {
+        "visited": true,
+        "value": "ww22223"
+      },
+      "bd21": {
+        "visited": true,
+        "value": "22"
+      },
+      "bd22": {
+        "visited": true,
+        "value": "2020-10-27T00:00:00.000+06:00"
+      },
+      "bd23": {
+        "visited": true,
+        "value": "22222"
+      },
+      "q22": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q16": {
+        "visited": true,
+        "value": "Да"
+      },
+      "q18": {
+        "visited": true,
+        "value": "Да"
+      },
+      "pd6": {
+        "visited": true,
+        "value": "{\"regionType\":\"город\",\"regionShortType\":\"г\",\"region\":\"Москва\",\"city\":\"\",\"district\":\"\",\"town\":\"\",\"inCityDist\":\"\",\"streetType\":\"шоссе\",\"streetShortType\":\"ш\",\"street\":\"Варшавское\",\"additionalArea\":\"\",\"additionalStreet\":\"\",\"houseType\":\"дом\",\"houseShortType\":\"д\",\"house\":\"141А\",\"houseCheckbox\":false,\"houseCheckboxClosed\":false,\"building1Type\":\"корпус\",\"building1ShortType\":\"к\",\"building1\":\"3\",\"building2\":\"\",\"apartmentType\":\"квартира\",\"apartmentShortType\":\"кв\",\"apartment\":\"999\",\"apartmentCheckbox\":false,\"apartmentCheckboxClosed\":false,\"index\":\"117405\",\"geoLat\":\"55.584645\",\"geoLon\":\"37.603487\",\"fullAddress\":\"117405, г. Москва, ш. Варшавское, д. 141А, к. 3, кв. 999\",\"addressStr\":\"г. Москва, ш. Варшавское\",\"lat\":\"55.584645\",\"lng\":\"37.603487\",\"fiasCode\":\"4ff7be6b-e016-49b1-aee7-cd98c1f15e2a\",\"okato\":\"45296597000\",\"hasErrors\":0,\"kladrCode\":\"7700000000004761533\",\"regionCode\":\"77\"}"
+      },
+      "pd9": {
+        "visited": true,
+        "value": ""
+      },
+      "pd7": {
+        "visited": true,
+        "value": "2020-11-04T00:00:00.000+06:00"
+      },
+      "pd8": {
+        "visited": true,
+        "value": "2020-10-29T00:00:00.000+06:00"
+      },
+      "ms1": {
+        "visited": true,
+        "value": "{\"value\":\"7700181\",\"parentValue\":null,\"title\":\"Отделение ОУФМС России по г. Москве в Троицком административном округе в д. Яковлевское.\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"email_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"Деревня д. Яковлевское, д. Яковлевское, д. 4\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"Деревня д. Яковлевское, д. Яковлевское, д. 4\"},\"valueAsOfType\":\"Деревня д. Яковлевское, д. Яковлевское, д. 4\"},{\"name\":\"phone_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"+7(916)2635045\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"+7(916)2635045\"},\"valueAsOfType\":\"+7(916)2635045\"},{\"name\":\"fax_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"schedule_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},\"valueAsOfType\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},{\"name\":\"scheduleComment_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                \"},\"valueAsOfType\":\"\\n                \"}],\"attributeValues\":{\"phone_out\":\"+7(916)2635045\",\"email_out\":\"\",\"schedule_out\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"fax_out\":\"\",\"scheduleComment_out\":\"\\n                \",\"address_out\":\"Деревня д. Яковлевское, д. Яковлевское, д. 4\"},\"idForMap\":0,\"center\":[36.941114,55.46509],\"baloonContent\":[{\"value\":\"Деревня д. Яковлевское, д. Яковлевское, д. 4\",\"label\":\"Адрес\"},{\"value\":\"+7(916)2635045\",\"label\":\"Телефон\"},{\"value\":\"\",\"label\":\"Электроная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\"}"
+      }
+    },
+    "currentValue": {},
+    "errors": {},
+    "applicantAnswers": {
+      "w1": {
+        "visited": true,
+        "value": ""
+      },
+      "q1": {
+        "visited": true,
+        "value": "Нового образца"
+      },
+      "q2": {
+        "visited": true,
+        "value": "Мне и детям"
+      },
+      "q3": {
+        "visited": true,
+        "value": "До 14 лет"
+      },
+      "q8": {
+        "visited": true,
+        "value": "По месту жительства"
+      },
+      "d5": {
+        "visited": true,
+        "value": ""
+      },
+      "pd1": {
+        "visited": true,
+        "value": "{\"states\":[{\"groupName\":\"Фёдоров Фёдор Акакиевич\",\"fields\":[{\"label\":\"Дата рождения:\",\"value\":\"06.06.1987\"}]},{\"groupName\":\"Паспорт гражданина РФ\",\"fields\":[{\"label\":\"Серия и номер:\",\"value\":\"0011 111111\"},{\"label\":\"Дата выдачи:\",\"value\":\"16.07.2011\"},{\"label\":\"Кем выдан:\",\"value\":\"Место 1\"},{\"label\":\"Код подразделения:\",\"value\":\"000-001\"},{\"label\":\"Место рождения:\",\"value\":\"вапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап вап вап вапвапва вапвапвапвапвапвапвпвапв авапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап в\"}]}],\"storedValues\":{\"firstName\":\"Фёдор\",\"lastName\":\"Фёдоров\",\"birthPlace\":\"вапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап вап вап вапвапва вапвапвапвапвапвапвпвапв авапва вапвап вапва пвапвап вап вап вапвапвап вапвап вап ва пвапвавапвапвапвавапвапвап в\",\"rfPasportIssuedBy\":\"Место 1\",\"gender\":\"M\",\"rfPasportIssuedById\":\"000001\",\"rfPasportSeries\":\"0011\",\"middleName\":\"Акакиевич\",\"birthDate\":\"06.06.1987\",\"rfPasportNumber\":\"111111\",\"rfPasportIssueDate\":\"16.07.2011\"}}"
+      },
+      "pd2": {
+        "visited": true,
+        "value": "+7(100)0000002"
+      },
+      "pd3": {
+        "visited": true,
+        "value": "bedward70@mail.ru"
+      },
+      "pd4": {
+        "visited": true,
+        "value": "{\"regAddr\":{\"cityType\":\"город\",\"streetShortType\":\"тер\",\"additionalStreetShortType\":null,\"districtType\":null,\"geoLat\":\"59.5681332\",\"building2Type\":null,\"okato\":\"44401000000\",\"building1Type\":null,\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"59.5681332\",\"apartmentCheckboxClosed\":true,\"houseCheckboxClosed\":true,\"streetType\":\"территория\",\"town\":\"\",\"lng\":\"150.8084956\",\"index\":\"685000\",\"townShortType\":null,\"district\":\"\",\"fullAddress\":\"685000, обл. Магаданская, г. Магадан, тер. Автодром\",\"houseCheckbox\":true,\"region\":\"Магаданская\",\"geoLon\":\"150.8084956\",\"additionalArea\":\"\",\"apartmentType\":null,\"city\":\"Магадан\",\"apartmentShortType\":null,\"house\":\"\",\"apartmentCheckbox\":true,\"townType\":null,\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"49\",\"districtShortType\":null,\"street\":\"Автодром\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":\"г\",\"kladrCode\":\"49000001000035799\",\"building1ShortType\":null,\"fiasCode\":\"ed2f65b5-f0b6-4cb4-9f8d-5f498076e4e8\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":null,\"inCityDist\":\"\",\"addressStr\":\"обл. Магаданская, г. Магадан, тер. Автодром\",\"building1\":\"\",\"building2\":\"\",\"houseShortType\":null,\"building2ShortType\":null,\"apartment\":\"\"},\"regDate\":\"28.10.2020\"}"
+      },
+      "d33": {
+        "visited": true,
+        "value": "{\"mnemonic\":\"d33.PhotoUploadComponent.passport_photo.0\",\"name\":\"HF_tYEhcH_8.jpg\",\"objectType\":2,\"objectId\":763518919}"
+      },
+      "eh1": {
+        "visited": true,
+        "value": "[{\"type\":\"unemployed\",\"label\":\"Я не работал\",\"from\":{\"year\":2009,\"month\":1,\"monthCode\":\"Февраль\"},\"to\":{\"year\":2020,\"month\":10,\"monthCode\":\"Ноябрь\"},\"address\":\"asx\",\"checkboxToDate\":true}]"
+      },
+      "q9": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "q4": {
+        "visited": true,
+        "value": "Нет"
+      },
+      "fai6": {
+        "visited": true,
+        "value": "{\"id\":\"RUS\",\"text\":\"РОССИЯ\",\"formatted\":\"\",\"originalItem\":{\"value\":\"RUS\",\"parentValue\":null,\"title\":\"РОССИЯ\",\"isLeaf\":true,\"children\":[],\"attributes\":[],\"source\":null,\"attributeValues\":{}}}"
+      },
+      "rf34": {
+        "visited": true,
+        "value": "false"
+      },
+      "rb9": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb10": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb11": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb12": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb13": {
+        "visited": true,
+        "value": "0"
+      },
+      "rb14": {
+        "visited": true,
+        "value": "0"
+      },
+      "q30": {
+        "visited": true,
+        "value": "Получение впервые"
+      },
+      "ai18": {
+        "visited": true,
+        "value": "[{\"ai18_4\":\"Ирина\",\"ai18_5\":\"Алексеевна\",\"ai18_6\":\"false\",\"ai18_0\":\"7580304\",\"clr3\":{\"regDate\":\"29.10.2020\",\"regAddr\":{\"streetShortType\":\"ул\",\"districtType\":\"район\",\"geoLat\":\"56.7172303\",\"building2Type\":\"строение\",\"okato\":\"65249000016\",\"building1Type\":\"корпус\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"56.7172303\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Бутка\",\"lng\":\"63.7783514\",\"index\":\"623610\",\"townShortType\":\"с\",\"district\":\"Талицкий\",\"fullAddress\":\"623610, обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина, д. 15, к. 2, стр. 14, кв. 3\",\"houseCheckbox\":false,\"region\":\"Свердловская\",\"geoLon\":\"63.7783514\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"15\",\"apartmentCheckbox\":false,\"townType\":\"село\",\"regionShortType\":\"обл\",\"regionCode\":\"66\",\"districtShortType\":\"р-н\",\"street\":\"Ленина\",\"kladrCode\":\"66028000018003400\",\"building1ShortType\":\"к\",\"fiasCode\":\"a532f63d-624a-4fbe-9cef-f9923ce7a19f\",\"hasErrors\":0,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина\",\"building1\":\"2\",\"building2\":\"14\",\"houseShortType\":\"д\",\"building2ShortType\":\"стр\",\"apartment\":\"3\"}},\"d34\":{\"name\":\"1qrRZLRJ0wc.jpg\",\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.7580304\",\"objectId\":763518919,\"objectType\":2},\"ai18_1\":\"2020-01-01T00:00:00Z\",\"q28_2\":\"Получение впервые\",\"ai18_2\":\"F\",\"ai18_3\":\"Орлова\",\"pd21\":{\"storedValues\":{\"firstName\":\"Ирина\",\"lastName\":\"Орлова\",\"rfBirthCertificateIssuedBy\":\"Отделение ЗАГС Академического района г.Москва\",\"rfBirthCertificateIssueDate\":\"30.09.2020\",\"rfBirthCertificateSeries\":\"XI-АА\",\"middleName\":\"Алексеевна\",\"rfBirthCertificateNumber\":\"123456\",\"birthDate\":\"01.01.2020\",\"rfBirthCertificateActNumber\":\"В-444\"},\"states\":[{\"groupName\":\"Орлова Ирина Алексеевна\",\"fields\":[{\"label\":\"Дата рождения\",\"value\":\"01.01.2020\"}]},{\"groupName\":\"Свидетельство о рождении\",\"fields\":[{\"label\":\"Серия и номер\",\"value\":\"XI-АА-123456\"},{\"label\":\"Дата выдачи\",\"value\":\"30.09.2020\"},{\"label\":\"Кем выдан\",\"value\":\"Отделение ЗАГС Академического района г.Москва\"},{\"label\":\"Актовый номер\",\"value\":\"В-444\"}]}]},\"bd22\":\"2020-10-27T00:00:00.000+06:00\",\"bd23\":\"22222\",\"bd20\":\"ww22223\",\"bd21\":\"22\",\"q22\":\"Нет\",\"q26\":\"Нет\",\"q27\":\"Нет\"}]"
+      },
+      "q16": {
+        "visited": true,
+        "value": "Да"
+      },
+      "q18": {
+        "visited": true,
+        "value": "Да"
+      },
+      "pd6": {
+        "visited": true,
+        "value": "{\"regionType\":\"город\",\"regionShortType\":\"г\",\"region\":\"Москва\",\"city\":\"\",\"district\":\"\",\"town\":\"\",\"inCityDist\":\"\",\"streetType\":\"шоссе\",\"streetShortType\":\"ш\",\"street\":\"Варшавское\",\"additionalArea\":\"\",\"additionalStreet\":\"\",\"houseType\":\"дом\",\"houseShortType\":\"д\",\"house\":\"141А\",\"houseCheckbox\":false,\"houseCheckboxClosed\":false,\"building1Type\":\"корпус\",\"building1ShortType\":\"к\",\"building1\":\"3\",\"building2\":\"\",\"apartmentType\":\"квартира\",\"apartmentShortType\":\"кв\",\"apartment\":\"999\",\"apartmentCheckbox\":false,\"apartmentCheckboxClosed\":false,\"index\":\"117405\",\"geoLat\":\"55.584645\",\"geoLon\":\"37.603487\",\"fullAddress\":\"117405, г. Москва, ш. Варшавское, д. 141А, к. 3, кв. 999\",\"addressStr\":\"г. Москва, ш. Варшавское\",\"lat\":\"55.584645\",\"lng\":\"37.603487\",\"fiasCode\":\"4ff7be6b-e016-49b1-aee7-cd98c1f15e2a\",\"okato\":\"45296597000\",\"hasErrors\":0,\"kladrCode\":\"7700000000004761533\",\"regionCode\":\"77\"}"
+      },
+      "pd9": {
+        "visited": true,
+        "value": ""
+      },
+      "pd7": {
+        "visited": true,
+        "value": "2020-11-04T00:00:00.000+06:00"
+      },
+      "pd8": {
+        "visited": true,
+        "value": "2020-10-29T00:00:00.000+06:00"
+      },
+      "ms1": {
+        "visited": true,
+        "value": "{\"value\":\"7700181\",\"parentValue\":null,\"title\":\"Отделение ОУФМС России по г. Москве в Троицком административном округе в д. Яковлевское.\",\"isLeaf\":true,\"children\":null,\"attributes\":[{\"name\":\"email_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"address_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"Деревня д. Яковлевское, д. Яковлевское, д. 4\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"Деревня д. Яковлевское, д. Яковлевское, д. 4\"},\"valueAsOfType\":\"Деревня д. Яковлевское, д. Яковлевское, д. 4\"},{\"name\":\"phone_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"+7(916)2635045\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"+7(916)2635045\"},\"valueAsOfType\":\"+7(916)2635045\"},{\"name\":\"fax_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\"},\"valueAsOfType\":\"\"},{\"name\":\"schedule_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},\"valueAsOfType\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \"},{\"name\":\"scheduleComment_out\",\"type\":\"STRING\",\"value\":{\"asString\":\"\\n                \",\"asLong\":null,\"asDecimal\":null,\"asDateTime\":null,\"asDate\":null,\"asBoolean\":null,\"typeOfValue\":\"STRING\",\"value\":\"\\n                \"},\"valueAsOfType\":\"\\n                \"}],\"attributeValues\":{\"phone_out\":\"+7(916)2635045\",\"email_out\":\"\",\"schedule_out\":\"\\n                        Пн: с 09:00 по 18:00; перерыв с 14:00 по 14:45;<br/>\\n                        Вт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Ср: с 09:00 по 13:00; <br/>\\n                        Чт: с 11:00 по 20:00; перерыв с 14:00 по 14:45;<br/>\\n                        Пт: с 09:00 по 16:45; перерыв с 14:00 по 14:45;<br/>\\n                        Сб: с 09:00 по 16:00; <br/>\\n                        Воскресенье: выходной\\n                \",\"fax_out\":\"\",\"scheduleComment_out\":\"\\n                \",\"address_out\":\"Деревня д. Яковлевское, д. Яковлевское, д. 4\"},\"idForMap\":0,\"center\":[36.941114,55.46509],\"baloonContent\":[{\"value\":\"Деревня д. Яковлевское, д. Яковлевское, д. 4\",\"label\":\"Адрес\"},{\"value\":\"+7(916)2635045\",\"label\":\"Телефон\"},{\"value\":\"\",\"label\":\"Электроная почта\"}],\"agreement\":true,\"expanded\":true,\"btnName\":\"Выбрать\"}"
+      }
+    },
+    "cycledApplicantAnswers": {
+      "currentAnswerId": "ai18",
+      "answerlist": [
+        {
+          "id": "ai18",
+          "initScreen": "s39",
+          "currentItemId": "7580304",
+          "items": [
+            {
+              "id": "7580304",
+              "itemAnswers": {
+                "ai18_4": {
+                  "visited": true,
+                  "value": "Ирина"
+                },
+                "ai18_5": {
+                  "visited": true,
+                  "value": "Алексеевна"
+                },
+                "ai18_6": {
+                  "visited": true,
+                  "value": "false"
+                },
+                "ai18_0": {
+                  "visited": true,
+                  "value": "7580304"
+                },
+                "ai18_1": {
+                  "visited": true,
+                  "value": "2020-01-01T00:00:00Z"
+                },
+                "ai18_2": {
+                  "visited": true,
+                  "value": "F"
+                },
+                "ai18_3": {
+                  "visited": true,
+                  "value": "Орлова"
+                },
+                "pd21": {
+                  "visited": true,
+                  "value": "{\"states\":[{\"groupName\":\"Орлова Ирина Алексеевна\",\"fields\":[{\"label\":\"Дата рождения\",\"value\":\"01.01.2020\"}]},{\"groupName\":\"Свидетельство о рождении\",\"fields\":[{\"label\":\"Серия и номер\",\"value\":\"XI-АА-123456\"},{\"label\":\"Дата выдачи\",\"value\":\"30.09.2020\"},{\"label\":\"Кем выдан\",\"value\":\"Отделение ЗАГС Академического района г.Москва\"},{\"label\":\"Актовый номер\",\"value\":\"В-444\"}]}],\"storedValues\":{\"firstName\":\"Ирина\",\"lastName\":\"Орлова\",\"rfBirthCertificateIssuedBy\":\"Отделение ЗАГС Академического района г.Москва\",\"rfBirthCertificateIssueDate\":\"30.09.2020\",\"rfBirthCertificateSeries\":\"XI-АА\",\"middleName\":\"Алексеевна\",\"rfBirthCertificateNumber\":\"123456\",\"birthDate\":\"01.01.2020\",\"rfBirthCertificateActNumber\":\"В-444\"}}"
+                },
+                "clr3": {
+                  "visited": true,
+                  "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":\"район\",\"geoLat\":\"56.7172303\",\"building2Type\":\"строение\",\"okato\":\"65249000016\",\"building1Type\":\"корпус\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"56.7172303\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Бутка\",\"lng\":\"63.7783514\",\"index\":\"623610\",\"townShortType\":\"с\",\"district\":\"Талицкий\",\"fullAddress\":\"623610, обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина, д. 15, к. 2, стр. 14, кв. 3\",\"houseCheckbox\":false,\"region\":\"Свердловская\",\"geoLon\":\"63.7783514\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"15\",\"apartmentCheckbox\":false,\"townType\":\"село\",\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"66\",\"districtShortType\":\"р-н\",\"street\":\"Ленина\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"66028000018003400\",\"building1ShortType\":\"к\",\"fiasCode\":\"a532f63d-624a-4fbe-9cef-f9923ce7a19f\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина\",\"building1\":\"2\",\"building2\":\"14\",\"houseShortType\":\"д\",\"building2ShortType\":\"стр\",\"apartment\":\"3\"},\"regDate\":\"29.10.2020\"}"
+                },
+                "d34": {
+                  "visited": true,
+                  "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.7580304\",\"name\":\"1qrRZLRJ0wc.jpg\",\"objectType\":2,\"objectId\":763518919}"
+                },
+                "q26": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q27": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q28_2": {
+                  "visited": true,
+                  "value": "Получение впервые"
+                },
+                "bd20": {
+                  "visited": true,
+                  "value": "ww22223"
+                },
+                "bd21": {
+                  "visited": true,
+                  "value": "22"
+                },
+                "bd22": {
+                  "visited": true,
+                  "value": "2020-10-27T00:00:00.000+06:00"
+                },
+                "bd23": {
+                  "visited": true,
+                  "value": "22222"
+                },
+                "q22": {
+                  "visited": true,
+                  "value": "Нет"
+                }
+              },
+              "cachedAnswers": {
+                "ai18_4": {
+                  "visited": true,
+                  "value": "Ирина"
+                },
+                "ai18_5": {
+                  "visited": true,
+                  "value": "Алексеевна"
+                },
+                "ai18_6": {
+                  "visited": true,
+                  "value": "false"
+                },
+                "ai18_0": {
+                  "visited": true,
+                  "value": "7580304"
+                },
+                "ai18_1": {
+                  "visited": true,
+                  "value": "2020-01-01T00:00:00Z"
+                },
+                "ai18_2": {
+                  "visited": true,
+                  "value": "F"
+                },
+                "ai18_3": {
+                  "visited": true,
+                  "value": "Орлова"
+                },
+                "pd21": {
+                  "visited": true,
+                  "value": "{\"states\":[{\"groupName\":\"Орлова Ирина Алексеевна\",\"fields\":[{\"label\":\"Дата рождения\",\"value\":\"01.01.2020\"}]},{\"groupName\":\"Свидетельство о рождении\",\"fields\":[{\"label\":\"Серия и номер\",\"value\":\"XI-АА-123456\"},{\"label\":\"Дата выдачи\",\"value\":\"30.09.2020\"},{\"label\":\"Кем выдан\",\"value\":\"Отделение ЗАГС Академического района г.Москва\"},{\"label\":\"Актовый номер\",\"value\":\"В-444\"}]}],\"storedValues\":{\"firstName\":\"Ирина\",\"lastName\":\"Орлова\",\"rfBirthCertificateIssuedBy\":\"Отделение ЗАГС Академического района г.Москва\",\"rfBirthCertificateIssueDate\":\"30.09.2020\",\"rfBirthCertificateSeries\":\"XI-АА\",\"middleName\":\"Алексеевна\",\"rfBirthCertificateNumber\":\"123456\",\"birthDate\":\"01.01.2020\",\"rfBirthCertificateActNumber\":\"В-444\"}}"
+                },
+                "clr3": {
+                  "visited": true,
+                  "value": "{\"regAddr\":{\"cityType\":null,\"streetShortType\":\"ул\",\"additionalStreetShortType\":null,\"districtType\":\"район\",\"geoLat\":\"56.7172303\",\"building2Type\":\"строение\",\"okato\":\"65249000016\",\"building1Type\":\"корпус\",\"regionType\":\"область\",\"additionalStreet\":\"\",\"lat\":\"56.7172303\",\"apartmentCheckboxClosed\":false,\"houseCheckboxClosed\":false,\"streetType\":\"улица\",\"town\":\"Бутка\",\"lng\":\"63.7783514\",\"index\":\"623610\",\"townShortType\":\"с\",\"district\":\"Талицкий\",\"fullAddress\":\"623610, обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина, д. 15, к. 2, стр. 14, кв. 3\",\"houseCheckbox\":false,\"region\":\"Свердловская\",\"geoLon\":\"63.7783514\",\"additionalArea\":\"\",\"apartmentType\":\"квартира\",\"city\":\"\",\"apartmentShortType\":\"кв\",\"house\":\"15\",\"apartmentCheckbox\":false,\"townType\":\"село\",\"additionalAreaType\":null,\"regionShortType\":\"обл\",\"regionCode\":\"66\",\"districtShortType\":\"р-н\",\"street\":\"Ленина\",\"additionalStreetType\":null,\"inCityDistShortType\":null,\"additionalAreaShortType\":null,\"cityShortType\":null,\"kladrCode\":\"66028000018003400\",\"building1ShortType\":\"к\",\"fiasCode\":\"a532f63d-624a-4fbe-9cef-f9923ce7a19f\",\"hasErrors\":0,\"inCityDistType\":null,\"houseType\":\"дом\",\"inCityDist\":\"\",\"addressStr\":\"обл. Свердловская, р-н. Талицкий, с. Бутка, ул. Ленина\",\"building1\":\"2\",\"building2\":\"14\",\"houseShortType\":\"д\",\"building2ShortType\":\"стр\",\"apartment\":\"3\"},\"regDate\":\"29.10.2020\"}"
+                },
+                "d34": {
+                  "visited": true,
+                  "value": "{\"mnemonic\":\"d34.PhotoUploadComponent.child_passport_photo.7580304\",\"name\":\"1qrRZLRJ0wc.jpg\",\"objectType\":2,\"objectId\":763518919}"
+                },
+                "q26": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q27": {
+                  "visited": true,
+                  "value": "Нет"
+                },
+                "q28_2": {
+                  "visited": true,
+                  "value": "Получение впервые"
+                },
+                "bd20": {
+                  "visited": true,
+                  "value": "ww22223"
+                },
+                "bd21": {
+                  "visited": true,
+                  "value": "22"
+                },
+                "bd22": {
+                  "visited": true,
+                  "value": "2020-10-27T00:00:00.000+06:00"
+                },
+                "bd23": {
+                  "visited": true,
+                  "value": "22222"
+                },
+                "q22": {
+                  "visited": true,
+                  "value": "Нет"
+                }
+              },
+              "esiaData": {
+                "lastName": "Орлова",
+                "rfBirthCertificateIssueDate": "2020-09-30T00:00:00Z",
+                "gender": "F",
+                "regDate": "",
+                "isNew": false,
+                "relationshipToChild": "",
+                "birthDate": "2020-01-01T00:00:00Z",
+                "regAddr": "",
+                "firstName": "Ирина",
+                "rfBirthCertificateIssuedBy": "Отделение ЗАГС Академического района г.Москва",
+                "rfBirthCertificateSeries": "XI-АА",
+                "middleName": "Алексеевна",
+                "id": "7580304",
+                "rfBirthCertificateNumber": "123456",
+                "rfBirthCertificateActNumber": "В-444",
+                "Series": "ww22223",
+                "Number": "22",
+                "IssuedBy": "22222"
+              },
+              "finishedScreens": [
+                "scrchld16",
+                "scrchld10",
+                "scrchld9",
+                "scrchld11",
+                "scrchld13",
+                "scrchld15_2",
+                "s70",
+                "s71"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "participants": {
+      "-10000": {
+        "role": "Coapplicant",
+        "mode": "SlaveApplicant",
+        "component": "ai18",
+        "index": 0
+      }
+    },
+    "display": {
+      "id": "s84",
+      "name": "Заявление отправлено! новый, взрослый и дети до 14, регистрация",
+      "type": "INFO",
+      "header": "Заявление отправлено!",
+      "components": [
+        {
+          "id": "d21",
+          "type": "InfoScr",
+          "label": "<p><center><img src='https://gu-st.ru/content/catalog/new/status_1.svg'></center></p><p>Оформление загранпаспорта будет производиться подразделением <b>Отделение ОУФМС России по г. Москве в Троицком административном округе в д. Яковлевское.</b> по адресу:<br><a target='_blank' href='http://yandex.ru/maps/?pt=36.941114,55.46509&z=13'>Деревня д. Яковлевское, д. Яковлевское, д. 4</a></p><p>Процедура оформления паспорта займет до <b>1 месяца</b></p><p>(до 3-х месяцев в случае допуска к сведениям, составляющим государственную тайну)</p><p>После рассмотрения заявления в ваш личный кабинет придет уведомление о возможности оплатить пошлину онлайн со скидкой 30%</p><p>Дождитесь в личном кабинете приглашения в подразделение</p><p>Принесите с собой <a id='DocOrigonals'>оригиналы документов</a></p><p>Сотрудник полиции сверит данные из электронного заявления с оригинальными документами, сфотографирует вас и сообщит о сроке готовности загранпаспорта</p>",
+          "attrs": {
+            "actions": [
+              {
+                "label": "Перейти в личный кабинет",
+                "value": "Перейти в личный кабинет",
+                "type": "redirectToLK",
+                "action": "getNextScreen"
+              }
+            ],
+            "clarifications": {
+              "DocOrigonals": {
+                "title": "Какие документы взять в МВД",
+                "text": "<ul><li>ваш паспорт РФ</li><li>ранее выданный загранпаспорт (при наличии)</li><li>разрешение командования — для служащих в Вооруженных Силах России, а также в федеральных органах власти, в которых предусмотрена военная служба (за исключением службы по призыву)</li><li>документ, подтверждающий права законного представителя ребенка</li><li>свидетельство о рождении ребенка или акт органа опеки и попечительства о назначении опекуна или попечителя</li><li>свидетельство о рождении для детей до 14 лет</li><li>документ, подтверждающий наличие гражданства у ребенка (до 14 лет)</li><li>свидетельство о рождении с отметкой о принадлежности к гражданству РФ либо вкладыш с отметкой о наличии российского гражданства к свидетельству о рождении, ранее выданный загранпаспорт</li><li>ранее выданный загранпаспорт — если он был у вашего ребенка и срок его службы еще не истек</li></ul>"
+              }
+            },
+            "refs": {
+              "reference_to_name": "ms1.value.title",
+              "reference_to_x": "ms1.value.center[0]",
+              "reference_to_y": "ms1.value.center[1]",
+              "reference_to_address": "ms1.value.attributes[1].valueAsOfType"
+            }
+          },
+          "arguments": {},
+          "value": "",
+          "required": true,
+          "cycled": false
+        }
+      ],
+      "terminal": true,
+      "impasse": false,
+      "accepted": true,
+      "firstScreen": false
+    },
+    "attachmentInfo": {
+      "d33": [
+        {
+          "uploadId": "passport_photo",
+          "uploadMnemonic": "d33.PhotoUploadComponent.passport_photo.0",
+          "uploadFilename": "HF_tYEhcH_8.jpg"
+        }
+      ]
+    },
+    "additionalParameters": {
+      "masterOid": "1000415878",
+      "masterId": "763518919",
+      "citizenshipCode": "RUS",
+      "gender": "M",
+      "orderId": "763518919",
+      "serviceCode": "10000000101",
+      "citizenship": "РОССИЯ",
+      "oid": "1000415878",
+      "snils": "000-000-000 03",
+      "masterSnils": "000-000-000 03"
+    },
+    "gender": "M"
+  }
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:AppealCycleResponse xmlns:ns2="urn://web.gibdd.ru/appeal-fines-gibdd/commons/scenario/1.0.2"
+                         xmlns:ns3="urn://web.gibdd.ru/appeal-fines-gibdd/appeal-cycle/1.0.2"
+                         xmlns="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2"
+                         Id="R-61cf0bbf-6f09-494a-a0c0-b7b9f3508cdb"
+                         ReqId="Q-00caa448-3994-4f16-a8b3-af005d5aa9ba"
+                         timestamp="2020-12-22T18:56:28.625+03:00"
+                         wantCallback="false">
+    <orderId>991753267</orderId>
+    <Status code="300">
+        <Message>Затребованы дополнительные доказательства</Message>
+    </Status>
+    <ns3:AdditionalEvidenceRequest>
+        <ns3:Evidences>
+            <ns2:Evidence code="16" required="true" textAllowed="false">
+                <ns2:Title>Документы, подтверждающие переход права собственности на ТС другому лицу</ns2:Title>
+                <ns2:Hint>Подсказка</ns2:Hint>
+                <ns2:AttachmentsAllowed>
+                    <ns2:AttachmentTemplate countMin="1" countMax="1" sizeTotalKB="5000">
+                        <ns2:FileFormats>
+                            <ns2:FileFormat code="1">
+                                <ns2:Title>Растровые изображения</ns2:Title>
+                                <ns2:FileExtensions>
+                                    <ns2:FileExtension>jpg</ns2:FileExtension>
+                                    <ns2:FileExtension>png</ns2:FileExtension>
+                                </ns2:FileExtensions>
+                            </ns2:FileFormat>
+                        </ns2:FileFormats>
+                    </ns2:AttachmentTemplate>
+                </ns2:AttachmentsAllowed>
+            </ns2:Evidence>
+        </ns3:Evidences>
+    </ns3:AdditionalEvidenceRequest>
+</ns3:AppealCycleResponse>

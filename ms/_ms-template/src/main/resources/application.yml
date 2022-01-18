@@ -1,0 +1,12 @@
+server:
+  # TODO Rename port
+  port: 8097
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    # TODO Rename service name
+    name: rename-service-name
+    env: dev
+

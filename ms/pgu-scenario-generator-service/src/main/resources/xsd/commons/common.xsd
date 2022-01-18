@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+            xmlns:com="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2"
+            targetNamespace="urn://web.gibdd.ru/appeal-fines-gibdd/commons/common/1.0.2">
+
+    <xsd:complexType name="RequestType">
+        <xsd:annotation>
+            <xsd:documentation>Общая часть всех запросов</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="orderId" type="com:stringNN-20" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Атрибут ЕПГУ. При наличии, будет возвращен в ответах</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="AdditionalData" type="com:AdditionalDataType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Дополнительные данные</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="Id" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Идентификатор запроса</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:ID">
+                    <xsd:maxLength value="60"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="timestamp" type="xsd:dateTime" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Дата и время формирования запроса</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="uin" type="com:UINType" use="required">
+            <xsd:annotation>
+                <xsd:documentation>УИН обжалуемого постановления</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="routeNumber" type="com:stringNN-20" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Маршрутная информация</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="AdditionalDataType">
+        <xsd:sequence>
+            <xsd:element name="Item" type="com:NameValuePairType" maxOccurs="1000"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ResponseType">
+        <xsd:annotation>
+            <xsd:documentation>Общая часть всех ответов</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="orderId" type="com:stringNN-20" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Атрибут для ЕПГУ. Обязателен при указании его в запроса</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element ref="com:Status"/>
+            <xsd:sequence>
+                <xsd:annotation>
+                    <xsd:documentation>Дополнительные данные</xsd:documentation>
+                </xsd:annotation>
+                <xsd:element name="AdditionalData" type="com:AdditionalDataType" minOccurs="0"/>
+            </xsd:sequence>
+        </xsd:sequence>
+        <xsd:attribute name="Id" type="xsd:ID" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Идентификатор ответа</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="ReqId" type="com:string-60" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Идентификатор запроса</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="timestamp" type="xsd:dateTime" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Дата и время формирования ответа</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="wantCallback" type="xsd:boolean">
+            <xsd:annotation>
+                <xsd:documentation>Требование прислать ответный Callback запрос (например, на получение документа и
+                    сценария обжалования)
+                </xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:element name="Status" type="com:StatusType">
+        <xsd:annotation>
+            <xsd:documentation>Статус обработки запроса поставщиком вида сведений</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+    <xsd:simpleType name="URNType">
+        <xsd:annotation>
+            <xsd:documentation>УРН</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9a-fA-F]{6}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="stringNN-20">
+        <xsd:restriction base="xsd:normalizedString">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="20"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="string-60">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="60"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="string-100">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="100"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="string-250">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="250"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="string-1000">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="string-2048">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="2048"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="string-4000">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="SNILSType">
+        <xsd:annotation>
+            <xsd:documentation>СНИЛС (только цифры)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="11"/>
+            <xsd:pattern value="\d{11}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="PhoneNumberType">
+        <xsd:annotation>
+            <xsd:documentation>Номер телефона (11 цифр). Пример: 89991234567</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="11"/>
+            <xsd:pattern value="\d{11}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="EMailType">
+        <xsd:annotation>
+            <xsd:documentation>Адрес электронной почты</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="200"/>
+            <xsd:pattern value="\S+@\S+"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="PersonINNType">
+        <xsd:annotation>
+            <xsd:documentation>ИНН ФЛ</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d{12}"/>
+            <xsd:length value="12"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="LegalINNType">
+        <xsd:annotation>
+            <xsd:documentation>ИНН ЮЛ</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:length value="10"/>
+            <xsd:pattern value="\d{10}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="LegalKPPType">
+        <xsd:annotation>
+            <xsd:documentation>КПП</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:length value="9"/>
+            <xsd:pattern value="\d{9}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="LegalOGRNType">
+        <xsd:annotation>
+            <xsd:documentation>ОГРН юр. лица</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:length value="13"/>
+            <xsd:pattern value="\d{13}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="BusinessOGRNType">
+        <xsd:annotation>
+            <xsd:documentation>ОГРН ИП</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:length value="15"/>
+            <xsd:pattern value="\d{15}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="UINType">
+        <xsd:annotation>
+            <xsd:documentation>УИН</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d{20}"/>
+            <xsd:pattern value="\d{25}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="UserType">
+        <xsd:annotation>
+            <xsd:documentation>Тип заявителя</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="PERSON_RF"/>
+            <xsd:enumeration value="PERSON_FOREIGN"/>
+            <xsd:enumeration value="LEGAL"/>
+            <xsd:enumeration value="BUSINESSMAN"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="PersonType">
+        <xsd:annotation>
+            <xsd:documentation>Сведения о физ. лице</xsd:documentation>
+        </xsd:annotation>
+        <xsd:attribute name="surname" type="com:string-100" use="required"/>
+        <xsd:attribute name="name" type="com:string-100"  use="required"/>
+        <xsd:attribute name="patronymic" type="com:string-100" use="optional"/>
+        <xsd:attribute name="birthdate" type="xsd:date" use="required"/>
+        <xsd:attribute name="snils" type="com:SNILSType"/>
+        <xsd:attribute name="phone" type="com:string-60"/>
+        <xsd:attribute name="email" type="com:EMailType"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="BusinessPersonType">
+        <xsd:annotation>
+            <xsd:documentation>Сведения о юр. лице</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Person" type="com:PersonType"/>
+        </xsd:sequence>
+        <xsd:attribute name="orgName" type="com:string-250" use="required"/>
+        <xsd:attribute name="inn" type="com:PersonINNType" use="required"/>
+        <xsd:attribute name="ogrn" type="com:BusinessOGRNType" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="LegalCompanyType">
+        <xsd:annotation>
+            <xsd:documentation>Полные об организации и руководителе</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="com:LegalType">
+                <xsd:sequence>
+                    <xsd:element name="CEO" type="com:PersonType" minOccurs="0">
+                        <xsd:annotation>
+                            <xsd:documentation>Руководитель организации</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="LegalType">
+        <xsd:annotation>
+            <xsd:documentation>Сведения о организации</xsd:documentation>
+        </xsd:annotation>
+        <xsd:attribute name="nameFull" type="com:string-2048" use="required"/>
+        <xsd:attribute name="nameShort" type="com:string-250" use="required"/>
+        <xsd:attribute name="inn" type="com:LegalINNType" use="required"/>
+        <xsd:attribute name="ogrn" type="com:LegalOGRNType" use="required"/>
+        <xsd:attribute name="kpp" type="com:LegalKPPType" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="NameValuePairType">
+        <xsd:annotation>
+            <xsd:documentation>Дополнительный атрибут</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Name">
+                <xsd:annotation>
+                    <xsd:documentation>Наименование поля</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:minLength value="1"/>
+                        <xsd:maxLength value="100"/>
+                        <xsd:pattern value="\S+([\S\s]*\S+)*"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="Value">
+                <xsd:annotation>
+                    <xsd:documentation>Значение поля</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:minLength value="1"/>
+                        <xsd:maxLength value="4000"/>
+                        <xsd:pattern value="\S+([\S\s]*\S+)*"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!--    <xsd:element name="AdditionalData">-->
+    <!--        <xsd:annotation>-->
+    <!--            <xsd:documentation>Набор дополнительных атрибутов</xsd:documentation>-->
+    <!--        </xsd:annotation>-->
+    <!--        <xsd:complexType>-->
+    <!--            <xsd:sequence>-->
+    <!--                <xsd:element name="Attrs" type="com:NameValuePairType" minOccurs="0" maxOccurs="unbounded"/>-->
+    <!--            </xsd:sequence>-->
+    <!--        </xsd:complexType>-->
+    <!--    </xsd:element>-->
+
+    <xsd:complexType name="AppliedDocumentType">
+        <xsd:annotation>
+            <xsd:documentation>Описатель приложенного документа</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="description" type="com:string-250"/>
+        </xsd:sequence>
+        <xsd:attribute name="attName" type="com:string-250" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Имя-идентификатор вложения с документом</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="attEntryName" type="com:string-250">
+            <xsd:annotation>
+                <xsd:documentation>Имя-идентификатор элемента вложения. Например, имя файла в ZIP</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="mimeType" type="com:string-250" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Тип содержимого: pdf, zip, doc, ...</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:element name="AppliedDocument" type="com:AppliedDocumentType"/>
+
+    <xsd:element name="AppliedDocuments" type="com:AppliedDocumentListType">
+        <xsd:annotation>
+            <xsd:documentation>Прилагаемые документы</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+    <xsd:complexType name="AppliedDocumentListType">
+        <xsd:annotation>
+            <xsd:documentation>Приложенные документы</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="AppliedDocument" type="com:AppliedDocumentType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="CallbackType">
+        <xsd:annotation>
+            <xsd:documentation>Обратный вызов</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Result">
+                <xsd:annotation>
+                    <xsd:documentation>Результат</xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Message" type="com:string-250" minOccurs="0"/>
+                    </xsd:sequence>
+                    <xsd:attribute name="code" use="required">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:int">
+                                <!--                                <xsd:enumeration value="0">-->
+                                <!--                                    <xsd:annotation>-->
+                                <!--                                        <xsd:documentation>Успешно</xsd:documentation>-->
+                                <!--                                    </xsd:annotation>-->
+                                <!--                                </xsd:enumeration>-->
+                                <!--                                <xsd:enumeration value="1">-->
+                                <!--                                    <xsd:annotation>-->
+                                <!--                                        <xsd:documentation>Произошла ошибка</xsd:documentation>-->
+                                <!--                                    </xsd:annotation>-->
+                                <!--                                </xsd:enumeration>-->
+                                <!--                                <xsd:enumeration value="2">-->
+                                <!--                                    <xsd:annotation>-->
+                                <!--                                        <xsd:documentation>Операция была отменена</xsd:documentation>-->
+                                <!--                                    </xsd:annotation>-->
+                                <!--                                </xsd:enumeration>-->
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:attribute>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="RefId" type="com:string-60" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Идентификатор ответа, запрашивающего обратный вызов
+                </xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="timestamp" type="xsd:dateTime"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="CallbackResponseType">
+        <xsd:annotation>
+            <xsd:documentation>Ответ на обратный вызов</xsd:documentation>
+        </xsd:annotation>
+        <xsd:attribute name="code" type="xsd:int">
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="StatusType">
+        <xsd:annotation>
+            <xsd:documentation>Статус запроса</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Message" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Сообщение сопровождающее статус</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="2000"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="code" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Код</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:normalizedString">
+                    <xsd:minLength value="1"/>
+                    <xsd:maxLength value="4"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+
+</xsd:schema>

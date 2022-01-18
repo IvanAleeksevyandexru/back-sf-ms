@@ -1,0 +1,17 @@
+version: '2.1'
+services:
+
+  activemq1:
+    container_name: activemq1
+    image: vromero/activemq-artemis:latest-alpine
+    ports:
+      - 8161:8161
+      - 61616:61616
+
+  activemq2:
+    container_name: activemq2
+    image: vromero/activemq-artemis:latest-alpine
+    ports:
+      - 8162:8161
+      - 61617:61616
+
