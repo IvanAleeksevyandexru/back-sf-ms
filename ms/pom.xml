@@ -30,7 +30,6 @@
         <module>sp-adapter-service</module>
         <module>service-descriptor-storage</module>
         <module>pgu-service-config</module>
-        <module>pgu-scenario-player-service</module>
         <module>pgu-scenario-generator-service</module>
         <module>service-publisher</module>
         <module>smev-jms-receiver</module>
