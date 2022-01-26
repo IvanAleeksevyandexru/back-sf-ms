@@ -26,37 +26,37 @@
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-dto</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-draft-client</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-sd-storage-client</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-terrabyte-client</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-common-core</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-common-logging</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-common-kafka</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
         <dependency>
             <groupId>com.jayway.jsonpath</groupId>
@@ -66,7 +66,7 @@
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-common-person-search</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>velocity</groupId>
@@ -244,7 +244,7 @@
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-common-starter-tracing</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
 
         <dependency>
@@ -296,7 +296,7 @@
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-common-attachments</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>

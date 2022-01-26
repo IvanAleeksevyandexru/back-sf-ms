@@ -25,31 +25,31 @@
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-common-logging</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
 
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-common-starter-tracing</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
 
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-common-core</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
 
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-dto</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
 
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-draft-converter-client</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
 
         <dependency>

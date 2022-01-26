@@ -32,13 +32,13 @@
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-sd-storage-client</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
 
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-common-logging</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
 
         <dependency>
@@ -51,13 +51,13 @@
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-common-core</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
 
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-dto</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
         <!--        inner dependencies-->
 
@@ -78,7 +78,7 @@
         <dependency>
             <groupId>ru.gosuslugi.pgu</groupId>
             <artifactId>pgu-common-starter-tracing</artifactId>
-            <version>${project.version}</version>
+            <version>${epgu2.sf.lib.version}</version>
         </dependency>
         <dependency>
             <groupId>jakarta.xml.bind</groupId>
