@@ -17,7 +17,7 @@ import ru.gosuslugi.pgu.dto.esep.SignedFileInfo
 import ru.gosuslugi.pgu.voskhod.adapter.mapper.EsepMapper
 import ru.gosuslugi.pgu.voskhod.adapter.mapper.EsepMapperImpl
 import ru.gosuslugi.pgu.voskhod.adapter.service.SignService
-import ru.gosuslugi.pgu.voskhod.adapter.service.SpAdapterClient
+import ru.gosuslugi.pgu.sp.adapter.SpAdapterClient;
 import ru.gosuslugi.pgu.voskhod.adapter.service.esep.EsepServiceHelper
 import ru.nvg.idecs.storageservice.ws.common.data.DataService
 import ru.nvg.idecs.storageservice.ws.common.data.OrderAttachmentsRequest

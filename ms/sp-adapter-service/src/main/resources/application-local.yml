@@ -13,25 +13,9 @@ spring:
     # Адрес для подключения к кафке для трейсинга в Zipkin
     bootstrap-servers: localhost:9092
     auto-create-topics: true
-
-    suggestions:
-        # Включает или выключает отправку событий
+    producers:
+      suggestions:
         enabled: false
-        target-topic:
-          topic-name: suggestions-topic
-          topic-partitions: 1
-          topic-replication-factor: 1
-
-    form-service:
-      enabled: false
-      topic-name: sp-adapter
-      fs-sp-adapter-consumer-group-id : fsSpAdapterConsumerGroupId
-      sp-errors-topic-name: sp-errors
-      self-errors-topic-name: self-errors
-      sp-errors-partitions: 1
-      self-errors-partitions: 1
-      sp-errors-replication-factor: 1
-      self-errors-replication-factor: 1
 
 pgu.uddi.url: http://pgu-dev-fednlb.test.gosuslugi.ru/juddiv3/services/inquiry?wsdl
 

@@ -9,10 +9,12 @@ import ru.atc.idecs.integration.ws.esep.internal.InternalESEPIntegrationService;
 import ru.atc.idecs.integration.ws.esep.internal.SaveESEPSigningFileRequest;
 import ru.atc.idecs.integration.ws.esep.internal.SaveESEPSigningFileResponse;
 import ru.gosuslugi.pgu.common.core.exception.ExternalServiceException;
+import ru.gosuslugi.pgu.common.core.json.JsonProcessingUtil;
 import ru.gosuslugi.pgu.common.logging.service.SpanService;
 import ru.gosuslugi.pgu.dto.esep.*;
 import ru.gosuslugi.pgu.voskhod.adapter.mapper.EsepMapper;
 import ru.gosuslugi.pgu.voskhod.adapter.service.esep.EsepServiceHelper;
+import ru.gosuslugi.pgu.sp.adapter.SpAdapterClient;
 import ru.nvg.idecs.common.util.ws.ResponseCode;
 import ru.nvg.idecs.storageservice.ws.common.data.DataService;
 import ru.nvg.idecs.storageservice.ws.common.data.OrderAttachmentsRequest;
@@ -115,11 +117,13 @@ public class SignService {
         OrderAttachmentsRequest attachmentsRequest = new OrderAttachmentsRequest();
         attachmentsRequest.setOrderId(attachmentOrderId);
         attachmentsRequest.setAuthToken(AUTH_TOKEN);
+        log.info("ESEP external request = {}", JsonProcessingUtil.toJson(attachmentsRequest));
         final SendAttachmentsToESEPResponse response = spanService.runExternalService(
                 "dataService.sendAttachmentsToESEP",
                 "dataService.sendAttachmentsToESEP",
                 () -> dataService.sendAttachmentsToESEP(attachmentsRequest),
                 Map.of("attachmentOrderId", String.valueOf(attachmentOrderId)));
+        log.info("ESEP external response = {}",JsonProcessingUtil.toJson(response));
         handlePossibleServiceError("Error while transferring attachments to ESEP (orderId = " + attachmentOrderId +")", response.getError());
 
         return response;
@@ -137,12 +141,13 @@ public class SignService {
         }
 
         request.setOperationId(signResponse.getOperationID());
-
+        log.info("ESEP external request = {}", JsonProcessingUtil.toJson(request));
         final SaveESEPSigningFileResponse response = spanService.runExternalService(
                 "internalESEPIntegrationService.saveESEPSigningFile",
                 "internalESEPIntegrationService.saveESEPSigningFile",
                 () -> internalESEPIntegrationService.saveESEPSigningFile(request),
                 Map.of("orderId", String.valueOf(orderId)));
+        log.info("ESEP external response = {}", JsonProcessingUtil.toJson(response));
         if (response != null && response.getError() != null && response.getError().getCode() != ResponseCode.OK_RESULT.getCode()) {
             throw new ExternalServiceException("Can't save ESEP file info in LK (code: " + response.getError().getCode() + ", message: " +
                 response.getError().getMessage() + ")");

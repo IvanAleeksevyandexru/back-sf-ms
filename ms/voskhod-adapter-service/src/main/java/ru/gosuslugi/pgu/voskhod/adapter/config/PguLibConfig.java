@@ -72,7 +72,7 @@ public class PguLibConfig {
     @DependsOn("appContextUtil")
     public JaxWsPortProxyFactoryBean uddiService(PguProperties properties) throws MalformedURLException {
         JaxWsPortProxyFactoryBean proxyFactoryBean = new JaxWsPortProxyFactoryBean();
-        proxyFactoryBean.setServiceInterface(org.uddi.v3_service.UDDIInquiryPortType.class);
+        proxyFactoryBean.setServiceInterface(UDDIInquiryPortType.class);
         proxyFactoryBean.setServiceName("UDDIInquiryService");
         proxyFactoryBean.setLookupServiceOnStartup(false);
 
@@ -95,7 +95,7 @@ public class PguLibConfig {
     public ConfigService configService(JaxWsClientFactory factory) throws Exception {
         WsClientFactoryBean factoryBean = new WsClientFactoryBean();
         factoryBean.setUddiKey("uddi:gosuslugi.ru:services:config/configservice");
-        factoryBean.setTargetClass(ru.atc.idecs.config.ws.ConfigService.class);
+        factoryBean.setTargetClass(ConfigService.class);
         factoryBean.setJaxWsClientFactory(factory);
         factoryBean.setPortName("ConfigServiceSOAP");
         factoryBean.setWsdlDocumentUrl("classpath:META-INF/wsdl/ConfigService.wsdl");
@@ -107,7 +107,7 @@ public class PguLibConfig {
     public DataService dataService(JaxWsClientFactory factory) throws Exception {
         WsClientFactoryBean factoryBean = new WsClientFactoryBean();
         factoryBean.setUddiKey("uddi:gosuslugi.ru:services:storage/dataservice");
-        factoryBean.setTargetClass(ru.nvg.idecs.storageservice.ws.common.data.DataService.class);
+        factoryBean.setTargetClass(DataService.class);
         factoryBean.setJaxWsClientFactory(factory);
         factoryBean.setPortName("DataServiceSOAP");
         factoryBean.setWsdlDocumentUrl("classpath:META-INF/wsdl/common/DataService.wsdl");
@@ -119,7 +119,7 @@ public class PguLibConfig {
     public InternalESEPIntegrationService internalESEPIntegrationService(JaxWsClientFactory factory) throws Exception {
         WsClientFactoryBean factoryBean = new WsClientFactoryBean();
         factoryBean.setUddiKey("uddi:gosuslugi.ru:services:esep/internal/esepservice");
-        factoryBean.setTargetClass(ru.atc.idecs.integration.ws.esep.internal.InternalESEPIntegrationService.class);
+        factoryBean.setTargetClass(InternalESEPIntegrationService.class);
         factoryBean.setJaxWsClientFactory(factory);
         factoryBean.setPortName("InternalESEPIntegrationServiceSOAP");
         factoryBean.setWsdlDocumentUrl("classpath:META-INF/wsdl/esep/InternalESEPIntegrationService.wsdl");

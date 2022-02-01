@@ -1,5 +1,6 @@
 package ru.gosuslugi.pgu.voskhod.adapter.service.esep.impl;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfstring;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -25,7 +26,9 @@ import ru.atc.carcass.common.exception.FaultException;
 import ru.atc.idecs.config.util.ConfigUtil;
 import ru.atc.idecs.config.ws.ConfigService;
 import ru.gosuslugi.pgu.common.core.exception.ExternalServiceException;
+import ru.gosuslugi.pgu.common.core.json.JsonProcessingUtil;
 import ru.gosuslugi.pgu.common.logging.service.SpanService;
+import ru.gosuslugi.pgu.fs.common.service.JsonProcessingService;
 import ru.gosuslugi.pgu.voskhod.adapter.service.esep.EsepServiceHelper;
 import ru.gosuslugi.pgu.voskhod.adapter.service.esep.impl.model.IEsepServiceMethod;
 import ru.nvg.idecs.storageservice.ws.types.EsepFile;
@@ -99,13 +102,14 @@ public class EsepServiceHelperImpl implements EsepServiceHelper {
         for (EsepFile esepFile : fileAccessCodes) {
             signRequest.getFileAccessCodes().getString().add(esepFile.getFileAccessCode());
         }
-
+        log.info("ESEP External Request : {}", JsonProcessingUtil.toJson(signRequest));
         final IEsepService esepService = createIEsepService(IEsepServiceMethod.createUIToSignEx);
         final CreateUIToSingResponse signResponse = spanService.runExternalService(
                 "esepService.createUIToSingEx",
                 "esepService.createUIToSingEx",
                 () -> esepService.createUIToSingEx(signRequest),
                 Map.of("returnUrl", returnUrl));
+        log.info("ESEP External Response : {}",JsonProcessingUtil.toJson(signResponse));
         final RequestResult requestResult = signResponse.getRequestResult();
         if (requestResult == null || requestResult.isWasSuccessful() == null || !requestResult.isWasSuccessful()) {
             StringBuilder messageBuilder = new StringBuilder("Can't initialise ESEP sign process");
@@ -135,14 +139,14 @@ public class EsepServiceHelperImpl implements EsepServiceHelper {
         request.setCredentials(credentials);
         request.setFileAccessCodes(new ArrayOfstring());
         request.getFileAccessCodes().getString().addAll(fileAccessCodes);
-
         final IEsepService esepService = createIEsepService(IEsepServiceMethod.getFileCertificatesUserInfo);
+        log.info("ESEP External Request : {}",JsonProcessingUtil.toJson(request));
         final GetFileCertificatesUserInfoResponse response = spanService.runExternalService(
                 "esepService.createUIToSingEx",
                 "esepService.createUIToSingEx",
                 () -> esepService.getFileCertificatesUserInfo(request),
                 Map.of());
-
+        log.info("ESEP External Response : {}",JsonProcessingUtil.toJson(response));
         if (!response.getRequestResult().isWasSuccessful()) {
             throw new ExternalServiceException(String.format("Error code: %s, message: %s",
                 response.getRequestResult().getErrorCode(), response.getRequestResult().getErrorMessage()));

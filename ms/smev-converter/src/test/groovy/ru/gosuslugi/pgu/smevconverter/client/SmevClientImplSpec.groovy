@@ -9,7 +9,6 @@ import org.springframework.web.client.RestTemplate
 import ru.gosuslugi.pgu.common.core.exception.ExternalServiceException
 import ru.gosuslugi.pgu.smevconverter.config.SmevClientProperties
 import ru.gosuslugi.pgu.smevconverter.model.SmevServiceResponseDto
-import spock.lang.Ignore
 import spock.lang.Shared
 import spock.lang.Specification
 
@@ -17,7 +16,6 @@ import static org.springframework.test.web.client.match.MockRestRequestMatchers.
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withStatus
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess
 
-@Ignore
 class SmevClientImplSpec extends Specification {
 
     @Shared
@@ -41,7 +39,7 @@ class SmevClientImplSpec extends Specification {
         def xmlRequest = 'xml-request'
         def expectedDto = new SmevServiceResponseDto(id: 'a31e9628-2bb8-4086-9387-c8d54e726ffd', ttl: 10, status: 'DONE', data: 'output xml data')
         mockServer.expect(ExpectedCount.once(),
-                requestTo(new URI(properties.url + '/barbarbok/internal/api/barbarbok/v1/get')))
+                requestTo(new URI(properties.url + '/barbarbok/v1/get')))
                 .andExpect(method(HttpMethod.POST))
                 .andExpect(content().json('{"data": "' + xmlRequest + '", "ttl": ' + properties.ttl + ', "smevVersion": "' + properties.smevVersion + '", "timeout": ' + properties.timeout + '}'))
                 .andRespond(
@@ -58,7 +56,7 @@ class SmevClientImplSpec extends Specification {
 
     def exceptions() {
         given:
-        mockServer.expect(requestTo(new URI(properties.url + '/barbarbok/internal/api/barbarbok/v1/get')))
+        mockServer.expect(requestTo(new URI(properties.url + '/barbarbok/v1/get')))
                 .andExpect(method(HttpMethod.POST))
                 .andRespond(withStatus(status))
         when:

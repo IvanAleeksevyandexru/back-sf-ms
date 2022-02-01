@@ -5,6 +5,7 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
+import ru.gosuslugi.pgu.common.core.util.CloseableList;
 
 import java.io.File;
 import java.io.IOException;
@@ -67,16 +68,16 @@ public final class Merger {
      * @param pdfFile файл для записи результата
      */
     public void build(File pdfFile, Comparator<File> comparator) throws IOException {
-        try (PDDocument document = new PDDocument()) {
+        try (CloseableList closeableList = new CloseableList()) {
+            PDDocument document = closeableList.add(new PDDocument());
             for(File resource : getSortedFiles(ResourceType.IMAGE, comparator))
                 addImagePage(resource, document);
 
             PDFMergerUtility mergerUtility = new PDFMergerUtility();
-            for(File resource : getSortedFiles(ResourceType.PDF, comparator))
-                try (PDDocument source = PDDocument.load(resource)) {
-                    mergerUtility.appendDocument(document, source);
-                }
-
+            for(File resource : getSortedFiles(ResourceType.PDF, comparator)) {
+                PDDocument source = closeableList.add(PDDocument.load(resource));
+                mergerUtility.appendDocument(document, source);
+            }
             document.save(pdfFile);
         }
     }

@@ -14,29 +14,6 @@ spring:
     bootstrap-servers: localhost:19092
     auto-create-topics: true
 
-    suggestions:
-      # Включает или выключает отправку событий
-      enabled: false
-      sender-threads: 5
-      target-topic:
-        topic-name: suggestions-topic
-        topic-partitions: 1
-        topic-replication-factor: 1
-
-    form-service:
-      enabled: true
-      topic-name: sp-adapter
-      sp-errors-topic-name: sp-errors
-      self-errors-topic-name: self-errors
-      sp-adapter-fs-consumer-group-id : spAdapterFsConsumerGroupId
-      sp-response-topic-name: sp-result
-      sp-errors-partitions: 1
-      self-errors-partitions: 1
-      sp-response-partitions: 1
-      sp-errors-replication-factor: 1
-      self-errors-replication-factor: 1
-      sp-response-replication-factor: 1
-
 pgu.uddi.url: http://pgu-dev-fednlb.test.gosuslugi.ru/juddiv3/services/inquiry?wsdl
 
 pdf-generator:

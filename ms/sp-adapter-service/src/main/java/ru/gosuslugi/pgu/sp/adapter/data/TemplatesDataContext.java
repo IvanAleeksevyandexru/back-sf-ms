@@ -93,7 +93,7 @@ public class TemplatesDataContext {
     }
 
     /** Возвращает название типа организации
-     * @see ru.atc.carcass.security.rest.model.orgs.OrgType
+     * @see OrgType
      * @return тип регистрации огранизации (АО, ИП, ОО...)
      */
     public OrgType getOrgType() {

@@ -23,6 +23,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.LinkedHashSet;
 
 import static org.springframework.util.CollectionUtils.isEmpty;
 import static ru.gosuslugi.pgu.generator.util.MapUtils.linkedMapOf;
@@ -61,11 +62,11 @@ public class DescriptorUtils {
 
             if (isFirstScreen) {
                 parentScreenRules.add(ScreenRule.builder()
-                        .conditions(Set.of(RuleCondition.builder()
+                        .conditions(new LinkedHashSet<>(Set.of(RuleCondition.builder()
                                 .field(getMenuComponentId(reason.getScreenNumber()))
                                 .visited(true)
                                 .value(reason.getCode())
-                                .build()))
+                                .build())))
                         .nextDisplay(newScreenId)
                         .build());
             } else {

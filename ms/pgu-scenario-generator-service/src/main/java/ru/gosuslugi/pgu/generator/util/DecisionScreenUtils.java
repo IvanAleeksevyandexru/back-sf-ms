@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
+import java.util.LinkedHashSet;
 import java.util.function.Predicate;
 import java.util.function.ToIntFunction;
 import java.util.stream.Collectors;
@@ -107,11 +108,11 @@ public class DecisionScreenUtils {
         String parentScreenId = getMenuScreenId(reason.getScreenNumber());
         descriptor.getScreenRules().get(parentScreenId).add(
                 ScreenRule.builder()
-                        .conditions(Set.of(RuleCondition.builder()
+                        .conditions(new LinkedHashSet<>(Set.of(RuleCondition.builder()
                                 .field(getMenuComponentId(reason.getScreenNumber()))
                                 .visited(true)
                                 .value(reason.getCode())
-                                .build()))
+                                .build())))
                         .nextDisplay(decisionScreenId)
                         .build());
         descriptor.getScreenRules().put(decisionScreenId, descriptor.getScreenRules().get(DECISION_SCREEN_RULE_TEMPLATE_ID));

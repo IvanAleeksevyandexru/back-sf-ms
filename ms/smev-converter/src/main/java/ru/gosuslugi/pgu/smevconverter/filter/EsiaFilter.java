@@ -2,6 +2,7 @@ package ru.gosuslugi.pgu.smevconverter.filter;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -11,6 +12,7 @@ import ru.gosuslugi.pgu.common.core.exception.PguException;
 import ru.gosuslugi.pgu.common.core.exception.dto.error.ErrorMessageWithoutModal;
 import ru.gosuslugi.pgu.common.core.json.JsonProcessingUtil;
 import ru.gosuslugi.pgu.common.logging.service.SpanService;
+import ru.gosuslugi.pgu.smevconverter.model.UserSession;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -23,6 +25,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.springframework.http.HttpStatus.UNAUTHORIZED;
+import static ru.gosuslugi.pgu.common.logging.service.SpanService.USER_ID_TAG;
 
 
 /**
@@ -34,16 +37,31 @@ import static org.springframework.http.HttpStatus.UNAUTHORIZED;
 public class EsiaFilter extends OncePerRequestFilter {
 
     private static final String ACC_T_COOKIE = "acc_t";
+    @Value("${esia.auth.exclude-urls:#{null}}")
+    private List<String> excludeUrls;
+    private final UserSession userSession;
     private final SpanService spanService;
+
+    @Override
+    protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
+        Optional<String> excludeUrl = excludeUrls.stream()
+                .filter(url -> request.getServletPath().startsWith(url))
+                .findFirst();
+        if (excludeUrl.isPresent()) {
+            spanService.addTagToSpan(USER_ID_TAG, "Unauthorized");
+            return true;
+        }
+        return false;
+    }
 
     @Override
     protected void doFilterInternal(@NonNull HttpServletRequest request,
                                     @NonNull HttpServletResponse response,
                                     @NonNull FilterChain filterChain) throws ServletException, IOException {
-        if (!tokenIsValid(request)) {
-            setCookieErrorResponse(response);
-        } else {
+        if (tokenIsValid(request)) {
             filterChain.doFilter(request, response);
+        } else {
+            setCookieErrorResponse(response);
         }
     }
 
@@ -62,13 +80,13 @@ public class EsiaFilter extends OncePerRequestFilter {
         }
 
         try {
-            var token = cookieOptional.get().getValue();
-            var tokenInfo = OAuthTokenUtil.getTokenInfo(token);
+            var tokenInfo = OAuthTokenUtil.getTokenInfo(cookieOptional.get().getValue());
             // не просрочен ли токен
             if (Instant.now().isAfter(Instant.ofEpochSecond(tokenInfo.getExp()))) {
                 log.error(String.format(esiaErrorMessage, "date expired"));
                 return false;
             }
+            userSession.setUserId(Long.parseLong(tokenInfo.getUserId()));
         } catch (EsiaOAuthTokenSessionException | ArrayIndexOutOfBoundsException e) {
             log.error(String.format(esiaErrorMessage, "has errors"));
             return false;

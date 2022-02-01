@@ -1,0 +1,1 @@
+package ru.gosuslugi.pgu.sp.adapter.client;

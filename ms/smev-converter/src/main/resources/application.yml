@@ -3,6 +3,10 @@ server:
   servlet:
     context-path: /api
 
+esia:
+  auth:
+    exclude-urls: /smev-converter/actuator,/smev-converter/swagger-ui,/smev-converter/swagger-ui.html,/smev-converter/v3/api-docs,/smev-converter/webjar,/smev-converter/swagger-resources
+
 spring:
   application:
     name: smev-converter
@@ -20,6 +24,12 @@ draft-converter:
     enabled: true
     url: http://local.test.gosuslugi.ru:8097/api
 #    url: http://pgu-uat-fednlb.test.gosuslugi.ru/draft-converter
+
+ratelimit:
+  enabled: true
+  limit: 5
+  ttl: 600
+  pgu-url: http://pgu-uat-fednlb.test.gosuslugi.ru/ratelimit-api/internal/api/ratelimit/
 
 springdoc:
   packagesToScan: ru.gosuslugi.pgu.smevconverter

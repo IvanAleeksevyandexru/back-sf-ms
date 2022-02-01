@@ -56,7 +56,7 @@ public class PguSpClientConfig {
     @Bean
     public JaxWsPortProxyFactoryBean jaxWsPortProxyFactoryBean(PguClientProperties properties) throws MalformedURLException {
         JaxWsPortProxyFactoryBean proxyFactoryBean = new JaxWsPortProxyFactoryBean();
-        proxyFactoryBean.setServiceInterface(org.uddi.v3_service.UDDIInquiryPortType.class);
+        proxyFactoryBean.setServiceInterface(UDDIInquiryPortType.class);
         proxyFactoryBean.setServiceName("UDDIInquiryService");
         proxyFactoryBean.setLookupServiceOnStartup(false);
 
