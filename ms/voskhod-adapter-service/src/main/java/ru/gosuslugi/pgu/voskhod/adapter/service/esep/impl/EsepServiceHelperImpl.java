@@ -1,6 +1,5 @@
 package ru.gosuslugi.pgu.voskhod.adapter.service.esep.impl;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfstring;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -28,7 +27,6 @@ import ru.atc.idecs.config.ws.ConfigService;
 import ru.gosuslugi.pgu.common.core.exception.ExternalServiceException;
 import ru.gosuslugi.pgu.common.core.json.JsonProcessingUtil;
 import ru.gosuslugi.pgu.common.logging.service.SpanService;
-import ru.gosuslugi.pgu.fs.common.service.JsonProcessingService;
 import ru.gosuslugi.pgu.voskhod.adapter.service.esep.EsepServiceHelper;
 import ru.gosuslugi.pgu.voskhod.adapter.service.esep.impl.model.IEsepServiceMethod;
 import ru.nvg.idecs.storageservice.ws.types.EsepFile;

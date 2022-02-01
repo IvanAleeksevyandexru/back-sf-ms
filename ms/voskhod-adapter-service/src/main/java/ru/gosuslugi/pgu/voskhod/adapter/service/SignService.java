@@ -14,7 +14,6 @@ import ru.gosuslugi.pgu.common.logging.service.SpanService;
 import ru.gosuslugi.pgu.dto.esep.*;
 import ru.gosuslugi.pgu.voskhod.adapter.mapper.EsepMapper;
 import ru.gosuslugi.pgu.voskhod.adapter.service.esep.EsepServiceHelper;
-import ru.gosuslugi.pgu.sp.adapter.SpAdapterClient;
 import ru.nvg.idecs.common.util.ws.ResponseCode;
 import ru.nvg.idecs.storageservice.ws.common.data.DataService;
 import ru.nvg.idecs.storageservice.ws.common.data.OrderAttachmentsRequest;
