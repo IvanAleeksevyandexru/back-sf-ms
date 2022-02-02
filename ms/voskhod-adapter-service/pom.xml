@@ -190,6 +190,12 @@
             <version>${spock.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>ru.gosuslugi.pgu</groupId>
+            <artifactId>pgu-sp-adapter-client</artifactId>
+            <version>${epgu2.sf.lib.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
