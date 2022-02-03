@@ -1,7 +1,5 @@
 package ru.gosuslugi.pgu.generator.service.fines;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.gosuslugi.pgu.common.logging.annotation.Log;
@@ -15,7 +13,6 @@ import ru.gosuslugi.pgu.generator.service.FileStorageService;
 import ru.gosuslugi.pgu.generator.service.XmlUnmarshallService;
 import ru.gosuslugi.pgu.sd.storage.ServiceDescriptorClient;
 
-import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -34,11 +31,10 @@ public class AppealFinesService {
     private final XmlUnmarshallService xmlUnmarshallService;
     private final ServiceDescriptorClient serviceDescriptorClient;
     private final FileStorageService fileStorageService;
-    private final IpshRestClient IPSHRestClient;
-    private final ObjectMapper objectMapper;
+    private final IpshRestClient ipshRestClient;
 
     public ServiceDescriptor generateMainService(AppealFinesRequest request) {
-        GetAppealScenarioResponse xmlResponse = IPSHRestClient.getFinesAppealXml(request);
+        GetAppealScenarioResponse xmlResponse = ipshRestClient.getFinesAppealXml(request);
 
         ServiceDescriptor initialDescriptor = loadFromStorage(APPEAL_FINES_SERVICE_ID);
         saveParametersToDescriptor(initialDescriptor, request, xmlResponse);
@@ -68,18 +64,11 @@ public class AppealFinesService {
     }
 
     private ServiceDescriptor loadFromStorage(String serviceId) {
-        try {
-            ServiceDescriptor serviceDescriptor = objectMapper.readValue(
-                    serviceDescriptorClient.getServiceDescriptor(serviceId),
-                    ServiceDescriptor.class
-            );
-            if (serviceDescriptor == null) {
-                throw new DescriptorGenerationException("Service Descriptor not found for service " + serviceId);
-            }
-            return serviceDescriptor;
-        } catch (JsonProcessingException e) {
-            throw new DescriptorGenerationException("Error on parsing Service Descriptor for service " + serviceId, e);
+        ServiceDescriptor serviceDescriptor = serviceDescriptorClient.getServiceDescriptor(serviceId);
+        if (serviceDescriptor == null) {
+            throw new DescriptorGenerationException("Service Descriptor not found for service " + serviceId);
         }
+        return serviceDescriptor;
     }
 
     private String parseOrderId(String serviceId) {

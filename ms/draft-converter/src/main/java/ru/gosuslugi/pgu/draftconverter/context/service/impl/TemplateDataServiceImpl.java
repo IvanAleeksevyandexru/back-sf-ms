@@ -13,7 +13,6 @@ import java.util.Map;
 import java.util.Objects;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import lombok.val;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -56,7 +55,7 @@ public class TemplateDataServiceImpl implements TemplateDataService {
     }
 
     private void populateFromServiceDescriptor(final TemplateDataContext dataContext,
-            final String serviceId) {
+                                               final String serviceId) {
         if (!sdIntegrationEnabled) {
             return;
         }
@@ -76,8 +75,8 @@ public class TemplateDataServiceImpl implements TemplateDataService {
     }
 
     private SpDescriptionSection getServiceDescriptor(final String serviceId) {
-        val descriptorString = serviceDescriptorClient.getServiceDescriptor(serviceId);
+        var descriptor = serviceDescriptorClient.getServiceDescriptor(serviceId);
         log.info("Получено описание услуги с id {}", serviceId);
-        return JsonProcessingUtil.fromJson(descriptorString, SpDescriptionSection.class);
+        return JsonProcessingUtil.getObjectMapper().convertValue(descriptor, SpDescriptionSection.class);
     }
 }

@@ -135,8 +135,8 @@ public abstract class XMLServiceBatchTest {
                 File jpeg = getjpegFile(pr, page, jpegFileName);
 
                 assertTrue(
-                    "Checking expected " + expectedJpeg.getAbsolutePath() + " vs actual " + jpeg.getAbsolutePath(),
-                    FileUtils.contentEquals(expectedJpeg, jpeg)
+                        "Checking expected " + expectedJpeg.getAbsolutePath() + " vs actual " + jpeg.getAbsolutePath(),
+                        FileUtils.contentEquals(expectedJpeg, jpeg)
                 );
             }
         }
@@ -144,9 +144,9 @@ public abstract class XMLServiceBatchTest {
 
     private RenderService getRenderService() {
         return new RenderServiceImpl(
-            new VelocityConfig().velocityEngine(properties),
-            new TemplatePackageLocalServiceImpl(),
-            new VelocityConfig().prototypeTemplateContext()
+                new VelocityConfig().velocityEngine(properties),
+                new TemplatePackageLocalServiceImpl(),
+                new VelocityConfig().prototypeTemplateContext()
         );
     }
 
@@ -174,8 +174,8 @@ public abstract class XMLServiceBatchTest {
     private DraftHolderDto getDraftFromFile(String fileName) throws IOException {
         try (InputStream is = getClass().getClassLoader().getResourceAsStream(fileName);) {
             return OBJECT_MAPPER.readValue(
-                is,
-                DraftHolderDto.class
+                    is,
+                    DraftHolderDto.class
             );
         }
     }
@@ -184,8 +184,8 @@ public abstract class XMLServiceBatchTest {
         return new ServiceDescriptorClient() {
 
             @Override
-            public String getServiceDescriptor(String serviceId) {
-                return scenarioJson;
+            public ServiceDescriptor getServiceDescriptor(String serviceId) {
+                return ServiceDescriptor.builder().service(scenarioJson).build();
             }
 
             @Override
