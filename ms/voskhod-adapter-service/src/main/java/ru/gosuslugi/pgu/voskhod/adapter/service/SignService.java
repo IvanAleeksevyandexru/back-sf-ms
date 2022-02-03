@@ -12,6 +12,7 @@ import ru.gosuslugi.pgu.common.core.exception.ExternalServiceException;
 import ru.gosuslugi.pgu.common.core.json.JsonProcessingUtil;
 import ru.gosuslugi.pgu.common.logging.service.SpanService;
 import ru.gosuslugi.pgu.dto.esep.*;
+import ru.gosuslugi.pgu.sp.adapter.SpAdapterClient;
 import ru.gosuslugi.pgu.voskhod.adapter.mapper.EsepMapper;
 import ru.gosuslugi.pgu.voskhod.adapter.service.esep.EsepServiceHelper;
 import ru.nvg.idecs.common.util.ws.ResponseCode;

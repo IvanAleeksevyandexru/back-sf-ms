@@ -1,6 +1,5 @@
 package ru.gosuslugi.pgu.voskhod.adapter.serivce
 
-import brave.Tracer
 import org.datacontract.schemas._2004._07.granit_esep_ppnp_webservices_contracts.ArrayOfCertificateUserInfo
 import org.datacontract.schemas._2004._07.granit_esep_ppnp_webservices_contracts.CertificateUserInfo
 import org.datacontract.schemas._2004._07.granit_esep_ppnp_webservices_contracts.CreateUIToSingResponse
@@ -9,15 +8,14 @@ import ru.atc.idecs.integration.ws.esep.internal.InternalESEPIntegrationService
 import ru.atc.idecs.integration.ws.esep.internal.SaveESEPSigningFileRequest
 import ru.atc.idecs.integration.ws.esep.internal.SaveESEPSigningFileResponse
 import ru.gosuslugi.pgu.common.core.exception.ExternalServiceException
-import ru.gosuslugi.pgu.common.logging.rest.interceptor.ExternalServiceInterceptor
 import ru.gosuslugi.pgu.common.logging.service.SpanService
 import ru.gosuslugi.pgu.dto.SmevRequestDto
 import ru.gosuslugi.pgu.dto.esep.PrepareSignRequest
 import ru.gosuslugi.pgu.dto.esep.SignedFileInfo
+import ru.gosuslugi.pgu.sp.adapter.SpAdapterClient
 import ru.gosuslugi.pgu.voskhod.adapter.mapper.EsepMapper
 import ru.gosuslugi.pgu.voskhod.adapter.mapper.EsepMapperImpl
 import ru.gosuslugi.pgu.voskhod.adapter.service.SignService
-import ru.gosuslugi.pgu.sp.adapter.SpAdapterClient;
 import ru.gosuslugi.pgu.voskhod.adapter.service.esep.EsepServiceHelper
 import ru.nvg.idecs.storageservice.ws.common.data.DataService
 import ru.nvg.idecs.storageservice.ws.common.data.OrderAttachmentsRequest
@@ -69,7 +67,7 @@ class SignServiceSpec extends Specification {
         }
 
         signService = new SignService(
-                Mock(SpAdapterClient) { it.createXmlAndPdf(ORDER_ID, USER_ID) >> { new SmevRequestDto(FILE_ACCESS_CODE) } },
+                Mock(SpAdapterClient) { it.createXmlAndPdf(ORDER_ID, USER_ID, _ as Long, _ as String) >> { new SmevRequestDto(FILE_ACCESS_CODE) } },
                 dataService,
                 esepServiceHelper,
                 internalESEPIntegrationService,
