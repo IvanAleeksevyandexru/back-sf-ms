@@ -21,7 +21,7 @@ public class SpConfigServiceImpl implements SpConfigService {
             JSONObject jsonObject = new JSONObject(service.get(serviceId));
             return jsonObject.getString("spConfig");
         } catch(JSONException e){
-            log.info("Cannot parse spConfig for serviceId = " + serviceId, e);
+            log.info("Cannot parse spConfig for serviceId = " + serviceId + ": " + e.getMessage(), e);
             return null;
         }
     }
