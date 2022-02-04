@@ -1,4 +1,4 @@
-package ru.gosuslugi.pgu.sp.adapter.properties;
+package ru.gosuslugi.pgu.sp.adapter.config.props;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

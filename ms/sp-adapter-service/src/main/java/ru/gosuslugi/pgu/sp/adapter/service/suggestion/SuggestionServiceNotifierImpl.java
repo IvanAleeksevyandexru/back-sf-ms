@@ -8,7 +8,7 @@ import org.springframework.kafka.support.SendResult;
 import org.springframework.stereotype.Service;
 import org.springframework.util.concurrent.ListenableFuture;
 import ru.gosuslugi.pgu.dto.suggest.SuggestOrderDto;
-import ru.gosuslugi.pgu.sp.adapter.properties.SpKafkaProducersProperties;
+import ru.gosuslugi.pgu.sp.adapter.config.props.SpKafkaProducersProperties;
 
 import static java.lang.String.format;
 import static ru.gosuslugi.pgu.common.core.logger.LoggerUtil.debug;
