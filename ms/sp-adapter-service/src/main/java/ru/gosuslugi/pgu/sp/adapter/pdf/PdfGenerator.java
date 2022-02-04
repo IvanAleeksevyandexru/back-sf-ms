@@ -2,12 +2,18 @@ package ru.gosuslugi.pgu.sp.adapter.pdf;
 
 import com.thoughtworks.xstream.XStream;
 import lombok.extern.slf4j.Slf4j;
+import lombok.val;
 import org.apache.avalon.framework.configuration.ConfigurationException;
 import org.apache.avalon.framework.configuration.DefaultConfiguration;
 import org.apache.avalon.framework.configuration.DefaultConfigurationBuilder;
 import org.apache.avalon.framework.configuration.MutableConfiguration;
 import org.apache.commons.io.IOUtils;
-import org.apache.fop.apps.*;
+import org.apache.fop.apps.FOPException;
+import org.apache.fop.apps.FOUserAgent;
+import org.apache.fop.apps.Fop;
+import org.apache.fop.apps.FopFactory;
+import org.apache.fop.apps.FopFactoryBuilder;
+import org.apache.fop.apps.MimeConstants;
 import org.apache.tomcat.util.codec.binary.Base64;
 import org.springframework.stereotype.Service;
 import org.xml.sax.SAXException;
@@ -24,11 +30,22 @@ import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.sax.SAXResult;
 import javax.xml.transform.stream.StreamSource;
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 import java.net.URISyntaxException;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static java.util.stream.Collectors.toCollection;
@@ -64,6 +81,8 @@ public class PdfGenerator {
 
     private final static String MVD_EMBLDEM = "/pdf/imgs/mvd_emblem.png";
 
+    private final static String CFG = "/pdf/fonts/fop.cfg.xml";
+
     private final String mksLogoImageData;
     private final String svgLogo;
     private final String pngGosuslugiLogo;
@@ -95,11 +114,11 @@ public class PdfGenerator {
         }
         try {
             DefaultConfigurationBuilder confBuilder = new DefaultConfigurationBuilder();
-            DefaultConfiguration cfg = (DefaultConfiguration) confBuilder.build(PdfGenerator.class.getResource("/pdf/fonts/fop.cfg.xml").toExternalForm());
-            String classPath = PdfGenerator.class.getResource("").toExternalForm();
-            String packageName = PdfGenerator.class.getPackage().getName();
-            int packageNameLength = packageName.length() + (!classPath.endsWith("/") && !classPath.endsWith("\\") ? 0 : 1);
-            String baseUrl = classPath.substring(0, classPath.length() - packageNameLength);
+
+            val cfgResource = Objects.requireNonNull(PdfGenerator.class.getResource(CFG));
+            val cfgPath = cfgResource.toExternalForm();
+            DefaultConfiguration cfg = (DefaultConfiguration) confBuilder.build(cfgPath);
+            String baseUrl = cfgPath.substring(0, cfgPath.length() - CFG.length());
             if (baseUrl.endsWith("/") || baseUrl.endsWith("\\")) {
                 baseUrl = baseUrl.substring(0, baseUrl.length() - 1);
             }
@@ -111,7 +130,7 @@ public class PdfGenerator {
                 String correctUrl = baseUrl + delimeter + embedUrl;
                 font.setAttribute(FONT_EMBED_URL_ATTR, correctUrl);
             }
-            FopFactoryBuilder fopFactoryBuilder = new FopFactoryBuilder(PdfGenerator.class.getResource("/pdf/fonts/fop.cfg.xml").toURI()).setConfiguration(cfg);
+            FopFactoryBuilder fopFactoryBuilder = new FopFactoryBuilder(cfgResource.toURI()).setConfiguration(cfg);
             fopFactory = fopFactoryBuilder.build();
         } catch (IOException | URISyntaxException e) {
             log.error("Cannot retrieve default configuration file", e);
