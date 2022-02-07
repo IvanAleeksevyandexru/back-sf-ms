@@ -1,30 +1,5 @@
 package ru.gosuslugi.pgu.xmlservice.context.service.impl;
 
-import static org.hamcrest.CoreMatchers.instanceOf;
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.greaterThanOrEqualTo;
-import static org.hamcrest.Matchers.nullValue;
-import static org.testng.AssertJUnit.assertEquals;
-import static org.testng.AssertJUnit.assertFalse;
-import static org.testng.AssertJUnit.assertNotNull;
-import static org.testng.AssertJUnit.assertNull;
-import static org.testng.AssertJUnit.assertTrue;
-import ru.gosuslugi.pgu.common.core.attachments.AttachmentService;
-import ru.gosuslugi.pgu.common.core.exception.EntityNotFoundException;
-import ru.gosuslugi.pgu.draft.DraftClient;
-import ru.gosuslugi.pgu.draft.model.DraftHolderDto;
-import ru.gosuslugi.pgu.dto.ScenarioDto;
-import ru.gosuslugi.pgu.dto.pdf.data.FileDescription;
-import ru.gosuslugi.pgu.sd.storage.ServiceDescriptorClient;
-import ru.gosuslugi.pgu.xmlservice.context.data.TemplateDataContext;
-import ru.gosuslugi.pgu.xmlservice.context.service.TemplateDataService;
-import ru.gosuslugi.pgu.xmlservice.data.GenerateXmlRequest;
-
-import java.io.IOException;
-import java.net.URL;
-import java.util.List;
-import java.util.Map;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.io.IOUtils;
 import org.hamcrest.Matcher;
@@ -34,8 +9,34 @@ import org.mockito.MockitoAnnotations;
 import org.mockito.Spy;
 import org.testng.AssertJUnit;
 import org.testng.SkipException;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import ru.gosuslugi.pgu.common.core.attachments.AttachmentService;
+import ru.gosuslugi.pgu.common.core.exception.EntityNotFoundException;
+import ru.gosuslugi.pgu.draft.DraftClient;
+import ru.gosuslugi.pgu.draft.model.DraftHolderDto;
+import ru.gosuslugi.pgu.dto.ScenarioDto;
+import ru.gosuslugi.pgu.dto.descriptor.ServiceDescriptor;
+import ru.gosuslugi.pgu.dto.pdf.data.FileDescription;
+import ru.gosuslugi.pgu.fs.common.service.JsonProcessingService;
+import ru.gosuslugi.pgu.fs.common.service.impl.JsonProcessingServiceImpl;
+import ru.gosuslugi.pgu.sd.storage.ServiceDescriptorClient;
+import ru.gosuslugi.pgu.xmlservice.context.data.TemplateDataContext;
+import ru.gosuslugi.pgu.xmlservice.context.service.TemplateDataService;
+import ru.gosuslugi.pgu.xmlservice.data.GenerateXmlRequest;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.List;
+import java.util.Map;
+
+import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.greaterThanOrEqualTo;
+import static org.hamcrest.Matchers.nullValue;
+import static org.testng.AssertJUnit.assertTrue;
 
 public class TemplateDataServiceImplTest {
     private static final String SOURCES_ROOT = "context/";
@@ -64,6 +65,7 @@ public class TemplateDataServiceImplTest {
     @Mock
     private AttachmentService attachmentService;
     private GenerateXmlRequest context;
+    private JsonProcessingService jsonProcessingService;
 
     private static <T> void assumeThat(T actual, Matcher<? super T> matcher) {
         if (!matcher.matches(actual)) {
@@ -83,6 +85,11 @@ public class TemplateDataServiceImplTest {
         }
     }
 
+    @BeforeClass
+    public void initClass() {
+        jsonProcessingService = new JsonProcessingServiceImpl(OBJECT_MAPPER);
+    }
+
     @BeforeMethod
     public void init() throws IOException {
         MockitoAnnotations.initMocks(this);
@@ -90,7 +97,7 @@ public class TemplateDataServiceImplTest {
         DraftHolderDto draftDtoStub = readAndDeserialize("draft.json", DraftHolderDto.class);
         Mockito.when(draftClient.getDraftById(ORDER_ID, USER_OID, ORG_ID))
                 .thenReturn(draftDtoStub);
-        String serviceDescriptionStub = read("service-description.json");
+        var serviceDescriptionStub = jsonProcessingService.fromJson(read("service-description.json"), ServiceDescriptor.class);
         Mockito.when(sdClient.getServiceDescriptor(SERVICE_ID)).thenReturn(serviceDescriptionStub);
 
         sut = new TemplateDataServiceImpl(sdClient, draftClient, attachmentService);
@@ -125,7 +132,7 @@ public class TemplateDataServiceImplTest {
     @Test
     public void shouldPopulateContextWhenServiceDescriptionParametersGiven() throws IOException {
         // given
-        String serviceDescriptionStub = read("service-description-params.json");
+        var serviceDescriptionStub = jsonProcessingService.fromJson(read("service-description-params.json"), ServiceDescriptor.class);
         Mockito.when(sdClient.getServiceDescriptor(SERVICE_ID)).thenReturn(serviceDescriptionStub);
 
         // when

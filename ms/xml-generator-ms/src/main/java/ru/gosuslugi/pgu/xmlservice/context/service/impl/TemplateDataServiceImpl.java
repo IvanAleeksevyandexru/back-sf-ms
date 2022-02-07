@@ -1,6 +1,13 @@
 package ru.gosuslugi.pgu.xmlservice.context.service.impl;
 
-import static java.util.Objects.isNull;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 import ru.gosuslugi.pgu.common.core.attachments.AttachmentService;
 import ru.gosuslugi.pgu.common.core.exception.EntityNotFoundException;
 import ru.gosuslugi.pgu.common.core.exception.JsonParsingException;
@@ -29,15 +36,8 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import lombok.val;
-import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
+
+import static java.util.Objects.isNull;
 
 /**
  * {@inheritDoc}
@@ -71,8 +71,8 @@ public class TemplateDataServiceImpl implements TemplateDataService {
     }
 
     public void populateFromDraft(final TemplateDataContext dataContext,
-            final GenerateXmlRequest request, final ScenarioDto draft,
-            final SpDescriptionSection serviceDescription) {
+                                  final GenerateXmlRequest request, final ScenarioDto draft,
+                                  final SpDescriptionSection serviceDescription) {
 
         dataContext.getValues().clear();
         dataContext.getValues().putAll(getApplicantAnswers(draft));
@@ -80,11 +80,11 @@ public class TemplateDataServiceImpl implements TemplateDataService {
 
         dataContext.getAdditionalValues().clear();
         dataContext.getAdditionalValues()
-                   .putAll(getAdditionalValues(draft, request.getUserId(), serviceDescription));
+                .putAll(getAdditionalValues(draft, request.getUserId(), serviceDescription));
     }
 
     private void populateFromServiceDescriptor(TemplateDataContext dataContext,
-            final SpDescriptionSection spDescriptionSection) {
+                                               final SpDescriptionSection spDescriptionSection) {
         if (Objects.nonNull(spDescriptionSection)
                 && Objects.nonNull(spDescriptionSection.getParameters())) {
             dataContext.getServiceParameters().putAll(spDescriptionSection.getParameters());
@@ -118,13 +118,13 @@ public class TemplateDataServiceImpl implements TemplateDataService {
                 getApplicantAnswersWithCurrentFromDraft(draft);
 
         return draftApplicantAnswers.entrySet()
-                                    .stream()
-                                    .filter(entry -> Optional.ofNullable(entry.getValue())
-                                                             .map(ApplicantAnswer::getValue)
-                                                             .isPresent())
-                                    .collect(Collectors.toMap(Entry::getKey,
-                                            entry -> toJavaBeanIfNeeded(entry.getKey(),
-                                                    entry.getValue().getValue())));
+                .stream()
+                .filter(entry -> Optional.ofNullable(entry.getValue())
+                        .map(ApplicantAnswer::getValue)
+                        .isPresent())
+                .collect(Collectors.toMap(Entry::getKey,
+                        entry -> toJavaBeanIfNeeded(entry.getKey(),
+                                entry.getValue().getValue())));
     }
 
     private Map<String, ApplicantAnswer> getApplicantAnswersWithCurrentFromDraft(
@@ -136,7 +136,7 @@ public class TemplateDataServiceImpl implements TemplateDataService {
     }
 
     private Map<String, Object> getAdditionalValues(ScenarioDto draft, Long oid,
-            SpDescriptionSection serviceDescription) {
+                                                    SpDescriptionSection serviceDescription) {
         Map<String, Object> additionalValues = new HashMap<>(draft.getAdditionalParameters());
         checkAndPopulateSpRequestKeys(additionalValues);
 
@@ -153,7 +153,7 @@ public class TemplateDataServiceImpl implements TemplateDataService {
         if (cycledAnswersPos.isComponentNameDefined()) {
             cycledComponentValue =
                     Optional.ofNullable(draft.getApplicantAnswers()
-                                             .get(cycledAnswersPos.getComponentName()))
+                                    .get(cycledAnswersPos.getComponentName()))
                             .map(ApplicantAnswer::getValue)
                             .orElse(null);
         }
@@ -171,8 +171,8 @@ public class TemplateDataServiceImpl implements TemplateDataService {
 
     private CycledComponentPosition computeCycledAnswerPosition(ApplicantDto currentParticipant) {
         final String cycledComponentName = Optional.ofNullable(currentParticipant)
-                                                   .map(ApplicantDto::getComponent)
-                                                   .orElse(null);
+                .map(ApplicantDto::getComponent)
+                .orElse(null);
 
         final Integer participantCycledIndex =
                 Optional.ofNullable(currentParticipant)
@@ -184,7 +184,7 @@ public class TemplateDataServiceImpl implements TemplateDataService {
     }
 
     private Map extractCycledParticipantAnswers(String cycledComponentValue,
-            CycledComponentPosition cycledAnswerPos) {
+                                                CycledComponentPosition cycledAnswerPos) {
         Map cycledApplicantAnswers = Collections.emptyMap();
         if (hasNoJsonSigns(cycledComponentValue)) {
             log.warn("Тип данных ответа созаявителя"
@@ -271,15 +271,15 @@ public class TemplateDataServiceImpl implements TemplateDataService {
      */
     private boolean isDefaultDigestValueEnabled(SpDescriptionSection spDescriptionSection) {
         return Optional.ofNullable(spDescriptionSection)
-                       .map(SpDescriptionSection::getSpConfig)
-                       .map(Descriptor::isDefaultDigestValueEnabled)
-                       .orElse(true);
+                .map(SpDescriptionSection::getSpConfig)
+                .map(Descriptor::isDefaultDigestValueEnabled)
+                .orElse(true);
     }
 
     private SpDescriptionSection getServiceDescriptor(String serviceId) {
-        val descriptorString = serviceDescriptorClient.getServiceDescriptor(serviceId);
-        log.info("Получено описание услуги с id {}: {}", serviceId, descriptorString);
-        return JsonProcessingUtil.fromJson(descriptorString, SpDescriptionSection.class);
+        var descriptor = serviceDescriptorClient.getServiceDescriptor(serviceId);
+        log.info("Получено описание услуги с id {}: {}", serviceId, descriptor.getService());
+        return JsonProcessingUtil.getObjectMapper().convertValue(descriptor, SpDescriptionSection.class);
     }
 
     private boolean hasNoJsonSigns(String value) {

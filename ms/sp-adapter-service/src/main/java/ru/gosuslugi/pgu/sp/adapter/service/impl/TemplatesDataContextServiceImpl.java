@@ -11,7 +11,6 @@ import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import ru.gosuslugi.pgu.common.core.attachments.AttachmentService;
-import ru.gosuslugi.pgu.common.core.json.JsonProcessingUtil;
 import ru.gosuslugi.pgu.dto.ApplicantAnswer;
 import ru.gosuslugi.pgu.dto.ApplicantRole;
 import ru.gosuslugi.pgu.dto.AttachmentInfo;
@@ -330,8 +329,8 @@ public class TemplatesDataContextServiceImpl implements TemplatesDataContextServ
     }
 
     private SpDescriptionSection getDescriptor(String serviceId) {
-        val descriptorString = serviceDescriptorClient.getServiceDescriptor(serviceId);
-        log.info("Получено описание сервиса {}", descriptorString);
-        return JsonProcessingUtil.fromJson(descriptorString, SpDescriptionSection.class);
+        var descriptor = serviceDescriptorClient.getServiceDescriptor(serviceId);
+        log.info("Получено описание сервиса {}", descriptor.getService());
+        return mapper.convertValue(descriptor, SpDescriptionSection.class);
     }
 }

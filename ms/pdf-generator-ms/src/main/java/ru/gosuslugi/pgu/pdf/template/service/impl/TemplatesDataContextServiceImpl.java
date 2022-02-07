@@ -4,16 +4,14 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import lombok.val;
 import org.springframework.stereotype.Service;
 import ru.gosuslugi.pgu.common.core.attachments.AttachmentService;
-import ru.gosuslugi.pgu.common.core.json.JsonProcessingUtil;
 import ru.gosuslugi.pgu.dto.ApplicantAnswer;
 import ru.gosuslugi.pgu.dto.ApplicantRole;
 import ru.gosuslugi.pgu.dto.AttachmentInfo;
+import ru.gosuslugi.pgu.dto.Descriptor;
 import ru.gosuslugi.pgu.dto.ScenarioDto;
 import ru.gosuslugi.pgu.dto.ServiceInfoDto;
-import ru.gosuslugi.pgu.dto.Descriptor;
 import ru.gosuslugi.pgu.dto.SpDescriptionSection;
 import ru.gosuslugi.pgu.pdf.template.model.data.TemplatesDataContext;
 import ru.gosuslugi.pgu.pdf.template.service.DefaultTemplateService;
@@ -21,7 +19,16 @@ import ru.gosuslugi.pgu.pdf.template.service.TemplatesDataContextService;
 import ru.gosuslugi.pgu.sd.storage.ServiceDescriptorClient;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.Set;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 import static java.util.Objects.isNull;
@@ -57,7 +64,7 @@ public class TemplatesDataContextServiceImpl implements TemplatesDataContextServ
     @Override
     public TemplatesDataContext prepareDataContext(String serviceId, Long orderId, Long oid, String roleId, ScenarioDto draft) {
         TemplatesDataContext dataContext = prepareDraftParameters(serviceId, orderId, oid, roleId, draft);
-        val spDescriptionSection = getDescriptor(draft.getServiceDescriptorId());
+        var spDescriptionSection = getDescriptor(draft.getServiceDescriptorId());
 
         if (spDescriptionSection.getSpConfig() != null) {
             dataContext.setBusinessXmlName(spDescriptionSection.getSpConfig().getBusinessXmlName());
@@ -77,7 +84,7 @@ public class TemplatesDataContextServiceImpl implements TemplatesDataContextServ
         dataContext.setDescriptorStructure(
                 defaultTemplateService.prepareTemplateContext(
                         getDescriptor(draft.getServiceDescriptorId()
-        )));
+                        )));
 
         return dataContext;
     }
@@ -109,7 +116,7 @@ public class TemplatesDataContextServiceImpl implements TemplatesDataContextServ
 
         //setting additional parameters
         dataContext.setAdditionalValues(retrieveAdditionalParametersFromDraft(draft, oid));
-        val reusePaymentUin = dataContext.getAdditionalValues().get("reusePaymentUin");
+        var reusePaymentUin = dataContext.getAdditionalValues().get("reusePaymentUin");
         if (reusePaymentUin != null)
             dataContext.setReusePaymentUin(reusePaymentUin.toString());
 
@@ -273,7 +280,7 @@ public class TemplatesDataContextServiceImpl implements TemplatesDataContextServ
     }
 
     private SpDescriptionSection getDescriptor(String serviceId) {
-        val descriptorString = serviceDescriptorClient.getServiceDescriptor(serviceId);
-        return JsonProcessingUtil.fromJson(descriptorString, SpDescriptionSection.class);
+        var descriptor = serviceDescriptorClient.getServiceDescriptor(serviceId);
+        return mapper.convertValue(descriptor, SpDescriptionSection.class);
     }
 }

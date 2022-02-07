@@ -1,16 +1,25 @@
 package ru.gosuslugi.pgu.xmlservice.context.service.impl;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.greaterThanOrEqualTo;
-import static org.testng.AssertJUnit.assertFalse;
-import static org.testng.AssertJUnit.assertNotNull;
-import static org.testng.AssertJUnit.assertTrue;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.io.IOUtils;
+import org.mockito.ArgumentMatchers;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
+import org.mockito.Spy;
+import org.testng.SkipException;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 import ru.gosuslugi.pgu.common.core.attachments.AttachmentService;
 import ru.gosuslugi.pgu.draft.DraftClient;
 import ru.gosuslugi.pgu.draft.model.DraftHolderDto;
 import ru.gosuslugi.pgu.dto.ScenarioDto;
+import ru.gosuslugi.pgu.dto.descriptor.ServiceDescriptor;
 import ru.gosuslugi.pgu.dto.pdf.data.FileDescription;
+import ru.gosuslugi.pgu.fs.common.service.JsonProcessingService;
+import ru.gosuslugi.pgu.fs.common.service.impl.JsonProcessingServiceImpl;
 import ru.gosuslugi.pgu.sd.storage.ServiceDescriptorClient;
 import ru.gosuslugi.pgu.xmlservice.context.data.TemplateDataContext;
 import ru.gosuslugi.pgu.xmlservice.context.service.TemplateDataService;
@@ -20,17 +29,13 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.commons.io.IOUtils;
-import org.mockito.ArgumentMatchers;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
-import org.mockito.Spy;
-import org.testng.SkipException;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.greaterThanOrEqualTo;
+import static org.testng.AssertJUnit.assertFalse;
+import static org.testng.AssertJUnit.assertNotNull;
+import static org.testng.AssertJUnit.assertTrue;
 
 public class TemplateDataServiceImplAdditionalValuesTest {
     private static final String SOURCES_ROOT = "context/";
@@ -65,11 +70,17 @@ public class TemplateDataServiceImplAdditionalValuesTest {
     @Mock
     private AttachmentService attachmentService;
     private GenerateXmlRequest context;
+    private JsonProcessingService jsonProcessingService;
 
     private static void assumeFalse(boolean condition) {
         if (condition) {
             throw new SkipException("");
         }
+    }
+
+    @BeforeClass
+    public void initClass() {
+        jsonProcessingService = new JsonProcessingServiceImpl(OBJECT_MAPPER);
     }
 
     @BeforeMethod
@@ -79,7 +90,7 @@ public class TemplateDataServiceImplAdditionalValuesTest {
         DraftHolderDto draftDtoStub = readAndDeserialize("draft.json", DraftHolderDto.class);
         Mockito.when(draftClient.getDraftById(ORDER_ID, USER_OID_VALID_COMPONENT, ORG_ID))
                 .thenReturn(draftDtoStub);
-        String serviceDescriptionStub = read("service-description.json");
+        var serviceDescriptionStub = jsonProcessingService.fromJson(read("service-description.json"), ServiceDescriptor.class);
         Mockito.when(sdClient.getServiceDescriptor(SERVICE_ID)).thenReturn(serviceDescriptionStub);
 
         sut = new TemplateDataServiceImpl(sdClient, draftClient, attachmentService);
@@ -184,7 +195,7 @@ public class TemplateDataServiceImplAdditionalValuesTest {
     }
 
     private void verifyRoleIndexAndComponentValues(Map<String, Object> additionalValues,
-            final String componentName, final Integer index) {
+                                                   final String componentName, final Integer index) {
         assertThat(additionalValues.get(TemplateDataContext.ROLE_INDEX_KEY), is(index));
         assertThat(additionalValues.get(TemplateDataContext.ROLE_COMPONENT_KEY), is(componentName));
     }
