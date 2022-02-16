@@ -89,13 +89,13 @@ public class TemplatesDataContextServiceImpl implements TemplatesDataContextServ
 
         Descriptor descriptor = spServiceDescriptorClient.getSpConfig(draft.getServiceDescriptorId());
         if (descriptor != null) {
-            dataContext.setBusinessXmlName(spDescriptionSection.getSpConfig().getBusinessXmlName());
-            dataContext.setServiceCustomId(computeCustomServiceId(spDescriptionSection.getSpConfig().getServiceCustomId(), draft));
-            dataContext.setReplacedHeaders(spDescriptionSection.getSpConfig().getReplacedHeaders());
-            dataContext.setAlwaysAttachServicePdf(spDescriptionSection.getSpConfig().getAlwaysAttachServicePdf());
-            dataContext.setFiles(spDescriptionSection.getSpConfig().getFiles());
-            dataContext.setAdditionalPdfs(spDescriptionSection.getSpConfig().getAdditionalPdfName());
-            dataContext.setRegPreviewSendToSP(spDescriptionSection.getSpConfig().isRegPreviewSendToSP());
+            dataContext.setBusinessXmlName(descriptor.getBusinessXmlName());
+            dataContext.setServiceCustomId(computeCustomServiceId(descriptor.getServiceCustomId(), draft));
+            dataContext.setReplacedHeaders(descriptor.getReplacedHeaders());
+            dataContext.setAlwaysAttachServicePdf(descriptor.getAlwaysAttachServicePdf());
+            dataContext.setFiles(descriptor.getFiles());
+            dataContext.setAdditionalPdfs(descriptor.getAdditionalPdfName());
+            dataContext.setRegPreviewSendToSP(descriptor.isRegPreviewSendToSP());
         }
 
         Map<String, String> parameters = spServiceDescriptorClient.getSpParams(draft.getServiceDescriptorId());
