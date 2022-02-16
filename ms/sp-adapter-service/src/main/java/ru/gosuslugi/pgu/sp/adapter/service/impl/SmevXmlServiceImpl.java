@@ -6,7 +6,6 @@ import lombok.val;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import ru.gosuslugi.pgu.common.core.attachments.AttachmentService;
-import ru.gosuslugi.pgu.dto.pdf.data.AttachmentType;
 import ru.gosuslugi.pgu.dto.pdf.data.FileDescription;
 import ru.gosuslugi.pgu.dto.pdf.data.FileType;
 import ru.gosuslugi.pgu.sp.adapter.data.TemplatesDataContext;
@@ -52,7 +51,9 @@ public class SmevXmlServiceImpl extends AbstractSmevFileService implements SmevX
                     buildAttachmentFileName(templatesDataContext, fileDescription),
                     buildAttachmentMnemonic(templatesDataContext, fileDescription),
                     xml.getBytes(),
-                    fileDescription.getAttachmentType() == AttachmentType.LK ? templatesDataContext.getAttachments() : null,
+                    isSendToSmevAllowed(fileDescription.getAttachmentType())
+                            ? templatesDataContext.getAttachments()
+                            : null,
                     templatesDataContext.getGeneratedFiles());
         }
         return xml;

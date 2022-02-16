@@ -1,13 +1,11 @@
 package ru.gosuslugi.pgu.sp.adapter.service.impl;
 
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+import static ru.gosuslugi.pgu.sp.adapter.util.DefaultOptionsSpConfig.determineTemplateFileName;
 import ru.gosuslugi.pgu.common.core.attachments.AttachmentService;
 import ru.gosuslugi.pgu.draft.DraftClient;
 import ru.gosuslugi.pgu.draft.model.DraftHolderDto;
 import ru.gosuslugi.pgu.dto.ApplicantRole;
 import ru.gosuslugi.pgu.dto.ScenarioDto;
-import ru.gosuslugi.pgu.dto.pdf.data.AttachmentType;
 import ru.gosuslugi.pgu.dto.pdf.data.FileDescription;
 import ru.gosuslugi.pgu.dto.pdf.data.FileType;
 import ru.gosuslugi.pgu.dto.pdf.data.UniqueType;
@@ -25,8 +23,8 @@ import java.nio.file.Files;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
-
-import static ru.gosuslugi.pgu.sp.adapter.util.DefaultOptionsSpConfig.determineTemplateFileName;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * Реализация замещается отдельным микросервисом pdf-generator-service.
@@ -69,9 +67,12 @@ public class SmevPdfServiceImpl extends AbstractSmevFileService implements SmevP
         if (pdfFile != null) {
             try {
                 byte[] fileBody = Files.readAllBytes(pdfFile.toPath());
-                Set<String> attachments = options.getAttachmentType() == AttachmentType.REQUEST ? null : templatesDataContext.getAttachments();
                 String fileName = buildAttachmentFileName(templatesDataContext, options);
                 String mnemonic = buildAttachmentMnemonic(templatesDataContext, options);
+                Set<String> attachments =
+                        isSendToSmevAllowed(options.getAttachmentType())
+                                ? templatesDataContext.getAttachments()
+                                : null;
                 attachmentService.saveAttachment(templatesDataContext.getOrderId(), PDF_MIME_TYPE, fileName, mnemonic, fileBody, attachments, templatesDataContext.getGeneratedFiles());
             } catch (IOException e) {
                 log.error("Error during processing pdf file for serviceId {} with orderId {}. Ignoring...", templatesDataContext.getServiceId(), templatesDataContext.getOrderId(), e);
