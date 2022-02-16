@@ -1,0 +1,35 @@
+[
+  {
+    "type": "REQUEST",
+    "fileName": "business_xml_forbidden",
+    "addedFileName": "NONE",
+    "mnemonic": "business_xml_forbidden",
+    "addedMnemonic": "NONE",
+    "attachmentType": "SEND_SMEV_FORBIDDEN",
+    "templates": {
+      "Applicant": "10000000332/10000000332_Applicant.vm"
+    }
+  },
+  {
+    "type": "REQUEST",
+    "fileName": "business_xml",
+    "addedFileName": "NONE",
+    "mnemonic": "business_xml",
+    "addedMnemonic": "NONE",
+    "attachmentType": "LK",
+    "templates": {
+      "Applicant": "10000000332/10000000332_Applicant.vm"
+    }
+  },
+  {
+    "type": "XML",
+    "fileName": "transport_xml",
+    "addedFileName": "NONE",
+    "mnemonic": "transport_xml",
+    "addedMnemonic": "NONE",
+    "attachmentType": "REQUEST",
+    "templates": {
+      "Applicant": "10000000332/t_10000000332_Applicant.vm"
+    }
+  }
+]

@@ -39,10 +39,19 @@ public class SmevPdfServiceImpl extends AbstractSmevFileService implements SmevP
     private DraftClient draftClient;
     @Autowired
     private TemplatesDataContextService templatesDataContextService;
+
     @Autowired
+    public void setAttachmentService(AttachmentService attachmentService) {
+        this.attachmentService = attachmentService;
+    }
+
     private AttachmentService attachmentService;
-    @Autowired
     private PdfTemplateRenderService pdfTemplateRenderService;
+
+    @Autowired
+    public void setPdfTemplateRenderService(PdfTemplateRenderService pdfTemplateRenderService) {
+        this.pdfTemplateRenderService = pdfTemplateRenderService;
+    }
 
     @Override
     public void handlePdfAttachments(TemplatesDataContext templatesDataContext, FileDescription options) {
