@@ -55,7 +55,7 @@ public abstract class AbstractSmevFileService {
      * Определяет по attachmentType, следует ли отправлять файл как вложение в запросе в СМЭВ.
      *
      * @param attachmentType способ обработки файла как вложения.
-     * @return true, если отправка в СМЭВ запрещена.
+     * @return true, если отправка в СМЭВ разрешена.
      */
     protected boolean isSendToSmevAllowed(final AttachmentType attachmentType) {
         return !SEND_SMEV_FORBIDDEN_TYPES.contains(attachmentType);
