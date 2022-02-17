@@ -19,8 +19,7 @@ class AppealFinesServiceTest extends Specification {
             Mock(XmlUnmarshallService),
             Mock(ServiceDescriptorClient),
             Mock(FileStorageService),
-            Mock(IpshRestClient),
-            new ObjectMapper())
+            Mock(IpshRestClient))
 
     def 'Test Time Parameter' () {
         given:
