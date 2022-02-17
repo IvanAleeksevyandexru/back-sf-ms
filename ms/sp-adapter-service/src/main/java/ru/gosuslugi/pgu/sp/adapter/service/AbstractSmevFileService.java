@@ -1,12 +1,21 @@
 package ru.gosuslugi.pgu.sp.adapter.service;
 
 import org.apache.commons.io.FilenameUtils;
+
+import ru.gosuslugi.pgu.dto.pdf.data.AttachmentType;
 import ru.gosuslugi.pgu.dto.pdf.data.FileDescription;
 import ru.gosuslugi.pgu.dto.pdf.data.FileType;
 import ru.gosuslugi.pgu.sp.adapter.data.TemplatesDataContext;
 
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 public abstract class AbstractSmevFileService {
 
+    private static final Set<AttachmentType> SEND_SMEV_FORBIDDEN_TYPES =
+            Stream.of(AttachmentType.REQUEST, AttachmentType.SEND_SMEV_FORBIDDEN)
+                  .collect(Collectors.toUnmodifiableSet());
     private final String XML_EXTENSION = "xml";
     private final String PDF_EXTENSION = "pdf";
 
@@ -40,6 +49,16 @@ public abstract class AbstractSmevFileService {
             case HASH: return mnemonic + "_" + templatesDataContext.getRequestHash();
         }
         return mnemonic == null ? buildAttachmentFileName(templatesDataContext, fileDescription) : mnemonic;
+    }
+
+    /**
+     * Определяет по attachmentType, следует ли отправлять файл как вложение в запросе в СМЭВ.
+     *
+     * @param attachmentType способ обработки файла как вложения.
+     * @return true, если отправка в СМЭВ разрешена.
+     */
+    protected boolean isSendToSmevAllowed(final AttachmentType attachmentType) {
+        return !SEND_SMEV_FORBIDDEN_TYPES.contains(attachmentType);
     }
 
     private String getFileExtension(FileType fileType, boolean isFileExtension) {

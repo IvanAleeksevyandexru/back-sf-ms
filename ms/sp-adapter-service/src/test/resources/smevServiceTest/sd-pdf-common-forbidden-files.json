@@ -1,0 +1,35 @@
+[
+  {
+    "type": "COMMON_PDF",
+    "fileName": "common_pdf_forbidden",
+    "addedFileName": "NONE",
+    "mnemonic": "common_pdf_forbidden",
+    "addedMnemonic": "NONE",
+    "attachmentType": "SEND_SMEV_FORBIDDEN",
+    "templates": {
+      "Applicant": "10000000332/pdf_10000000332_Applicant.vm"
+    }
+  },
+  {
+    "type": "COMMON_PDF",
+    "fileName": "common_pdf",
+    "addedFileName": "NONE",
+    "mnemonic": "common_pdf",
+    "addedMnemonic": "NONE",
+    "attachmentType": "LK",
+    "templates": {
+      "Applicant": "10000000332/pdf_10000000332_Applicant.vm"
+    }
+  },
+  {
+    "type": "XML",
+    "fileName": "transport_xml",
+    "addedFileName": "NONE",
+    "mnemonic": "transport_xml",
+    "addedMnemonic": "NONE",
+    "attachmentType": "REQUEST",
+    "templates": {
+      "Applicant": "10000000332/t_10000000332_Applicant.vm"
+    }
+  }
+]

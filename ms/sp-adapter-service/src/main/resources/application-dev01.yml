@@ -13,6 +13,9 @@ spring:
     # Адрес для подключения к кафке для трейсинга в Zipkin
     bootstrap-servers: localhost:19092
     auto-create-topics: true
+    producers:
+      suggestions:
+        enabled: false
 
 pgu.uddi.url: http://pgu-dev-fednlb.test.gosuslugi.ru/juddiv3/services/inquiry?wsdl
 
