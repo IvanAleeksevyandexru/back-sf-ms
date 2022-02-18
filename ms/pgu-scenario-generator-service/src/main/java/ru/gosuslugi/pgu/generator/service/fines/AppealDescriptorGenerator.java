@@ -153,7 +153,7 @@ public class AppealDescriptorGenerator {
         if (reason.getParticipation() == ASK) {
             return "QSParticipation";
         }
-        return "FinishScreen1";
+        return "QSSignQuestion";
     }
 
     private String getHeader(String subject, int currentPage, int totalPages) {
