@@ -1,6 +1,5 @@
 package ru.gosuslugi.pgu.generator.service
 
-import com.fasterxml.jackson.databind.ObjectMapper
 import ru.gosuslugi.pgu.dto.descriptor.ServiceDescriptor
 import ru.gosuslugi.pgu.generator.client.IpshRestClient
 import ru.gosuslugi.pgu.generator.model.appeal.scenario.GetAppealScenarioResponse
@@ -19,8 +18,7 @@ class AppealFinesServiceTest extends Specification {
             Mock(XmlUnmarshallService),
             Mock(ServiceDescriptorClient),
             Mock(FileStorageService),
-            Mock(IpshRestClient),
-            new ObjectMapper())
+            Mock(IpshRestClient))
 
     def 'Test Time Parameter' () {
         given:
