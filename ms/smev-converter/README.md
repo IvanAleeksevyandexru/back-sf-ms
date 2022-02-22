@@ -1,8 +1,18 @@
-## СМЭВ конвертер (барбарбок)
+## smev-converter - преобразователь ответов барбарбока в json
 
 ### Описание
-Микросервис для отправки запросов в СМЭВ-адаптер (барбарбок) и конвертации ответа по указанному vm-шаблону в Draft Converter Service. 
+См. https://jira.egovdev.ru/browse/EPGUCORE-81867
 
-Rest-спецификация: http://local.test.gosuslugi.ru:8092/api/v3/api-docs
+Микросервис отправляет xml-запрос в СМЭВ (барбарбок) и преобразовывает полученный xml-ответ в формат json по указанному vm-шаблону через draft-converter.
 
-Swagger-ui: http://local.test.gosuslugi.ru:8092/api/swagger-ui/index.html?configUrl=/api/v3/api-docs/swagger-config
+Доступность на тестовых окружениях:
+- http://pgu-uat-fednlb.test.gosuslugi.ru/smev-converter
+- https://dev01.pgu2-pub.test.gosuslugi.ru/smev-converter
+- https://dev02.pgu2-pub.test.gosuslugi.ru/smev-converter
+- https://dev-l11.pgu2-pub.test.gosuslugi.ru/smev-converter
+
+### Swagger-ui 
+http://localhost:8092/api/swagger-ui.html
+
+### Actuator 
+http://pgu-uat-fednlb.test.gosuslugi.ru/smev-converter/actuator

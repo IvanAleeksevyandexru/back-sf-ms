@@ -5,28 +5,29 @@ server:
 
 esia:
   auth:
-    exclude-urls: /smev-converter/actuator,/smev-converter/swagger-ui,/smev-converter/swagger-ui.html,/smev-converter/v3/api-docs,/smev-converter/webjar,/smev-converter/swagger-resources
+    exclude-urls: /actuator,/swagger-ui,/v3/api-docs
+    disabled: true
 
 spring:
   application:
     name: smev-converter
 
 smev-service:
-  url: http://pgu-dev-fednlb.test.gosuslugi.ru/barbarbok/internal/api
-#  url: http://pgu-uat-fednlb.test.gosuslugi.ru/barbarbok/internal/api
+  url: http://kuber.gosuslugi.local:15227/barbarbok/internal/api
   smev-version: SMEV30MESSAGE
-  timeout: 300
-  ttl: 100
+  ## Время ожидания ответа, сек.
+  timeout: 60
+  ## Время жизни запроса в кеше, мин.
+  ttl: 30
   enabled: true
 
 draft-converter:
   integration:
     enabled: true
     url: http://local.test.gosuslugi.ru:8097/api
-#    url: http://pgu-uat-fednlb.test.gosuslugi.ru/draft-converter
 
 ratelimit:
-  enabled: true
+  enabled: false
   limit: 5
   ttl: 600
   pgu-url: http://pgu-uat-fednlb.test.gosuslugi.ru/ratelimit-api/internal/api/ratelimit/

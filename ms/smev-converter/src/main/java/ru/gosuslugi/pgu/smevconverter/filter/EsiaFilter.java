@@ -39,11 +39,17 @@ public class EsiaFilter extends OncePerRequestFilter {
     private static final String ACC_T_COOKIE = "acc_t";
     @Value("${esia.auth.exclude-urls:#{null}}")
     private List<String> excludeUrls;
+    @Value("${esia.auth.disabled:#{false}}")
+    private boolean authDisabled;
     private final UserSession userSession;
     private final SpanService spanService;
 
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
+        if (authDisabled) {
+            spanService.addTagToSpan(USER_ID_TAG, "Unauthorized");
+            return true;
+        }
         Optional<String> excludeUrl = excludeUrls.stream()
                 .filter(url -> request.getServletPath().startsWith(url))
                 .findFirst();

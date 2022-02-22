@@ -1,0 +1,10 @@
+smev-service:
+  url: http://pgu-dev-fednlb.test.gosuslugi.ru/barbarbok/internal/api
+
+draft-converter:
+  integration:
+    enabled: true
+    url: http://pgu-dev-fednlb.test.gosuslugi.ru/draft-converter
+
+ratelimit:
+  enabled: true
