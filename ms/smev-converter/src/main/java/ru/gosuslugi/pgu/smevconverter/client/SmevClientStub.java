@@ -2,28 +2,30 @@ package ru.gosuslugi.pgu.smevconverter.client;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import ru.gosuslugi.pgu.smevconverter.model.SmevPullResponseDto;
-import ru.gosuslugi.pgu.smevconverter.model.SmevServiceResponseDto;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import ru.gosuslugi.pgu.smevconverter.model.BarbarbokPushResponseDto;
+import ru.gosuslugi.pgu.smevconverter.model.BarbarbokResponseDto;
 
 @Slf4j
 @RequiredArgsConstructor
 public class SmevClientStub implements SmevClient {
 
     @Override
-    public SmevServiceResponseDto get(String requestXml) {
-        log.debug("Stub SmevClient get");
-        return null;
+    public ResponseEntity<BarbarbokResponseDto> get(String requestXml) {
+        log.debug("Stub SmevClient call barbarbok#get");
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @Override
-    public String push(String requestXml) {
-        log.debug("Stub SmevClient push");
-        return null;
+    public ResponseEntity<BarbarbokPushResponseDto> push(String requestXml) {
+        log.debug("Stub SmevClient call barbarbok#push");
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @Override
-    public SmevPullResponseDto pull(String requestId) {
-        log.debug("Stub SmevClient pull");
-        return null;
+    public ResponseEntity<BarbarbokResponseDto> pull(String requestId) {
+        log.debug("Stub SmevClient call barbarbok#pull");
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }

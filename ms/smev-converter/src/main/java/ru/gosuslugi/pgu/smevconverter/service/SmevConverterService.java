@@ -1,15 +1,15 @@
 package ru.gosuslugi.pgu.smevconverter.service;
 
-import ru.gosuslugi.pgu.dto.SmevConverterPullRequestDto;
+import org.springframework.http.ResponseEntity;
 import ru.gosuslugi.pgu.dto.SmevConverterGetRequestDto;
+import ru.gosuslugi.pgu.dto.SmevConverterPullRequestDto;
 import ru.gosuslugi.pgu.dto.SmevConverterPushRequestDto;
-import ru.gosuslugi.pgu.smevconverter.model.SmevPullResponseDto;
 
 import java.util.Map;
 
 public interface SmevConverterService {
 
-    Map<Object, Object> get(SmevConverterGetRequestDto request);
-    String push(SmevConverterPushRequestDto request);
-    SmevPullResponseDto pull(SmevConverterPullRequestDto request);
+    ResponseEntity<Map<Object, Object>> get(SmevConverterGetRequestDto request);
+    ResponseEntity<Map<Object, Object>> push(SmevConverterPushRequestDto request);
+    ResponseEntity<Map<Object, Object>> pull(SmevConverterPullRequestDto request);
 }
