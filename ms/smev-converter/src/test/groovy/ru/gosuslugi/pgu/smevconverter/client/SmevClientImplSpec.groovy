@@ -36,7 +36,7 @@ class SmevClientImplSpec extends Specification {
 
     def setup() {
         mockServer = MockRestServiceServer.createServer(restTemplate)
-        apiClient = new SmevClientImpl(restTemplate, properties, apiPath, JsonProcessingUtil.getObjectMapper())
+        apiClient = new SmevClientImpl(restTemplate, properties, apiPath)
     }
 
     def 'pull. status 200 with errors'() {
