@@ -18,6 +18,8 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Objects;
 
+import static ru.gosuslugi.pgu.common.core.json.JsonProcessingUtil.*;
+
 @Log
 @Service
 @RequiredArgsConstructor
@@ -68,7 +70,11 @@ public class AppealFinesService {
         if (serviceDescriptor == null) {
             throw new DescriptorGenerationException("Service Descriptor not found for service " + serviceId);
         }
-        return serviceDescriptor;
+        return serviceDescriptorDeepCopy(serviceDescriptor);
+    }
+
+    private ServiceDescriptor serviceDescriptorDeepCopy(ServiceDescriptor serviceDescriptor) {
+        return fromJson(toJson(serviceDescriptor), ServiceDescriptor.class);
     }
 
     private String parseOrderId(String serviceId) {
