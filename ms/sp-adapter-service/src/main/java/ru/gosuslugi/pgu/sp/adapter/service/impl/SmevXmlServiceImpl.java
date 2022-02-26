@@ -62,7 +62,7 @@ public class SmevXmlServiceImpl extends AbstractSmevFileService implements SmevX
     private void logIllegalAttachmentFilename(TemplatesDataContext templatesDataContext) {
         val serviceId = templatesDataContext.getServiceId();
         if (Objects.equals(serviceId, "10000000104") && templatesDataContext.getBusinessXmlName() == null) {
-            log.error("For serviceId {} property 'businessXmlName' is null. Data context: {}", serviceId, templatesDataContext);
+            log.error("For serviceId {} property 'businessXmlName' is null.", serviceId);
         }
     }
 

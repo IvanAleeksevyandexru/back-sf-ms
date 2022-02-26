@@ -131,7 +131,7 @@ public class TemplatesDataContextServiceImpl implements TemplatesDataContextServ
             } catch (JsonProcessingException e) {
                 //Преобразования не удались. Там не искомый Json. Возвращаем значение из serviceCustomId
                 if(log.isDebugEnabled()){
-                    log.debug("Can not parse json for serviceCustomId, json is: ", answerStrinig);
+                    log.debug("Can not parse json for serviceCustomId, json is: {}", answerStrinig);
                 }
             }
         }
@@ -143,7 +143,7 @@ public class TemplatesDataContextServiceImpl implements TemplatesDataContextServ
                 .map(SpDescriptionSection::getSpConfig)
                 .map(Descriptor::getBusinessXmlName).orElse(null);
         if (Objects.equals(serviceId, "10000000104") && Objects.isNull(businessXmlFilename)) {
-            log.error("For serviceId {} property 'businessXmlName' is null. SP description section: {}", serviceId, spDescriptionSection);
+            log.error("For serviceId {} property 'businessXmlName' is null.", serviceId);
         }
     }
 
