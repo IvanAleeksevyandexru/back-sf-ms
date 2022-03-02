@@ -10,7 +10,7 @@ import ru.gosuslugi.pgu.dto.SpRequestErrorDto;
 import ru.gosuslugi.pgu.dto.SpResponseOkDto;
 import ru.gosuslugi.pgu.sp.adapter.exceptions.SpAdapterServiceException;
 import ru.gosuslugi.pgu.sp.adapter.exceptions.SpRequestException;
-import ru.gosuslugi.pgu.sp.adapter.properties.SpKafkaProducersProperties;
+import ru.gosuslugi.pgu.sp.adapter.config.props.SpKafkaProducersProperties;
 import ru.gosuslugi.pgu.sp.adapter.service.SmevService;
 
 @Slf4j
