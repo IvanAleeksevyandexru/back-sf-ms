@@ -24,19 +24,7 @@ spring:
 
     auto-create-topics: true
 
-    batch-processor:
-      threads: 5
-
     consumers:
-      form-service:
-        enabled: true
-        topic: sp-adapter
-        group-id: 0
-        batch-processing: true
-        max-poll-records: 100
-        poll-timeout: 345600s
-        fetch-max-size: 52428800
-        partition-fetch-bytes: 1048576
       form-service-batch:
         enabled: true
         topic: sp-adapter-batch

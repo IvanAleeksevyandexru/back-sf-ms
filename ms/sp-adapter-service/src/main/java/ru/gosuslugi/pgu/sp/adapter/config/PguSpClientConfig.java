@@ -18,7 +18,7 @@ import ru.gosuslugi.pgu.common.core.interceptor.creator.RestTemplateCreator;
 import ru.gosuslugi.pgu.common.esia.search.service.UddiService;
 import ru.gosuslugi.pgu.common.esia.search.service.impl.CacheImpl;
 import ru.gosuslugi.pgu.common.logging.service.SpanService;
-import ru.gosuslugi.pgu.sp.adapter.properties.PguClientProperties;
+import ru.gosuslugi.pgu.sp.adapter.config.props.PguClientProperties;
 import ru.gosuslugi.pgu.sp.adapter.types.PackageProcessingStatus;
 import ru.gosuslugi.pgu.terrabyte.client.TerrabyteClient;
 

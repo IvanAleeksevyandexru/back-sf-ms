@@ -3,16 +3,15 @@ package ru.gosuslugi.pgu.sp.adapter.config;
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.common.serialization.LongSerializer;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
 import org.springframework.kafka.support.serializer.JsonSerializer;
-import ru.gosuslugi.pgu.common.kafka.util.KafkaFactoryUtils;
+import ru.gosuslugi.pgu.common.kafka.config.KafkaProducerCreator;
 import ru.gosuslugi.pgu.dto.suggest.SuggestOrderDto;
-import ru.gosuslugi.pgu.sp.adapter.properties.SpKafkaProducersProperties;
+import ru.gosuslugi.pgu.sp.adapter.config.props.SpKafkaProducersProperties;
 
 /**
  * Настройка обмена сообщениями - suggestions
@@ -20,17 +19,10 @@ import ru.gosuslugi.pgu.sp.adapter.properties.SpKafkaProducersProperties;
 @Configuration
 @RequiredArgsConstructor
 @ConditionalOnProperty(prefix = "spring.kafka.producers.suggestions", name = "enabled", havingValue = "true")
-public class KafkaSuggestionsConfig {
+public class KafkaSuggestionsProducerConfig {
 
-    @Value(value = "${spring.kafka.brokers}")
-    private String brokers;
-
+    private final KafkaProducerCreator kafkaProducerCreator;
     private final SpKafkaProducersProperties spKafkaProducersProperties;
-
-    @Bean
-    public ProducerFactory<Long, SuggestOrderDto> suggestionProducerFactory() {
-        return KafkaFactoryUtils.createDefaultProducerFactory(brokers, new LongSerializer(), new JsonSerializer<>());
-    }
 
     @Bean
     @ConditionalOnProperty(prefix = "spring.kafka", name = "auto-create-topics", havingValue = "true")
@@ -39,7 +31,12 @@ public class KafkaSuggestionsConfig {
     }
 
     @Bean
+    public ProducerFactory<Long, SuggestOrderDto> suggestionProducerFactory() {
+        return kafkaProducerCreator.createProducerFactory(new LongSerializer(), new JsonSerializer<>());
+    }
+
+    @Bean
     public KafkaTemplate<Long, SuggestOrderDto> suggestionKafkaTemplate() {
-        return new KafkaTemplate<>(suggestionProducerFactory());
+        return kafkaProducerCreator.createKafkaTemplate(suggestionProducerFactory());
     }
 }
