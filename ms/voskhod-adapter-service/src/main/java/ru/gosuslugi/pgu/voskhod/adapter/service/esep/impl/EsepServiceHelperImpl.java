@@ -85,47 +85,29 @@ public class EsepServiceHelperImpl implements EsepServiceHelper {
 
     @Override
     public CreateUIToSingResponse createUIToSingEx(String returnUrl, List<EsepFile> fileAccessCodes) {
-        final CreateUIToSingRequest signRequest = new CreateUIToSingRequest();
-        Credentials credentials = createCredentials();
-
-        signRequest.setCredentials(credentials);
-        signRequest.setClienSignatureFormat(ClientSignatureFormat.CMS);
-        signRequest.setClientSignatureKind(SignatureKind.DETACHED);
-        signRequest.setClientSigningMode(ClientSigningMode.BATCH);
-        signRequest.setServerSignRequired(false);
-        signRequest.setServerSignatureFormat(ServerSignatureFormat.CMS);
-        signRequest.setReturnUrl(returnUrl);
-
-        signRequest.setFileAccessCodes(new ArrayOfstring());
-        for (EsepFile esepFile : fileAccessCodes) {
-            signRequest.getFileAccessCodes().getString().add(esepFile.getFileAccessCode());
-        }
-        log.info("ESEP External Request : {}", JsonProcessingUtil.toJson(signRequest));
+        final CreateUIToSingRequest signRequest = createUIToSingRequest(returnUrl, fileAccessCodes);
         final IEsepService esepService = createIEsepService(IEsepServiceMethod.createUIToSignEx);
         final CreateUIToSingResponse signResponse = spanService.runExternalService(
                 "esepService.createUIToSingEx",
                 "esepService.createUIToSingEx",
                 () -> esepService.createUIToSingEx(signRequest),
-                Map.of("returnUrl", returnUrl));
-        log.info("ESEP External Response : {}",JsonProcessingUtil.toJson(signResponse));
+                Map.of("returnUrl", returnUrl),
+                JsonProcessingUtil.toJson(signRequest));
         final RequestResult requestResult = signResponse.getRequestResult();
         if (requestResult == null || requestResult.isWasSuccessful() == null || !requestResult.isWasSuccessful()) {
             StringBuilder messageBuilder = new StringBuilder("Can't initialise ESEP sign process");
             if (requestResult != null) {
                 messageBuilder.append(": ").append(requestResult.getErrorCode())
-                    .append(": ").append(requestResult.getErrorMessage()).append(": ");
+                        .append(": ").append(requestResult.getErrorMessage()).append(": ");
                 if (requestResult.getErrorData() != null) {
                     for (ErrorDataItem errorData : requestResult.getErrorData().getErrorDataItem()) {
                         messageBuilder.append(errorData.getKey()).append("=").append(errorData.getValue()).append(", ");
                     }
-
                     messageBuilder.setLength(messageBuilder.length() - 2);
                 }
             }
-
             throw new ExternalServiceException(messageBuilder.toString());
         }
-
         return signResponse;
     }
 
@@ -138,16 +120,17 @@ public class EsepServiceHelperImpl implements EsepServiceHelper {
         request.setFileAccessCodes(new ArrayOfstring());
         request.getFileAccessCodes().getString().addAll(fileAccessCodes);
         final IEsepService esepService = createIEsepService(IEsepServiceMethod.getFileCertificatesUserInfo);
-        log.info("ESEP External Request : {}",JsonProcessingUtil.toJson(request));
+
         final GetFileCertificatesUserInfoResponse response = spanService.runExternalService(
                 "esepService.createUIToSingEx",
                 "esepService.createUIToSingEx",
                 () -> esepService.getFileCertificatesUserInfo(request),
-                Map.of());
-        log.info("ESEP External Response : {}",JsonProcessingUtil.toJson(response));
+                Map.of(),
+                JsonProcessingUtil.toJson(request));
+
         if (!response.getRequestResult().isWasSuccessful()) {
             throw new ExternalServiceException(String.format("Error code: %s, message: %s",
-                response.getRequestResult().getErrorCode(), response.getRequestResult().getErrorMessage()));
+                    response.getRequestResult().getErrorCode(), response.getRequestResult().getErrorMessage()));
         }
 
         return response.getFileCertificateUserInfos().getFileCertificateUserInfo();
@@ -206,5 +189,23 @@ public class EsepServiceHelperImpl implements EsepServiceHelper {
         credentials.setPassword(esepPassword);
         return credentials;
     }
-}
 
+    public CreateUIToSingRequest createUIToSingRequest(String returnUrl, List<EsepFile> fileAccessCodes) {
+        final CreateUIToSingRequest signRequest = new CreateUIToSingRequest();
+        Credentials credentials = createCredentials();
+
+        signRequest.setCredentials(credentials);
+        signRequest.setClienSignatureFormat(ClientSignatureFormat.CMS);
+        signRequest.setClientSignatureKind(SignatureKind.DETACHED);
+        signRequest.setClientSigningMode(ClientSigningMode.BATCH);
+        signRequest.setServerSignRequired(false);
+        signRequest.setServerSignatureFormat(ServerSignatureFormat.CMS);
+        signRequest.setReturnUrl(returnUrl);
+        signRequest.setFileAccessCodes(new ArrayOfstring());
+
+        for (EsepFile esepFile : fileAccessCodes) {
+            signRequest.getFileAccessCodes().getString().add(esepFile.getFileAccessCode());
+        }
+        return signRequest;
+    }
+}
