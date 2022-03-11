@@ -204,8 +204,9 @@ public class SmevServiceImpl implements SmevService {
                 .filter(file -> (file.getType() == FileType.XML) &&
                         (StringUtils.isEmpty(file.getAddRule()) || shouldAddFile(file.getAddRule(), draft)))
                 .map(fileDescription -> smevXmlService.getSmevRequest(templatesDataContext, fileDescription))
+                .filter(StringUtils::hasText)
                 .collect(Collectors.toList());
-        boolean transportXmlEmpty = listTransportXml.isEmpty() || listTransportXml.stream().filter(xml -> StringUtils.isEmpty(xml)).count() > 0;
+        boolean transportXmlEmpty = listTransportXml.isEmpty();
         // Business XML
         if (templatesDataContext.getFiles().stream()
                 .filter(file -> file.getType() == FileType.REQUEST)
