@@ -5,6 +5,8 @@ import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
+import ru.gosuslugi.pgu.common.core.exception.ExternalServiceException;
+import ru.gosuslugi.pgu.common.core.exception.RetryKafkaException;
 import ru.gosuslugi.pgu.dto.SpAdapterDto;
 import ru.gosuslugi.pgu.dto.SpRequestErrorDto;
 import ru.gosuslugi.pgu.dto.SpResponseOkDto;
@@ -29,21 +31,21 @@ public class SmevTemplateMessageProcessor {
             var result = true;
             if (spAdapterDto.isSigned()) {
                 result = smevTemplateEngineService.processSignedSmevRequest(
-                    spAdapterDto.getServiceId(),
-                    spAdapterDto.getOrderId(),
-                    spAdapterDto.getOid(),
-                    spAdapterDto.getRole(),
-                    spAdapterDto.getOrgId(),
-                    true
+                        spAdapterDto.getServiceId(),
+                        spAdapterDto.getOrderId(),
+                        spAdapterDto.getOid(),
+                        spAdapterDto.getRole(),
+                        spAdapterDto.getOrgId(),
+                        true
                 );
             } else {
                 result = smevTemplateEngineService.processSmevRequest(
-                    spAdapterDto.getServiceId(),
-                    spAdapterDto.getOrderId(),
-                    spAdapterDto.getOid(),
-                    spAdapterDto.getRole(),
-                    spAdapterDto.getOrgId(),
-                    true
+                        spAdapterDto.getServiceId(),
+                        spAdapterDto.getOrderId(),
+                        spAdapterDto.getOid(),
+                        spAdapterDto.getRole(),
+                        spAdapterDto.getOrgId(),
+                        true
                 );
             }
             if (!result) {
@@ -53,6 +55,8 @@ public class SmevTemplateMessageProcessor {
             SpResponseOkDto responseOkDto = new SpResponseOkDto(spAdapterDto.getOrderId(), spAdapterDto.getOid(), spAdapterDto.getServiceId(), spAdapterDto.getTargetId());
             spResponseTopicTemplate.send(spKafkaProducersProperties.getResponse().getTopic(), spAdapterDto.getOrderId(), responseOkDto);
 
+        } catch (SpAdapterServiceException | ExternalServiceException e) {
+            throw new RetryKafkaException(e);
         } catch (SpRequestException ex) {
             log.error(String.format("Произошла ошибка отправки заявления в SP %s", spAdapterDto), ex);
             val spError = ex.getSpRequestError();

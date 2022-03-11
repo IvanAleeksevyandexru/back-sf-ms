@@ -6,6 +6,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import ru.gosuslugi.pgu.common.kafka.properties.KafkaConsumerProperties;
 import ru.gosuslugi.pgu.common.kafka.service.AbstractBatchMessageListener;
+import ru.gosuslugi.pgu.common.kafka.service.KafkaRetryService;
 import ru.gosuslugi.pgu.common.logging.service.SpanService;
 import ru.gosuslugi.pgu.dto.SpAdapterDto;
 import ru.gosuslugi.pgu.dto.SpRequestErrorDto;
@@ -25,10 +26,11 @@ public class SmevTemplateBatchKafkaListener extends AbstractBatchMessageListener
 
     public SmevTemplateBatchKafkaListener(SmevTemplateMessageProcessor smevTemplateMessageProcessor,
                                           KafkaConsumerProperties formServiceBatchConsumerProperties,
+                                          KafkaRetryService kafkaRetryService,
                                           SpanService spanService,
                                           KafkaTemplate<Long, SpRequestErrorDto> errorTopicTemplate,
                                           SpKafkaProducersProperties spKafkaProducersProperties) {
-        super(formServiceBatchConsumerProperties, spanService);
+        super(formServiceBatchConsumerProperties, kafkaRetryService, spanService);
         this.smevTemplateMessageProcessor = smevTemplateMessageProcessor;
         this.errorTopicTemplate = errorTopicTemplate;
         this.spKafkaProducersProperties = spKafkaProducersProperties;
@@ -47,6 +49,5 @@ public class SmevTemplateBatchKafkaListener extends AbstractBatchMessageListener
             spError.setCause(cause);
             errorTopicTemplate.send(spKafkaProducersProperties.getSelfErrors().getTopic(), spError);
         }
-
     }
 }
