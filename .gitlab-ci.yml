@@ -1,0 +1,234 @@
+include:
+  - template: Code-Quality.gitlab-ci.yml 
+
+image: registry.gosuslugi.local/epgu2-dev/tools/maven:3-liberica-openjdk-11
+
+stages:
+  - Test
+  - Build
+  - Package
+
+variables:
+  MAVEN_CLI_OPTS: "-T 2 -s .m2/settings.ci.xml --batch-mode -Dmaven.repo.local=.m2/repository -Depgu2.sf.lib.version=400.24.0"
+  MAVEN_OPTS: "-XX:+UseParallelGC -XX:-TieredCompilation -XX:TieredStopAtLevel=1"
+  DOCKER_TAG: ${CI_COMMIT_REF_SLUG}-${CI_BUILD_ID}
+  DOCKER_DRIVER: overlay2
+  DOCKER_HOST: tcp://localhost:2375/
+
+cache:
+  paths:
+    - .m2/repository
+
+code_quality:
+  stage: Test
+  cache: []
+  artifacts:
+    paths: [gl-code-quality-report.json]
+  tags:
+    - k8s
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" || $CI_COMMIT_REF_NAME =~ /^release/'
+      when: always
+    - if: $CI_COMMIT_REF_NAME !~ /^release/ && $CI_PIPELINE_SOURCE != "merge_request_event"
+      when: manual
+  allow_failure: true
+      
+build:
+  stage: Build
+  script:
+    - mvn $MAVEN_CLI_OPTS versions:set -DnewVersion=$DOCKER_TAG
+    - mvn $MAVEN_CLI_OPTS clean package
+  artifacts:
+    when: always
+    expire_in: 1 hour
+    paths:
+      - ms/lk-jms-notifier/target/*.jar
+      - ms/identification/target/*.jar
+      - ms/pdf-generator-ms/target/*.jar
+      - ms/draft-converter/target/*.jar
+      - ms/voskhod-adapter-service/target/*.jar
+      - ms/xml-generator-ms/target/*.jar
+      - ms/sp-adapter-service/target/*.jar
+      - ms/pgu-service-config/target/*.jar
+      - ms/pgu-scenario-generator-service/target/*.jar
+      - ms/service-descriptor-storage/target/*.jar
+      - ms/service-publisher/target/*.jar
+      - ms/smev-jms-receiver/target/*.jar
+      - ms/smev-converter/target/*.jar
+    reports:
+      junit:
+        - ms/lk-jms-notifier/target/surefire-reports/TEST-*.xml
+        - ms/identification/target/surefire-reports/TEST-*.xml
+        - ms/pdf-generator-ms/target/surefire-reports/TEST-*.xml
+        - ms/draft-converter/target/surefire-reports/TEST-*.xml
+        - ms/voskhod-adapter-service/target/surefire-reports/TEST-*.xml
+        - ms/xml-generator-ms/target/surefire-reports/TEST-*.xml
+        - ms/sp-adapter-service/target/surefire-reports/TEST-*.xml
+        - ms/pgu-service-config/target/surefire-reports/TEST-*.xml
+        - ms/pgu-scenario-generator-service/target/surefire-reports/TEST-*.xml
+        - ms/service-descriptor-storage/target/surefire-reports/TEST-*.xml
+        - ms/service-publisher/target/surefire-reports/TEST-*.xml
+        - ms/smev-jms-receiver/target/surefire-reports/TEST-*.xml
+        - ms/smev-converter/target/surefire-reports/TEST-*.xml
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" || $CI_COMMIT_REF_NAME =~ /^release/'
+      when: always
+    - if: $CI_COMMIT_REF_NAME !~ /^release/ && $CI_PIPELINE_SOURCE != "merge_request_event"
+      when: manual
+  interruptible: true      
+  tags:
+    - k8s
+
+lk-jms-notifier:
+  cache: []
+  stage: Package
+  image: docker:18.09.7-dind
+  services:
+    - name: docker:18.09.7-dind
+      entrypoint: ["dockerd-entrypoint.sh"]
+      command: ["--insecure-registry", "registry.gosuslugi.local"]
+  script:
+    - docker build --build-arg BUILD_VERSION=${DOCKER_TAG} ms/lk-jms-notifier/ --tag registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/lk-jms-notifier:${DOCKER_TAG}
+    - docker push registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/lk-jms-notifier:${DOCKER_TAG}
+  tags:
+    - k8s
+
+identification:
+  cache: []
+  stage: Package
+  image: docker:18.09.7-dind
+  services:
+    - name: docker:18.09.7-dind
+      entrypoint: ["dockerd-entrypoint.sh"]
+      command: ["--insecure-registry", "registry.gosuslugi.local"]
+  script:
+    - docker build --build-arg BUILD_VERSION=${DOCKER_TAG} ms/identification/ --tag registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/identification:${DOCKER_TAG}
+    - docker push registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/identification:${DOCKER_TAG}
+  tags:
+    - k8s
+
+pdf-generator-ms:
+  cache: []
+  stage: Package
+  image: docker:18.09.7-dind
+  services:
+    - name: docker:18.09.7-dind
+      entrypoint: ["dockerd-entrypoint.sh"]
+      command: ["--insecure-registry", "registry.gosuslugi.local"]
+  script:
+    - docker build --build-arg BUILD_VERSION=${DOCKER_TAG} ms/pdf-generator-ms/ --tag registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/pdf-generator-ms:${DOCKER_TAG}
+    - docker push registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/pdf-generator-ms:${DOCKER_TAG}
+  tags:
+    - k8s
+
+draft-converter:
+  cache: []
+  stage: Package
+  image: docker:18.09.7-dind
+  services:
+    - name: docker:18.09.7-dind
+      entrypoint: ["dockerd-entrypoint.sh"]
+      command: ["--insecure-registry", "registry.gosuslugi.local"]
+  script:
+    - docker build --build-arg BUILD_VERSION=${DOCKER_TAG} ms/draft-converter/ --tag registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/draft-converter:${DOCKER_TAG}
+    - docker push registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/draft-converter:${DOCKER_TAG}
+  tags:
+    - k8s
+
+voskhod-adapter:
+  cache: []
+  stage: Package
+  image: docker:18.09.7-dind
+  services:
+    - name: docker:18.09.7-dind
+      entrypoint: ["dockerd-entrypoint.sh"]
+      command: ["--insecure-registry", "registry.gosuslugi.local"]
+  script:
+    - docker build --build-arg BUILD_VERSION=${DOCKER_TAG} ms/voskhod-adapter-service/ --tag registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/voskhod-adapter:${DOCKER_TAG}
+    - docker push registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/voskhod-adapter:${DOCKER_TAG}
+  tags:
+    - k8s
+
+sp-adapter:
+  cache: []
+  stage: Package
+  image: docker:18.09.7-dind
+  services:
+    - name: docker:18.09.7-dind
+      entrypoint: ["dockerd-entrypoint.sh"]
+      command: ["--insecure-registry", "registry.gosuslugi.local"]
+  script:
+    - docker build --build-arg BUILD_VERSION=${DOCKER_TAG} ms/sp-adapter-service/ --tag registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/sp-adapter:${DOCKER_TAG}
+    - docker push registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/sp-adapter:${DOCKER_TAG}
+  tags:
+    - k8s
+
+pgu-service-config:
+  cache: []
+  stage: Package
+  image: docker:18.09.7-dind
+  services:
+    - name: docker:18.09.7-dind
+      entrypoint: ["dockerd-entrypoint.sh"]
+      command: ["--insecure-registry", "registry.gosuslugi.local"]
+  script:
+    - docker build --build-arg BUILD_VERSION=${DOCKER_TAG} ms/pgu-service-config/ --tag registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/pgu-service-config:${DOCKER_TAG}
+    - docker push registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/pgu-service-config:${DOCKER_TAG}
+  tags:
+    - k8s
+
+scenario-generator:
+  cache: []
+  stage: Package
+  image: docker:18.09.7-dind
+  services:
+    - name: docker:18.09.7-dind
+      entrypoint: ["dockerd-entrypoint.sh"]
+      command: ["--insecure-registry", "registry.gosuslugi.local"]
+  script:
+    - docker build --build-arg BUILD_VERSION=${DOCKER_TAG} ms/pgu-scenario-generator-service/ --tag registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/scenario-generator:${DOCKER_TAG}
+    - docker push registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/scenario-generator:${DOCKER_TAG}
+  tags:
+    - k8s
+
+service-descriptor-storage:
+  cache: []
+  stage: Package
+  image: docker:18.09.7-dind
+  services:
+    - name: docker:18.09.7-dind
+      entrypoint: ["dockerd-entrypoint.sh"]
+      command: ["--insecure-registry", "registry.gosuslugi.local"]
+  script:
+    - docker build --build-arg BUILD_VERSION=${DOCKER_TAG} ms/service-descriptor-storage/ --tag registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/service-descriptor-storage:${DOCKER_TAG}
+    - docker push registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/service-descriptor-storage:${DOCKER_TAG}
+  tags:
+    - k8s
+
+smev-jms-receiver:
+  cache: []
+  stage: Package
+  image: docker:18.09.7-dind
+  services:
+    - name: docker:18.09.7-dind
+      entrypoint: ["dockerd-entrypoint.sh"]
+      command: ["--insecure-registry", "registry.gosuslugi.local"]
+  script:
+    - docker build --build-arg BUILD_VERSION=${DOCKER_TAG} ms/smev-jms-receiver/ --tag registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/smev-jms-receiver:${DOCKER_TAG}
+    - docker push registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/smev-jms-receiver:${DOCKER_TAG}
+  tags:
+    - k8s
+
+smev-converter:
+  cache: []
+  stage: Package
+  image: docker:18.09.7-dind
+  services:
+    - name: docker:18.09.7-dind
+      entrypoint: ["dockerd-entrypoint.sh"]
+      command: ["--insecure-registry", "registry.gosuslugi.local"]
+  script:
+    - docker build --build-arg BUILD_VERSION=${DOCKER_TAG} ms/smev-converter/ --tag registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/smev-converter:${DOCKER_TAG}
+    - docker push registry.gosuslugi.local/epgu2-dev/epgu2sf-ms/smev-converter:${DOCKER_TAG}
+  tags:
+    - k8s    
