@@ -9,7 +9,7 @@ stages:
   - Package
 
 variables:
-  MAVEN_CLI_OPTS: "-T 2 -s .m2/settings.ci.xml --batch-mode -Dmaven.repo.local=.m2/repository -Depgu2.sf.lib.version=400.24.0"
+  MAVEN_CLI_OPTS: "-T 2 -s .m2/settings.ci.xml --batch-mode -Dmaven.repo.local=.m2/repository"
   MAVEN_OPTS: "-XX:+UseParallelGC -XX:-TieredCompilation -XX:TieredStopAtLevel=1"
   DOCKER_TAG: ${CI_COMMIT_REF_SLUG}-${CI_BUILD_ID}
   DOCKER_DRIVER: overlay2
