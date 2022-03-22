@@ -10,6 +10,7 @@ import ru.gosuslugi.pgu.generator.model.scenario.EvidenceTemplateType;
 
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 import static ru.gosuslugi.pgu.generator.util.DescriptorUtils.*;
@@ -60,6 +61,8 @@ public class AdditionalStepsAppealDescriptorGenerator {
         serviceDescriptor.getScreens().removeIf(screen -> screen.getId().startsWith(ADDITIONAL_STEP_SCREEN_PREFIX));
         serviceDescriptor.getScreenRules().keySet().removeIf(screen -> screen.startsWith(ADDITIONAL_STEP_SCREEN_PREFIX));
         serviceDescriptor.getApplicationFields().removeIf(component -> componentsToDelete.contains(component.getId()));
+
+        serviceDescriptor.getParameters().put("Id", UUID.randomUUID().toString());
     }
 
 
