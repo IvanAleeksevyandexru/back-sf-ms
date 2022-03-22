@@ -17,6 +17,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Objects;
+import java.util.UUID;
 
 import static ru.gosuslugi.pgu.common.core.json.JsonProcessingUtil.*;
 
@@ -85,7 +86,7 @@ public class AppealFinesService {
         if (Objects.isNull(descriptor.getParameters())) {
             descriptor.setParameters(new HashMap<>());
         }
-        descriptor.getParameters().put("Id", response.getId());
+        descriptor.getParameters().put("Id", UUID.randomUUID().toString());
         descriptor.getParameters().put("ReqId", response.getReqId());
         Calendar timestamp = response.getTimestamp();
         descriptor.getParameters().put("timestamp", timestamp.toInstant().atZone(timestamp.getTimeZone().toZoneId()).toOffsetDateTime().format(DATE_FORMAT));
