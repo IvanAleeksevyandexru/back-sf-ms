@@ -17,3 +17,7 @@ spring:
       request:
         consistency: quorum
       compression: LZ4
+
+springdoc:
+  packagesToScan: ru.gosuslugi.pgu.service.descriptor
+  pathsToMatch: /**

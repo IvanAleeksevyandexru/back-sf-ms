@@ -17,3 +17,7 @@ jms:
   connection: localhost:61616
   username: artemis
   password: simetraehcapa
+
+springdoc:
+  packagesToScan: ru.gosuslugi.pgu.lk.notifier
+  pathsToMatch: /**

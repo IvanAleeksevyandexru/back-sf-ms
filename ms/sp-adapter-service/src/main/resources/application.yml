@@ -114,3 +114,7 @@ terrabyte:
     storage-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/api/storage/v1
     internal-storage-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/internal/api/storage
     internal-dataservice-url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/internal/api/dataservice
+
+springdoc:
+  packagesToScan: ru.gosuslugi.pgu.sp.adapter
+  pathsToMatch: /**

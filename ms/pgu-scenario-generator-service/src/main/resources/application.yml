@@ -19,3 +19,7 @@ ipsh:
 
 file-storage:
   url: http://pgu-dev-feddsnlb.test.gosuslugi.ru/storageservice/internal/api/storage
+
+springdoc:
+  packagesToScan: ru.gosuslugi.pgu.generator
+  pathsToMatch: /**
