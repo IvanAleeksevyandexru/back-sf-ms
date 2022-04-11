@@ -23,3 +23,7 @@ initConfig: |
             "gibddRouteNumber": "46000000000"
        }
     }
+
+springdoc:
+  packagesToScan: ru.gosuslugi.pgu.service
+  pathsToMatch: /**

@@ -1,5 +1,7 @@
 package ru.gosuslugi.pgu.lk.notifier.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
@@ -19,6 +21,12 @@ public class LkNotificationController {
     private final JmsLkMessageSender jmsLkMessageSender;
 
     @PostMapping("/send")
+    @Operation(summary = "Отсылка нотификаций", responses = {
+            @ApiResponse(responseCode = "200", description = "OK"),
+            @ApiResponse(responseCode = "400", description = "Неверные параметры"),
+            @ApiResponse(responseCode = "401", description = "Требуется авторизация"),
+            @ApiResponse(responseCode = "500", description = "Внутренняя ошибка")
+    })
     public void sendLkNotification(@Validated @RequestBody SendNotificationRequestDto request) {
         log.debug("Sending notification to LK: {}", request);
         jmsLkMessageSender.sendMessages(request);
