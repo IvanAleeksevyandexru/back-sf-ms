@@ -108,8 +108,8 @@ build:
 
 lk-jms-notifier:
   cache: []
-  variables:
-    GIT_STRATEGY: none
+  #variables:
+  #  GIT_STRATEGY: none
   stage: Package
   image: docker:18.09.7-dind
   services:
@@ -124,8 +124,8 @@ lk-jms-notifier:
 
 identification:
   cache: []
-  variables:
-    GIT_STRATEGY: none  
+  #variables:
+  #  GIT_STRATEGY: none  
   stage: Package
   image: docker:18.09.7-dind
   services:
@@ -140,8 +140,8 @@ identification:
 
 pdf-generator-ms:
   cache: []
-  variables:
-    GIT_STRATEGY: none  
+  #variables:
+  #  GIT_STRATEGY: none  
   stage: Package
   image: docker:18.09.7-dind
   services:
@@ -156,8 +156,8 @@ pdf-generator-ms:
 
 draft-converter:
   cache: []
-  variables:
-    GIT_STRATEGY: none  
+  #variables:
+  #  GIT_STRATEGY: none  
   stage: Package
   image: docker:18.09.7-dind
   services:
@@ -172,8 +172,8 @@ draft-converter:
 
 voskhod-adapter:
   cache: []
-  variables:
-    GIT_STRATEGY: none  
+  #variables:
+  #  GIT_STRATEGY: none  
   stage: Package
   image: docker:18.09.7-dind
   services:
@@ -188,8 +188,8 @@ voskhod-adapter:
 
 sp-adapter:
   cache: []
-  variables:
-    GIT_STRATEGY: none  
+  #variables:
+  #  GIT_STRATEGY: none  
   stage: Package
   image: docker:18.09.7-dind
   services:
@@ -204,8 +204,8 @@ sp-adapter:
 
 pgu-service-config:
   cache: []
-  variables:
-    GIT_STRATEGY: none  
+  #variables:
+  #  GIT_STRATEGY: none  
   stage: Package
   image: docker:18.09.7-dind
   services:
@@ -220,8 +220,8 @@ pgu-service-config:
 
 scenario-generator:
   cache: []
-  variables:
-    GIT_STRATEGY: none  
+  #variables:
+  #  GIT_STRATEGY: none  
   stage: Package
   image: docker:18.09.7-dind
   services:
@@ -236,8 +236,8 @@ scenario-generator:
 
 service-descriptor-storage:
   cache: []
-  variables:
-    GIT_STRATEGY: none  
+  #variables:
+  #  GIT_STRATEGY: none  
   stage: Package
   image: docker:18.09.7-dind
   services:
@@ -252,8 +252,8 @@ service-descriptor-storage:
 
 smev-jms-receiver:
   cache: []
-  variables:
-    GIT_STRATEGY: none  
+  #variables:
+  #  GIT_STRATEGY: none  
   stage: Package
   image: docker:18.09.7-dind
   services:
@@ -268,8 +268,8 @@ smev-jms-receiver:
 
 smev-converter:
   cache: []
-  variables:
-    GIT_STRATEGY: none  
+  #variables:
+  #  GIT_STRATEGY: none  
   stage: Package
   image: docker:18.09.7-dind
   services:
