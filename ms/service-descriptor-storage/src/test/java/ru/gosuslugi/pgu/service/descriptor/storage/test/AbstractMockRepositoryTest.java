@@ -3,6 +3,7 @@ package ru.gosuslugi.pgu.service.descriptor.storage.test;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.data.cassandra.core.CassandraTemplate;
 import org.springframework.test.context.ActiveProfiles;
 import ru.gosuslugi.pgu.service.descriptor.storage.repository.ServiceDescriptorRepository;
 import ru.gosuslugi.pgu.service.descriptor.storage.repository.TemplatePackageRepository;
@@ -26,6 +27,9 @@ public abstract class AbstractMockRepositoryTest {
 
     @MockBean
     TemplatePackageRepository templatePackageRepository;
+
+    @MockBean
+    CassandraTemplate cassandraTemplate;
 
     @BeforeEach
     public void init() throws IOException {
