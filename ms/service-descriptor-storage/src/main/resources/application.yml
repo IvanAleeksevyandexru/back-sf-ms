@@ -8,6 +8,9 @@ spring:
     name: service-descriptor-storage
     env: dev
     version: 8.0
+  cache:
+    cache-names: cacheComponentRegistry
+    caffeine.spec: expireAfterWrite=3600s
   data:
     cassandra:
       contact-points: 127.0.0.1:9042
@@ -17,3 +20,7 @@ spring:
       request:
         consistency: quorum
       compression: LZ4
+
+springdoc:
+  packagesToScan: ru.gosuslugi.pgu.service.descriptor
+  pathsToMatch: /**

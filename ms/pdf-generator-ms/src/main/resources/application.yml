@@ -24,3 +24,8 @@ terrabyte:
 template-service:
     file-resource-loader-path: ms/pdf-generator-ms/vm-templates
     refresh-rate: 3000
+
+
+springdoc:
+  packagesToScan: ru.gosuslugi.pgu.pdf.template
+  pathsToMatch: /**

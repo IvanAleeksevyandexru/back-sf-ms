@@ -1,5 +1,13 @@
 package ru.gosuslugi.pgu.generator.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.enums.Explode;
+import io.swagger.v3.oas.annotations.enums.ParameterIn;
+import io.swagger.v3.oas.annotations.enums.ParameterStyle;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
@@ -28,6 +36,12 @@ public class AppealFinesController {
     private final AppealFinesService appealFinesService;
 
     @PostMapping
+    @Operation(summary = "Генерация сценария", responses = {
+            @ApiResponse(responseCode = "200", description = "OK"),
+            @ApiResponse(responseCode = "400", description = "Неверные параметры"),
+            @ApiResponse(responseCode = "401", description = "Требуется авторизация"),
+            @ApiResponse(responseCode = "500", description = "Внутренняя ошибка")
+    })
     public void generateScenario(@RequestBody @Valid AppealFinesRequest request) {
         log.info("Generation started for request {}", request);
 
@@ -35,6 +49,13 @@ public class AppealFinesController {
     }
 
     @PostMapping("/debug")
+    @Operation(summary = "Генерация сценария, отладка", responses = {
+            @ApiResponse(responseCode = "200", description = "OK"),
+            @ApiResponse(responseCode = "400", description = "Неверные параметры"),
+            @ApiResponse(responseCode = "401", description = "Требуется авторизация"),
+            @ApiResponse(responseCode = "500", description = "Внутренняя ошибка",
+                    content = @Content(schema = @Schema(implementation = ServiceDescriptor.class)))
+    })
     public ServiceDescriptor generateScenarioWithDebug(@RequestBody @Valid AppealFinesRequest request) {
         log.info("DEBUG Generation started for request {}", request);
 
@@ -42,14 +63,29 @@ public class AppealFinesController {
     }
 
     @PostMapping("/additional")
-    public void additionalSteps(@RequestParam String serviceId) {
+    @Operation(summary = "Дополнительные шаги", responses = {
+            @ApiResponse(responseCode = "200", description = "OK"),
+            @ApiResponse(responseCode = "400", description = "Неверные параметры"),
+            @ApiResponse(responseCode = "401", description = "Требуется авторизация"),
+            @ApiResponse(responseCode = "500", description = "Внутренняя ошибка")
+    })
+    public void additionalSteps(@Parameter(name = "serviceId", in = ParameterIn.QUERY, description = "ID сервиса", schema = @Schema(type = "string"))
+                                    @RequestParam String serviceId) {
         log.info("Started generation of additional step for Appeal Fines. ServiceId: {}", serviceId);
 
         appealFinesService.generateAdditionalSteps(serviceId);
     }
 
     @PostMapping("/additional/debug")
-    public ServiceDescriptor additionalStepsWithDebug(@RequestParam String serviceId) {
+    @Operation(summary = "Дополнительные шаги, отладка", responses = {
+            @ApiResponse(responseCode = "200", description = "OK"),
+            @ApiResponse(responseCode = "400", description = "Неверные параметры"),
+            @ApiResponse(responseCode = "401", description = "Требуется авторизация"),
+            @ApiResponse(responseCode = "500", description = "Внутренняя ошибка",
+                    content = @Content(schema = @Schema(implementation = ServiceDescriptor.class)))
+    })
+    public ServiceDescriptor additionalStepsWithDebug(@Parameter(name = "serviceId", in = ParameterIn.QUERY, description = "ID сервиса", schema = @Schema(type = "string"))
+                                                          @RequestParam String serviceId) {
         log.info("DEBUG Started generation of additional step for Appeal Fines. ServiceId: {}", serviceId);
 
         return appealFinesService.generateAdditionalSteps(serviceId);

@@ -13,7 +13,7 @@ spring:
       contact-points: 10.65.37.27:9042,10.65.37.28:9042,10.65.37.29:9042,10.65.37.30:9042,10.65.37.32:9042
       username: cassandra
       password: cassandra
-      keyspace-name: pub_dev_l11
+      keyspace-name: pub_dev01
       schema-action: none
       local-datacenter: dc1
       request:

@@ -9,6 +9,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.data.cassandra.core.CassandraTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.restdocs.JUnitRestDocumentation;
@@ -23,6 +24,7 @@ import org.springframework.web.context.WebApplicationContext;
 import ru.gosuslugi.pgu.service.descriptor.storage.repository.ServiceDescriptorRepository;
 import ru.gosuslugi.pgu.service.descriptor.storage.repository.TemplatePackageRepository;
 import ru.gosuslugi.pgu.service.descriptor.storage.repository.model.TemplatePackage;
+import ru.gosuslugi.pgu.service.descriptor.storage.service.FindComponentRegistryService;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -55,6 +57,9 @@ public class SingleTemlateControllerRestdocsTest {
 
     @MockBean
     TemplatePackageRepository templatePackageRepository;
+
+    @MockBean
+    CassandraTemplate cassandraTemplate;
 
     public void init() throws IOException {
         byte[] data = this.getClass().getClassLoader().getResourceAsStream("package_10000000100.zip").readAllBytes();
