@@ -30,13 +30,4 @@ public class SmevTemplateBatchKafkaListener extends AbstractBatchMessageListener
     protected void processMessage(List<SpAdapterDto> messages) {
         messages.forEach(smevTemplateMessageProcessor::processMessage);
     }
-
-    private void processError(List<SpAdapterDto> spAdapterDtoList, String cause) {
-        for (SpAdapterDto spAdapterDto: spAdapterDtoList) {
-            SpRequestErrorDto spError = new SpRequestErrorDto();
-            spError.setAdapterRequestDto(spAdapterDto);
-            spError.setCause(cause);
-            errorTopicTemplate.send(spKafkaProducersProperties.getSelfErrors().getTopic(), spError);
-        }
-    }
 }
