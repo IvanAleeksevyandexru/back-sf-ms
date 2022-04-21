@@ -1,0 +1,34 @@
+# Коллекция запросов для локального обращения к sp-adapter (требуется IDEA Ultimate).
+
+### сформировать PDF GET-запросом
+GET http://localhost:8090/pdf?pdfName=pdf&orderId=1&light=true&needToSave=false
+accept: */*
+Cookie: acc_t=
+Cookie: u=
+
+### сформировать PDF POST-запросом
+POST http://localhost:8090/pdf?pdfName=pdf&light=true
+accept: */*
+Cookie: acc_t=
+Cookie: u=
+Content-Type: application/json
+
+{"scenarioDto": {
+    "serviceCode": "1000",
+    "targetCode": "1000",
+    "masterOrderId": 0,
+    "orderId": 1,
+    "gepsId": 1,
+    "currentScenarioId": 1,
+    "serviceId": "1000",
+    "parentServiceId": "1000",
+    "serviceDescriptorId": "1000",
+    "targetId": "1000",
+    "currentUrl": "string",
+    "finishedAndCurrentScreens": [
+    ],
+    "gender": "string"
+  }
+}
+###
+
