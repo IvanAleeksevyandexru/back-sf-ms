@@ -5,18 +5,19 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.enums.ParameterIn;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import ru.gosuslugi.pgu.common.core.attachments.AttachmentService;
@@ -27,49 +28,57 @@ import ru.gosuslugi.pgu.sp.adapter.data.TemplatesDataContext;
 import ru.gosuslugi.pgu.sp.adapter.dto.PdfCreationRequestDto;
 import ru.gosuslugi.pgu.sp.adapter.service.SmevPdfService;
 
-import java.awt.print.Book;
 import java.util.HashSet;
 import java.util.Optional;
 
-import static org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR;
-
 /**
- * Контроллер  для генерации PDF
+ * Контроллер для генерации PDF.
  */
 @RestController
 @RequiredArgsConstructor
 @Slf4j
 public class PdfTemplateController {
-
     private final UserPersonalData userPersonalData;
     private final SmevPdfService smevPdfService;
     private final AttachmentService attachmentService;
-    public static final String PDF_MIME_TYPE = "application/pdf";
 
     /**
-     * Генерация PDF из черновика пользователя. Каждый раз при вызове файл генерируется заново, не сохраняется
+     * Генерация PDF из черновика пользователя. Каждый раз при вызове файл генерируется заново, не
+     * сохраняется
+     *
      * @param pdfName - практически префикс названия vm-шаблона c ролью Applicant
      * @param orderId - идентификатор черновика
      * @param light - флаг создания PDF из простого шаблона
      * @param needToSave - флаг отвечающий за то, нужно ли сохранять фаил в террабайт или нет
      * @return файл PDF как вложение web ответа.
-     * @see MediaType
      */
     @GetMapping("/pdf")
-    @Operation(summary = "Генерация PDF из черновика пользователя. Каждый раз при вызове файл генерируется заново, не сохраняется", responses = {
-            @ApiResponse(responseCode = "200", description = "файл PDF как вложение web ответа"),
-            @ApiResponse(responseCode = "400", description = "Неверные параметры"),
-            @ApiResponse(responseCode = "500", description = "Внутренняя ошибка")
-    })
+    @Operation(summary = "Генерирует PDF из черновика пользователя. Каждый раз при вызове файл"
+            + " генерируется заново, не сохраняется",
+            responses = {
+                    @ApiResponse(responseCode = "200", description = "файл PDF как вложение web "
+                            + "ответа"),
+                    @ApiResponse(responseCode = "400", description = "Неверные параметры"),
+                    @ApiResponse(responseCode = "500", description = "Внутренняя ошибка")
+            })
     public ResponseEntity<Resource> getPDFFile(
-            @Parameter(name = "path", in = ParameterIn.QUERY, description = "практически префикс названия vm-шаблона c ролью Applicant", schema = @Schema(type = "string"))
-                @RequestParam("pdfName") String pdfName,
-            @Parameter(name = "path", in = ParameterIn.QUERY, description = "идентификатор черновика", schema = @Schema(type = "integer"))
-                @RequestParam("orderId") Long orderId,
-            @Parameter(name = "path", in = ParameterIn.QUERY, description = "флаг создания PDF из простого шаблона", schema = @Schema(type = "boolean"))
-                @RequestParam(name = "light", required = false) Boolean light,
-            @Parameter(name = "path", in = ParameterIn.QUERY, description = "флаг отвечающий за то, нужно ли сохранять фаил в террабайт или нет", schema = @Schema(type = "boolean"))
-                @RequestParam(name = "needToSave", required = false) Boolean needToSave
+            @Parameter(description = "Практически префикс названия vm-шаблона c ролью Applicant")
+            @RequestParam("pdfName")
+            String pdfName,
+
+            @Parameter(description = "Идентификатор черновика")
+            @RequestParam("orderId")
+            Long orderId,
+
+            @Parameter(description = "Флаг: true — создается бизнес- (common-) PDF,"
+                    + " false — дополнительная (additional).")
+            @RequestParam(name = "light", required = false)
+            Boolean light,
+
+            @Parameter(description = "Флаг, отвечающий за то, нужно ли сохранять файл"
+                            + " в terrabyte, или нет. True — нужно.")
+            @RequestParam(name = "needToSave", required = false)
+            Boolean needToSave
     ) {
         val lightMode = light != null && light;
         val userId = userPersonalData.getUserId();
@@ -85,7 +94,7 @@ public class PdfTemplateController {
         }
         val save = needToSave != null && needToSave;
         if (save) {
-            attachmentService.saveAttachment(orderId, PDF_MIME_TYPE,
+            attachmentService.saveAttachment(orderId, MediaType.APPLICATION_PDF_VALUE,
                     pdfName, pdfName, pdfContent, null, new HashSet<>());
         }
         try {
@@ -97,7 +106,7 @@ public class PdfTemplateController {
                     .body(bytes);
         } catch (Exception e) {
             log.error(String.format("Ошибка чтения файла pdf pdfName = %s, orderId = %s", pdfName, orderId),e);
-            return ResponseEntity.status(INTERNAL_SERVER_ERROR).build();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
 
@@ -115,12 +124,21 @@ public class PdfTemplateController {
             @ApiResponse(responseCode = "500", description = "Внутренняя ошибка")
     })
     public ResponseEntity<Resource> getPDFFile(
-            @Parameter(name = "path", in = ParameterIn.QUERY, description = "практически префикс названия vm-шаблона c ролью Applicant", schema = @Schema(type = "string"))
-                @RequestParam("pdfName") String pdfName,
-            @RequestBody(description = "DTO со ScenarioDTO", content = @Content(schema=@Schema(implementation = PdfCreationRequestDto.class)))
-                PdfCreationRequestDto pdfCreationRequestDto,
-            @Parameter(name = "path", in = ParameterIn.QUERY, description = "флаг создания PDF из простого шаблона", schema = @Schema(type = "boolean"))
-                @RequestParam(name = "light", required = false) Boolean light
+            @Parameter(description = "Представляет префикс в названии vm-шаблона", example = "pdf")
+            @RequestParam("pdfName")
+            String pdfName,
+
+            @RequestBody
+            @io.swagger.v3.oas.annotations.parameters.RequestBody(
+                    description = "DTO со ScenarioDTO",
+                    content = @Content(schema = @Schema(implementation =
+                            PdfCreationRequestDto.class)))
+            PdfCreationRequestDto pdfCreationRequestDto,
+
+            @Parameter(description = "Флаг: true — создается бизнес- (common-) PDF,"
+                            + " false — дополнительная (additional).")
+            @RequestParam(name = "light", required = false)
+            Boolean light
     ) {
         val lightMode = light != null && light;
         val userId = userPersonalData.getUserId();
@@ -143,14 +161,16 @@ public class PdfTemplateController {
                     .body(bytes);
         } catch (Exception e) {
             log.error(String.format("Ошибка чтения файла pdf pdfName = %s, без указания orderId ", pdfName),e);
-            return ResponseEntity.status(INTERNAL_SERVER_ERROR).build();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
 
     /**
      * Генерация PDF из черновика пользователя с сохранением в terrabyte.
-     * @param body параметры вызова @see {@link SavedPdfRequest}
-     * @return {@code 200} - JSON c описанием мнемоники файла, {@code 204} - если по бизнесу не должен сформироваться файл
+     *
+     * @param body параметры вызова @see {@link SavedPdfRequest}.
+     * @return {@code 200} - JSON c описанием мнемоники файла, {@code 204} &mdash; если по бизнесу не
+     * должен сформироваться файл.
      * @see SavedPdfDto
      */
     @Operation(summary = "Генерация PDF из черновика пользователя с сохранением в terrabyte.", responses = {
@@ -161,8 +181,11 @@ public class PdfTemplateController {
     })
     @PostMapping("/save/pdf")
     public ResponseEntity<Object> savePdf(
-            @RequestBody(description = "параметры вызова", content = @Content(schema=@Schema(implementation = SavedPdfRequest.class)))
-                @Validated SavedPdfRequest body) {
+            @RequestBody
+            @Validated
+            @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "параметры вызова",
+                    content = @Content(schema = @Schema(implementation = SavedPdfRequest.class)))
+            SavedPdfRequest body) {
         val lightMode = body.getLight() != null && body.getLight();
         val userId = body.getUserId();
         val orgId = body.getOrgId();
@@ -176,13 +199,13 @@ public class PdfTemplateController {
             return ResponseEntity.noContent().build();
         }
         try {
-            val mnemonic = attachmentService.saveAttachment(body.getOrderId(), PDF_MIME_TYPE,
+            val mnemonic = attachmentService.saveAttachment(body.getOrderId(), MediaType.APPLICATION_PDF_VALUE,
                     body.getSavedName(), body.getSavedName(), pdfContent, null, new HashSet<>());
             return ResponseEntity.ok(new SavedPdfDto(mnemonic));
         } catch (Exception e) {
             val errorText = String.format("Error during processing pdf file for orderId %s. Ignoring...", body.getOrderId());
             log.error(errorText, e);
-            return ResponseEntity.status(INTERNAL_SERVER_ERROR).body(errorText);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(errorText);
         }
     }
 }
